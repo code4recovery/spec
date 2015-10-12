@@ -19,7 +19,7 @@ This API specification is a product of a working group of the NAATW (National AA
 The API is a single JSON file. It can be named anything, and located anywhere on a website. It should be linked from the head:
 
 ```
-<meta name="12_step_meetings_api" content="http://aasanjose.org/wp-admin/admin-ajax.php?action=api">
+<meta name="12_step_meetings_api" content="/wp-admin/admin-ajax.php?action=api">
 ```
 The area JSON should look like this:
 
@@ -30,7 +30,7 @@ The area JSON should look like this:
 	program: "AA",
 	api_version: "1.0",
 	software: "12 Step Meeting List",
-	software_version: "1.5.6",
+	software_version: "1.6.2",
 	locations: [
 		{
 			id: "saturday-nite-live",
@@ -75,7 +75,7 @@ The area JSON should look like this:
 }
 ```
 * **name** is the official name of the institution providing the information. It's preferred that it be as short as possible.
-* **location** is the primary location, generally the county name or the largest city in the area. Please avoid listing multiple cities if a single regional description is more concise.
+* **location** is the primary location covered by this resource, generally the county name or the largest city in the area. Please avoid listing multiple cities if a single regional description is more concise.
 * **program** is the name of the program, eg AA, NA, OA, etc.
 * **api_version** the current version of this API is 1.0
 * **software** (optional) the name of the software used to maintain the meeting list. In the case of plugins, it's the plugin name, rather than the platform name.
