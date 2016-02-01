@@ -1,5 +1,8 @@
 # 12 Step Meetings API
 
+## Note
+This is a proposal for version 2 of the API. Version 1 is documented here: [https://meetingguide.org/api](https://meetingguide.org/api)
+
 ## Overview
 The purpose of this API is to facilitate the free exchange of timely, accurate information about twelve step meetings between interested parties. There should be as few limits as possible on access to data. 
 
