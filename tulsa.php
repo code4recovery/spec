@@ -5,7 +5,7 @@
 $server = '127.0.0.1';
 $username = 'root';
 $password = '';
-$database = 'tulsa';
+$database = 'aa_tulsa';
 
 //create some variables we're going to need
 $meetings = array();
@@ -30,7 +30,7 @@ $result = mysql_query('SELECT
 		m.Meeting_Comments AS notes,
 		m.Group_ID AS location_slug,
 		GREATEST(m.Meeting_Last_Update, l.Group_Last_Update) updated,
-		l.Group_Name AS location_name,
+		l.Group_Name AS location,
 		l.Group_Comments AS location_notes,
 		l.Group_Address_1 AS address,
 		l.Group_Address_2,
