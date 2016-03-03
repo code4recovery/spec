@@ -1,5 +1,5 @@
 <?php
-//simple PHP script to output API for aaneok.org
+//simplest possible PHP script to output api
 
 //database connection info, edit me
 $server = '127.0.0.1';
@@ -30,7 +30,7 @@ $result = mysql_query('SELECT
 		m.Meeting_Comments AS notes,
 		m.Group_ID AS location_slug,
 		GREATEST(m.Meeting_Last_Update, l.Group_Last_Update) updated,
-		l.Group_Name AS location,
+		l.Group_Name AS location_name,
 		l.Group_Comments AS location_notes,
 		l.Group_Address_1 AS address,
 		l.Group_Address_2,
@@ -67,7 +67,7 @@ while ($row = mysql_fetch_assoc($result)) {
 	if ($row['open']) $types[] = 'O';
 	
 	$meetings[] = array(
-		'name' => null,
+		'name' => $row['location_name'],
 		'slug' => $row['slug'],
 		'notes' => $row['notes'],
 		'updated' => $row['updated'],
@@ -90,6 +90,5 @@ while ($row = mysql_fetch_assoc($result)) {
 	);
 }
 
-//output json
 header('Content-type: application/json; charset=utf-8');
 echo json_encode($meetings);
