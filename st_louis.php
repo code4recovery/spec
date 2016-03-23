@@ -25,19 +25,20 @@ $result = mysql_query('SELECT
 		MeetingCity,
 		MeetingState,
 		MeetingZipCode,
-		MeetingTime,
-		MeetingNotes,
-		MeetingFormat,
-		MeetingLanguage,
-		MeetingBabySitting,
-		MeetingSpecialInterest,
-		MeetingSmokingStatus,
-		MeetingHandicapFacil,
-		MeetingGenderID,
 		MeetingStatus,
+		MeetingGenderID,
+		MeetingHandicapFacil,
+		MeetingSmokingStatus,
+		MeetingNotes,
+		MeetingSpecialInterest,
+		MeetingBabySitting,
+		MeetingLanguage,
+		MeetingFormat,
+		NewComerMeeting,
+		MeetingTime,
 		asl
 	FROM tblmeetings
-	WHERE IncludeMeetingOnWeb = "Y"');
+	WHERE GroupMeetStat = "A" AND MeetingAddress IS NOT NULL AND MeetingAddress <> ""');
 
 //loop through
 while ($r = mysql_fetch_array($result)) {
