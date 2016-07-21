@@ -66,7 +66,7 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `url` is optional and should point to the meeting's listing on the area website.
 
-`image` is an optional url that should point to an image representing the meeting. We recommend an image of the building's facade. Ideally this is a JPG image 1080px wide by 540px tall.
+`image` is an optional url that should point to an image representing the location. We recommend an image of the building's facade. Ideally this is a JPG image 1080px wide by 540px tall.
 
 `types` is an optional array of standardized meeting types. See the types section below.
 
