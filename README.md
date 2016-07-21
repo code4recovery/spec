@@ -8,13 +8,15 @@ If you have feedback, please put an issue on this repository.
 
 To implement the API on your server, create a file that can take information from your database and format it in the correct specification (see below). 
 
-The file [meeting-guide-json.php](meeting-guide-json.php) contains the simplest version of the JSON feed for PHP.
+The file [meeting-guide-json.php](meeting-guide-json.php) contains the simplest version of the JSON feed for PHP. It will require a little customization to work properly.
 
 For security, your script should not accept any parameters. It should be read-only.
 
+It's critically important that your data not break anyone's anonymity. No last names should be used in meeting notes, and no one's face should be pictured in meeting images.
+
 Test your feed with the [Meeting Guide JSON Feed Validator](https://meetingguide.org/validate). Once it's ready, or if you have questions, use the [Meeting Guide contact form](https://meetingguide.org/contact).
 
-If you would like to share your JSON script, we would be pleased to include it in the repository so that it may help future users.
+If you would like to share your script, we'll include a copy in this repository so that it might help future users.
 
 ##Specification
 The JSON file is expected to contain a simple array of meetings. [Here is an example](https://aasanjose.org/wp-admin/admin-ajax.php?action=meetings) of a live JSON feed.
@@ -23,10 +25,11 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 [
 	{
 		"name": "Sunday Serenity",
-		"location": "Alano Club",
 		"slug": "sunday-serenity",
 		"day": 0,
 		"time": "18:00",
+		"location": "Alano Club",
+		"group": "The Serenity Group",
 		"notes": "Ring buzzer. Meeting is on the 2nd floor.",
 		"updated": "2014-05-31 14:32:23",
 		"url": "https://intergroup.org/meetings/sunday-serenity",
@@ -47,13 +50,15 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `name` is a required string. It should be the meeting name, where possible. Some areas use group names instead, although that's more abiguous. 255 characters max.
 
-`location` is a required string and should be a recognizable building or landmark name.
-
 `slug` is required, and must be unique to your data set. It should preferably be a string, but integer IDs are fine too.
 
 `day` is required and may be an integer or an array of integers 0-6, representing Sunday (0) through Saturday (6).
 
 `time` is a required five-character string in the `HH:MM` 24-hour time format.
+
+`location` is an optional string and should be a recognizable building or landmark name.
+
+`group` is an optional string.
 
 `notes` is an optional long text field. Line breaks are ok, but HTML will be stripped.
 
@@ -77,8 +82,11 @@ That's ok. App users don't actually see the codes, just the types they translate
 ####Our meeting type isn't listed!
 Types have to be consistent across the app to make a good user experience. It's common that a user might see meeting results from several areas at a time (this happens near borders). The set of meeting types we use is a mutually-agreed-upon set of names across 30+ areas. If you have a request to edit the list, we will bring it up as business with at our steering committee meeting.
 
-####Why is slug necssary?
-Slug is a necessary field because there is an app feature where users may 'favorite' a meeting, and in order for that mark to persist across sessions we must attach it to a unique field. It might seem intuitive that meeting location + time would be a unique combination, but in practice we see cases where there are in fact simultaneous meetings at the same location.
+####Why is slug necessary?
+Slug is a required unique field because there is an app feature where users may 'favorite' a meeting, and in order for that to persist across sessions we must attach it to a unique field. It might seem intuitive that meeting location + time would be a unique combination, but in practice we see cases where there are in fact simultaneous meetings at the same location.
+
+####Why are day and time required?
+It's perfectly fine for meetings to be 'by appointment' and this often happens in places where there are not many meetings. The app, however, needs this information to present useful information to the user.
 
 ####Why can't we have HTML in meeting notes?
 We are trying to make the data portable across a range of devices, some of which might not display HTML.
