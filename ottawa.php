@@ -12,7 +12,7 @@ $sql		= 'SELECT * FROM meetings';
 
 //send header and turn off error reporting so we can get a proper HTTP result
 header('Content-type: application/json; charset=utf-8');
-error_reporting(0);
+error_reporting(E_ALL);
 
 //connect to database
 if (empty($server)) error('$server variable is empty');
@@ -49,22 +49,22 @@ while ($row = mysql_fetch_assoc($result)) {
 	if (!empty($row['typeDiscussion'])) $types[] = 'D';
 	if (!empty($row['typeSpeaker'])) $types[] = 'SP';
 	if (!empty($row['typeMeditation'])) $types[] = 'MED';
-	if ($row['typeSpecial'] == 'WO')) {
+	if ($row['typeSpecial'] == 'WO') {
 		$types[] = 'W';
-	} elseif ($row['typeSpecial'] == 'LGBT')) {
+	} elseif ($row['typeSpecial'] == 'LGBT') {
 		$types[] = 'LGBTQ';
-	} elseif ($row['typeSpecial'] == 'MO')) {
+	} elseif ($row['typeSpecial'] == 'MO') {
 		$types[] = 'M';
-	} elseif ($row['typeSpecial'] == 'STEP')) {
+	} elseif ($row['typeSpecial'] == 'STEP') {
 		$types[] = 'ST';
 	}
-	if ($row['typeNotes'] == 'BB')) {
+	if ($row['typeNotes'] == 'BB') {
 		$types[] = 'B';
-	} elseif ($row['typeNotes'] == 'TR')) {
+	} elseif ($row['typeNotes'] == 'TR') {
 		$types[] = 'TR';
-	} elseif ($row['typeNotes'] == 'MO')) {
+	} elseif ($row['typeNotes'] == 'MO') {
 		$types[] = 'M';
-	} elseif ($row['typeNotes'] == 'STEP')) {
+	} elseif ($row['typeNotes'] == 'STEP') {
 		$types[] = 'ST';
 	}
 	$types = array_unique($types);
