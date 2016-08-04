@@ -6,7 +6,12 @@ $server		= '127.0.0.1';
 $username	= 'root';
 $password	= '';
 $database	= 'your_database_name';
-$sql		= 'SELECT meetings.*, locations.* FROM meetings JOIN locations ON meetings.location_id = locations.id';
+
+//if you have only a meetings table, use this variable
+$sql		= 'SELECT * FROM meetings';
+
+//if you have both meetings and locations, try this one. You may need to customize it some.
+//$sql		= 'SELECT meetings.*, locations.* FROM meetings JOIN locations ON meetings.location_id = locations.id';
 
 //send header and turn off error reporting so we can get a proper HTTP result
 header('Content-type: application/json; charset=utf-8');
@@ -16,7 +21,7 @@ error_reporting(0);
 if (empty($server)) error('$server variable is empty');
 $link = mysql_connect($server, $username, $password) or error('could not connect to database server');
 mysql_select_db($database, $link) or error('could not select database');
-mysql_set_charset('UTF-8', $link);
+mysql_set_charset('utf8', $link);
 
 //select data
 if (empty($sql)) error('$sql variable is empty');
@@ -41,5 +46,7 @@ function error($string) {
 
 //function to output json
 function output($array) {
-	die(json_encode($array));
+	$return = json_encode($array);
+	if (json_last_error()) error(json_last_error_msg());
+	die($return);
 }
