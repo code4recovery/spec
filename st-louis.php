@@ -43,10 +43,12 @@ $meetings = mysql_query('SELECT
 //loop through
 while ($meeting = mysql_fetch_array($meetings)) {
 
+	$meeting = array_map('trim', $meeting);
+
 	$slug			= $meeting['AutoNumber'];
 	$time			= $meeting['MeetingTime'];
 	$name			= $meeting['GroupName'];
-	$day			= [$meeting['MeetingDayNum'] - 1];
+	$day			= $meeting['MeetingDayNum'] - 1;
 	$location		= $meeting['MeetingPlaceName'];
 	$notes			= $meeting['MeetingNotes'];
 	$address		= $meeting['MeetingAddress'];
@@ -67,7 +69,7 @@ while ($meeting = mysql_fetch_array($meetings)) {
 	if (substr($city, 0, 8) == 'St Louis') $city = 'St. Louis';
 
 	//types			
-	$types = [];
+	$types = array();
 	if ($meeting['MeetingBabySitting'] == 1) $types[] = 'BA'; //babysitting
 	if ($meeting['MeetingSmokingStatus'] == 2) $types[] = 'SM'; //smoking
 	if ($meeting['MeetingLanguage'] == 'SPANISH') $types[] = 'S';
