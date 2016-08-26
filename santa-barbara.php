@@ -36,7 +36,7 @@ mysqli_set_charset($link, 'utf8');
 //select data
 if (empty($sql)) error('$sql variable is empty');
 $result = mysqli_query($link, $sql);
-if (!$result) error(mysql_error($link));
+if (!$result) error(mysqli_error($link));
 
 $decode_types = array(
 	'C' => 'C',

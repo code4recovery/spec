@@ -6,103 +6,149 @@ $server = '127.0.0.1';
 $username = 'root';
 $password = '';
 $database = 'aa_baltimore';
+$sql	  = 'SELECT * FROM meeting_directory WHERE mID <> "Group ID"'; //checking because header row present in data sample
 
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
-
-function slugify($text)
-{ 
-  // replace non letter or digits by -
-  $text = preg_replace('~[^\\pL\d]+~u', '-', $text);
-
-  // trim
-  $text = trim($text, '-');
-
-  // transliterate
-  $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
-
-  // lowercase
-  $text = strtolower($text);
-
-  // remove unwanted characters
-  $text = preg_replace('~[^-\w]+~', '', $text);
-
-  if (empty($text))
-  {
-    return 'n-a';
-  }
-
-  return $text;
-}
 
 class Meeting
 {
 	function __construct( $row )
 	{
-		$types = array();
 
-		if ($row->mOpen == 'O') {
-			$types[] = 'O';
-		} elseif ($this->mOpen == 'C') {
-			$types[] = 'C';			
-		}
-		if (stristr($row->mNotes, 'big book')) $types[] = 'BB';
-		if (stristr($row->mNotes, 'chip')) $types[] = 'H';
-		if (stristr($row->mNotes, 'gay')) $types[] = 'G';
-		if (stristr($row->mNotes, 'grapevine')) $types[] = 'GR';
-		if (stristr($row->mNotes, 'spanish')) $types[] = 'S';
-		if (stristr($row->mNotes, 'step')) $types[] = 'ST';
-		if (stristr($row->mNotes, 'trad')) $types[] = 'TR';
-		if (stristr($row->mNotes, 'women')) {
-			$types[] = 'W';
-		} elseif (stristr($row->mNotes, 'men')) {
-			$types[] = 'M';
-		}
-		if ($row->mAccess == 'H') $types[] = 'X';
-		if ($row->mType == 'Discussion') {
-			$types[] = 'D';
-		} elseif ($row->mType == 'Speaker') {
-			$types[] = 'SP';
-		}		
-		
 		$this->name = $row->mName;
-		$this->slug = $row->mID;
-		$this->notes = $row->Notes;
-		$this->updated = date('c');
-		//$this->url = '';
 		$this->time = $row->mInternational;
-		$this->day = $row->mDayNo -1;
-		$this->types = $types;
-		$this->address = $row->mAdd2;
-		$this->city = $row->mCity;
+		if ($this->time == '2400') $this->time = '23:59'; //ad-hoc replacement
+		$this->day = $row->mDayNo -1; //day should be 0 - 6 (sun - sat)
+		$this->slug = $row->mID . '-' . $this->day . '-' . str_replace(':', '', $this->time); //id by itself is not unique
+		$this->notes = $row->mNotes;
+		$this->location = $row->mAdd1;
+
+		//fixing addresses that have extra stuff in them
+		if ($pos = strpos($row->mAdd2, ' (')) {
+			$this->address = substr($row->mAdd2, 0, $pos);
+			$this->notes .= substr($row->mAdd2, $pos);
+		} elseif ($pos = strpos($row->mAdd2, ';')) {
+			$this->address = substr($row->mAdd2, 0, $pos);
+			$this->notes .= substr($row->mAdd2, $pos);
+		} elseif ($pos = strpos($row->mAdd2, ', ')) {
+			$this->address = substr($row->mAdd2, 0, $pos);
+			$this->notes .= substr($row->mAdd2, $pos);
+		} elseif ($pos = strpos($row->mAdd2, '- ')) {
+			$this->address = substr($row->mAdd2, 0, $pos);
+			$this->notes .= substr($row->mAdd2, $pos);
+		} elseif ($pos = strpos($row->mAdd2, '-rear')) { //don't want to simply match - since it's correct in many addresses
+			$this->address = substr($row->mAdd2, 0, $pos);
+			$this->notes .= substr($row->mAdd2, $pos);
+		} elseif ($pos = strpos($row->mAdd2, '-near')) { //don't want to simply match - since it's correct in many addresses
+			$this->address = substr($row->mAdd2, 0, $pos);
+			$this->notes .= substr($row->mAdd2, $pos);
+		} elseif ($pos = strpos($row->mAdd2, '-Roland')) { //don't want to simply match - since it's correct in many addresses
+			$this->address = substr($row->mAdd2, 0, $pos);
+			$this->notes .= substr($row->mAdd2, $pos);
+		} elseif ($pos = strpos($row->mAdd2, '-Smith')) { //don't want to simply match - since it's correct in many addresses
+			$this->address = substr($row->mAdd2, 0, $pos);
+			$this->notes .= substr($row->mAdd2, $pos);
+		} elseif ($pos = strpos($row->mAdd2, ' @ ')) {
+			$this->address = substr($row->mAdd2, 0, $pos);
+			$this->notes .= substr($row->mAdd2, $pos);
+		} elseif ($pos = strpos($row->mAdd2, ' bet. ')) {
+			$this->address = substr($row->mAdd2, 0, $pos);
+			$this->notes .= substr($row->mAdd2, $pos);
+		} elseif ($pos = strpos($row->mAdd2, ' at ')) {
+			$this->address = substr($row->mAdd2, 0, $pos);
+			$this->notes .= substr($row->mAdd2, $pos);
+		} elseif ($pos = strpos($row->mAdd2, ' & ')) {
+			$this->address = substr($row->mAdd2, 0, $pos);
+			$this->notes .= substr($row->mAdd2, $pos);
+		} else {
+			$this->address = $row->mAdd2;
+		}
+		
+		//ad-hoc replacements
+		$this->address = str_replace(' La.', ' Lane', $this->address);
+		$this->address = str_replace('Comm Life Ctr', '961 Johnsville Road', $this->address);
+		$this->address = str_replace('Hanover Price', 'Hanover Pike', $this->address);
+		
+		//fixing cities that have extra stuff
+		if ($pos = strpos($row->mCity, '/')) {
+			$this->city = substr($row->mCity, 0, $pos);
+		} else {
+			$this->city = $row->mCity;
+		}
+		
 		$this->state = 'MD';
 		$this->postal_code = $row->mZip;
 		$this->country = 'US';
-		if (strstr($row->mSpecial, ',')) {
-			$this->latitude = explode(',',$row->mSpecial)[0];
-			$this->longitude = explode(',',$row->mSpecial)[1];
-		}
+		list($this->latitude, $this->longitude) = explode(',', trim($row->mSpecial));
 		$this->timezone = 'America/New_York';
-		$this->location = $row->mAdd1;
-		$this->location_slug = slugify($row->mAdd1);
-		//$this->location_notes = '';
+
+		//build array of meeting codes
+		$this->types = array();
+		if ($row->mOpen == 'O') {
+			$this->types[] = 'O';
+		} elseif ($this->mOpen == 'C') {
+			$this->types[] = 'C';			
+		}
+		if (stristr($row->mNotes, 'big book')) $this->types[] = 'BB';
+		if (stristr($row->mNotes, 'chip')) $this->types[] = 'H';
+		if (stristr($row->mNotes, 'gay')) $this->types[] = 'G';
+		if (stristr($row->mNotes, 'grapevine')) $this->types[] = 'GR';
+		if (stristr($row->mNotes, 'spanish')) $this->types[] = 'S';
+		if (stristr($row->mNotes, 'step')) $this->types[] = 'ST';
+		if (stristr($row->mNotes, 'trad')) $this->types[] = 'TR';
+		if (stristr($row->mNotes, 'women')) {
+			$this->types[] = 'W';
+		} elseif (stristr($row->mNotes, 'men')) {
+			$this->types[] = 'M';
+		}
+		if ($row->mAccess == 'H') $types[] = 'X';
+		if ($row->mType == 'Discussion') {
+			$this->types[] = 'D';
+		} elseif ($row->mType == 'Speaker') {
+			$this->types[] = 'SP';
+		}		
 	}
 }
 
-mysql_connect($server, $username, $password);
-mysql_select_db($database);
+if (function_exists('mysqli_connect')) {
+	$link = mysqli_connect($server, $username, $password, $database) or error('could not connect to database server');
+	mysqli_set_charset($link, 'utf8');
 
-$result = mysql_query('SELECT * FROM meeting_directory WHERE mID <> "Group ID"'); //checking because header row present in data sample
-
-$data = array();
-while ($row = mysql_fetch_object($result)) {
-	$obj = new Meeting($row);
-	if (!empty($obj->latitude)) //checking because some rows are empty, looks like import issue maybe
-	{
-		array_push($data, $obj);
+	$result = mysqli_query($link, $sql);
+	if (!$result) error(mysqli_error($link));
+		
+	$data = array();
+	while ($row = mysqli_fetch_object($result)) {
+		$obj = new Meeting($row);
+		if (!empty($obj->latitude)) //checking because some rows are empty, looks like import issue maybe
+		{
+			array_push($data, $obj);
+		}
 	}
+	
+	header('Content-type: application/json; charset=utf-8');
+	echo json_encode($data);
+	
+	mysqli_free_result($result);
+	mysqli_close($link);
+} else {
+	mysql_connect($server, $username, $password);
+	mysql_select_db($database);
+	
+	$result = mysql_query($sql);
+	
+	$data = array();
+	while ($row = mysql_fetch_object($result)) {
+		$obj = new Meeting($row);
+		if (!empty($obj->latitude)) //checking because some rows are empty, looks like import issue maybe
+		{
+			array_push($data, $obj);
+		}
+	}
+	
+	header('Content-type: application/json; charset=utf-8');
+	echo json_encode($data);
+	
+	mysql_free_result($result);
 }
 
-header('Content-type: application/json; charset=utf-8');
-echo json_encode($data);
-
-mysql_free_result($result);
