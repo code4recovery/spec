@@ -28,6 +28,7 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 		"slug": "sunday-serenity",
 		"day": 0,
 		"time": "18:00",
+		"end_time": "19:30",
 		"location": "Alano Club",
 		"group": "The Serenity Group",
 		"notes": "Ring buzzer. Meeting is on the 2nd floor.",
@@ -55,6 +56,8 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 `day` is required and may be an integer or an array of integers 0-6, representing Sunday (0) through Saturday (6).
 
 `time` is a required five-character string in the `HH:MM` 24-hour time format.
+
+`end_time` is an optional five-character string in the `HH:MM` 24-hour time format.
 
 `location` is an optional string and should be a recognizable building or landmark name.
 
