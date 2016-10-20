@@ -9,6 +9,13 @@ if (!file_exists($db_name)) die('database file ' . $db_name . ' does not exist!'
 
 $connection = odbc_connect('Driver={Microsoft Access Driver (*.mdb)};Dbq=' . $db_name, null, null);
 
+/*debugging
+echo '<pre>';
+$debug = odbc_exec($connection, 'SELECT * FROM meeting_data');
+while ($d = odbc_fetch_array($debug)) {
+	print_r($d);
+}*/
+
 $result = odbc_exec($connection, 'SELECT
 		meetings.meeting_id AS slug,
 		time,
@@ -16,7 +23,7 @@ $result = odbc_exec($connection, 'SELECT
 		meeting_type,
 		notes,
 		meeting_code,
-		Name AS location,
+		places.Name AS location,
 		Add1 AS address,
 		city,
 		state,
@@ -29,10 +36,6 @@ $result = odbc_exec($connection, 'SELECT
 
 $meetings = array();
 
-$decode_types = array(
-	
-);
-
 while ($row = odbc_fetch_array($result)) { 
 
 	//decrement day by one
@@ -40,6 +43,9 @@ while ($row = odbc_fetch_array($result)) {
 
 	//build array of meeting codes
 	$row['types'] = array();
+
+	//title case
+	$row['location'] = ucwords(strtolower($row['location']));
 
 	if ($row['meeting_type'] == '1') $row['types'][] = 'O';
 	if ($row['meeting_type'] == '2') $row['types'][] = 'C';
