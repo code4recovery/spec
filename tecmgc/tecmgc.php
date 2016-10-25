@@ -11,7 +11,7 @@ Text Domain: tecmgc
 */
 
 add_action('wp_ajax_tecmgc', 'tecgmc_output');
-add_action('wp_ajax_nopriv_tecmgc', 'tecmgc_output');
+add_action('wp_ajax_nopriv_tecmgc', 'tecgmc_output');
 
 function tecgmc_output() {
 
@@ -78,13 +78,18 @@ function tecgmc_output() {
 	
 		//figure out the meeting types for this meeting
 		$meeting_types = array();
-		$type = tribe_get_custom_field('Type');
-		foreach ($types as $key => $value) {
-			if (strstr($type, $key)) {
-				$meeting_types[] = $value;
+		$type = tribe_get_custom_fields($event->ID);
+		if (!empty($type['Type'])) {
+			foreach ($types as $key => $value) {
+				if (strstr($type['Type'], $key)) {
+					$meeting_types[] = $value;
+				}
 			}
 		}
-		
+
+		//skip empty locations
+		if (empty($locations[$custom['_EventVenueID'][0]]['city'])) continue;
+
 		//append meeting to the array
 		$meetings[] = array_merge(array(
 			'name' => $event->post_title,
