@@ -109,6 +109,7 @@ The codes below are only used for transmitting meeting data. App users will only
 `AL` Concurrent with Alateen  
 `XT` Cross Talk Permitted  
 `DLY` Daily  
+`DD` Dual Diagnosis  
 `FF` Fragrance Free  
 `FR` French  
 `G` Gay  
