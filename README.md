@@ -120,11 +120,11 @@ The codes below are only used for transmitting meeting data. App users will only
 `LGBTQ` LGBTQ  
 `MED` Meditation  
 `M` Men  
-`O` Open 
-`POL` Polish
-`POR` Portuguese
-`PUN` Punjabi
-`RUS` Russian
+`O` Open  
+`POL` Polish  
+`POR` Portuguese  
+`PUN` Punjabi  
+`RUS` Russian  
 `ASL` Sign Language  
 `SM` Smoking Permitted  
 `S` Spanish  
