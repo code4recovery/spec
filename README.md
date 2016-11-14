@@ -114,12 +114,17 @@ The codes below are only used for transmitting meeting data. App users will only
 `FR` French  
 `G` Gay  
 `GR` Grapevine  
+`ITA` Italian  
 `L` Lesbian  
 `LIT` Literature  
 `LGBTQ` LGBTQ  
 `MED` Meditation  
 `M` Men  
-`O` Open  
+`O` Open 
+`POL` Polish
+`POR` Portuguese
+`PUN` Punjabi
+`RUS` Russian
 `ASL` Sign Language  
 `SM` Smoking Permitted  
 `S` Spanish  
