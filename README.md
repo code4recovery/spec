@@ -115,6 +115,7 @@ The codes below are only used for transmitting meeting data. App users will only
 `G` Gay  
 `GR` Grapevine  
 `ITA` Italian  
+`KOR` Korean  
 `L` Lesbian  
 `LIT` Literature  
 `LGBTQ` LGBTQ  
