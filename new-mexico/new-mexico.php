@@ -49,10 +49,17 @@ foreach ($file as &$line) {
 	
 	//decrement day of week
 	$day--;
-	
+
+
 	//format time
 	$time = date('H:i', strtotime($time));
 	
+	//make address clearer to google
+	$address = str_replace('  ', ' ', $address);
+	if (substr($address, -4) == ', NM') {
+		$address = substr($address, 0, strlen($address) - 4) . ', New Mexico';
+	}
+
 	//types
 	$types = explode(',', $types);
 	$types = array_map('trim', $types);
