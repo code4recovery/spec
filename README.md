@@ -97,10 +97,19 @@ We are trying to make the data portable across a range of devices, some of which
 ##Meeting Types
 The codes below are only used for transmitting meeting data. App users will only see the full definitions.
 
+The codes below should be considered 'reserved.' In your implementation, it's ok to alter the description (for example
+"Topic Discussion" rather than "Discussion") so long as the intent is the same. "Child Care Available" is a common substitute
+for "Babysitting Available." "American Sign Language" or "ASL" rather than "Sign Language." It's also ok to add types, 
+they will be ignored by the importer.
+
+`11` 11th Step Meditation
+`ASBI` As Bill Sees It
 `A` Atheist / Agnostic  
 `BA` Babysitting Available  
 `BE` Beginner  
 `B` Big Book  
+`BRK` Breakfast
+`BUS` Business (meetings tagged this should not be displayed in meeting finders)
 `CF` Child-Friendly  
 `H` Chips  
 `C` Closed  
@@ -109,6 +118,8 @@ The codes below are only used for transmitting meeting data. App users will only
 `AL` Concurrent with Alateen  
 `XT` Cross Talk Permitted  
 `DLY` Daily  
+`DR` Daily Reflections
+`D` Discussion  
 `DD` Dual Diagnosis  
 `FF` Fragrance Free  
 `FR` French  
@@ -118,9 +129,13 @@ The codes below are only used for transmitting meeting data. App users will only
 `KOR` Korean  
 `L` Lesbian  
 `LIT` Literature  
+`LS` Living Sober
 `LGBTQ` LGBTQ  
 `MED` Meditation  
 `M` Men  
+`N` Native American
+`NC` Newcomers
+`NS` Non-Smoking (type is ignored by Meeting Guide)
 `O` Open  
 `POL` Polish  
 `POR` Portuguese  
@@ -131,10 +146,9 @@ The codes below are only used for transmitting meeting data. App users will only
 `S` Spanish  
 `SP` Speaker  
 `ST` Step Meeting  
-`D` Topic Discussion  
-`TR` Tradition  
+`TR` Tradition Study
 `T` Transgender  
-`X` Wheelchair Accessible  
+`X` Wheelchair Access  
 `W` Women  
 `Y` Young People  
 
