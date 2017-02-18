@@ -1,7 +1,7 @@
 <?php
 //file json exporter for new mexico
 
-$file = file('default.db');
+$file = file('cgi-bin/dbman/default.db');
 
 $return = array();
 
