@@ -65,6 +65,8 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `notes` is an optional long text field. Line breaks are ok, but HTML will be stripped.
 
+`location_notes` is an optional long text field with notes applying to all meetings at the location.
+
 `updated` is an optional UTC timestamp in the format `YYYY-MM-DD HH:MM:SS`.
 
 `url` is optional and should point to the meeting's listing on the area website.
@@ -72,6 +74,8 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 `image` is an optional url that should point to an image representing the location. We recommend an image of the building's facade. Ideally this is a JPG image 1080px wide by 540px tall.
 
 `types` is an optional array of standardized meeting types. See the types section below.
+
+`formatted_address` either this or the address / city / state / postal_code / country combination are required.
 
 `address`, `city`, `state`, `postal_code`, and `country` are all optional strings, but together they must form an address that Google can identify. `address` and `city` are suggested. Take special care to strip extra information from the address, such as 'upstairs' or 'around back,' since this is the primary cause of geocoding problems. (That information belongs in the `notes` field.) Intersections are usually ok, but approximate addresses, such as only a city or route, do not have enough precision to be useful.
 
@@ -83,7 +87,7 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 That's ok. App users don't actually see the codes, just the types they translate to.
 
 ####Our meeting type isn't listed!
-Types have to be consistent across the app to make a good user experience. It's common that a user might see meeting results from several areas at a time (this happens near borders). The set of meeting types we use is a mutually-agreed-upon set of names across 30+ areas. If you have a request to edit the list, we will bring it up as business with at our steering committee meeting.
+Types have to be consistent across the app to make a good user experience. It's common that a user might see meeting results from several areas at a time (this happens in small areas, and near borders). The set of meeting types we use is a mutually-agreed-upon set of names across 70+ areas. If you have a request to edit the list, we will bring it up at our steering committee meeting.
 
 ####Why is slug necessary?
 Slug is a required unique field because there is an app feature where users may 'favorite' a meeting, and in order for that to persist across sessions we must attach it to a unique field. It might seem intuitive that meeting location + time would be a unique combination, but in practice we see cases where there are in fact simultaneous meetings at the same location.
