@@ -106,22 +106,20 @@ The codes below should be considered 'reserved.' In your implementation, it's ok
 for "Babysitting Available." "American Sign Language" or "ASL" rather than "Sign Language." It's also ok to add types, 
 they will be ignored by the importer.
 
-`11` 11th Step Meditation
+`11` 11th Step Meditation 
 `ASBI` As Bill Sees It
 `A` Atheist / Agnostic  
 `BA` Babysitting Available  
-`BE` Beginner  
 `B` Big Book  
+`H` Birthday  
 `BRK` Breakfast
-`BUS` Business (meetings tagged this should not be displayed in meeting finders)
+`BUS` Business (meetings tagged this are not displayed in Meeting Guide)
 `CF` Child-Friendly  
-`H` Chips  
 `C` Closed  
 `CAN` Candlelight  
 `AL-AN` Concurrent with Al-Anon  
 `AL` Concurrent with Alateen  
 `XT` Cross Talk Permitted  
-`DLY` Daily  
 `DR` Daily Reflections
 `D` Discussion  
 `DD` Dual Diagnosis  
@@ -138,7 +136,7 @@ they will be ignored by the importer.
 `MED` Meditation  
 `M` Men  
 `N` Native American
-`NC` Newcomers
+`BE` Newcomer
 `NS` Non-Smoking (type is ignored by Meeting Guide)
 `O` Open  
 `POL` Polish  
