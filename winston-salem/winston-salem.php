@@ -80,7 +80,7 @@ foreach ($result as $row) {
 	$types = array();
 	if (array_key_exists($row['type'], $decode_types)) $types[] = $decode_types[$row['type']];
 	if ($row['open_closed'] == 'Open') $types[] = 'O';
-	if ($row['open_closed'] == 'Closed') $types[] = 'O';
+	if ($row['open_closed'] == 'Closed') $types[] = 'C';
 	if (!empty($row['spanish'])) $types[] = 'S';
 	if (!empty($row['haccess'])) $types[] = 'X';
 	if (stristr($row['affiltn'], 'women')) $types[] = 'W';
