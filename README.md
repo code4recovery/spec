@@ -113,50 +113,52 @@ The codes below should be considered 'reserved.' In your implementation, it's ok
 for "Babysitting Available." "American Sign Language" or "ASL" rather than "Sign Language." It's also ok to add types,
 they will be ignored by the importer.
 
-`11` 11th Step Meditation
-`ASBI` As Bill Sees It
-`A` Atheist / Agnostic
-`BA` Babysitting Available
-`B` Big Book
-`H` Birthday
-`BRK` Breakfast
-`BUS` Business (meetings tagged this are not displayed in Meeting Guide)
-`CF` Child-Friendly
-`C` Closed
-`CAN` Candlelight
-`AL-AN` Concurrent with Al-Anon
-`AL` Concurrent with Alateen
-`XT` Cross Talk Permitted
-`DR` Daily Reflections
-`D` Discussion
-`DD` Dual Diagnosis
-`FF` Fragrance Free
-`FR` French
-`G` Gay
-`GR` Grapevine
-`ITA` Italian
-`KOR` Korean
-`L` Lesbian
-`LIT` Literature
-`LS` Living Sober
-`LGBTQ` LGBTQ
-`MED` Meditation
-`M` Men
-`N` Native American
-`BE` Newcomer
-`NS` Non-Smoking (type is ignored by Meeting Guide)
-`O` Open
-`POL` Polish
-`POR` Portuguese
-`PUN` Punjabi
-`RUS` Russian
-`ASL` Sign Language
-`SM` Smoking Permitted
-`S` Spanish
-`SP` Speaker
-`ST` Step Meeting
-`TR` Tradition Study
-`T` Transgender
-`X` Wheelchair Access
-`W` Women
-`Y` Young People
+    Code | Definition
+-------- | -----------
+`11`     | 11th Step Meditation
+`ASBI`   | As Bill Sees It
+`A`      | Atheist / Agnostic
+`BA`     | Babysitting Available
+`B`      | Big Book
+`H`      | Birthday
+`BRK`    | Breakfast
+`BUS`    | Business (meetings tagged this are not displayed in Meeting Guide)
+`CF`     | Child-Friendly
+`C`      | Closed
+`CAN`    | Candlelight
+`AL-AN`  | Concurrent with Al-Anon
+`AL`     | Concurrent with Alateen
+`XT`     | Cross Talk Permitted
+`DR`     | Daily Reflections
+`D`      | Discussion
+`DD`     | Dual Diagnosis
+`FF`     | Fragrance Free
+`FR`     | French
+`G`      | Gay
+`GR`     | Grapevine
+`ITA`    | Italian
+`KOR`    | Korean
+`L`      | Lesbian
+`LIT`    | Literature
+`LS`     | Living Sober
+`LGBTQ`  | LGBTQ
+`MED`    | Meditation
+`M`      | Men
+`N`      | Native American
+`BE`     | Newcomer
+`NS`     | Non-Smoking (type is ignored by Meeting Guide)
+`O`      | Open
+`POL`    | Polish
+`POR`    | Portuguese
+`PUN`    | Punjabi
+`RUS`    | Russian
+`ASL`    | Sign Language
+`SM`     | Smoking Permitted
+`S`      | Spanish
+`SP`     | Speaker
+`ST`     | Step Meeting
+`TR`     | Tradition Study
+`T`      | Transgender
+`X`      | Wheelchair Access
+`W`      | Women
+`Y`      | Young People
