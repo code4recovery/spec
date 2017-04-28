@@ -34,7 +34,7 @@ $decode_types = array(
 	'MED' => 'MED',
 	'N' => 'N',
 	'NC' => 'NC',
-	'NS' => 'NS',
+	'NS' => 'Non-Smoking',
 	'O' => 'O',
 	'S' => 'SP',
 	'SA' => 'SM',
@@ -73,6 +73,13 @@ foreach ($file as &$line) {
 	if (substr($address, -4) == ', NM') {
 		$address = substr($address, 0, strlen($address) - 4) . ', New Mexico';
 	}
+	
+	//fix two specific issues
+	if ($address == 'San Felipe Pueblo, Uninc Sandoval County, New Mexico') {
+		$address = 'San Felipe Pueblo, New Mexico';
+	} elseif ($address == 'Call DCM') {
+		$address = 'Albuquerque, New Mexico';
+	}
 
 	//types
 	$types = explode(',', $types);
@@ -83,13 +90,8 @@ foreach ($file as &$line) {
 	$return[] = compact('slug', 'day', 'time', 'name', 'location', 'address', 'region', 'types');
 }
 
-//dd($file);
-
+//send correct mime header
 header('Content-type: application/json; charset=utf-8');
-echo json_encode($return);
 
-function dd($variable) {
-	echo '<pre>';
-	print_r($variable);
-	exit;
-}
+//output json
+echo json_encode($return);
