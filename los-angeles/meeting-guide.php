@@ -1,7 +1,7 @@
 <?php
 
 //database connection info, edit me!
-$host		= '127.0.0.1';
+$host		= 'localhost';
 $user		= 'root';
 $password	= '';
 $database	= 'lacoaa';
@@ -43,7 +43,7 @@ foreach ($result as $row) {
 	if ($row['MEN'] == '1') 		$types[] = 'M';
 	if ($row['WOMEN'] == '1')	$types[] = 'W';
 	if ($row['GAY'] == '1')		$types[] = 'LGBTQ';
-	if ($row['YOUNG'] == '1')	$types[] = 'Y';
+	//if ($row['YOUNG'] == '1')	$types[] = 'Y';
 	
 	//build array
 	$return[] = array(

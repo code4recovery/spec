@@ -1,14 +1,16 @@
 <?php
 //simple PHP script to output API for baltimoreaa.org
 
+//ini_set('display_errors', 1);
+//ini_set('display_startup_errors', 1);
+
 //database connection info, edit me
-$server = '127.0.0.1';
+$server = 'localhost';
 $username = 'root';
 $password = '';
-$database = 'aa_baltimore';
-$sql	  = 'SELECT * FROM meeting_directory WHERE mID <> "Group ID"'; //checking because header row present in data sample
+$database = 'baltimore';
 
-error_reporting(E_ERROR | E_WARNING | E_PARSE);
+$sql	  = 'SELECT * FROM meeting_directory WHERE mID <> "Group ID"'; //checking because header row present in data sample
 
 class Meeting
 {
@@ -79,14 +81,14 @@ class Meeting
 		$this->state = 'MD';
 		$this->postal_code = $row->mZip;
 		$this->country = 'US';
-		list($this->latitude, $this->longitude) = explode(',', trim($row->mSpecial));
+		//list($this->latitude, $this->longitude) = explode(',', trim($row->mSpecial));
 		$this->timezone = 'America/New_York';
 
 		//build array of meeting codes
 		$this->types = array();
 		if ($row->mOpen == 'O') {
 			$this->types[] = 'O';
-		} elseif ($this->mOpen == 'C') {
+		} elseif ($row->mOpen == 'C') {
 			$this->types[] = 'C';			
 		}
 		if (stristr($row->mNotes, 'big book')) $this->types[] = 'BB';
@@ -110,45 +112,27 @@ class Meeting
 	}
 }
 
-if (function_exists('mysqli_connect')) {
-	$link = mysqli_connect($server, $username, $password, $database) or error('could not connect to database server');
-	mysqli_set_charset($link, 'utf8');
+$link = mysqli_connect($server, $username, $password, $database) or die('could not connect to database server');
 
-	$result = mysqli_query($link, $sql);
-	if (!$result) error(mysqli_error($link));
-		
-	$data = array();
-	while ($row = mysqli_fetch_object($result)) {
-		$obj = new Meeting($row);
-		if (!empty($obj->latitude)) //checking because some rows are empty, looks like import issue maybe
-		{
-			array_push($data, $obj);
-		}
-	}
+$result = mysqli_query($link, $sql);
+if (!$result) die(mysqli_error($link));
 	
-	header('Content-type: application/json; charset=utf-8');
-	echo json_encode($data);
-	
-	mysqli_free_result($result);
-	mysqli_close($link);
-} else {
-	mysql_connect($server, $username, $password);
-	mysql_select_db($database);
-	
-	$result = mysql_query($sql);
-	
-	$data = array();
-	while ($row = mysql_fetch_object($result)) {
-		$obj = new Meeting($row);
-		if (!empty($obj->latitude)) //checking because some rows are empty, looks like import issue maybe
-		{
-			array_push($data, $obj);
-		}
-	}
-	
-	header('Content-type: application/json; charset=utf-8');
-	echo json_encode($data);
-	
-	mysql_free_result($result);
+$data = array();
+while ($row = mysqli_fetch_object($result)) {
+	$obj = new Meeting($row);
+	if (empty($obj->address)) continue; //checking because some rows are empty, looks like import issue maybe
+	array_push($data, $obj);
 }
 
+header('Content-type: application/json; charset=utf-8');
+echo json_encode($data);
+
+mysqli_free_result($result);
+mysqli_close($link);
+
+
+function dd($obj) {
+	echo '<pre>';
+	print_r($obj);
+	exit;
+}
