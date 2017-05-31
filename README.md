@@ -124,6 +124,7 @@ they will be ignored by the importer.
 `DR` Daily Reflections  
 `D` Discussion  
 `DD` Dual Diagnosis  
+`EN` English
 `FF` Fragrance Free  
 `FR` French  
 `G` Gay  
