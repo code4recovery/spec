@@ -6,7 +6,7 @@ If you have feedback, please put an issue on this repository.
 
 ## Usage
 
-To implement the API on your server, create a file that can take information from your database and format it in the correct specification (see below). 
+To implement the API on your server, create a file that can take information from your database and format it in the correct specification (see below).
 
 The file [meeting-guide-json.php](meeting-guide-json.php) contains the simplest version of the JSON feed for PHP. It will require a little customization to work properly.
 
@@ -47,7 +47,7 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 		"region": "Downtown"
 	},
 	...
-]	
+]
 ```
 
 `name` is a required string. It should be the meeting name, where possible. Some areas use group names instead, although that's more abiguous. 255 characters max.
@@ -84,6 +84,28 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 ## Common Questions & Concerns
 
+#### We use different meeting codes!
+
+That's ok. App users don't actually see the codes, just the types they translate to.
+
+#### Our meeting type isn't listed!
+
+Types have to be consistent across the app to make a good user experience. It's common that a user might see meeting results from several areas at a time (this happens in small areas, and near borders). The set of meeting types we use is a mutually-agreed-upon set of names across 70+ areas. If you have a request to edit the list, we will bring it up at our steering committee meeting.
+
+#### Why is slug necessary?
+
+Slug is a required unique field because there is an app feature where users may 'favorite' a meeting, and in order for that to persist across sessions we must attach it to a unique field. It might seem intuitive that meeting location + time would be a unique combination, but in practice we see cases where there are in fact simultaneous meetings at the same location.
+
+#### Why are day and time required?
+
+It's perfectly fine for meetings to be 'by appointment' and this often happens in places where there are not many meetings. The app, however, needs this information to present useful information to the user.
+
+#### Why can't we have HTML in meeting notes?
+
+We are trying to make the data portable across a range of devices, some of which might not display HTML.
+
+## Meeting Types
+
 #### We use different meeting codes! 
 That's ok. App users don't actually see the codes, just the types they translate to.
 
@@ -104,54 +126,55 @@ The codes below are only used for transmitting meeting data. App users will only
 
 The codes below should be considered 'reserved.' In your implementation, it's ok to alter the description (for example
 "Topic Discussion" rather than "Discussion") so long as the intent is the same. "Child Care Available" is a common substitute
-for "Babysitting Available." "American Sign Language" or "ASL" rather than "Sign Language." It's also ok to add types, 
+for "Babysitting Available." "American Sign Language" or "ASL" rather than "Sign Language." It's also ok to add types,
 they will be ignored by the importer.
 
-`11` 11th Step Meditation  
-`ASBI` As Bill Sees It  
-`A` Atheist / Agnostic  
-`BA` Babysitting Available  
-`B` Big Book  
-`H` Birthday  
-`BRK` Breakfast  
-`BUS` Business (meetings tagged this are not displayed in Meeting Guide)  
-`CF` Child-Friendly  
-`C` Closed  
-`CAN` Candlelight  
-`AL-AN` Concurrent with Al-Anon  
-`AL` Concurrent with Alateen  
-`XT` Cross Talk Permitted  
-`DR` Daily Reflections  
-`D` Discussion  
-`DD` Dual Diagnosis  
-`EN` English
-`FF` Fragrance Free  
-`FR` French  
-`G` Gay  
-`GR` Grapevine  
-`ITA` Italian  
-`KOR` Korean  
-`L` Lesbian  
-`LIT` Literature  
-`LS` Living Sober  
-`LGBTQ` LGBTQ  
-`MED` Meditation  
-`M` Men  
-`N` Native American  
-`BE` Newcomer  
-`NS` Non-Smoking (type is ignored by Meeting Guide)  
-`O` Open  
-`POL` Polish  
-`POR` Portuguese  
-`PUN` Punjabi  
-`RUS` Russian  
-`ASL` Sign Language  
-`SM` Smoking Permitted  
-`S` Spanish  
-`SP` Speaker  
-`ST` Step Meeting  
-`TR` Tradition Study  
-`T` Transgender  
-`X` Wheelchair Access  
-`W` Women  
-`Y` Young People  
+Code | Definition
+---- | ----------
+`11` | 11th Step Meditation
+`ASBI` | As Bill Sees It
+`A` | Atheist / Agnostic
+`BA` | Babysitting Available
+`B` | Big Book
+`H` | Birthday
+`BRK` | Breakfast
+`BUS` | Business (meetings tagged this are not displayed in Meeting Guide)
+`CF` | Child-Friendly
+`C` | Closed
+`CAN` | Candlelight
+`AL-AN` | Concurrent with Al-Anon
+`AL` | Concurrent with Alateen
+`XT` | Cross Talk Permitted
+`DR` | Daily Reflections
+`D` | Discussion
+`DD` | Dual Diagnosis
+`FF` | Fragrance Free
+`FR` | French
+`G` | Gay
+`GR` | Grapevine
+`ITA` | Italian
+`KOR` | Korean
+`L` | Lesbian
+`LIT` | Literature
+`LS` | Living Sober
+`LGBTQ` | LGBTQ
+`MED` | Meditation
+`M` | Men
+`N` | Native American
+`BE` | Newcomer
+`NS` | Non-Smoking (type is ignored by Meeting Guide)
+`O` | Open
+`POL` | Polish
+`POR` | Portuguese
+`PUN` | Punjabi
+`RUS` | Russian
+`ASL` | Sign Language
+`SM` | Smoking Permitted
+`S` | Spanish
+`SP` | Speaker
+`ST` | Step Meeting
+`TR` | Tradition Study
+`T` | Transgender
+`X` | Wheelchair Access
+`W` | Women
+`Y` | Young People
