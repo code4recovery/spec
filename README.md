@@ -106,6 +106,22 @@ We are trying to make the data portable across a range of devices, some of which
 
 ## Meeting Types
 
+#### We use different meeting codes! 
+That's ok. App users don't actually see the codes, just the types they translate to.
+
+#### Our meeting type isn't listed!
+Types have to be consistent across the app to make a good user experience. It's common that a user might see meeting results from several areas at a time (this happens in small areas, and near borders). The set of meeting types we use is a mutually-agreed-upon set of names across 70+ areas. If you have a request to edit the list, we will bring it up at our steering committee meeting.
+
+#### Why is slug necessary?
+Slug is a required unique field because there is an app feature where users may 'favorite' a meeting, and in order for that to persist across sessions we must attach it to a unique field. It might seem intuitive that meeting location + time would be a unique combination, but in practice we see cases where there are in fact simultaneous meetings at the same location.
+
+#### Why are day and time required?
+It's perfectly fine for meetings to be 'by appointment' and this often happens in places where there are not many meetings. The app, however, needs this information to present useful information to the user.
+
+#### Why can't we have HTML in meeting notes?
+We are trying to make the data portable across a range of devices, some of which might not display HTML.
+
+## Meeting Types
 The codes below are only used for transmitting meeting data. App users will only see the full definitions.
 
 The codes below should be considered 'reserved.' In your implementation, it's ok to alter the description (for example
