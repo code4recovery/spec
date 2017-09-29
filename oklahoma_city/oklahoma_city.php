@@ -86,6 +86,7 @@ foreach ($result as $row) {
 		'types' => $types,
 		'address' => $row['Add1'],
 		'city' => $row['City'],
+		'state' => 'OK',
 		'postal_code' => $row['ZIP'],
 		'region' => $row['City'],
 	);

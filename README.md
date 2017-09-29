@@ -178,3 +178,13 @@ Code | Definition
 `X` | Wheelchair Access
 `W` | Women
 `Y` | Young People
+
+## Next Steps
+
+The file [version-2.json](version-2.json) contains some ideas for next steps for this format. Key enhancements:
+
+* organizational metadata so that an org can indicate its preferred name and URL
+* contact information for following up on issues with feed or meeting info
+* language split out into its own fields
+* indication of which language was used for geocoding
+
