@@ -6,17 +6,20 @@
 		"types": [
 			"Intergroup"
 		],
-		"location": "Santa Clara County",
+		"location": "Santa Clara County, CA, USA",
 		"boundaries": {
-			"north": 43.1234,
-			"east": -121.1234,
-			"south": 42.1234,
-			"west": -122.1234
+			"north": 37.484637,
+			"east": -121.208178,
+			"south": 36.8941549,
+			"west": -122.202476
 		},
 		"contacts": {
 			"meetings": "directory@aasanjose.org",
-			"technical": "webmaster@aasanjose.org"
+			"technical": "webmaster@aasanjose.org",
+			"general": "info@meetingguide.org",
+			"helpline": "+14083748511"
 		},
+		"address": "274 E Hamilton Ave d, Campbell, CA 95008, USA",
 		"languages": [
 			"en",
 			"es"
