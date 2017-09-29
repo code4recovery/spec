@@ -30,7 +30,7 @@
 		"platform_version": "4.8.2",
 		"software": "12 Step Meeting List",
 		"software_version": "2.14.14",
-		"base_language": "en"
+		"geocoding_language": "en"
 	},
 	"meetings": [
 		{
