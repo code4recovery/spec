@@ -1,0 +1,11 @@
+#map { width: 100%; height: 100%; }
+
+.infowindow { width: 200px; padding: 5px 0 10px; }
+
+.infowindow h2 { margin: 0 0 10px; }
+
+.infowindow address { font-style: normal; margin-bottom: 15px; }
+
+.infowindow .meeting { padding-left: 90px; margin-top: 10px; }
+
+.infowindow .meeting time { position: absolute; left: 0; width: 80px; overflow: hidden; }
