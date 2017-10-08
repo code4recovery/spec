@@ -33,6 +33,7 @@ try {
 			m.format,
 			m.open_closed,
 			m.wc_access,
+			m.smoking,
 			l.location_name `location`,
 			l.address,
 			l.city,
@@ -64,10 +65,25 @@ foreach ($result as $row) {
 	if ($row['interest'] == 'Gay/Lesbian') $types[] = 'LGBTQ';
 	if ($row['interest'] == 'Newcomer') $types[] = 'BE';
 	//if ($row['interest'] == 'Seniors 50-plus') $types[] = '';
+	if (stristr($row['format'], '11th Step')) $types[] = '11';
+	if (stristr($row['format'], 'BB')) $types[] = 'B';
+	if (stristr($row['format'], 'Big Book')) $types[] = 'B';
+	if (stristr($row['format'], '12 & 12')) $types[] = 'ST';
+	if (stristr($row['format'], 'Discussion')) $types[] = 'D';
+	if (stristr($row['format'], 'As Bill Sees It')) $types[] = 'ASBI';
+	if (stristr($row['format'], 'Newcomers')) $types[] = 'BE';
+	if (stristr($row['format'], 'Literature')) $types[] = 'LIT';
+	if (stristr($row['format'], 'Living Sober')) $types[] = 'LS';
+	if (stristr($row['format'], 'Meditation')) $types[] = 'MED';
+	if (stristr($row['format'], 'Speaker')) $types[] = 'SP';
+	if (stristr($row['format'], 'Step Study')) $types[] = 'ST';
+	if (stristr($row['format'], 'Traditions')) $types[] = 'T';
 	if ($row['wc_access'] == '(WH)') $types[] = 'X';	
 	if ($row['open_closed'] == '(O)') $types[] = 'O';	
 	if ($row['open_closed'] == '(C)') $types[] = 'C';	
-	
+	if ($row['smoking'] == '(S)') $types[] = 'SM';	
+	if ($row['smoking'] == '(NS)') $types[] = 'NS';	
+	$types = array_unique($types);
 		
 	//notes
 	$notes = array();
