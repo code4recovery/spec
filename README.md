@@ -18,6 +18,16 @@ Test your feed with the [Meeting Guide JSON Feed Validator](https://meetingguide
 
 If you would like to share your script, we'll include a copy in this repository so that it might help future users.
 
+## Sharing Your Data
+
+Once a script is posted to a site, you may link to it like an RSS feed in your site's `<HEAD>` tag:
+
+```HTML
+<link rel="alternate" type="application/json" title="Meetings Feed" href="/etc/meetings-feed.php">
+```
+
+The script may have any name, and be in any directory. The `title="Meetings Feed"` attribute is required.
+
 ## Specification
 
 The JSON file is expected to contain a simple array of meetings. [Here is an example](https://aasanjose.org/wp-admin/admin-ajax.php?action=meetings) of a live JSON feed.
