@@ -23,10 +23,10 @@ If you would like to share your script, we'll include a copy in this repository 
 Once a script is posted to a site, you may link to it like an RSS feed in your site's `<HEAD>` tag:
 
 ```HTML
-<link rel="alternate" type="application/json" title="Meetings Feed" href="/etc/meetings-feed.php">
+<link rel="alternate" type="application/json" title="Meetings Feed" href="https://example.com/etc/meetings-feed.php">
 ```
 
-The script may have any name, and be in any directory. The `title="Meetings Feed"` attribute is required.
+The script may have any name, and be in any directory, but it should be a fully qualified URL, and the `title="Meetings Feed"` attribute is required.
 
 ## Specification
 
