@@ -1,5 +1,8 @@
 //define global variables
-var map, infowindow, days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+var map, 
+	infowindow, 
+	markers = [], 
+	days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 //convert a HH:MM time to hh:mm:a
 function formatTime(time) {
@@ -13,29 +16,19 @@ function formatTime(time) {
 	return hours + ':' + minutes + ampm;
 }
 
-//get a JSON url, return contents
-function getJSON(url, callback) {
-	var xhr = new XMLHttpRequest();
-	xhr.open('GET', url, true);
-	xhr.responseType = 'json';
-	xhr.onload = function() {
-		callback(xhr.response);
-	};
-	xhr.send();
-}
+//get and show markers for a param, eg '' or '?type=women'
+function getAndShowMarkers(param, fitBounds) {
 
-//run this when map has loaded
-function initMap() {
-
-	//define map, set to blank
-    map = new google.maps.Map(document.getElementById('map'));
-
-	//define infowindow
-	infowindow = new google.maps.InfoWindow();
+	//clear any markers on the map
+	if (markers.length) {
+		for (var i = 0; i < markers.length; i++) {
+			markers[i].setMap(null);
+		}
+		markers = [];
+	}
 	
 	//fetch data
-	getJSON('json.cfm' + window.location.search, function(meetings) { 
-		
+	getJSON('json.cfm' + param, function(meetings) { 
 		
 		//define an object for storing locations
 		var locations = {};
@@ -65,14 +58,12 @@ function initMap() {
 			
 			//add location to array if doesn't exist			
 			if (!(key in locations)) {
-
 				locations[key] = {
 					name: meetings[i].location,
 					address: address,
 					meetings: [],
 					position: new google.maps.LatLng(meetings[i].latitude, meetings[i].longitude)
 				}
-								
 			}
 			
 			//add this meeting
@@ -106,11 +97,11 @@ function initMap() {
 			
 			//build title string for pin
 			var title = [];
-			if (locations[i].name) title[title.length] = locations[i].name;
+			if (locations[i].meetings[0].name) title[title.length] = locations[i].meetings[0].name;
 			if (locations[i].address) title[title.length] = locations[i].address;
-			if (locations[i].city) title[title.length] = locations[i].city;
-			if (locations[i].state) title[title.length] = locations[i].state;
-			if (locations[i].postal_code) title[title.length] = locations[i].postal_code;
+			
+			//extend bounds
+			bounds.extend(locations[i].position);
 			
 			//add the marker to the map
 			var marker = new google.maps.Marker({
@@ -122,9 +113,6 @@ function initMap() {
 				meetings: locations[i].meetings
 			});
 
-			//extend bounds
-			bounds.extend(locations[i].position);
-			
 			//set infowindow to open when marker is clicked
 			marker.addListener('click', function() {
 				//build html content
@@ -136,7 +124,7 @@ function initMap() {
 				}
 
 				if (this.address) {
-					content += '<address>' + this.address + '</address>';
+					content += '<address><a href="https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(this.address) + '" target="_blank">' + this.address + '</a></address>';
 				}
 				
 				//empty array for each day of the week (to build meeting columns)
@@ -166,12 +154,44 @@ function initMap() {
 				infowindow.open(map, this);
 			});
 			
+			//append to array, so we can clear it later
+			markers.push(marker);
 		}
 		
 		//fit the map to marker bounds
-		map.fitBounds(bounds);
+		if (fitBounds) map.fitBounds(bounds);
 
-	});
+	});	
+}
+
+//get a JSON url, return contents
+function getJSON(url, callback) {
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', url, true);
+	xhr.responseType = 'json';
+	xhr.onload = function() {
+		callback(xhr.response);
+	};
+	xhr.send();
+}
+
+//run this when Google Maps has loaded
+function initMap() {
+
+	//define map, set to blank
+    map = new google.maps.Map(document.getElementById('map'), {
+		mapTypeControlOptions: {
+			style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+			position: google.maps.ControlPosition.BOTTOM_CENTER
+		},
+		fullscreenControl: false,
+    });
+
+	//define infowindow
+	infowindow = new google.maps.InfoWindow();
+	
+	//get data and show markers with query string
+	getAndShowMarkers(window.location.search, true);
 	
 	//add geolocation button
 	if (navigator.geolocation) {
@@ -197,9 +217,11 @@ function initMap() {
 		//add action
 		geoButton.addEventListener('click', function() {
 			
+			geoButton.style.backgroundImage = 'url(spinner.gif)';
+
 			navigator.geolocation.getCurrentPosition(function(position) {
 				var geoLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-				this.style.backgroundImage = 'url(location-on.png)';
+				geoButton.style.backgroundImage = 'url(location-on.png)';
 				
 				//create user marker
 				var geoMarker = new google.maps.Marker({
@@ -215,14 +237,66 @@ function initMap() {
 					map: map
 				});
 				
-				map.panTo(geoLocation);
 				map.setZoom(14);
+				map.panTo(geoLocation);
 			}, function(error) {
+				geoButton.style.backgroundImage = 'url(location-off.png)';
 				alert(error.message);
 			});
 		});
 		
 		map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(geoButton);
 	}	
+
+	//create and style dropdown menu
+	var typeSelect = document.createElement('select');
+	typeSelect.style.mozAppearance = 'none';
+	typeSelect.style.webkitAppearance = 'none';
+	typeSelect.style.backgroundImage = 'url(menu.svg)';
+	typeSelect.style.backgroundRepeat = 'no-repeat';
+	typeSelect.style.backgroundColor = 'white';
+	typeSelect.style.backgroundSize = '35px 35px';
+	typeSelect.style.backgroundPosition = '2px 5px';
+	typeSelect.style.fontSize = '30px';
+	typeSelect.style.marginTop = '10px';
+	typeSelect.style.textAlign = 'center';
+	typeSelect.style.borderRadius = '2px';
+	typeSelect.style.boxShadow = '0 1px 4px rgba(0, 0, 0, 0.3)';
+	typeSelect.style.border = 'none';
+	typeSelect.style.padding = '5px 20px 5px 45px';
 	
+	//append options (URLs match the cfif/cfelseif where conditions json.cfm)
+	var options = {
+		'': 'All Meetings',
+		'?type=child': 'Child Friendly',
+		'?type=gay': 'LGBT',
+		'?type=men': 'Men',
+		'?type=open': 'Open',
+		'?type=smoking': 'Smoking',
+		'?type=spanish': 'Spanish',
+		'?type=rightnow': 'Upcoming Today',
+		'?type=wheelchair': 'Wheelchair Access',
+		'?type=women': 'Women',
+		'?type=yp': 'Young People',
+	}
+	for (var i = 0; i < Object.keys(options).length ; i++) {
+		var option = document.createElement('option');
+		option.value = Object.keys(options)[i];
+		option.text = options[option.value];
+		if (window.location.search == option.value) option.selected = true;
+		typeSelect.appendChild(option);
+	}
+	
+	//add action
+	typeSelect.addEventListener('change', function(){
+		getAndShowMarkers(this.value);
+		
+		//set this query string in the URL, if the browser supports it
+		if (history.pushState) {
+			history.pushState(null, null, '/map/' + this.value);
+		}
+		
+	});
+	
+	map.controls[google.maps.ControlPosition.TOP_CENTER].push(typeSelect);
 }

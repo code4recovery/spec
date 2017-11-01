@@ -1,4 +1,12 @@
-<cfquery name="get_meetings" datasource="#attributes.dsn#">
+<cfset today = #dayofweek(now())#>
+<cfquery name="getday" datasource="#attributes.dsn#">
+	SELECT number
+    FROM days
+    WHERE day = '#today#'
+</cfquery>
+<cfset today = #today#-1>
+    
+    <cfquery name="get_meetings" datasource="#attributes.dsn#">
 	SELECT
 		groupname,
 		meetingid,
@@ -24,9 +32,26 @@
 		<cfelseif url.type eq 'men'>
 			WHERE(people = 'm')
 				OR(attended='men')
+		<cfelseif url.type eq 'yp'>
+			WHERE(people = 'yp')
+				OR(attended='young people')
 		<cfelseif url.type eq 'women'>
-			WHERE(people = 'w')
-				OR(attended='women')
+			WHERE(people = 'nam')
+				OR(attended='native american')
+		<cfelseif url.type eq 'smoking'>
+			WHERE (smoking = on)
+		<cfelseif url.type eq 'wheelchair'>
+			WHERE (wheelchair = on)
+		<cfelseif url.type eq 'spanish'>
+			WHERE (spanish = on)
+		<cfelseif url.type eq 'child'>
+			WHERE (childcare = on)
+            	OR (childfriend = on)
+		<cfelseif url.type eq 'open'>
+			WHERE (open = 'open')
+        <cfelseif url.type eq 'rightnow'>
+			WHERE day = #today#
+    		  	AND time2 > #numberformat(timeformat(now(), "HH:mm:ss.0"),0.0000000)#
 		</cfif>
 	</cfif>
 			

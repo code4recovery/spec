@@ -20,7 +20,11 @@ html, body {
 
 #map .infowindow address { 
 	font-style: normal; 
-	margin-bottom: 10px; 
+	margin: 5px 0 10px; 
+}
+
+#map .infowindow address a {
+	color: #3a84df;	
 }
 
 #map .infowindow .day {

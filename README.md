@@ -174,6 +174,7 @@ Code | Definition
 `BE` | Newcomer
 `NS` | Non-Smoking (type is ignored by Meeting Guide)
 `O` | Open
+`P` | Professionals
 `POL` | Polish
 `POR` | Portuguese
 `PUN` | Punjabi
