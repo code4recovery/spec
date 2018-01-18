@@ -150,8 +150,8 @@ Code | Definition
 `BRK` | Breakfast
 `BUS` | Business (meetings tagged this are not displayed in Meeting Guide)
 `CF` | Child-Friendly
-`C` | Closed
 `CAN` | Candlelight
+`C` | Closed
 `AL-AN` | Concurrent with Al-Anon
 `AL` | Concurrent with Alateen
 `XT` | Cross Talk Permitted
@@ -174,9 +174,9 @@ Code | Definition
 `BE` | Newcomer
 `NS` | Non-Smoking (type is ignored by Meeting Guide)
 `O` | Open
-`P` | Professionals
 `POL` | Polish
 `POR` | Portuguese
+`P` | Professionals
 `PUN` | Punjabi
 `RUS` | Russian
 `ASL` | Sign Language

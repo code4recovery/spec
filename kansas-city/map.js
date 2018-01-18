@@ -67,11 +67,12 @@ function getAndShowMarkers(param, fitBounds) {
 			}
 			
 			//add this meeting
-			locations[key].meetings[locations[key].meetings.length] = {
+			locations[key].meetings.push({
 				name: meetings[i].name,
 				day: meetings[i].day,
-				time: meetings[i].time
-			}
+				time: meetings[i].time,
+				topic: meetings[i].topic == 'none' ? '' : meetings[i].topic
+			});
 			
 		}
 		
@@ -97,8 +98,8 @@ function getAndShowMarkers(param, fitBounds) {
 			
 			//build title string for pin
 			var title = [];
-			if (locations[i].meetings[0].name) title[title.length] = locations[i].meetings[0].name;
-			if (locations[i].address) title[title.length] = locations[i].address;
+			if (locations[i].meetings[0].name) title.push(locations[i].meetings[0].name);
+			if (locations[i].address) title.push(locations[i].address);
 			
 			//extend bounds
 			bounds.extend(locations[i].position);
@@ -117,14 +118,14 @@ function getAndShowMarkers(param, fitBounds) {
 			marker.addListener('click', function() {
 				//build html content
 				var content = '<div class="infowindow">' +
-					'<h2>' + this.meetings[0].name + '</h2>';
-					
+					//'<h2>' + this.meetings[0].name + '</h2>';
+					'<h2>' + this.address + '</h2>';					
 				if (this.location && this.location != this.address) {
 					content += '<h3>' + this.location + '</h3>';
 				}
 
 				if (this.address) {
-					content += '<address><a href="https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(this.address) + '" target="_blank">' + this.address + '</a></address>';
+					content += '<address><a href="https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(this.address) + '" target="_blank">Directions</a></address>';
 				}
 				
 				//empty array for each day of the week (to build meeting columns)
@@ -132,8 +133,8 @@ function getAndShowMarkers(param, fitBounds) {
 				
 				//loop through meetings and put them in buckets
 				for (var j = 0; j < this.meetings.length; j++) {
-					location_days[this.meetings[j].day][location_days[this.meetings[j].day].length] = 
-						formatTime(this.meetings[j].time); //todo add type here
+					//todo add type here
+					location_days[this.meetings[j].day].push(formatTime(this.meetings[j].time) + ' ' + this.meetings[j].topic);
 				}
 				
 				for (var j = 0; j < 7; j++) {
@@ -268,16 +269,31 @@ function initMap() {
 	//append options (URLs match the cfif/cfelseif where conditions json.cfm)
 	var options = {
 		'': 'All Meetings',
-		'?type=child': 'Child Friendly',
-		'?type=gay': 'LGBT',
-		'?type=men': 'Men',
+		'?type=rightnow': 'Upcoming Today',
 		'?type=open': 'Open',
+		'?type=Sunday': 'Sunday',
+		'?type=Monday': 'Monday',
+		'?type=Tuesday': 'Tuesday',
+		'?type=Wednesday': 'Wednesday',
+		'?type=Thursday': 'Thursday',
+		'?type=Friday': 'Friday',
+		'?type=Saturday': 'Saturday',
+		'?type=morning': '6AM to Noon',
+		'?type=noon': 'Noon',
+		'?type=afternoon': '1PM to 6PM',
+		'?type=evening': '6PM to 9PM',
+		'?type=night': '9PM to Midnight',
+		'?type=midnight': 'Midnight to 6AM',
+		'?type=women': 'Women',
+		'?type=men': 'Men',
+		'?type=yp': 'Young People',
+		'?type=gay': 'LGBT',
+		'?type=child': 'Child Friendly',
 		'?type=smoking': 'Smoking',
 		'?type=spanish': 'Spanish',
-		'?type=rightnow': 'Upcoming Today',
+		'?type=nam': 'Native American',
 		'?type=wheelchair': 'Wheelchair Access',
-		'?type=women': 'Women',
-		'?type=yp': 'Young People',
+		
 	}
 	for (var i = 0; i < Object.keys(options).length ; i++) {
 		var option = document.createElement('option');
