@@ -7,7 +7,7 @@ function tsml_import_reformat($meetings) {
 	$return = array();
 	$state = 'MD';
 	$country = 'US';
-	$decode_days = array('Sun' => 'Sunday', 'Mon' => 'Monday', 'Tue' => 'Tuesday', 'Wed' => 'Wednesday', 'Thu' => 'Thursday', 'Fri' => 'Friday', 'Sat' => 'Satureday');
+	$decode_days = array('Sun' => 'Sunday', 'Mon' => 'Monday', 'Tue' => 'Tuesday', 'Wed' => 'Wednesday', 'Thu' => 'Thursday', 'Fri' => 'Friday', 'Sat' => 'Saturday');
 	$delimiters = array('@', ';', '&', '(');
 	array_shift($meetings);
 	
@@ -15,7 +15,7 @@ function tsml_import_reformat($meetings) {
 	foreach($meetings as $meeting) {
 		//easy ones
 		$day = array_key_exists($meeting[7], $decode_days) ? $decode_days[$meeting[7]] : $meeting[7];
-		$time = $meeting[8];
+		$time = $meeting[9];
 		$name = $meeting[1];
 		$location = $meeting[2];
 		$city = $meeting[4];
@@ -38,7 +38,7 @@ function tsml_import_reformat($meetings) {
 		//open column
 		if ($meeting[10] == 'O') {
 			$types[] = 'Open';
-		} elseif ($types[10] == 'C') {
+		} elseif ($meeting[10] == 'C') {
 			$types[] = 'Closed';
 		}
 		
