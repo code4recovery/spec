@@ -187,6 +187,7 @@ Code | Definition
 `TR` | Tradition Study
 `T` | Transgender
 `X` | Wheelchair Access
+`XB` | Wheelchair-Accessible Bathroom
 `W` | Women
 `Y` | Young People
 
