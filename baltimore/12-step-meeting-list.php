@@ -18,10 +18,17 @@ function tsml_import_reformat($meetings) {
 		$time = $meeting[9];
 		$name = $meeting[1];
 		$location = $meeting[2];
-		$city = $meeting[4];
+		$region = $meeting[4];
 		$postal_code = $meeting[5];
 		$location_notes = '';
 		$notes = $meeting[13];
+
+		//if region has a slash, just take the first part and hope google figures it out
+		if ($pos = strpos($region, '/')) {
+			$city = substr($region, 0, $pos);
+		} else {
+			$city = $region;
+		}
 
 		//split address at delimiter if present
 		$address = $meeting[3];
@@ -47,13 +54,11 @@ function tsml_import_reformat($meetings) {
 		foreach ($type_values as $value) {
 			if ($value == 'AS BILL SEES IT') $types[] = 'As Bill Sees It';
 			if ($value == 'BB') $types[] = 'Big Book';
-			if ($value == 'BEG') $types[] = 'Newcomer';
 			if ($value == 'CHIP') $types[] = 'Birthday';
 			if ($value == 'D') $types[] = 'Discussion';
 			if ($value == 'DAILY REFLECTIONS') $types[] = 'Daily Reflections';
 			if ($value == 'DISCUSSION') $types[] = 'Discussion';
 			if ($value == 'G') $types[] = 'LGBTQ';
-			if ($value == 'GRAPEVINE') $types[] = 'Grapevine';
 			if ($value == 'LGBTQ') $types[] = 'LGBTQ';
 			if ($value == 'LIT') $types[] = 'Literature';
 			if ($value == 'MENS') $types[] = 'Men';
@@ -75,7 +80,7 @@ function tsml_import_reformat($meetings) {
 		$types = implode(',', $types);
 		
 		//add to array
-		$return[] = compact('day', 'time', 'name', 'location', 'address', 'city', 'state', 'postal_code', 'country', 'types', 'notes', 'location_notes');
+		$return[] = compact('day', 'time', 'name', 'location', 'address', 'city', 'state', 'postal_code', 'country', 'types', 'notes', 'location_notes', 'region');
 	}
 
 	//go back to non-associative format
