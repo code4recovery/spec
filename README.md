@@ -18,16 +18,6 @@ Test your feed with the [Meeting Guide JSON Feed Validator](https://meetingguide
 
 If you would like to share your script, we'll include a copy in this repository so that it might help future users.
 
-## Sharing Your Data
-
-Once a script is posted to a site, you may link to it like an RSS feed in your site's `<HEAD>` tag:
-
-```HTML
-<link rel="alternate" type="application/json" title="Meetings Feed" href="https://example.com/etc/meetings-feed.php">
-```
-
-The script may have any name, and be in any directory, but it should be a fully qualified URL, and the `title="Meetings Feed"` attribute is required.
-
 ## Specification
 
 The JSON file is expected to contain a simple array of meetings. [Here is an example](https://aasanjose.org/wp-admin/admin-ajax.php?action=meetings) of a live JSON feed.
@@ -114,8 +104,6 @@ It's perfectly fine for meetings to be 'by appointment' and this often happens i
 
 We are trying to make the data portable across a range of devices, some of which might not display HTML.
 
-## Meeting Types
-
 #### We use different meeting codes! 
 That's ok. App users don't actually see the codes, just the types they translate to.
 
@@ -190,6 +178,16 @@ Code | Definition
 `XB` | Wheelchair-Accessible Bathroom
 `W` | Women
 `Y` | Young People
+
+## Sharing Your Data
+
+If you choose, you may make your feed discoverable by linking to it (like RSS) in your site's `<HEAD>`.
+
+```HTML
+<link rel="alternate" type="application/json" title="Meetings Feed" href="https://example.com/etc/meetings-feed.php">
+```
+
+The script may have any name, and be in any directory, but it should be a fully qualified URL, and the `title="Meetings Feed"` attribute is required.
 
 ## Next Steps
 
