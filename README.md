@@ -78,9 +78,11 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `formatted_address` either this or the address / city / state / postal_code / country combination are required.
 
-`address`, `city`, `state`, `postal_code`, and `country` are all optional strings, but together they must form an address that Google can identify. `address` and `city` are suggested. Take special care to strip extra information from the address, such as 'upstairs' or 'around back,' since this is the primary cause of geocoding problems. (That information belongs in the `notes` field.) Intersections are usually ok, but approximate addresses, such as only a city or route, do not have enough precision to be useful.
+`address`, `city`, `state`, `postal_code`, and `country` are all optional strings, but together they must form an address that Google can identify. `address` and `city` are suggested. Take special care to strip extra information from the address, such as 'upstairs' or 'around back,' since this is the primary cause of geocoding problems. (That information belongs in the `notes` field.) Intersections are usually ok, but approximate addresses, such as only a city or route, do not have enough precision to be listed in the app.
 
 `region` is an optional string that represents a geographical subset of meeting locations. Usually this is a neighborhood or city. District numbers are discouraged because they require special program knowledge to be understood.
+
+`venmo` is an optional string and should be a valid Venmo handle, eg @FFG-Group. This is understood to be the address for 7th Tradition contributions to the group, and not any other entity.
 
 ## Common Questions & Concerns
 
