@@ -149,6 +149,7 @@ Code | Definition
 `BE` | Newcomer
 `NS` | Non-Smoking (type is ignored by Meeting Guide)
 `O` | Open
+`POC` | People of Color
 `POL` | Polish
 `POR` | Portuguese
 `P` | Professionals
