@@ -138,6 +138,7 @@ Code | Definition
 `G` | Gay
 `GR` | Grapevine
 `ITA` | Italian
+`JA` | Japanese
 `KOR` | Korean
 `L` | Lesbian
 `LIT` | Literature
