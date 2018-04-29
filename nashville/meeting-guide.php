@@ -104,6 +104,7 @@ foreach ($result as $row) {
 	//format name in title case
 	$name = ucwords(strtolower($row['name']));
 	$name = str_replace('Aa ', 'AA ', $name);
+	$name = str_replace('S.a.s./sober ', 'S.A.S./Sober ', $name);
 
 	//day
 	$row['day'] = array_search($row['day'], $decode_days);
