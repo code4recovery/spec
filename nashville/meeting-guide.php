@@ -126,6 +126,13 @@ foreach ($result as $row) {
 		}
 	}
 
+	//address
+	if (empty($row['address'])) {
+		$row['address'] = $row['location'];
+		$row['address'] = '';
+	}
+
+	//handle time
 	if (strlen($row['time']) == 3) {
 		$row['time'] = substr($row['time'], 0, 1) . ':' . substr($row['time'], 1, 2);
 	} elseif (strlen($row['time']) == 4) {
