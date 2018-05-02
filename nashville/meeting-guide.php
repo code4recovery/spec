@@ -129,7 +129,6 @@ foreach ($result as $row) {
 	//address
 	if (empty($row['address'])) {
 		$row['address'] = $row['location'];
-		$row['address'] = '';
 	}
 
 	//handle time
