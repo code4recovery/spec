@@ -119,7 +119,6 @@ Code | Definition
 ---- | ----------
 `11` | 11th Step Meditation
 `ASBI` | As Bill Sees It
-`A` | Atheist / Agnostic
 `BA` | Babysitting Available
 `B` | Big Book
 `H` | Birthday
@@ -156,6 +155,7 @@ Code | Definition
 `P` | Professionals
 `PUN` | Punjabi
 `RUS` | Russian
+`A` | Secular
 `ASL` | Sign Language
 `SM` | Smoking Permitted
 `S` | Spanish
