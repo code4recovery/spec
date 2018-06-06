@@ -118,13 +118,14 @@ they will be ignored by the importer.
 Code | Definition
 ---- | ----------
 `11` | 11th Step Meditation
+`12x12` | 12 Steps & 12 Traditions,
 `ASBI` | As Bill Sees It
 `BA` | Babysitting Available
 `B` | Big Book
 `H` | Birthday
 `BRK` | Breakfast
-`CF` | Child-Friendly
 `CAN` | Candlelight
+`CF` | Child-Friendly
 `C` | Closed
 `AL-AN` | Concurrent with Al-Anon
 `AL` | Concurrent with Alateen
@@ -132,10 +133,12 @@ Code | Definition
 `DR` | Daily Reflections
 `D` | Discussion
 `DD` | Dual Diagnosis
+`EN` | English
 `FF` | Fragrance Free
 `FR` | French
 `G` | Gay
 `GR` | Grapevine
+`NDG` | Indigenous
 `ITA` | Italian
 `JA` | Japanese
 `KOR` | Korean
