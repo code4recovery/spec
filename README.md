@@ -131,6 +131,7 @@ Code | Definition
 `AL` | Concurrent with Alateen
 `XT` | Cross Talk Permitted
 `DR` | Daily Reflections
+`DB` | Digital Basket
 `D` | Discussion
 `DD` | Dual Diagnosis
 `EN` | English
