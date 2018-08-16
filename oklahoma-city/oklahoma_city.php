@@ -75,10 +75,11 @@ foreach ($result as $row) {
 	if (!empty($row['Spanish'])) $types[] = 'S';
 	if (!empty($row['Disability'])) $types[] = 'X';
 	if (!empty($row['Babysit'])) $types[] = 'BA';
+	sort($types);
 
 	//build array
 	$return[] = array(
-		'slug' => md5(implode('-', array($row['GroupName'], $row['Day'], $row['Time'], $row['Add1']))),
+		'slug' => md5(implode('-', array($row['GroupName'], $row['Day'], $row['Time'], $row['Add1'], implode(',', $types)))),
 		'day' => $decode_days[$row['Day']],
 		'name' => $row['GroupName'],
 		'notes' => $row['Add2'],

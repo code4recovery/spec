@@ -184,10 +184,9 @@ The script may have any name, and be in any directory, but it should be a fully 
 
 ## Next Steps
 
-The file [version-2.json](version-2.json) contains some ideas for next steps for this format. Key enhancements:
+Some possible next steps for this format include:
 
 * organizational metadata so that an org can indicate its preferred name and URL
 * contact information for following up on issues with feed or meeting info
 * language split out into its own fields
 * indication of which language was used for geocoding
-
