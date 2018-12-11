@@ -3,7 +3,7 @@
 
 ini_set('display_errors', true);
 
-$db_name = '/path/to/database.mdb';
+$db_name = 'OCAA.mdb';
 
 if (!file_exists($db_name)) die('database file ' . $db_name . ' does not exist!');
 
@@ -19,6 +19,20 @@ $delimiters = array(
 	' @',
 	' (',
 	' between',
+);
+
+$decode_types = array(
+	'C' => 'C',
+	'O' => 'O',
+	'Y' => 'Y',
+	'~' => 'S',
+	'W' => 'W',
+	'M' => 'M',
+	'GA' => 'G',
+	'CC' => 'BA',
+	'BG' => 'BE',
+	'TA' => 'MED',
+	'SP' => 'SP',
 );
 
 $result = odbc_exec($connection, 'SELECT
@@ -44,25 +58,17 @@ while ($row = odbc_fetch_array($result)) {
 	//format time
 	$row['time'] = substr($row['time'], 11, 5);
 
-	//build array of meeting codes
-	if ($row['types'] == '(C)') {
-		$row['types'] = array('C');
-	} elseif ($row['types'] == '(G)') {
-		$row['types'] = array('G');
-	} elseif ($row['types'] == '(I)') {
-		//$row['types'] = array('C');
-	} elseif ($row['types'] == '(Y)') {
-		$row['types'] = array('Y');
-	} elseif ($row['types'] == '(~)') {
-		$row['types'] = array('S');
-	} else {
-		$row['types'] = array('O');
-	}
+	//explode and trim
+	$types = array_map('trim', explode(',', trim($row['types'], ' ()')));
 
-	if ($row['handicapped'] == 1) {
-		$row['types'][] = 'X';
-	}
+	$row['types'] = $row['handicapped'] ? array('X') : array();
 	unset($row['handicapped']);
+
+	foreach ($types as $type) {
+		if (array_key_exists($type, $decode_types)) {
+			$row['types'][] = $decode_types[$type];
+		}
+	}
 
 	//title case name
 	$row['name'] = ucwords(strtolower($row['name']));

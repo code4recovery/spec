@@ -70,7 +70,7 @@ foreach ($result as $row) {
 	if (stristr($row['format'], 'Big Book')) $types[] = 'B';
 	if (stristr($row['format'], '12 & 12')) $types[] = 'ST';
 	if (stristr($row['format'], 'Discussion')) $types[] = 'D';
-	if (stristr($row['format'], 'As Bill Sees It')) $types[] = 'ASBI';
+	if (stristr($row['format'], 'As Bill Sees It')) $types[] = 'ABSI';
 	if (stristr($row['format'], 'Newcomers')) $types[] = 'BE';
 	if (stristr($row['format'], 'Literature')) $types[] = 'LIT';
 	if (stristr($row['format'], 'Living Sober')) $types[] = 'LS';

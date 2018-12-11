@@ -91,7 +91,7 @@ $decode_types = array(
 	'DAILY REFLECTIONS LT' => 'DR',
 	'LIVING SOBER' => 'LS',
 	'GRAPEVINE' => 'GR',
-	'AS BILL SEES IT' => 'ASBI',
+	'AS BILL SEES IT' => 'ABSI',
 );
 
 //fetch data

@@ -119,7 +119,7 @@ Code | Definition
 ---- | ----------
 `11` | 11th Step Meditation
 `12x12` | 12 Steps & 12 Traditions,
-`ASBI` | As Bill Sees It
+`ABSI` | As Bill Sees It
 `BA` | Babysitting Available
 `B` | Big Book
 `H` | Birthday
