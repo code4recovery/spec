@@ -108,7 +108,7 @@ This API is for weekly recovery meetings.
 This API is for current meetings. If a meeting has closed, even temporarily, it should be removed from the feed and restored once it has resumed meeting.
 
 #### Want to build your own JavaScript meeting finder from 
-There are lots of ways to do it, but one way is using jQuery ([jQuery demo](jquery-demo/test.json)).
+There are lots of ways to do it, but one way is using jQuery ([jQuery demo](jquery-demo/demo.html)).
 
 ## Meeting Types
 The codes below are only used for transmitting meeting data. App users will only see the full definitions.
