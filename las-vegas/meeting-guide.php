@@ -24,16 +24,16 @@ try {
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $meta_decode = array(
-	'_content_field_20' => 'sunday',
-	'_content_field_21' => 'monday',
-	'_content_field_22' => 'tuesday',
-	'_content_field_23' => 'wednesday',
-	'_content_field_24' => 'thursday',
-	'_content_field_25' => 'friday',
-	'_content_field_26' => 'saturday',
+	'_content_field_20' => 'Sunday',
+	'_content_field_21' => 'Monday',
+	'_content_field_22' => 'Wednesday',
+	'_content_field_23' => 'Tuesday',
+	'_content_field_24' => 'Thursday',
+	'_content_field_25' => 'Friday',
+	'_content_field_26' => 'Saturday',
 	'_content_field_27' => 'notes',
 	'_content_field_28' => 'phone',
-	'_content_field_29' => 'url',
+	//'_content_field_29' => 'url',
 	'_content_field_30' => 'email',
 	'_address_line_1' => 'address',
 	'_zip_or_postal_in	dex' => 'postal_code',
@@ -156,6 +156,7 @@ foreach ($meetings as $meeting) {
 	$meeting = array_merge($meeting, getMetaFor($meeting['id']));
 
 	//handle joined address
+	if (empty($meeting['address'])) continue;
 	$meeting['address'] = str_replace('<br />', '<br/>', $meeting['address']);
 	$meeting['address'] = str_replace('</br>', '<br/>', $meeting['address']);
 	$meeting['address'] = explode('<br/>', $meeting['address']);
@@ -213,6 +214,8 @@ foreach ($meetings as $meeting) {
 		$meeting['city'] = 'McGill';
 	}
 
+	$meeting['url'] = 'https://www.lvcentraloffice.org/aameetinglisting/' . $meeting['post_name'] . '/';
+
 	//clean up values
 	$meeting = array_map('strip_tags', $meeting);
 	$meeting = array_map('trim', $meeting);
@@ -255,7 +258,8 @@ foreach ($meetings as $meeting) {
 	}
 
 	//loop through the days
-	foreach (array('sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday') as $index => $day) {
+	foreach (array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday') as $index => $day) {
+		if (!in_array($day, $types)) continue;
 		if (!empty($meeting[$day])) {
 			$meeting['day'] = $index;
 			if (strpos($meeting[$day], '-') === false) {
