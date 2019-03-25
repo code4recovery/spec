@@ -22,7 +22,7 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 //select data
 try {
 	$result = $pdo->query('SELECT * FROM list 
-		WHERE intergroup NOT IN (
+		WHERE intergroup IS NULL OR intergroup NOT IN (
 			"Salt Lake Central Office", 
 			"Intergroup Services of Northern Utah",
 			"Northern Utah",
@@ -82,7 +82,7 @@ foreach ($result as $row) {
 	}
 
 	//split location notes from location
-	$notes = [];
+	$notes = array();
 
 	if ($pos = strpos($row['address2'], '-')) {
 		$notes[] = trim(substr($row['address2'], $pos + 1));
