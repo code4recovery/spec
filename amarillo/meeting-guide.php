@@ -26,22 +26,42 @@ try {
     die('SQL query failed: ' . $e->getMessage());
 }
 
+//debugging
 function dd($obj) {
 	echo '<pre>';
 	print_r($obj);
 	exit;
 }
 
+//convert local meeting type to meeting guide type
+function meetingGuideType($type) {
+	global $type_lookup;
+	return array_key_exists($type, $type_lookup) ? $type_lookup[$type] : null;
+}
+
+//define array to return
 $meetings = array();
 
+//will use later to convert days to integers
 $day_lookup = array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+
+//will use later to convert local types to meeting guide types
+$type_lookup = array(
+	'O' => 'O',
+	'C' => 'C',
+	'D' => 'D',
+	'BB' => 'B',
+	'S' => 'SP',
+	'SS' => 'ST',
+	'M' => 'M',
+	'W' => 'W',
+	'ABSI' => 'ABSI',
+	'NS' => 'NS',
+);
 
 foreach ($result as $r) {
 
-	$types = array();
-
-	$address = $r['address'];
-
+	//replace string day with integer
 	if ($r['day'] == 'Everyday') {
 		$day = range(0, 6);
 	} elseif (in_array($r['day'], $day_lookup)) {
@@ -50,11 +70,21 @@ foreach ($result as $r) {
 		continue;
 	}
 
+	//turn types column into array of meeting guide type codes
+	$types = explode(' ', str_replace(array(',', '*'), ' ', $r['type']));
+	$types = array_values(array_filter(array_map('meetingGuideType', $types)));
+
+	//format address, split notes off
+	$address = $r['address'];
+
+	//return a key
 	$meetings[] = array(
 		'slug' => $r['id'],
 		'city' => $r['city'],
 		'day' => $day,
 		'time' => date('H:i', strtotime($r['timeampm'])),
+		//'timeampm' => $r['timeampm'],
+		//'type' => $r['type'],
 		'types' => $types,
 		'address' => $address,
 		'phone' => $r['phone'],
@@ -63,7 +93,6 @@ foreach ($result as $r) {
 		'country' => 'US',
 	);
 }
-
 
 //encode JSON
 $return = json_encode($meetings);
