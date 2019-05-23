@@ -1,144 +1,48 @@
 <?php
-//outputs meeting data for meeting guide app
 
-//ini_set('display_errors', true);
-
-$db_name = __DIR__ . '\fpdb\aa.mdb';
-
-if (!file_exists($db_name)) die('database file ' . $db_name . ' does not exist!');
-
-$connection = odbc_connect('Driver={Microsoft Access Driver (*.mdb)};Dbq=' . $db_name, null, null);
-
-/*debugging
-echo '<pre>';
-$debug = odbc_exec($connection, 'SELECT * FROM meeting_data');
-while ($d = odbc_fetch_array($debug)) {
-	print_r($d);
-}*/
-
-$result = odbc_exec($connection, 'SELECT
-		meetings.meeting_id AS slug,
-		time,
-		dow AS day,
-		meeting_type,
-		notes,
-		meeting_code,
-		places.Name AS location,
-		Add1 AS address,
-		city,
-		state,
-		Zip AS postal_code,
-		wheelChair,
-		smoking,
-		area_name AS region,
-		mname AS name 
-	FROM meeting_data');
-
-$meetings = array();
-
-while ($row = odbc_fetch_array($result)) { 
-
-	//decrement day by one
-	$row['day'] = $row['day'] - 1;
-
-	//build array of meeting codes
-	$row['types'] = array();
-
-	//title case
-	$row['location'] = ucwords(strtolower($row['location']));
-
-	if ($row['meeting_type'] == '1') $row['types'][] = 'O';
-	if ($row['meeting_type'] == '2') $row['types'][] = 'C';
-	if ($row['wheelChair'] == '1') $row['types'][] = 'X';
-	if ($row['smoking'] == '1') $row['types'][] = 'SM';
-	$row['meeting_code'] = explode(' ', $row['meeting_code']);
-	foreach ($row['meeting_code'] as $code) {
-		switch ($code) {
-			case 'AB':
-				$row['types'][] = 'LIT';
-				break;
-			case 'BB':
-				$row['types'][] = 'B';
-				break;
-			case 'BG':
-				$row['types'][] = 'BE';
-				break;
-			case 'CB':
-				$row['types'][] = 'LIT';
-				break;
-			case 'D':
-				$row['types'][] = 'D';
-				break;
-			case 'DR':
-				$row['types'][] = 'LIT';
-				break;
-			case 'FR':
-				$row['types'][] = 'FR';
-				break;
-			case 'g':
-				$row['types'][] = 'G';
-				break;
-			case 'GV':
-				$row['types'][] = 'GR';
-				break;
-			case 'LS':
-				$row['types'][] = 'LIT';
-				break;
-			case 'LT':
-				$row['types'][] = 'LIT';
-				break;
-			case 'M':
-				$row['types'][] = 'MED';
-				break;
-			case 'm':
-				$row['types'][] = 'M';
-				break;
-			case 'PG':
-				$row['types'][] = 'PG';
-				break;
-			case 'SH':
-				$row['types'][] = 'S';
-				break;
-			case 'SP':
-				$row['types'][] = 'SP';
-				break;
-			case 'SPD':
-				$row['types'][] = 'SP';
-				$row['types'][] = 'D';
-				break;
-			case 'SS':
-				$row['types'][] = 'ST';
-				break;
-			case 'ST':
-				$row['types'][] = 'ST';
-				break;
-			case 'STR':
-				$row['types'][] = 'ST';
-				$row['types'][] = 'TR';
-				break;
-			case 'TR':
-				$row['types'][] = 'TR';
-				break;
-			case 'w':
-				$row['types'][] = 'W';
-				break;
-			case 'YP':
-				$row['types'][] = 'Y';
-				break;
-		}
-	}
-	
-	unset($row['meeting_type']);
-	unset($row['wheelChair']);
-	unset($row['smoking']);
-	unset($row['meeting_code']);
-	$meetings[] = $row;
+//debug function
+function dd($obj) {
+	echo '<pre>';
+	print_r($obj);
+	exit;
 }
 
-//$meetings = array_slice($meetings, 0, 5);
+if (file_exists('wp-config.php')) {
+	include('wp-config.php');
+} else {
+	define('DB_NAME', 'broward');
+	define('DB_USER', 'root');
+	define('DB_PASSWORD', '');
+	define('DB_HOST', 'localhost');
+	$table_prefix  = 'aabci_';
+}
 
-odbc_close($connection);
+//make sure errors are being reported
+error_reporting(E_ALL);
 
-header('Content-type: application/json; charset=utf-8');
+//connect to database
+try {
+    $pdo = new PDO('mysql:charset=UTF8;dbname=' . DB_NAME . ';host=' . DB_HOST, DB_USER, DB_PASSWORD);
+} catch (PDOException $e) {
+    die('Database connection failed: ' . $e->getMessage());
+}
 
-echo json_encode($meetings);
+//error handling
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+
+//select data
+try {
+	$meetings = $pdo->query('SELECT ID, post_title, post_modified_gmt FROM ' . $table_prefix . 'posts WHERE post_type = "meetings" AND post_status = "publish"')->fetchAll();
+	$locations = $pdo->query('SELECT ID, post_title, post_modified_gmt FROM ' . $table_prefix . 'posts WHERE post_type = "locations" AND post_status = "publish"')->fetchAll();
+	$meta = $pdo->query('SELECT post_id, meta_key, meta_value FROM ' . $table_prefix . 'postmeta WHERE post_id IN (SELECT ID FROM ' . $table_prefix . 'posts WHERE post_type IN ("meetings", "locations"))')->fetchAll();
+} catch (PDOException $e) {
+    die('SQL query failed: ' . $e->getMessage());
+}
+
+$meetings = array_map(function($meeting){
+	return $meeting;
+}, $meetings);
+
+dd($meetings);
+
