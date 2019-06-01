@@ -121,7 +121,7 @@ foreach ($result as $r) {
 
 //go through the groups and add to the meetings array in the right format
 foreach ($groups as $group_id => $group) {
-	foreach ($days as $day) {
+	foreach ($days as $day_index => $day) {
 		if (!empty($group[$day . '_new'])) {
 			for ($i = 0; $i < $group[$day . '_new']; $i++) {
 
@@ -149,9 +149,10 @@ foreach ($groups as $group_id => $group) {
 					'updated' => max($group['meeting_updated'], $group['location_updated']),
 					'city' => $group['city'],
 					'state' => $group['state'],
-					'street_address' => $group['street_address'],
+					'address' => $group['street_address'],
 					'notes' => $group['suite_number'],
 					'postal_code' => $group['zip'],
+					'day' => $day_index,
 					'time' => $group[$day . '_new_' . $i . '_meeting_time'],
 					'types' => $types,
 					'url' => 'https://aabroward.org/locations/' . $group['location_slug'] . '/',
