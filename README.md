@@ -26,7 +26,7 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 [
 	{
 		"name": "Sunday Serenity",
-		"slug": "sunday-serenity",
+		"slug": "sunday-serenity-14",
 		"day": 0,
 		"time": "18:00",
 		"end_time": "19:30",
@@ -35,16 +35,16 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 		"notes": "Ring buzzer. Meeting is on the 2nd floor.",
 		"updated": "2014-05-31 14:32:23",
 		"url": "https://intergroup.org/meetings/sunday-serenity",
-		"image": "https://intergroup.org/assets/img/locations/alano-club.jpg",
 		"types": [
-			"O"
+			"O",
+			"T",
+			"LGBTQ"
 		],
 		"address": "123 Main Street",
 		"city": "Anytown",
 		"state": "CA",
 		"postal_code": "98765",
-		"country": "US",
-		"region": "Downtown"
+		"country": "US"
 	},
 	...
 ]
@@ -87,30 +87,39 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 ## Common Questions & Concerns
 
 #### We use different meeting codes!
+
 That's ok. App users don't actually see the codes, just the types they translate to.
 
 #### Our meeting type isn't listed!
+
 Types have to be consistent across the app to make a good user experience. It's common that a user might see meeting results from several areas at a time (this happens in small areas, and near borders). The set of meeting types we use is a mutually-agreed-upon set of names across 70+ areas. If you have a request to edit the list, we will bring it up at our steering committee meeting.
 
 #### Why is slug necessary?
+
 Slug is a required unique field because there is an app feature where users may 'favorite' a meeting, and in order for that to persist across sessions we must attach it to a unique field. It might seem intuitive that meeting location + time would be a unique combination, but in practice we see cases where there are in fact simultaneous meetings at the same location.
 
 #### Why are day and time required?
+
 It's perfectly fine for meetings to be 'by appointment' and this often happens in places where there are not many meetings. The app, however, needs this information to present useful information to the user.
 
 #### Why can't we have HTML in meeting notes?
+
 We are trying to make the data portable across a range of devices, some of which might not display HTML.
 
 #### What about business meetings or other monthly meetings?
-This API is for weekly recovery meetings. 
+
+This API is for weekly recovery meetings.
 
 #### What about temporary cancellations or closures?
+
 This API is for current meetings. If a meeting has closed, even temporarily, it should be removed from the feed and restored once it has resumed meeting.
 
-#### Want to build your own JavaScript meeting finder from 
+#### Want to build your own JavaScript meeting finder from
+
 There are lots of ways to do it, but one way is using jQuery ([jQuery demo](jquery-demo/demo.html)).
 
 ## Meeting Types
+
 The codes below are only used for transmitting meeting data. App users will only see the full definitions.
 
 The codes below should be considered 'reserved.' In your implementation, it's ok to alter the description (for example
@@ -118,62 +127,62 @@ The codes below should be considered 'reserved.' In your implementation, it's ok
 for "Babysitting Available." "American Sign Language" or "ASL" rather than "Sign Language." It's also ok to add types,
 they will be ignored by the importer.
 
-Code | Definition
----- | ----------
-`11` | 11th Step Meditation
-`12x12` | 12 Steps & 12 Traditions
-`ABSI` | As Bill Sees It
-`BA` | Babysitting Available
-`B` | Big Book
-`H` | Birthday
-`BRK` | Breakfast
-`CAN` | Candlelight
-`CF` | Child-Friendly
-`C` | Closed
-`AL-AN` | Concurrent with Al-Anon
-`AL` | Concurrent with Alateen
-`XT` | Cross Talk Permitted
-`DR` | Daily Reflections
-`DB` | Digital Basket
-`D` | Discussion
-`DD` | Dual Diagnosis
-`EN` | English
-`FF` | Fragrance Free
-`FR` | French
-`G` | Gay
-`GR` | Grapevine
-`NDG` | Indigenous
-`ITA` | Italian
-`JA` | Japanese
-`KOR` | Korean
-`L` | Lesbian
-`LIT` | Literature
-`LS` | Living Sober
-`LGBTQ` | LGBTQ
-`MED` | Meditation
-`M` | Men
-`N` | Native American
-`BE` | Newcomer
-`NS` | Non-Smoking (type is ignored by Meeting Guide)
-`O` | Open
-`POC` | People of Color
-`POL` | Polish
-`POR` | Portuguese
-`P` | Professionals
-`PUN` | Punjabi
-`RUS` | Russian
-`A` | Secular
-`ASL` | Sign Language
-`SM` | Smoking Permitted
-`S` | Spanish
-`SP` | Speaker
-`ST` | Step Meeting
-`TR` | Tradition Study
-`T` | Transgender
-`X` | Wheelchair Access
-`XB` | Wheelchair-Accessible Bathroom
-`W` | Women
-`Y` | Young People
+| Code    | Definition                                     |
+| ------- | ---------------------------------------------- |
+| `11`    | 11th Step Meditation                           |
+| `12x12` | 12 Steps & 12 Traditions                       |
+| `ABSI`  | As Bill Sees It                                |
+| `BA`    | Babysitting Available                          |
+| `B`     | Big Book                                       |
+| `H`     | Birthday                                       |
+| `BRK`   | Breakfast                                      |
+| `CAN`   | Candlelight                                    |
+| `CF`    | Child-Friendly                                 |
+| `C`     | Closed                                         |
+| `AL-AN` | Concurrent with Al-Anon                        |
+| `AL`    | Concurrent with Alateen                        |
+| `XT`    | Cross Talk Permitted                           |
+| `DR`    | Daily Reflections                              |
+| `DB`    | Digital Basket                                 |
+| `D`     | Discussion                                     |
+| `DD`    | Dual Diagnosis                                 |
+| `EN`    | English                                        |
+| `FF`    | Fragrance Free                                 |
+| `FR`    | French                                         |
+| `G`     | Gay                                            |
+| `GR`    | Grapevine                                      |
+| `NDG`   | Indigenous                                     |
+| `ITA`   | Italian                                        |
+| `JA`    | Japanese                                       |
+| `KOR`   | Korean                                         |
+| `L`     | Lesbian                                        |
+| `LIT`   | Literature                                     |
+| `LS`    | Living Sober                                   |
+| `LGBTQ` | LGBTQ                                          |
+| `MED`   | Meditation                                     |
+| `M`     | Men                                            |
+| `N`     | Native American                                |
+| `BE`    | Newcomer                                       |
+| `NS`    | Non-Smoking (type is ignored by Meeting Guide) |
+| `O`     | Open                                           |
+| `POC`   | People of Color                                |
+| `POL`   | Polish                                         |
+| `POR`   | Portuguese                                     |
+| `P`     | Professionals                                  |
+| `PUN`   | Punjabi                                        |
+| `RUS`   | Russian                                        |
+| `A`     | Secular                                        |
+| `ASL`   | Sign Language                                  |
+| `SM`    | Smoking Permitted                              |
+| `S`     | Spanish                                        |
+| `SP`    | Speaker                                        |
+| `ST`    | Step Meeting                                   |
+| `TR`    | Tradition Study                                |
+| `T`     | Transgender                                    |
+| `X`     | Wheelchair Access                              |
+| `XB`    | Wheelchair-Accessible Bathroom                 |
+| `W`     | Women                                          |
+| `Y`     | Young People                                   |
 
 ## Sharing Your Data
 
@@ -189,7 +198,7 @@ The script may have any name, and be in any directory, but it should be a fully 
 
 Some possible next steps for this format include:
 
-* organizational metadata so that an org can indicate its preferred name and URL
-* contact information for following up on issues with feed or meeting info
-* language split out into its own fields
-* indication of which language was used for geocoding
+-   organizational metadata so that an org can indicate its preferred name and URL
+-   contact information for following up on issues with feed or meeting info
+-   language split out into its own fields
+-   indication of which language was used for geocoding
