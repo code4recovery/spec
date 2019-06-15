@@ -210,7 +210,7 @@ foreach ($meetings as $meeting) {
 	}
 	if (strpos($meeting['address'], 'McGill Methodist Church') !== false) {
 		$meeting['location'] = 'McGill Methodist Church';
-		$meeting['address'] = 'Second Street at Avenue J';
+		$meeting['address'] = '2nd Street & Avenue J';
 		$meeting['city'] = 'McGill';
 	}
 
@@ -244,6 +244,7 @@ foreach ($meetings as $meeting) {
 		$meeting['time'] = array_values($time)[0];
 	}
 
+	/* this is throwing off mcgill meeting, which is "Thurs - 7pm"
 	//also try getting it from the meeting name
 	if (strpos($meeting['name'], '-') !== false) {
 		$name_parts = explode('-', $meeting['name']);
@@ -256,6 +257,7 @@ foreach ($meetings as $meeting) {
 			}
 		}
 	}
+	*/
 
 	//loop through the days
 	foreach (array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday') as $index => $day) {
