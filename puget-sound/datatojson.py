@@ -1,7 +1,7 @@
 import requests
-import json
+import simplejson as json
 
-def datatojson():
+def meetingdata():
 	#This script is run as a simple Flask app on a free Heroku plan to allow meeting data in a Google Sheet to connect to the Meeting Guide app
 	#For full Flask app see https://github.com/pugetsoundaa/jsonfeed
 
@@ -15,52 +15,31 @@ def datatojson():
 	json_request = requests.get(SPREADSHEET_FEED_URL)
 	json_string = json_request.text
 	parsed_json = json.loads(json_string)
-
-	#Preprocessing before Meeting Guide format loop
-	meetings = parsed_json["feed"]["entry"]
-	meetings_num = len(meetings)
+	#Preprocessing before meeting loop
+	gs_meetings = parsed_json["feed"]["entry"]
+	gs_meetings_num = len(gs_meetings)
 	output = []
-	output.append('[')
 
-	#Loop to create JSON string in Meeting Guide format
-	for x in range (0, meetings_num):
-		output.append('{"name":"')
-		#Have to add \ before each forward slash
-		output.append(meetings[x]["gsx$name"]["$t"].replace("/","\/"))
-		output.append('","slug":"')
-		output.append(meetings[x]["gsx$slug"]["$t"])
-		output.append('","day":[')
-		output.append(dayArray(meetings[x]))
-		output.append('],"time":"')
-		output.append(timeFormatted(meetings[x]))
-		output.append('","location":"')
-		#Have to add \ before each forward slash
-		output.append(meetings[x]["gsx$location"]["$t"].replace("/","\/"))
-		output.append('","notes":"')
-		#Have to add \ before each forward slash
-		output.append(meetings[x]["gsx$websitenotes"]["$t"].replace("/","\/"))
-		output.append('","updated":"')
-		output.append(updatedFormatted(meetings[x]))
-		output.append('","url":"https:\/\/apps.pugetsoundaa.org\/meetinglist\/index.html?slug=')
-		output.append(meetings[x]["gsx$slug"]["$t"])
-		output.append('","types":[')
-		output.append(typesArray(meetings[x]))
-		output.append('],"address":"')
-		#Have to add \ before each forward slash
-		output.append(meetings[x]["gsx$address"]["$t"].replace("/","\/"))
-		output.append('","city":"')
-		output.append(meetings[x]["gsx$city"]["$t"])
-		output.append('","state":"WA","postal_code":"')
-		output.append(meetings[x]["gsx$zipcode"]["$t"])
-		output.append('","country":"US"}')
-		if (x != meetings_num -1):
-			output.append(',')
+	#Loop to create array of meetings, each as a dictionary
+	for x in range (0, gs_meetings_num):
+		single_meeting_dict = {}
+		single_meeting_dict.update({'name' : gs_meetings[x]["gsx$name"]["$t"]})
+		single_meeting_dict.update({'slug' : gs_meetings[x]["gsx$slug"]["$t"]})
+		single_meeting_dict.update({'day' : dayArray(gs_meetings[x])})
+		single_meeting_dict.update({'time' : timeFormatted(gs_meetings[x])})
+		single_meeting_dict.update({'location' : gs_meetings[x]["gsx$location"]["$t"]})
+		single_meeting_dict.update({'notes' : gs_meetings[x]["gsx$websitenotes"]["$t"]})
+		single_meeting_dict.update({'updated' : updatedFormatted(gs_meetings[x])})
+		single_meeting_dict.update({'types' : typesArray(gs_meetings[x])})
+		single_meeting_dict.update({'address' : gs_meetings[x]["gsx$address"]["$t"]})
+		single_meeting_dict.update({'city' : gs_meetings[x]["gsx$city"]["$t"]})
+		single_meeting_dict.update({'state' : 'WA'})
+		single_meeting_dict.update({'postal_code' : gs_meetings[x]["gsx$zipcode"]["$t"]})
+		single_meeting_dict.update({'country' : 'US'})
+		output.append(single_meeting_dict)
 
-	#Postprocessing after Meeting Guide format loop
-	output.append(']')
-	output_string = ''.join(output)
-	
-	return output_string
+	return output
+
 
 #properly formats updated into YYYY-MM-DD HH:MM:SS
 def updatedFormatted(meeting):
@@ -95,41 +74,40 @@ def typesArray(meeting):
 	typesoutput = []
 
 	if(meeting["gsx$open"]["$t"]=="1"):
-		typesoutput.append('"O"')
+		typesoutput.append("O")
 	else:
-		typesoutput.append('"C"')
+		typesoutput.append("C")
 	if(meeting["gsx$mens"]["$t"]=="1"):
-		typesoutput.append(', "M"')
+		typesoutput.append("M")
 	typesArrayString = ''.join(typesoutput)
 	if(meeting["gsx$womens"]["$t"]=="1"):
-		typesoutput.append(', "W"')
+		typesoutput.append("W")
 	typesArrayString = ''.join(typesoutput)
 	if(meeting["gsx$handi"]["$t"]=="1"):
-		typesoutput.append(', "X"')
+		typesoutput.append("X")
 	typesArrayString = ''.join(typesoutput)
 	if(meeting["gsx$lgbtq"]["$t"]=="1"):
-		typesoutput.append(', "LGBTQ"')
+		typesoutput.append("LGBTQ")
 	typesArrayString = ''.join(typesoutput)
 	if(meeting["gsx$spanish"]["$t"]=="1"):
-		typesoutput.append(', "S"')
+		typesoutput.append("S")
 	typesArrayString = ''.join(typesoutput)
 	if(meeting["gsx$kid"]["$t"]=="1"):
-		typesoutput.append(', "CF"')
+		typesoutput.append("CF")
 	typesArrayString = ''.join(typesoutput)
 	if(meeting["gsx$si"]["$t"]=="1"):
-		typesoutput.append(', "ASL"')
+		typesoutput.append("ASL")
 	typesArrayString = ''.join(typesoutput)
 	if(meeting["gsx$alanon"]["$t"]=="1"):
-		typesoutput.append(', "AL-AN"')
+		typesoutput.append("AL-AN")
 	typesArrayString = ''.join(typesoutput)
 	if(meeting["gsx$young"]["$t"]=="1"):
-		typesoutput.append(', "Y"')
+		typesoutput.append("Y")
 	typesArrayString = ''.join(typesoutput)
 	if(meeting["gsx$speaker"]["$t"]=="1"):
-		typesoutput.append(', "SP"')
+		typesoutput.append("SP")
 
-	typesArrayString = ''.join(typesoutput)
-	return typesArrayString
+	return typesoutput
 
 #properly formats the time into HH:MM from from stime_num integer
 def timeFormatted(meeting):
@@ -149,41 +127,20 @@ def timeFormatted(meeting):
 #checks on each day and adds corresponding integer to the day array if true
 def dayArray(meeting):
 	dayoutput = []
-	y = 0 #helper variable to determine if preceding comma is necessary
 
 	if(meeting["gsx$sunday"]["$t"]=="1"):
-		dayoutput.append('0')
-		y+=1
+		dayoutput.append(0)
 	if(meeting["gsx$monday"]["$t"]=="1"):
-		if(y>0):
-			dayoutput.append(',')
-		dayoutput.append('1')
-		y+=1
+		dayoutput.append(1)
 	if(meeting["gsx$tuesday"]["$t"]=="1"):
-		if(y>0):
-			dayoutput.append(',')
-		dayoutput.append('2')
-		y+=1
+		dayoutput.append(2)
 	if(meeting["gsx$wednesday"]["$t"]=="1"):
-		if(y>0):
-			dayoutput.append(',')
-		dayoutput.append('3')
-		y+=1
+		dayoutput.append(3)
 	if(meeting["gsx$thursday"]["$t"]=="1"):
-		if(y>0):
-			dayoutput.append(',')
-		dayoutput.append('4')
-		y+=1
+		dayoutput.append(4)
 	if(meeting["gsx$friday"]["$t"]=="1"):
-		if(y>0):
-			dayoutput.append(',')
-		dayoutput.append('5')
-		y+=1
+		dayoutput.append(5)
 	if(meeting["gsx$saturday"]["$t"]=="1"):
-		if(y>0):
-			dayoutput.append(',')
-		dayoutput.append('6')
-		y+=1
+		dayoutput.append(6)
 
-	dayArrayString = ''.join(dayoutput)
-	return dayArrayString
+	return dayoutput
