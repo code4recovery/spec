@@ -59,6 +59,7 @@ $decode_types = array(
     'Step Study' => 'ST',
     'Wheelchair Accessible' => 'X',
     'Women Only' => 'W',
+    'Women\'s meeting' => 'W',
     'Young People' => 'YP',
 );
 
