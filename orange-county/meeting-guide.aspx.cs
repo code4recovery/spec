@@ -239,6 +239,7 @@ public partial class JoshMdb2Json : System.Web.UI.Page
         }
         jsonString.Remove(jsonString.Length - 1, 1); // remove last trailing comma
         jsonString.Append("]"); // enclose json with closing bracket
-        Response.Write(jsonString.ToString()); // write to browser
+		Response.AddHeader("Content-type", "text/json");
+		Response.Write(jsonString.ToString()); // write to browser
     }
 }

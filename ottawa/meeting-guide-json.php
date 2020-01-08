@@ -1,33 +1,60 @@
 <?php
 //simple PHP script to output API for a basic database
 
-//database connection info, edit me!
-$server		= '127.0.0.1';
-$username	= 'root';
+$host		= 'localhost';
+$user		= 'root';
 $password	= '';
-$database	= 'your_database_name';
+$database	= 'ottawa';
 
-//if you have only a meetings table, use this variable
-$sql		= 'SELECT * FROM meetings';
+//make sure errors are being reported
+
+error_reporting(E_ALL);
 
 //send header and turn off error reporting so we can get a proper HTTP result
 header('Content-type: application/json; charset=utf-8');
-error_reporting(E_ALL);
 
 //connect to database
-if (empty($server)) error('$server variable is empty');
-$link = mysql_connect($server, $username, $password) or error('could not connect to database server');
-mysql_select_db($database, $link) or error('could not select database');
-mysql_set_charset('utf8', $link);
+
+try {
+
+    $pdo = new PDO('mysql:charset=UTF8;dbname=' . $database . ';host=' . $host, $user, $password);
+
+} catch (PDOException $e) {
+
+    die('Database connection failed: ' . $e->getMessage());
+
+}
+
+//error handling
+
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 
 //select data
-if (empty($sql)) error('$sql variable is empty');
-$result = mysql_query($sql, $link);
-if (!$result) error(mysql_error($link));
+
+try {
+
+	$result = $pdo->query('SELECT * FROM meetings');
+
+} catch (PDOException $e) {
+
+    die('SQL query failed: ' . $e->getMessage());
+
+}
+
+
+
+//debugging
+
+function dd($obj) {
+	echo '<pre>';
+	print_r($obj);
+	exit;
+}
 
 //fetch data into array
 $return = array();
-while ($row = mysql_fetch_assoc($result)) {
+foreach ($result as $row) {
 	
 	//assemble types & notes fields
 	$types = $notes = array();
@@ -72,39 +99,34 @@ while ($row = mysql_fetch_assoc($result)) {
 	$return[] = array(
 		'name' => $row['groupName'],
 		'slug' => $row['meetingId'],
-		'day' => $row['dayNumber'],
+		'day' => $row['dayNumber'] - 1,
 		'time' => $row['meetingTime'],
 		'location' => $row['landmark'],
 		'group' => $row['groupName'],
 		'notes' => implode(PHP_EOL, $notes),
-		//'updated' => $row['meetingId'],
-		//'url' => $row['meetingId'],
+		'updated' => date('Y-m-d H:m:s'),
+		'url' => null,
 		'types' => $types,
 		'address' => $row['location'],
 		'city' => $row['city'],
-		//'postal_code' => $row['meetingId'],
+		'state' => null,
+		'postal_code' => null,
 		'country' => 'CA',
 		'region' => $row['area'],
 		'latitude' => $row['latitude'],
 		'longitude' => $row['longitude'],
 	);
 }
-mysql_free_result($result);
-mysql_close($link);
+
 
 //return JSON
-output($return);
+$return = json_encode($return);
+if (json_last_error()) error(json_last_error_msg());
+die($return);
 
 //function to handle errors
 function error($string) {
 	output(array(
 		'error' => $string,
 	));
-}
-
-//function to output json
-function output($array) {
-	$return = json_encode($array);
-	if (json_last_error()) error(json_last_error_msg());
-	die($return);
 }
