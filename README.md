@@ -177,6 +177,7 @@ they will be ignored by the importer.
 | `S`     | Spanish                                        |
 | `SP`    | Speaker                                        |
 | `ST`    | Step Meeting                                   |
+| `TC`    | Temporary Closure                              |
 | `TR`    | Tradition Study                                |
 | `T`     | Transgender                                    |
 | `X`     | Wheelchair Access                              |
