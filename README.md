@@ -82,9 +82,15 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `region` is an optional string that represents a geographical subset of meeting locations. Usually this is a neighborhood or city. District numbers are discouraged because they require special program knowledge to be understood.
 
-`venmo` is an optional string and should be a valid Venmo handle, eg @FFG-Group. This is understood to be the address for 7th Tradition contributions to the group, and not any other entity.
+`status` is an optional string which can be `active`, `suspended`, `online-only`, or `inactive`. If `status` is not provided, meetings will be assumed to be `active`. Other types can be used by independent front ends, but these four seem to be ones most regions will use.
 
-`video_conference_url` is an optional URL to a specific public videoconference meeting. This should be a common videoconferencing service such as Zoom or Google Hangouts. It should launch directly into the meeting, without requiring the user to type a meeting ID, password, or be invited to join beforehand. Online meetings should still have a physical address, and an optional meeting type of `TC` (Temporary Closure). This spec is still for geographic meetings; a true online-only spec is in the planning stages.
+`payment_venmo` is an optional string and should be a valid Venmo handle, eg @FFG-Group. This is understood to be the address for 7th Tradition contributions to the group, and not any other entity.
+
+`payment_paypal` is an optional string and should be a valid PayPal email address, such as myhomegroup@gmail.com. This is understood to be the address for 7th Tradition contributions to the group, and not any other entity.
+
+`video_conference_url` is an optional URL to a specific public videoconference meeting. This should be a common videoconferencing service such as Zoom, BlueJeans, Skype, or Google Hangouts. It should launch directly into the meeting, without requiring the user to type a meeting ID, password, or be invited to join beforehand. Online meetings should still have a physical address, and an optional meeting type of `TC` (Temporary Closure). This spec is still for geographic meetings; a true online-only spec is in the planning stages.
+
+`video_conference_dial_in` is an optional text field to include a phone number and meeting code to join via telephone.URL to a specific public videoconference meeting. This should be a common videoconferencing service such as Zoom or Google Hangouts. It should launch directly into the meeting, without requiring the user to type a meeting ID, password, or be invited to join beforehand. Online meetings should still have a physical address, and an optional meeting type of `TC` (Temporary Closure). This spec is still for geographic meetings; a true online-only spec is in the planning stages.
 
 ## Common Questions & Concerns
 
