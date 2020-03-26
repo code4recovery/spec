@@ -84,7 +84,9 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `venmo` is an optional string and should be a valid Venmo handle, eg @FFG-Group. This is understood to be the address for 7th Tradition contributions to the group, and not any other entity.
 
-`video_conference_url` is an optional URL to a specific public videoconference meeting. This should be a common videoconferencing service such as Zoom or Google Hangouts. It should launch directly into the meeting, without requiring the user to type a meeting ID, password, or be invited to join beforehand. Online meetings should still have a physical address, and an optional meeting type of `TC` (Temporary Closure). This spec is still for geographic meetings; a true online-only spec is in the planning stages.
+`conference_url` is an optional URL to a specific public videoconference meeting. This should be a common videoconferencing service such as Zoom or Google Hangouts. It should launch directly into the meeting and not link to an intermediary page. Online meetings should still have a physical address, and types of `ONL` (Online Meeting) and `TC` (Temporary Closure). This spec is still for geographic meetings; a true online-only spec is in the planning stages.
+
+`conference_phone` is telephone number to dial into a specific meeting.
 
 ## Common Questions & Concerns
 
@@ -163,6 +165,7 @@ they will be ignored by the importer.
 | `BE`    | Newcomer                                       |
 | `NS`    | Non-Smoking (type is ignored by Meeting Guide) |
 | `O`     | Open                                           |
+| `ONL`   | Online Meeting                                 |
 | `POC`   | People of Color                                |
 | `POL`   | Polish                                         |
 | `POR`   | Portuguese                                     |
