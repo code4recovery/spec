@@ -178,7 +178,7 @@ they will be ignored by the importer.
 | `S`     | Spanish                                        |
 | `SP`    | Speaker                                        |
 | `ST`    | Step Meeting                                   |
-| `TC`    | Temporary Closure                              |
+| `TC`    | Location Temporarily Closed                    |
 | `TR`    | Tradition Study                                |
 | `T`     | Transgender                                    |
 | `X`     | Wheelchair Access                              |
@@ -200,7 +200,7 @@ The script may have any name, and be in any directory, but it should be a fully 
 
 Some possible next steps for this format include:
 
--   organizational metadata so that an org can indicate its preferred name and URL
--   contact information for following up on issues with feed or meeting info
--   language split out into its own fields
--   indication of which language was used for geocoding
+- organizational metadata so that an org can indicate its preferred name and URL
+- contact information for following up on issues with feed or meeting info
+- language split out into its own fields
+- indication of which language was used for geocoding
