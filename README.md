@@ -82,7 +82,11 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `region` is an optional string that represents a geographical subset of meeting locations. Usually this is a neighborhood or city. District numbers are discouraged because they require special program knowledge to be understood.
 
-`venmo` is an optional string and should be a valid Venmo handle, eg @FFG-Group. This is understood to be the address for 7th Tradition contributions to the group, and not any other entity.
+`venmo` is an optional string and should be a valid Venmo handle, eg `@FFG-Group`. This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
+
+`square` is an optional string and should be a valid Square Cash cashtag, eg `$FreedomFellowship`. This is understood to be the address for 7th Tradition contributions to the grmeetingoup, and not any other entity.
+
+`paypal` is an optional string and should be a valid paypal.me URL, eg `https://www.paypal.me/groupname`. This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
 
 `conference_url` is an optional URL to a specific public videoconference meeting. This should be a common videoconferencing service such as Zoom or Google Hangouts. It should launch directly into the meeting and not link to an intermediary page. Online meetings should still have a physical address, and types of `ONL` (Online Meeting) and `TC` (Temporary Closure). This spec is still for geographic meetings; a true online-only spec is in the planning stages.
 
@@ -127,64 +131,66 @@ The codes below should be considered 'reserved.' In your implementation, it's ok
 for "Babysitting Available." "American Sign Language" or "ASL" rather than "Sign Language." It's also ok to add types,
 they will be ignored by the importer.
 
-| Code    | Definition                                     |
-| ------- | ---------------------------------------------- |
-| `11`    | 11th Step Meditation                           |
-| `12x12` | 12 Steps & 12 Traditions                       |
-| `ABSI`  | As Bill Sees It                                |
-| `BA`    | Babysitting Available                          |
-| `B`     | Big Book                                       |
-| `H`     | Birthday                                       |
-| `BRK`   | Breakfast                                      |
-| `CAN`   | Candlelight                                    |
-| `CF`    | Child-Friendly                                 |
-| `C`     | Closed                                         |
-| `AL-AN` | Concurrent with Al-Anon                        |
-| `AL`    | Concurrent with Alateen                        |
-| `XT`    | Cross Talk Permitted                           |
-| `DR`    | Daily Reflections                              |
-| `DB`    | Digital Basket                                 |
-| `D`     | Discussion                                     |
-| `DD`    | Dual Diagnosis                                 |
-| `EN`    | English                                        |
-| `FF`    | Fragrance Free                                 |
-| `FR`    | French                                         |
-| `G`     | Gay                                            |
-| `GR`    | Grapevine                                      |
-| `NDG`   | Indigenous                                     |
-| `ITA`   | Italian                                        |
-| `JA`    | Japanese                                       |
-| `KOR`   | Korean                                         |
-| `L`     | Lesbian                                        |
-| `LIT`   | Literature                                     |
-| `LS`    | Living Sober                                   |
-| `LGBTQ` | LGBTQ                                          |
-| `MED`   | Meditation                                     |
-| `M`     | Men                                            |
-| `N`     | Native American                                |
-| `BE`    | Newcomer                                       |
-| `NS`    | Non-Smoking (type is ignored by Meeting Guide) |
-| `O`     | Open                                           |
-| `ONL`   | Online Meeting                                 |
-| `POC`   | People of Color                                |
-| `POL`   | Polish                                         |
-| `POR`   | Portuguese                                     |
-| `P`     | Professionals                                  |
-| `PUN`   | Punjabi                                        |
-| `RUS`   | Russian                                        |
-| `A`     | Secular                                        |
-| `ASL`   | Sign Language                                  |
-| `SM`    | Smoking Permitted                              |
-| `S`     | Spanish                                        |
-| `SP`    | Speaker                                        |
-| `ST`    | Step Meeting                                   |
-| `TC`    | Location Temporarily Closed                    |
-| `TR`    | Tradition Study                                |
-| `T`     | Transgender                                    |
-| `X`     | Wheelchair Access                              |
-| `XB`    | Wheelchair-Accessible Bathroom                 |
-| `W`     | Women                                          |
-| `Y`     | Young People                                   |
+| Code    | Definition                                |
+| ------- | ----------------------------------------- |
+| `11`    | 11th Step Meditation                      |
+| `12x12` | 12 Steps & 12 Traditions                  |
+| `ABSI`  | As Bill Sees It                           |
+| `BA`    | Babysitting Available                     |
+| `B`     | Big Book                                  |
+| `H`     | Birthday                                  |
+| `BRK`   | Breakfast                                 |
+| `CAN`   | Candlelight                               |
+| `CF`    | Child-Friendly                            |
+| `C`     | Closed                                    |
+| `AL-AN` | Concurrent with Al-Anon                   |
+| `AL`    | Concurrent with Alateen                   |
+| `XT`    | Cross Talk Permitted                      |
+| `DR`    | Daily Reflections                         |
+| `DB`    | Digital Basket                            |
+| `D`     | Discussion                                |
+| `DD`    | Dual Diagnosis                            |
+| `EN`    | English                                   |
+| `FF`    | Fragrance Free                            |
+| `FR`    | French                                    |
+| `G`     | Gay                                       |
+| `GR`    | Grapevine                                 |
+| `NDG`   | Indigenous                                |
+| `ITA`   | Italian                                   |
+| `JA`    | Japanese                                  |
+| `KOR`   | Korean                                    |
+| `L`     | Lesbian                                   |
+| `LIT`   | Literature                                |
+| `LS`    | Living Sober                              |
+| `LGBTQ` | LGBTQ                                     |
+| `MED`   | Meditation                                |
+| `M`     | Men                                       |
+| `N`     | Native American                           |
+| `BE`    | Newcomer                                  |
+| `NS`    | Non-Smoking (ignored by Meeting Guide)    |
+| `O`     | Open                                      |
+| `ONL`   | Online Meeting (ignored by Meeting Guide) |
+| `OUT`   | Outdoor Meeting                           |
+| `POC`   | People of Color                           |
+| `POL`   | Polish                                    |
+| `POR`   | Portuguese                                |
+| `P`     | Professionals                             |
+| `PUN`   | Punjabi                                   |
+| `RUS`   | Russian                                   |
+| `A`     | Secular                                   |
+| `SEN`   | Seniors                                   |
+| `ASL`   | Sign Language                             |
+| `SM`    | Smoking Permitted                         |
+| `S`     | Spanish                                   |
+| `SP`    | Speaker                                   |
+| `ST`    | Step Meeting                              |
+| `TC`    | Location Temporarily Closed               |
+| `TR`    | Tradition Study                           |
+| `T`     | Transgender                               |
+| `X`     | Wheelchair Access                         |
+| `XB`    | Wheelchair-Accessible Bathroom            |
+| `W`     | Women                                     |
+| `Y`     | Young People                              |
 
 ## Sharing Your Data
 
