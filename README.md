@@ -82,11 +82,11 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `region` is an optional string that represents a geographical subset of meeting locations. Usually this is a neighborhood or city. District numbers are discouraged because they require special program knowledge to be understood.
 
-`venmo` is an optional string and should be a valid Venmo handle, eg `@FFG-Group`. This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
+`venmo` is an optional string and should be a valid Venmo handle, eg `@AAGroupName`. This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
 
-`square` is an optional string and should be a valid Square Cash cashtag, eg `$FreedomFellowship`. This is understood to be the address for 7th Tradition contributions to the grmeetingoup, and not any other entity.
+`square` is an optional string and should be a valid Square Cash cashtag, eg `$AAGroupName`. This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
 
-`paypal` is an optional string and should be a valid paypal.me URL, eg `https://www.paypal.me/groupname`. This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
+`paypal` is an optional string and should be a valid PayPal username, eg `AAGroupName`. This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
 
 `conference_url` is an optional URL to a specific public videoconference meeting. This should be a common videoconferencing service such as Zoom or Google Hangouts. It should launch directly into the meeting and not link to an intermediary page. Online meetings should still have a physical address, and types of `ONL` (Online Meeting) and `TC` (Temporary Closure). This spec is still for geographic meetings; a true online-only spec is in the planning stages.
 
