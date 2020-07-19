@@ -1,0 +1,95 @@
+{
+    "version": 2.0,
+    "entity": "SEPIA",
+    "bounds": [
+        [75.1234, 45.1234],
+        [76.4321, 44.4321],
+        [77.4321, 43.4321],
+        [78.4321, 42.4321],
+        [79.4321, 41.4321]
+    ],
+    "news": [
+        {
+            "subject": "29th Annual Round-Up",
+            "body": "Come to round up this year!",
+            "posted": "2020-05-31 14:32:23"
+        },
+        {
+            "subject": "80th Anniversary of AA in Philly Meeting",
+            "body": "Join us on February 20th!",
+            "posted": "2020-05-08 14:32:23"
+        }
+    ],
+    "online-only-meetings": [
+        {
+            "name": "Cyber Drunks",
+            "slug": "cyber-drunks",
+            "day": 0,
+            "time": "18:00",
+            "end_time": "19:30",
+            "group": "The Serenity Group",
+            "notes": "Round Robin.",
+            "updated": "2014-05-31 14:32:23",
+            "url": "https://intergroup.org/meetings/sunday-serenity",
+            "types": [
+                "LGBTQ"
+            ],
+            "conference_url": "https://zoom.us/j/12345689/?PWD=blahblah",
+            "conference_phone": "+12223334444,,123456789#,,123456#"
+        },
+    ],
+    "regions": [
+        {
+            "name": "Philadelphia County",
+            "regions": [
+                "name": "Center City",
+                "meetings" [
+                    {
+                        "name": "Sunday Serenity",
+                        "slug": "sunday-serenity-14",
+                        "day": 0,
+                        "time": "18:00",
+                        "end_time": "19:30",
+                        "location": "Alano Club",
+                        "group": "The Serenity Group",
+                        "notes": "Ring buzzer. Meeting is on the 2nd floor.",
+                        "updated": "2014-05-31 14:32:23",
+                        "url": "https://intergroup.org/meetings/sunday-serenity",
+                        "types": [
+                            "O",
+                            "T",
+                            "LGBTQ"
+                        ],
+                        "address": "123 Main Street",
+                        "city": "Anytown",
+                        "state": "CA",
+                        "postal_code": "98765",
+                        "country": "US"
+                    },
+                    {
+                        "name": "Monday Blues",
+                        "slug": "sunday-serenity-14",
+                        "day": 1,
+                        "time": "18:00",
+                        "end_time": "19:30",
+                        "location": "Alano Club",
+                        "group": "The Serenity Group",
+                        "notes": "Ring buzzer. Meeting is on the 2nd floor.",
+                        "updated": "2014-05-31 14:32:23",
+                        "url": "https://intergroup.org/meetings/sunday-serenity",
+                        "types": [
+                            "O",
+                            "T",
+                            "LGBTQ"
+                        ],
+                        "address": "123 Main Street",
+                        "city": "Anytown",
+                        "state": "CA",
+                        "postal_code": "98765",
+                        "country": "US"
+                    },
+                ]
+            ]
+        }
+    ]
+}
