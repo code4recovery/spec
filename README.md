@@ -60,6 +60,8 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `end_time` is an optional five-character string in the `HH:MM` 24-hour time format.
 
+`timezone` is an optional string in [tz database format](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) e.g. `America/New_York`.
+
 `location` is an optional string and should be a recognizable building or landmark name.
 
 `group` is an optional string.
