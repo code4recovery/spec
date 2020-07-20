@@ -1,6 +1,6 @@
 # Meeting Guide API
 
-The goal of the Meeting Guide API is help sync information about AA meetings. It was developed for the [Meeting Guide app](https://meetingguide.org/), but it is non-proprietary and other systems are encouraged to make use of it.
+The goal of the Meeting Guide API is help sync information about AA meetings. It was developed for the [Meeting Guide app](https://www.aa.org/pages/en_US/meeting-guide), but it is non-proprietary and other systems are encouraged to make use of it.
 
 If you have feedback, please put an issue on this repository.
 
@@ -8,13 +8,11 @@ If you have feedback, please put an issue on this repository.
 
 To implement the API on your server, create a file that can take information from your database and format it in the correct specification (see below).
 
-The file [meeting-guide-json.php](meeting-guide-json.php) contains the simplest version of the JSON feed for PHP. It will require a little customization to work properly.
-
 For security, your script should not accept any parameters. It should be read-only.
 
-It's critically important that your data not break anyone's anonymity. No last names should be used in meeting notes, and no one's face should be pictured in meeting images.
+Your data must not break anyone's anonymity. No last names should be used in meeting notes, and no one's face should be pictured in meeting images.
 
-Test your feed with the [Meeting Guide JSON Feed Validator](https://meetingguide.org/validate). Once it's ready, or if you have questions, use the [Meeting Guide contact form](https://meetingguide.org/contact).
+Test your feed with the [Meeting Guide JSON Feed Validator](https://meetingguide.org/validate). Once it's ready, or if you have questions, use the [Meeting Guide contact form](https://meetingguide.aa.org/contact).
 
 If you would like to share your script, we'll include a copy in this repository so that it might help future users.
 
@@ -90,7 +88,7 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `paypal` is an optional string and should be a valid PayPal username, eg `AAGroupName`. This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
 
-`conference_url` is an optional URL to a specific public videoconference meeting. This should be a common videoconferencing service such as Zoom or Google Hangouts. It should launch directly into the meeting and not link to an intermediary page. Online meetings should still have a physical address, and types of `ONL` (Online Meeting) and `TC` (Temporary Closure). This spec is still for geographic meetings; a true online-only spec is in the planning stages.
+`conference_url` is an optional URL to a specific public videoconference meeting. This should be a common videoconferencing service such as Zoom or Google Hangouts. It should launch directly into the meeting and not link to an intermediary page. Online meetings should still have a physical address, and types of `ONL` (Online Meeting) and `TC` (Temporary Closure). This spec is still for geographic meetings; options for online meetings are still in the planning stages.
 
 `conference_phone` is telephone number to dial into a specific meeting.
 
