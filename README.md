@@ -159,6 +159,7 @@ they will be ignored by the importer.
 | `FR`    | French                                    |
 | `G`     | Gay                                       |
 | `GR`    | Grapevine                                 |
+| `HE`    | Hebrew                                    |
 | `NDG`   | Indigenous                                |
 | `ITA`   | Italian                                   |
 | `JA`    | Japanese                                  |
@@ -167,13 +168,14 @@ they will be ignored by the importer.
 | `LIT`   | Literature                                |
 | `LS`    | Living Sober                              |
 | `LGBTQ` | LGBTQ                                     |
+| `TC`    | Location Temporarily Closed               |
 | `MED`   | Meditation                                |
 | `M`     | Men                                       |
 | `N`     | Native American                           |
 | `BE`    | Newcomer                                  |
 | `NS`    | Non-Smoking (ignored by Meeting Guide)    |
-| `O`     | Open                                      |
 | `ONL`   | Online Meeting (ignored by Meeting Guide) |
+| `O`     | Open                                      |
 | `OUT`   | Outdoor Meeting                           |
 | `POC`   | People of Color                           |
 | `POL`   | Polish                                    |
@@ -188,7 +190,6 @@ they will be ignored by the importer.
 | `S`     | Spanish                                   |
 | `SP`    | Speaker                                   |
 | `ST`    | Step Meeting                              |
-| `TC`    | Location Temporarily Closed               |
 | `TR`    | Tradition Study                           |
 | `T`     | Transgender                               |
 | `X`     | Wheelchair Access                         |
