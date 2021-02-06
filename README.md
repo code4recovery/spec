@@ -30,6 +30,7 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 		"end_time": "19:30",
 		"location": "Alano Club",
 		"group": "The Serenity Group",
+		"status": "in-person-open",
 		"notes": "Ring buzzer. Meeting is on the 2nd floor.",
 		"updated": "2014-05-31 14:32:23",
 		"url": "https://intergroup.org/meetings/sunday-serenity",
@@ -63,6 +64,14 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 `location` is an optional string and should be a recognizable building or landmark name.
 
 `group` is an optional string.
+
+`status` can be one of five strings, which describes the current meeting mode and status:
+
+    * `in-person` is for meetings that currently occur in person only.
+    * `online` is for meetings that currently occur online only.
+    * `hybrid` is for meetings that currently occur both in person and online.
+    * `temp-closed` is for meetings that are not currently occurring: temporarily closed.
+    * `perm-closed` is for meetings that are permanently closed, and will not occur again.
 
 `notes` is an optional long text field. Line breaks are ok, but HTML will be stripped.
 
