@@ -30,7 +30,7 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 		"end_time": "19:30",
 		"location": "Alano Club",
 		"group": "The Serenity Group",
-		"status": "in-person-open",
+		"status": "in-person",
 		"notes": "Ring buzzer. Meeting is on the 2nd floor.",
 		"updated": "2014-05-31 14:32:23",
 		"url": "https://intergroup.org/meetings/sunday-serenity",
