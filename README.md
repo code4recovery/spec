@@ -96,6 +96,8 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `conference_phone_notes` is an optional string with metadata about the `conference_phone` (eg a numeric meeting password or other user instructions). This field is not yet supported by the Meeting Guide app.
 
+`feedback_url` is an optional string that [TSML-UI](https://github.com/code4recovery/tsml-ui) uses for meeting feedback links. These could be local links, eg `/feedback?meeting=meeting-slug-1`, remote links, eg `https://typeform.com/to/23904203?meeting=meeting-slug-1`, or email links, eg `mailto:webservant@domain.org?subject=meeting-slug-1`.
+
 ## Common Questions & Concerns
 
 #### We use different meeting codes!
