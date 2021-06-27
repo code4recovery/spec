@@ -60,33 +60,9 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `timezone` is an optional string in [tz database format](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) e.g. `America/New_York`.
 
-`location` is an optional string and should be a recognizable building or landmark name.
-
-`group` is an optional string.
-
-`notes` is an optional long text field. Line breaks are ok, but HTML will be stripped.
-
-`location_notes` is an optional long text field with notes applying to all meetings at the location.
-
-`updated` is an optional UTC timestamp in the format `YYYY-MM-DD HH:MM:SS`.
-
-`url` is optional and should point to the meeting's listing on the area website.
-
-`image` is an optional url that should point to an image representing the location. We recommend an image of the building's facade. Ideally this is a JPG image 1080px wide by 540px tall.
-
 `types` is an optional array of standardized meeting types. See the types section below.
 
-`formatted_address` either this or the address / city / state / postal_code / country combination are required.
-
-`address`, `city`, `state`, `postal_code`, and `country` are all optional strings, but together they must form an address that Google can identify. `address` and `city` are suggested. Take special care to strip extra information from the address, such as 'upstairs' or 'around back,' since this is the primary cause of geocoding problems. (That information belongs in the `notes` field.) Intersections are usually ok, but approximate addresses, such as only a city or route, do not have enough precision to be listed in the app.
-
-`region` is an optional string that represents a geographical subset of meeting locations. Usually this is a neighborhood or city. District numbers are discouraged because they require special program knowledge to be understood.
-
-`venmo` is an optional string and should be a valid Venmo handle, eg `@AAGroupName`. This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
-
-`square` is an optional string and should be a valid Square Cash App cashtag, eg `$AAGroupName`. This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
-
-`paypal` is an optional string and should be a valid PayPal username, eg `AAGroupName`. This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
+`notes` is an optional long text field to hold additional details about the meeting. Line breaks are ok, but HTML will be stripped.
 
 `conference_url` is an optional URL to a specific public videoconference meeting. This should be a common videoconferencing service such as Zoom or Google Hangouts. It should launch directly into the meeting and not link to an intermediary page. Online meetings should still have a physical address, and types of `ONL` (Online Meeting) and `TC` (Temporary Closure). This spec is still for geographic meetings; options for online meetings are still in the planning stages.
 
@@ -96,7 +72,35 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `conference_phone_notes` is an optional string with metadata about the `conference_phone` (eg a numeric meeting password or other user instructions). This field is not yet supported by the Meeting Guide app.
 
-`feedback_url` is an optional string that [TSML-UI](https://github.com/code4recovery/tsml-ui) uses for meeting feedback links. These could be local links, eg `/feedback?meeting=meeting-slug-1`, remote links, eg `https://typeform.com/to/23904203?meeting=meeting-slug-1`, or email links, eg `mailto:webservant@domain.org?subject=meeting-slug-1`.
+`location` is an optional string and should be a recognizable building or landmark name.
+
+`location_notes` is an optional long text field with notes applying to all meetings at the location.
+
+`formatted_address` either this or the address / city / state / postal_code / country combination are required.
+
+`address`, `city`, `state`, `postal_code`, and `country` are all optional strings, but together they must form an address that Google can identify. `address` and `city` are suggested. Take special care to strip extra information from the address, such as 'upstairs' or 'around back,' since this is the primary cause of geocoding problems. (That information belongs in the `notes` field.) Intersections are usually ok, but approximate addresses, such as only a city or route, do not have enough precision to be listed in the app.
+
+`region` is an optional string that represents a geographical subset of meeting locations. Usually this is a neighborhood or city. District numbers are discouraged because they require special program knowledge to be understood.
+
+`updated` is an optional UTC timestamp in the format `YYYY-MM-DD HH:MM:SS` and indicates when the listing was last updated.
+
+`image` is an optional url that should point to an image representing the location. We recommend an image of the building's facade. Ideally this is a JPG image 1080px wide by 540px tall.
+
+`group` is an optional string representing the name of the group providing the meeting. Groups can hold meetings in multiple locations.
+
+`group_notes` is an optional long text field. Line breaks are ok, but HTML will be stripped.
+
+`venmo` is an optional string and should be a valid Venmo handle, eg `@AAGroupName`. This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
+
+`square` is an optional string and should be a valid Square Cash App cashtag, eg `$AAGroupName`. This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
+
+`paypal` is an optional string and should be a valid PayPal username, eg `AAGroupName`. This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
+
+`url` is optional and should point to the meeting's listing on the area website.
+
+`edit_url` is an optional string URL that trusted servants can use to edit the specific meeting's listing.
+
+`feedback_url` is an optional string URL that can be used to provide feedback about the meeting. These could be local links, eg `/feedback?meeting=meeting-slug-1`, remote links, eg `https://typeform.com/to/23904203?meeting=meeting-slug-1`, or email links, eg `mailto:webservant@domain.org?subject=meeting-slug-1`.
 
 ## Common Questions & Concerns
 
@@ -123,10 +127,6 @@ We are trying to make the data portable across a range of devices, some of which
 #### What about business meetings or other monthly meetings?
 
 This API is for weekly recovery meetings.
-
-#### Want to build your own JavaScript meeting finder from
-
-There are lots of ways to do it, but one way is using jQuery ([jQuery demo](jquery-demo/demo.html)).
 
 ## Meeting Types
 
@@ -204,7 +204,7 @@ they will be ignored by the importer.
 If you choose, you may make your feed discoverable by linking to it (like RSS) in your site's `<HEAD>`.
 
 ```HTML
-<link rel="alternate" type="application/json" title="Meetings Feed" href="https://example.com/etc/meetings-feed.php">
+<link rel="alternate" type="application/json" title="Meetings Feed" href="https://example.com/etc/meetings-feed">
 ```
 
 The script may have any name, and be in any directory, but it should be a fully qualified URL, and the `title="Meetings Feed"` attribute is required.
