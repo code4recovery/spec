@@ -80,6 +80,10 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `address`, `city`, `state`, `postal_code`, and `country` are all optional strings, but together they must form an address that Google can identify. `address` and `city` are suggested. Take special care to strip extra information from the address, such as 'upstairs' or 'around back,' since this is the primary cause of geocoding problems. (That information belongs in the `notes` field.) Intersections are usually ok, but approximate addresses, such as only a city or route, do not have enough precision to be listed in the app.
 
+`latitude` and `longitude` are optional numeric values indicating the geoposition of the meeting. Only five decimal places of precision are necessary here (1.11m). These values are ignored by the Meeting Guide importer.
+
+`approximate` is an optional boolean value, that, when present, indicates whether the address is an approximate location (`true`) or a specific point on a map such as a street address (`false`). This is ignored by the Meeting Guide importer.
+
 `region` is an optional string that represents a geographical subset of meeting locations. Usually this is a neighborhood or city. District numbers are discouraged because they require special program knowledge to be understood.
 
 `updated` is an optional UTC timestamp in the format `YYYY-MM-DD HH:MM:SS` and indicates when the listing was last updated.
@@ -104,27 +108,27 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 ## Common Questions & Concerns
 
-#### We use different meeting codes!
+### We use different meeting codes!
 
 That's ok. App users don't actually see the codes, just the types they translate to.
 
-#### Our meeting type isn't listed!
+### Our meeting type isn't listed!
 
 Types have to be consistent across the app to make a good user experience. It's common that a user might see meeting results from several areas at a time (this happens in small areas, and near borders). The set of meeting types we use is a mutually-agreed-upon set of names across 70+ areas. If you have a request to edit the list, we will bring it up at our steering committee meeting.
 
-#### Why is slug necessary?
+### Why is slug necessary?
 
 Slug is a required unique field because there is an app feature where users may 'favorite' a meeting, and in order for that to persist across sessions we must attach it to a unique field. It might seem intuitive that meeting location + time would be a unique combination, but in practice we see cases where there are in fact simultaneous meetings at the same location.
 
-#### Why are day and time required?
+### Why are day and time required?
 
 It's perfectly fine for meetings to be 'by appointment' and this often happens in places where there are not many meetings. The app, however, needs this information to present useful information to the user.
 
-#### Why can't we have HTML in meeting notes?
+### Why can't we have HTML in meeting notes?
 
 We are trying to make the data portable across a range of devices, some of which might not display HTML.
 
-#### What about business meetings or other monthly meetings?
+### What about business meetings or other monthly meetings?
 
 This API is for weekly recovery meetings.
 
