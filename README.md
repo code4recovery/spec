@@ -42,7 +42,8 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 		"city": "Anytown",
 		"state": "CA",
 		"postal_code": "98765",
-		"country": "US"
+		"country": "US",
+		"approximate": "no"
 	},
 	...
 ]
@@ -82,7 +83,7 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `latitude` and `longitude` are optional numeric values indicating the geoposition of the meeting. Only five decimal places of precision are necessary here (1.11m). These values are ignored by the Meeting Guide importer.
 
-`address_approximate` is an optional boolean value, that, when present, indicates whether the address is an approximate location (`true`) or a specific point on a map such as a street address (`false`). This is ignored by the Meeting Guide importer.
+`approximate` is an optional stringified boolean value, that, when present, indicates whether the address is an approximate location (`"yes"`) or a specific point on a map such as a street address (`"no"`). This is ignored by the Meeting Guide importer.
 
 `region` is an optional string that represents a geographical subset of meeting locations. Usually this is a neighborhood or city. District numbers are discouraged because they require special program knowledge to be understood.
 
