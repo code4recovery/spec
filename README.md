@@ -151,6 +151,7 @@ they will be ignored by the importer.
 | `BA`    | Babysitting Available                           |
 | `B`     | Big Book                                        |
 | `H`     | Birthday                                        |
+| `BI`    | Bisexual                                        |
 | `BRK`   | Breakfast                                       |
 | `CAN`   | Candlelight                                     |
 | `CF`    | Child-Friendly                                  |
