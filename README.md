@@ -18,7 +18,7 @@ If you would like to share your script, we'll include a copy in this repository 
 
 ## Specification
 
-The JSON file is expected to contain a simple array of meetings. [Here is an example](https://aasanjose.org/wp-admin/admin-ajax.php?action=meetings) of a live JSON feed.
+The JSON file is expected to contain a simple array of meetings. [Here is an example](https://sheets.code4recovery.org/storage/aasanjose.json) of a live JSON feed.
 
 ```JSON
 [
