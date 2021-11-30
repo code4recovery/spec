@@ -67,11 +67,11 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `conference_url` is an optional URL to a specific public videoconference meeting. This should be a common videoconferencing service such as Zoom or Google Hangouts. It should launch directly into the meeting and not link to an intermediary page. Online meetings should still have a physical address, and types of `ONL` (Online Meeting) and `TC` (Temporary Closure). This spec is still for geographic meetings; options for online meetings are still in the planning stages.
 
-`conference_url_notes` is an optional string which contains metadata about the `conference_url` (eg meeting password in plain text for those groups unwilling to publish a one-tap URL). This field is not yet supported by the Meeting Guide app.
+`conference_url_notes` is an optional string which contains metadata about the `conference_url` (eg meeting password in plain text for those groups unwilling to publish a one-tap URL).
 
 `conference_phone` is telephone number to dial into a specific meeting. Should be numeric, except a `+` symbol may be used for international dialers, and `,`, `*`, and `#` can be used to form one-tap phone links.
 
-`conference_phone_notes` is an optional string with metadata about the `conference_phone` (eg a numeric meeting password or other user instructions). This field is not yet supported by the Meeting Guide app.
+`conference_phone_notes` is an optional string with metadata about the `conference_phone` (eg a numeric meeting password or other user instructions).
 
 `location` is an optional string and should be a recognizable building or landmark name.
 
