@@ -65,7 +65,7 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `notes` is an optional long text field to hold additional details about the meeting. Line breaks are ok, but HTML will be stripped.
 
-`conference_url` is an optional URL to a specific public videoconference meeting. This should be a common videoconferencing service such as Zoom or Google Hangouts. It should launch directly into the meeting and not link to an intermediary page. Online meetings should still have a physical address, and types of `ONL` (Online Meeting) and `TC` (Temporary Closure). This spec is still for geographic meetings; options for online meetings are still in the planning stages.
+`conference_url` is an optional URL to a specific public videoconference meeting. This should be a common videoconferencing service such as Zoom or Google Hangouts. It should launch directly into the meeting and not link to an intermediary page.
 
 `conference_url_notes` is an optional string which contains metadata about the `conference_url` (eg meeting password in plain text for those groups unwilling to publish a one-tap URL).
 
