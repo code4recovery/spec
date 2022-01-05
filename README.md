@@ -12,7 +12,7 @@ For security, your script should not accept any parameters. It should be read-on
 
 Your data must not break anyone's anonymity. No last names should be used in meeting notes, and no one's face should be pictured in meeting images.
 
-Test your feed with the [Meeting Guide JSON Feed Validator](https://meetingguide.org/validate). Once it's ready, or if you have questions, use the [Meeting Guide contact form](https://meetingguide.aa.org/contact).
+You may test your feed with the [Meeting Guide JSON Feed Validator](https://meetingguide.org/validate). Once it's ready, or if you have questions, see [How to Connect to Meeting Guide](https://meetingguide.helpdocs.io/article/g0ykqkdq0u-connecting-to-meeting-guide-step-by-step).
 
 If you would like to share your script, we'll include a copy in this repository so that it might help future users.
 
