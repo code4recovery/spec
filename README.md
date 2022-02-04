@@ -18,7 +18,7 @@ If you would like to share your script, we'll include a copy in this repository 
 
 ## Specification
 
-The JSON file is expected to contain a simple array of meetings. [Here is an example](https://sheets.code4recovery.org/storage/aasanjose.json) of a live JSON feed.
+The JSON file is expected to contain a simple array of meetings. [Here is an example](https://sheets.code4recovery.org/storage/12Ga8uwMG4WJ8pZ_SEU7vNETp_aQZ-2yNVsYDFqIwHyE.json) of a live JSON feed.
 
 ```JSON
 [
@@ -142,68 +142,66 @@ The codes below should be considered 'reserved.' In your implementation, it's ok
 for "Babysitting Available." "American Sign Language" or "ASL" rather than "Sign Language." It's also ok to add types,
 they will be ignored by the importer.
 
-| Code    | Definition                                      |
-| ------- | ----------------------------------------------- |
-| `11`    | 11th Step Meditation                            |
-| `12x12` | 12 Steps & 12 Traditions                        |
-| `ASL`   | American Sign Language                          |
-| `ABSI`  | As Bill Sees It                                 |
-| `BA`    | Babysitting Available                           |
-| `B`     | Big Book                                        |
-| `H`     | Birthday                                        |
-| `BI`    | Bisexual                                        |
-| `BRK`   | Breakfast                                       |
-| `CAN`   | Candlelight                                     |
-| `CF`    | Child-Friendly                                  |
-| `C`     | Closed                                          |
-| `AL-AN` | Concurrent with Al-Anon                         |
-| `AL`    | Concurrent with Alateen                         |
-| `XT`    | Cross Talk Permitted                            |
-| `DR`    | Daily Reflections                               |
-| `DB`    | Digital Basket                                  |
-| `D`     | Discussion                                      |
-| `DD`    | Dual Diagnosis                                  |
-| `EN`    | English                                         |
-| `FF`    | Fragrance Free                                  |
-| `FR`    | French                                          |
-| `G`     | Gay                                             |
-| `GR`    | Grapevine                                       |
-| `HE`    | Hebrew                                          |
-| `NDG`   | Indigenous                                      |
-| `ITA`   | Italian                                         |
-| `JA`    | Japanese                                        |
-| `KOR`   | Korean                                          |
-| `L`     | Lesbian                                         |
-| `LIT`   | Literature                                      |
-| `LS`    | Living Sober                                    |
-| `LGBTQ` | LGBTQ                                           |
-| `TC`    | Location Temporarily Closed                     |
-| `MED`   | Meditation                                      |
-| `M`     | Men                                             |
-| `N`     | Native American                                 |
-| `BE`    | Newcomer                                        |
-| `NS`    | Non-Smoking (ignored by Meeting Guide importer) |
-| `ONL`   | Online (ignored by Meeting Guide importer)      |
-| `O`     | Open                                            |
-| `OUT`   | Outdoor                                         |
-| `POC`   | People of Color                                 |
-| `POL`   | Polish                                          |
-| `POR`   | Portuguese                                      |
-| `P`     | Professionals                                   |
-| `PUN`   | Punjabi                                         |
-| `RUS`   | Russian                                         |
-| `A`     | Secular                                         |
-| `SEN`   | Seniors                                         |
-| `SM`    | Smoking Permitted                               |
-| `S`     | Spanish                                         |
-| `SP`    | Speaker                                         |
-| `ST`    | Step Study                                      |
-| `TR`    | Tradition Study                                 |
-| `T`     | Transgender                                     |
-| `X`     | Wheelchair Access                               |
-| `XB`    | Wheelchair-Accessible Bathroom                  |
-| `W`     | Women                                           |
-| `Y`     | Young People                                    |
+| Code    | English                        | Español                              | Français                                     |
+| ------- | ------------------------------ | ------------------------------------ | -------------------------------------------- |
+| `11`    | 11th Step Meditation           | Meditación del Paso 11               | Méditation sur la 11e Étape                  |
+| `12x12` | 12 Steps & 12 Traditions       | 12 Pasos y 12 Tradiciones            | 12 Étapes et 12 Traditions                   |
+| `A`     | Secular                        | Secular                              | Séculier                                     |
+| `ABSI`  | As Bill Sees It                | Como lo ve Bill                      | Réflexions de Bill                           |
+| `AL`    | Concurrent with Alateen        | Concurrente con Alateen              | En même temps qu’Alateen                     |
+| `AL-AN` | Concurrent with Al-Anon        | Concurrente con Al-Anon              | En même temps qu’Al-Anon                     |
+| `ASL`   | American Sign Language         | Lenguaje por señas                   | Langage des Signes                           |
+| `B`     | Big Book                       | Libro Grande                         | Gros Livre                                   |
+| `BA`    | Babysitting Available          | Guardería disponible                 | Garderie d’enfants disponible                |
+| `BE`    | Newcomer                       | Principiantes                        | Nouveau/nouvelle                             |
+| `BI`    | Bisexual                       | Bisexual                             | Bisexuel                                     |
+| `BRK`   | Breakfast                      | Desayuno                             | Petit déjeuner                               |
+| `C`     | Closed                         | Cerrada                              | Fermé                                        |
+| `CAN`   | Candlelight                    | Luz de una vela                      | À la chandelle                               |
+| `CF`    | Child-Friendly                 | Niño amigable                        | Enfants acceptés                             |
+| `D`     | Discussion                     | Discusión                            | Discussion                                   |
+| `DB`    | Digital Basket                 | Canasta digital                      | Panier numérique                             |
+| `DD`    | Dual Diagnosis                 | Diagnóstico dual                     | Double diagnostic                            |
+| `DR`    | Daily Reflections              | Reflexiones Diarias                  | Réflexions quotidiennes                      |
+| `EN`    | English                        | Inglés                               | Anglais                                      |
+| `FF`    | Fragrance Free                 | Sin fragancia                        | Sans parfum                                  |
+| `FR`    | French                         | Francés                              | Français                                     |
+| `G`     | Gay                            | Gay                                  | Gai                                          |
+| `GR`    | Grapevine                      | La Viña                              | Grapevine                                    |
+| `H`     | Birthday                       | Cumpleaños                           | Anniversaire                                 |
+| `HE`    | Hebrew                         | Hebreo                               | Hébreu                                       |
+| `ITA`   | Italian                        | Italiano                             | Italien                                      |
+| `JA`    | Japanese                       | Japonés                              | Japonais                                     |
+| `KOR`   | Korean                         | Coreano                              | Coréen                                       |
+| `L`     | Lesbian                        | Lesbianas                            | Lesbienne                                    |
+| `LGBTQ` | LGBTQ                          | LGBTQ                                | LGBTQ                                        |
+| `LIT`   | Literature                     | Literatura                           | Publications                                 |
+| `LS`    | Living Sober                   | Viviendo Sobrio                      | Vivre… Sans alcool                           |
+| `M`     | Men                            | Hombres                              | Hommes                                       |
+| `MED`   | Meditation                     | Meditación                           | Méditation                                   |
+| `N`     | Native American                | Nativo Americano                     | Autochtone                                   |
+| `NDG`   | Indigenous                     | Indígena                             | Indigène                                     |
+| `O`     | Open                           | Abierta                              | Ouvert(e)                                    |
+| `OUT`   | Outdoor                        | Al aire libre                        | En plein air                                 |
+| `P`     | Professionals                  | Profesionales                        | Professionnels                               |
+| `POC`   | People of Color                | Gente de color                       | Gens de couleur                              |
+| `POL`   | Polish                         | Polaco                               | Polonais                                     |
+| `POR`   | Portuguese                     | Portugués                            | Portugais                                    |
+| `PUN`   | Punjabi                        | Punjabi                              | Pendjabi                                     |
+| `RUS`   | Russian                        | Ruso                                 | Russe                                        |
+| `S`     | Spanish                        | Español                              | Espagnol                                     |
+| `SEN`   | Seniors                        | Personas mayores                     | Séniors                                      |
+| `SM`    | Smoking Permitted              | Se permite fumar                     | Permis de fumer                              |
+| `SP`    | Speaker                        | Orador                               | Conférencier                                 |
+| `ST`    | Step Study                     | Estudio de pasos                     | Sur les Étapes                               |
+| `T`     | Transgender                    | Transgénero                          | Transgenre                                   |
+| `TC`    | Location Temporarily Closed    | Ubicación temporalmente cerrada      | Emplacement temporairement fermé             |
+| `TR`    | Tradition Study                | Estudio de tradicion                 | Étude des Traditions                         |
+| `W`     | Women                          | Mujer                                | Femmes                                       |
+| `X`     | Wheelchair Access              | Acceso en silla de ruedas            | Accès aux fauteuils roulants                 |
+| `XB`    | Wheelchair-Accessible Bathroom | Baño accesible para sillas de ruedas | Toilettes accessibles aux fauteuils roulants |
+| `XT`    | Cross Talk Permitted           | Se permite opinar                    | Conversation croisée permise                 |
+| `Y`     | Young People                   | Gente joven                          | Jeunes                                       |
 
 ## Sharing Your Data
 
