@@ -63,7 +63,7 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `types` is an optional array of standardized meeting types. See the [types section](#meeting-types) below.
 
-`languages` is an required array of one or more standardized interface languages. See the [languages section](#languages) below. If language is not specified, the Meeting Guide importer may add a default language to your meeting.
+`languages` is a required array of one or more standardized interface languages. See the [languages section](#languages) below. If a language is not specified, the Meeting Guide importer may add a default language to your meeting.
 
 `notes` is an optional long text field to hold additional details about the meeting. Line breaks are ok, but HTML will be stripped.
 
