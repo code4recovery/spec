@@ -61,7 +61,9 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `timezone` is an optional string in [tz database format](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) e.g. `America/New_York`.
 
-`types` is an optional array of standardized meeting types. See the types section below.
+`types` is an optional array of standardized meeting types. See the [types section](#meeting-types) below.
+
+`languages` is an required array of one or more standardized interface languages. See the [languages section](#languages) below. If language is not specified, the Meeting Guide importer may add a default language to your meeting.
 
 `notes` is an optional long text field to hold additional details about the meeting. Line breaks are ok, but HTML will be stripped.
 
@@ -142,6 +144,8 @@ The codes below should be considered 'reserved.' In your implementation, it's ok
 for "Babysitting Available." "American Sign Language" or "ASL" rather than "Sign Language." It's also ok to add types,
 they will be ignored by the importer.
 
+**Update** As of Oct 20, 2022, verbal/interface languages are now deprecated in `types`. They will continue to be supported for a period of time, but will eventually need to move to the new `languages` key/column.
+
 | Code    | English                        | Español                              | Français                                     |
 | ------- | ------------------------------ | ------------------------------------ | -------------------------------------------- |
 | `11`    | 11th Step Meditation           | Meditación del Paso 11               | Méditation sur la 11e Étape                  |
@@ -163,16 +167,10 @@ they will be ignored by the importer.
 | `DB`    | Digital Basket                 | Canasta digital                      | Panier numérique                             |
 | `DD`    | Dual Diagnosis                 | Diagnóstico dual                     | Double diagnostic                            |
 | `DR`    | Daily Reflections              | Reflexiones Diarias                  | Réflexions quotidiennes                      |
-| `EN`    | English                        | Inglés                               | Anglais                                      |
 | `FF`    | Fragrance Free                 | Sin fragancia                        | Sans parfum                                  |
-| `FR`    | French                         | Francés                              | Français                                     |
 | `G`     | Gay                            | Gay                                  | Gai                                          |
 | `GR`    | Grapevine                      | La Viña                              | Grapevine                                    |
 | `H`     | Birthday                       | Cumpleaños                           | Anniversaire                                 |
-| `HE`    | Hebrew                         | Hebreo                               | Hébreu                                       |
-| `ITA`   | Italian                        | Italiano                             | Italien                                      |
-| `JA`    | Japanese                       | Japonés                              | Japonais                                     |
-| `KOR`   | Korean                         | Coreano                              | Coréen                                       |
 | `L`     | Lesbian                        | Lesbianas                            | Lesbienne                                    |
 | `LGBTQ` | LGBTQ                          | LGBTQ                                | LGBTQ                                        |
 | `LIT`   | Literature                     | Literatura                           | Publications                                 |
@@ -185,11 +183,6 @@ they will be ignored by the importer.
 | `OUT`   | Outdoor                        | Al aire libre                        | En plein air                                 |
 | `P`     | Professionals                  | Profesionales                        | Professionnels                               |
 | `POC`   | People of Color                | Gente de color                       | Gens de couleur                              |
-| `POL`   | Polish                         | Polaco                               | Polonais                                     |
-| `POR`   | Portuguese                     | Portugués                            | Portugais                                    |
-| `PUN`   | Punjabi                        | Punjabi                              | Pendjabi                                     |
-| `RUS`   | Russian                        | Ruso                                 | Russe                                        |
-| `S`     | Spanish                        | Español                              | Espagnol                                     |
 | `SEN`   | Seniors                        | Personas mayores                     | Séniors                                      |
 | `SM`    | Smoking Permitted              | Se permite fumar                     | Permis de fumer                              |
 | `SP`    | Speaker                        | Orador                               | Conférencier                                 |
@@ -202,6 +195,73 @@ they will be ignored by the importer.
 | `XB`    | Wheelchair-Accessible Bathroom | Baño accesible para sillas de ruedas | Toilettes accessibles aux fauteuils roulants |
 | `XT`    | Cross Talk Permitted           | Se permite opinar                    | Conversation croisée permise                 |
 | `Y`     | Young People                   | Gente joven                          | Jeunes                                       |
+
+### Deprecated types
+
+| Code  | English    | Español   | Français  |
+| ----- | ---------- | --------- | --------- |
+| `EN`  | English    | Inglés    | Anglais   |
+| `FR`  | French     | Francés   | Français  |
+| `HE`  | Hebrew     | Hebreo    | Hébreu    |
+| `ITA` | Italian    | Italiano  | Italien   |
+| `JA`  | Japanese   | Japonés   | Japonais  |
+| `KOR` | Korean     | Coreano   | Coréen    |
+| `POL` | Polish     | Polaco    | Polonais  |
+| `POR` | Portuguese | Portugués | Portugais |
+| `PUN` | Punjabi    | Punjabi   | Pendjabi  |
+| `RUS` | Russian    | Ruso      | Russe     |
+| `S`   | Spanish    | Español   | Espagnol  |
+
+## Languages
+
+These come from the list of [ISO-639-1 list of language codes](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes). If you need a new language added, please [create an issue](https://github.com/code4recovery/spec/issues).
+
+| Code | English    |
+| ---- | ---------- |
+| `am` | Amharic    |
+| `en` | English    |
+| `fa` | Farsi      |
+| `fr` | French     |
+| `de` | German     |
+| `el` | Greek      |
+| `hi` | Hindi      |
+| `hu` | Hungarian  |
+| `it` | Italian    |
+| `ja` | Japanese   |
+| `ko` | Korean     |
+| `pl` | Polish     |
+| `pt` | Portuguese |
+| `pa` | Punjabi    |
+| `ru` | Russian    |
+| `sk` | Slovak     |
+| `es` | Spanish    |
+| `sw` | Swahili    |
+| `sv` | Swedish    |
+| `uk` | Ukrainian  |
+
+### Languages migration plan
+
+Part 1:
+
+- [ ] Meeting Guide importer adds support for reading the new `languages` key from JSON / Google Sheets
+- [ ] TSML adds support for importing the new `languages` key from JSON / CSV / Google Sheets
+- [ ] TSML UI adds support for reading the new `languages` key from JSON / Google Sheets
+- [ ] PDF adds support for reading the new `languages` key from JSON / Google Sheets
+- [ ] TSML adds the `languages` key to its JSON and CSV output (but does not remove languages from `types`)
+- [ ] Sheets adds the languages key to its JSON output (but does not remove languages from `types`)
+
+Part 2:
+
+- [ ] Meeting Guide app support sends message to connected entities asking them to update TSML, or update their Google Sheets
+- [ ] TSML makes a UI change to group languages together, and stops outputting languages in the `types` JSON key and CSV column
+- [ ] Sheets stops outputting languages in the `types` JSON key
+
+Part 3:
+
+- [ ] TSML UI stops recognizing languages present in the `types` key JSON / Google Sheets
+- [ ] TSML importer stops recognizing languages present in the `types` key JSON / Google Sheets
+- [ ] PDF stops recognizing languages present in the `types` key JSON / Google Sheets
+- [ ] Meeting Guide importer stops recognizing languages present in the `types` key JSON / Google Sheets
 
 ## Sharing Your Data
 
