@@ -224,6 +224,7 @@ These come from the list of [ISO-639-1 list of language codes](https://en.wikipe
 | `fr` | French     |
 | `de` | German     |
 | `el` | Greek      |
+| `he` | Hebrew     |
 | `hi` | Hindi      |
 | `hu` | Hungarian  |
 | `it` | Italian    |
