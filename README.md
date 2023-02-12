@@ -95,11 +95,11 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `group_notes` is an optional long text field. Line breaks are ok, but HTML will be stripped.
 
-`venmo` is an optional string and should be a valid Venmo handle, eg `@AAGroupName`. This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
+`venmo` is an optional string and should be a [Venmo handle](https://help.venmo.com/hc/en-us/articles/235432448-Check-or-Edit-Your-Username), eg `@AAGroupName`. This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
 
-`square` is an optional string and should be a valid Square Cash App cashtag, eg `$AAGroupName`. This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
+`square` is an optional string and should be a [Square Cash App cashtag](https://cash.app/help/us/en-us/3123-cashtags), eg `$AAGroupName`. This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
 
-`paypal` is an optional string and should be a valid PayPal username, eg `AAGroupName`. This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
+`paypal` is an optional string and should be a [PayPal.me username](https://www.paypal.com/us/cshelp/article/what-is-paypalme-help432), eg `AAGroupName`. This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
 
 `url` is optional and should point to the meeting's listing on the area website.
 
