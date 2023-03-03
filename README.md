@@ -123,7 +123,10 @@ Slug is a required unique field because there is an app feature where users may 
 
 ### Why is geographic information necessary for online-only meetings?
 
-It is our experience that even online-only meetings have _some_ kind of geographic association, even if that is only through their time zone and place of origin. We recommend using an approximate location for these meetings. `formatted_address` is the most flexible field for this, and values can be things like: `Wicker Park, Chicago, IL, USA` (neighborhood), `Chicago, IL, USA` (city), or `Illinois, USA` (state). It's also fine to use `country`, `city`, and `state` fields atomically.
+It is our experience that even online-only meetings have _some_ kind of geographic association, even if that is only through their time zone and place of origin.
+When users must choose between several meetings, showing geographic info can help them find the meetings they might share a geographic affinity with.
+
+We recommend using an approximate location for these meetings. `formatted_address` is the most flexible field for this, and values can be things like: `Wicker Park, Chicago, IL, USA` (neighborhood), `Chicago, IL, USA` (city), or `Illinois, USA` (state). It's also fine to use `country`, `city`, and `state` fields atomically.
 
 We recommend that addresses be standardized (can you find it with Google Maps?), and imply the time zone. For this reason, we don't recommend `United States`, since it spans multiple time zones.
 
