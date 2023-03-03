@@ -121,9 +121,11 @@ Types have to be consistent across the app to make a good user experience. It's 
 
 Slug is a required unique field because there is an app feature where users may 'favorite' a meeting, and in order for that to persist across sessions we must attach it to a unique field. It might seem intuitive that meeting location + time would be a unique combination, but in practice we see cases where there are in fact simultaneous meetings at the same location.
 
-### Why are day and time required?
+### Why is geographic information necessary for online-only meetings?
 
-It's perfectly fine for meetings to be 'by appointment' and this often happens in places where there are not many meetings. The app, however, needs this information to present useful information to the user.
+It is our experience that even online-only meetings have _some_ kind of geographic association, even if that is only through their time zone and place of origin. We recommend using an approximate location for these meetings. `formatted_address` is the most flexible field for this, and values can be things like: `Wicker Park, Chicago, IL, USA` (neighborhood), `Chicago, IL, USA` (city), or `Illinois, USA` (state). It's also fine to use `country`, `city`, and `state` fields atomically.
+
+We recommend that addresses be standardized (can you find it with Google Maps?), and imply the time zone. For this reason, we don't recommend `United States`, since it spans multiple time zones.
 
 ### Why can't we have HTML in meeting notes?
 
