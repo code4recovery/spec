@@ -1,6 +1,6 @@
 # Meeting Guide API
 
-The goal of the Meeting Guide API is help sync information about AA meetings. It was developed for the [Meeting Guide app](https://www.aa.org/pages/en_US/meeting-guide), but it is non-proprietary and other systems are encouraged to make use of it.
+The goal of the Meeting Guide API is help sync information about AA meetings. It was developed for the [Meeting Guide app](https://www.aa.org/meeting-guide-app), but it is non-proprietary and other systems are encouraged to make use of it.
 
 If you have feedback, please put an issue on this repository.
 
@@ -117,22 +117,29 @@ That's ok. App users don't actually see the codes, just the types they translate
 
 Types have to be consistent across the app to make a good user experience. It's common that a user might see meeting results from several areas at a time (this happens in small areas, and near borders). The set of meeting types we use is a mutually-agreed-upon set of names across 70+ areas. If you have a request to edit the list, we will bring it up at our steering committee meeting.
 
-### Why is slug necessary?
+### Meeting Guide requirements
+
+Some applications have requirements about what content needs to be in the feed. Meeting Guide, for example, requires `slug`, `day`, `time`, as well as geographic information to be present for it to be imported.
+
+#### Why is slug necessary?
 
 Slug is a required unique field because there is an app feature where users may 'favorite' a meeting, and in order for that to persist across sessions we must attach it to a unique field. It might seem intuitive that meeting location + time would be a unique combination, but in practice we see cases where there are in fact simultaneous meetings at the same location.
 
-### Why is geographic information necessary for online-only meetings?
+#### Why are day and time required?
 
-It is our experience that even online-only meetings have _some_ kind of geographic association, even if that is only through their time zone and place of origin.
-When users must choose between several meetings, showing geographic info can help them find the meetings they might share a geographic affinity with.
+It's perfectly fine for meetings to be 'by appointment' and this often happens in places where there are not many meetings. The app, however, needs this information to present useful information to the user.
 
-We recommend using an approximate location for these meetings. `formatted_address` is the most flexible field for this, and values can be things like: `Wicker Park, Chicago, IL, USA` (neighborhood), `Chicago, IL, USA` (city), or `Illinois, USA` (state). It's also fine to use `country`, `city`, and `state` fields atomically.
+#### Why is geographic information necessary for online-only meetings?
 
-We recommend that addresses be standardized (can you find it with Google Maps?), and imply the time zone. For this reason, we don't recommend `United States`, since it spans multiple time zones.
+Meeting Guide has far too many meetings in its database to expose them all to individual users. To present only the most relevant information, Meeting Guide selects meetings that are "nearby" - even if that meeting is online. In these cases, the location can be thought of as a point of origin for the meeting, or a geographic affinity.
+
+Use approximate locations for these meetings. `formatted_address` is the most flexible field for this, and values can be things like: `Wicker Park, Chicago, IL, USA` (neighborhood), `Chicago, IL, USA` (city), or `Illinois, USA` (state). It's also fine to use `country`, `city`, and `state` fields atomically.
+
+These locations should standardized (can you find it with Google Maps?), and imply the time zone. For this reason, don't use a broad geographic area like `United States` that spans multiple time zones.
 
 ### Why can't we have HTML in meeting notes?
 
-We are trying to make the data portable across a range of devices, some of which might not display HTML.
+Data should be portable across a range of devices, some of which might not display HTML.
 
 ### What about business meetings or other monthly meetings?
 
