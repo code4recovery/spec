@@ -154,6 +154,7 @@ The codes below should be considered 'reserved.' In your implementation, it's ok
 for "Babysitting Available." "American Sign Language" or "ASL" rather than "Sign Language." It's also ok to add types,
 they will be ignored by the importer.
 
+<!-- Types -->
 | Code    | English                        | Español                              | Français                                     |
 | ------- | ------------------------------ | ------------------------------------ | -------------------------------------------- |
 | `11`    | 11th Step Meditation           | Meditación del Paso 11               | Méditation sur la 11e Étape                  |
@@ -214,7 +215,7 @@ they will be ignored by the importer.
 | `XB`    | Wheelchair-Accessible Bathroom | Baño accesible para sillas de ruedas | Toilettes accessibles aux fauteuils roulants |
 | `XT`    | Cross Talk Permitted           | Se permite opinar                    | Conversation croisée permise                 |
 | `Y`     | Young People                   | Gente joven                          | Jeunes                                       |
-
+<!-- End Types -->
 ## Sharing Your Data
 
 If you choose, you may make your feed discoverable by linking to it (like RSS) in your site's `<HEAD>`.
