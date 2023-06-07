@@ -5,9 +5,6 @@
  * Reads a spec.json file and creates a new types table.
  * Leaves the remainder of the file as-is.
  *
- * ALL CHRACTER WIDTHS EXCLUDE SPACES BEFORE & AFTER PIPES.
- * THESE NUMBERS ARE EQUAL TO THE NUMBER OF DASHES IN THE HEADER ROW
- *
  * @author Anthony B <anthony.baggett@gmail.com>
  *
  * @since 1.0.0
@@ -16,31 +13,17 @@
 namespace Code4Recovery;
 
 class CreateReadme {
-    public string $specFile, $readmeFile, $tableContent;
+    /**
+     * The path to the json file containing spec data.
+     * @var string
+     */
+    public string $specFile;
 
     /**
-     * Number of characters the Code table column uses.
-     * @var int
+     * The path to the readme.md that will be created.
+     * @var string
      */
-    private int $codeCharWidth = 7;
-
-    /**
-     * Number of characters the English table column uses
-     * @var int
-     */
-    private int $enCharWidth = 30;
-
-    /**
-     * Number of characters the Español table column uses.
-     * @var int
-     */
-    private int $esCharWidth = 36;
-
-    /**
-     * Number of characters the Français table column uses.
-     * @var int
-     */
-    private int $frCharWidth = 44;
+    public string $readmeFile;
 
     /**
      * Replacement begins on the line after the appearance of this string.
@@ -55,13 +38,23 @@ class CreateReadme {
     private string $tableDelimiterBottom = '<!-- End Types -->';
 
     /**
-     * Table header markdown.
-     * @var string
+     * Languages used in the types table
+     * @var array
      */
-    private string $specTableHeader = <<<'EOT'
-| Code    | English                        | Español                              | Français                                     |
-| ------- | ------------------------------ | ------------------------------------ | -------------------------------------------- |
-EOT;
+    private array $languages = [
+        'en' => 'English',
+        'es' => 'Español',
+        'fr' => 'Français',
+        'ja' => '日本語',
+        'sv' => 'Svenska'
+    ];
+
+    /**
+     * Used to track all languages found in the spec file to avoid empty
+     * language columns
+     * @var array
+     */
+    private array $languagesUsed = [];
 
     /**
      * Constructor.
@@ -73,52 +66,90 @@ EOT;
         // Set variables
         $this->specFile   = $specFile;
         $this->readmeFile = $readmeFile;
-
         // Processing
-        $this->create_rows();
-        $this->write();
+        $rowContent = $this->createTableRows();
+        $headerContent = $this->createTableHeader();
+        $tableContent = $this->tableDelimiterTop . PHP_EOL;
+        $tableContent .= $headerContent;
+        $tableContent .= $rowContent;
+        $tableContent .= $this->tableDelimiterBottom;
+        $this->writeFile($tableContent);
+    }
+
+    /**
+     * Creates the table header markup.
+     *
+     * @return string
+     */
+    private function createTableHeader(): string
+    {
+        // Start header & header dashes output
+        $header = '| Code |';
+        $headerBottom = '| --- |';
+        // Loop through available languages, comparing them to the languages
+        // available in the spec data and create columns
+        foreach ($this->languages as $languageCode => $language) {
+            if (in_array($languageCode, $this->languagesUsed)) {
+                // Create columns
+                $header .= ' ' . $language . ' |';
+                $headerBottom .= ' --- |';
+            }
+        }
+        // Add line break after header labels & dashes
+        $header .= PHP_EOL . $headerBottom . PHP_EOL;
+        return $header;
     }
 
     /**
      * Gets the contents of the spec file and creates the table rows markup.
      *
-     * @return void
+     * @return string
      */
-    private function create_rows(): void
+    private function createTableRows(): string
     {
         // Init empty array
         $specRows = [];
-        $specJson = json_decode(file_get_contents($this->specFile));
+        // Get spec data & language codes
+        $specJson = json_decode(file_get_contents($this->specFile), true);
+        $languageCodes = array_keys($this->languages);
         // Replace table with contents of spec.json
-        foreach ($specJson->types as $key => $value) {
-            // Space padding (key Padding removese 2 extra spaces due to backticks)
-            $keyPadding       = $this->codeCharWidth - (mb_strlen( trim( $key)) + 2 );
-            $enPadding        = $this->enCharWidth - mb_strlen(trim( $value->en));
-            $esPadding        = $this->esCharWidth - mb_strlen(trim( $value->es));
-            $frPadding        = $this->frCharWidth - mb_strlen(trim( $value->fr));
-            $specRows[] = '| `' . trim( $key ) . '`' . str_repeat(' ', $keyPadding) . ' | ' . trim( $value->en ) . str_repeat( ' ', $enPadding ) . ' | ' . trim( $value->es ) . str_repeat( ' ', $esPadding ) . ' | ' . trim( $value->fr ) . str_repeat( ' ', $frPadding ) . ' |';
+        foreach ($specJson['types'] as $key => $value) {
+            // Begin row output
+            $rowString = '| `' . trim($key) . '` |';
+            // Loop through all translated values
+            foreach ($value as $languageKey => $translatedText) {
+                // Only display values for defined languages
+                if (in_array($languageKey, $languageCodes)) {
+                    // Add the language key to an array for use in creating the header
+                    if (!in_array($languageKey, $this->languagesUsed)) {
+                        $this->languagesUsed[] = $languageKey;
+                    }
+                    $rowString .= ' ' . $translatedText . ' |';
+                }
+            }
+            $specRows[] = $rowString;
         }
-        $this->tableContent = $this->tableDelimiterTop . PHP_EOL;
-        $this->tableContent .= $this->specTableHeader . PHP_EOL;
-        $this->tableContent .= implode(PHP_EOL, $specRows) . PHP_EOL;
-        $this->tableContent .= $this->tableDelimiterBottom;
+        return implode(PHP_EOL, $specRows) . PHP_EOL;
     }
 
     /**
      * Get the contents of the readme, replace the types table, and re-write.
+     *
+     * @param string $tableContent The markdown to write to the file
+     *
      * @return void
      */
-    private function write(): void
+    private function writeFile(string $tableContent): void
     {
         // Get the current readme contents
-        $readmeContents = file_get_contents( $this->readmeFile );
+        $readmeContents = file_get_contents($this->readmeFile);
         // Replace existing table
-        $result = preg_replace( '#(' . preg_quote( $this->tableDelimiterTop ) . ')(.*)(' . preg_quote( $this->tableDelimiterBottom ) . ')#siU', $this->tableContent, $readmeContents );
+        $result = preg_replace('#(' . preg_quote($this->tableDelimiterTop) . ')(.*)(' . preg_quote($this->tableDelimiterBottom) . ')#siU', $tableContent, $readmeContents);
         // Write new file
-        $readmeHandle = fopen( $this->readmeFile, "w" ) or die( "Unable to open file!" );
-        fwrite( $readmeHandle, $result );
-        fclose( $readmeHandle );
+        $readmeHandle = fopen($this->readmeFile, "w") or die("Unable to open file!");
+        fwrite($readmeHandle, $result);
+        fclose($readmeHandle);
     }
 }
 
-new CreateReadme( './spec.json', 'README.md' );
+new CreateReadme('./spec.json', 'README.md');
