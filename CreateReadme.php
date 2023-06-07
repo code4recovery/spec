@@ -66,14 +66,24 @@ class CreateReadme {
         // Set variables
         $this->specFile   = $specFile;
         $this->readmeFile = $readmeFile;
-        // Processing
-        $rowContent = $this->createTableRows();
-        $headerContent = $this->createTableHeader();
-        $tableContent = $this->tableDelimiterTop . PHP_EOL;
-        $tableContent .= $headerContent;
-        $tableContent .= $rowContent;
-        $tableContent .= $this->tableDelimiterBottom;
-        $this->writeFile($tableContent);
+        // Process
+        $this->writeFile($this->createTable());
+    }
+
+    /**
+     * Builds the types table.
+     *
+     * @return string Markdown for table
+     */
+    private function createTable(): string
+    {
+        $content[0] = $this->tableDelimiterTop;
+        // Rows must be created before header, so we know what language columns to create
+        $content[2] = $this->createTableRows();
+        $content[1] = $this->createTableHeader();
+        $content[3] = $this->tableDelimiterBottom;
+        ksort($content);
+        return implode(PHP_EOL, $content);
     }
 
     /**
@@ -83,21 +93,23 @@ class CreateReadme {
      */
     private function createTableHeader(): string
     {
-        // Start header & header dashes output
-        $header = '| Code |';
-        $headerBottom = '| --- |';
+        // Start columns & header dashes output
+        $headerColumns[] = '| Code';
+        $headerDashes[] = '| ---';
         // Loop through available languages, comparing them to the languages
         // available in the spec data and create columns
         foreach ($this->languages as $languageCode => $language) {
             if (in_array($languageCode, $this->languagesUsed)) {
                 // Create columns
-                $header .= ' ' . $language . ' |';
-                $headerBottom .= ' --- |';
+                $headerColumns[] = trim($language);
+                $headerDashes[] = '---';
             }
         }
-        // Add line break after header labels & dashes
-        $header .= PHP_EOL . $headerBottom . PHP_EOL;
-        return $header;
+        // Add an empty array value so our implode will add an extra ' | ' at the end
+        $markupArray['cols'] = implode(' | ', array_merge($headerColumns, ['']));
+        $markupArray['dashes'] = implode(' | ', array_merge($headerDashes, ['']));
+        // Build final markup with line breaks
+        return implode(PHP_EOL, $markupArray);
     }
 
     /**
@@ -111,25 +123,28 @@ class CreateReadme {
         $specRows = [];
         // Get spec data & language codes
         $specJson = json_decode(file_get_contents($this->specFile), true);
-        $languageCodes = array_keys($this->languages);
-        // Replace table with contents of spec.json
+        $availableLanguages = array_keys($this->languages);
+        // Loop through tupes from spec
         foreach ($specJson['types'] as $key => $value) {
-            // Begin row output
-            $rowString = '| `' . trim($key) . '` |';
-            // Loop through all translated values
+            // Begin row output. Empty the $columns array each time.
+            $specColumns = [];
+            $specColumns[] = '| `' . trim($key) . '`';
+            // Loop through translated values
             foreach ($value as $languageKey => $translatedText) {
-                // Only display values for defined languages
-                if (in_array($languageKey, $languageCodes)) {
+                // Only display values for available languages
+                if (in_array($languageKey, $availableLanguages)) {
                     // Add the language key to an array for use in creating the header
                     if (!in_array($languageKey, $this->languagesUsed)) {
-                        $this->languagesUsed[] = $languageKey;
+                        $this->languagesUsed[] = trim($languageKey);
                     }
-                    $rowString .= ' ' . $translatedText . ' |';
+                    // Add translation to columns
+                    $specColumns[] = trim($translatedText);
                 }
             }
-            $specRows[] = $rowString;
+            // Add empty array value so implode will create an extra "|" at then end of the markup
+            $specRows[] = implode(' | ', array_merge($specColumns, ['']));
         }
-        return implode(PHP_EOL, $specRows) . PHP_EOL;
+        return implode(PHP_EOL, $specRows);
     }
 
     /**
@@ -152,4 +167,4 @@ class CreateReadme {
     }
 }
 
-new CreateReadme('./spec.json', 'README.md');
+new CreateReadme('./data/types.json', 'README.md');
