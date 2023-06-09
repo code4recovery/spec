@@ -71,6 +71,9 @@ class UpdateReadme
         $this->readmeFile = $readmeFile;
         // Process
         $this->writeFile($this->createTable());
+
+        // write typescript
+        $this->writeTypeScript();
     }
 
     /**
@@ -176,6 +179,17 @@ class UpdateReadme
         $readmeHandle = fopen($this->readmeFile, "w") or die("Unable to open file!");
         fwrite($readmeHandle, $result);
         fclose($readmeHandle);
+    }
+
+    /**
+     * Write the typescript file
+     *
+     * @return void
+     */
+    private function writeTypeScript(): void
+    {
+        $json = file_get_contents($this->specFile);
+        file_put_contents('./src/index.ts', 'export const types = ' . $json . ';');
     }
 }
 
