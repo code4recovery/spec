@@ -112,9 +112,9 @@ class UpdateReadme
         // Create header dashes
         $rows = [$headerColumns, array_fill(0, count($headerColumns), '---')];
 
-        // Add an empty array value so our implode will add an extra '|' at the end
         // Build final markup with line breaks
         return implode(PHP_EOL, array_map(function ($row) {
+            // Add empty array values so our row is surrounded by pipes
             return implode('|', array_merge([''], $row, ['']));
         }, $rows));
     }
@@ -153,7 +153,7 @@ class UpdateReadme
                 }
             }
 
-            // Add empty array value so implode will create an extra "|" at then end of the markup
+            // Add empty array values so our row is surrounded by pipes
             $specRows[] = implode('|', array_merge([''], $specColumns, ['']));
         }
         return implode(PHP_EOL, $specRows);
