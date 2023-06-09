@@ -1,0 +1,294 @@
+{
+  "types": {
+    "11": {
+      "en": "11th Step Meditation",
+      "es": "Meditación del Paso 11",
+      "fr": "Méditation sur la 11e Étape"
+    },
+    "12x12": {
+      "en": "12 Steps & 12 Traditions",
+      "es": "12 Pasos y 12 Tradiciones",
+      "fr": "12 Étapes et 12 Traditions"
+    },
+    "A": {
+      "en": "Secular",
+      "es": "Secular",
+      "fr": "Séculier"
+    },
+    "ABSI": {
+      "en": "As Bill Sees It",
+      "es": "Como lo ve Bill",
+      "fr": "Réflexions de Bill"
+    },
+    "AL": {
+      "en": "Concurrent with Alateen",
+      "es": "Concurrente con Alateen",
+      "fr": "En même temps qu’Alateen"
+    },
+    "AL-AN": {
+      "en": "Concurrent with Al-Anon",
+      "es": "Concurrente con Al-Anon",
+      "fr": "En même temps qu’Al-Anon"
+    },
+    "ASL": {
+      "en": "American Sign Language",
+      "es": "Lenguaje por señas",
+      "fr": "Langage des Signes"
+    },
+    "B": {
+      "en": "Big Book",
+      "es": "Libro Grande",
+      "fr": "Gros Livre"
+    },
+    "BA": {
+      "en": "Babysitting Available",
+      "es": "Guardería disponible",
+      "fr": "Garderie d’enfants disponible"
+    },
+    "BE": {
+      "en": "Newcomer",
+      "es": "Principiantes",
+      "fr": "Nouveau/nouvelle"
+    },
+    "BI": {
+      "en": "Bisexual",
+      "es": "Bisexual",
+      "fr": "Bisexuel"
+    },
+    "BRK": {
+      "en": "Breakfast",
+      "es": "Desayuno",
+      "fr": "Petit déjeuner"
+    },
+    "C": {
+      "en": "Closed",
+      "es": "Cerrada",
+      "fr": "Fermé"
+    },
+    "CAN": {
+      "en": "Candlelight",
+      "es": "Luz de una vela",
+      "fr": "À la chandelle"
+    },
+    "CF": {
+      "en": "Child-Friendly",
+      "es": "Niño amigable",
+      "fr": "Enfants acceptés"
+    },
+    "D": {
+      "en": "Discussion",
+      "es": "Discusión",
+      "fr": "Discussion"
+    },
+    "DB": {
+      "en": "Digital Basket",
+      "es": "Canasta digital",
+      "fr": "Panier numérique"
+    },
+    "DD": {
+      "en": "Dual Diagnosis",
+      "es": "Diagnóstico dual",
+      "fr": "Double diagnostic"
+    },
+    "DR": {
+      "en": "Daily Reflections",
+      "es": "Reflexiones Diarias",
+      "fr": "Réflexions quotidiennes"
+    },
+    "EN": {
+      "en": "English",
+      "es": "Inglés",
+      "fr": "Anglais"
+    },
+    "FF": {
+      "en": "Fragrance Free",
+      "es": "Sin fragancia",
+      "fr": "Sans parfum"
+    },
+    "FR": {
+      "en": "French",
+      "es": "Francés",
+      "fr": "Français"
+    },
+    "G": {
+      "en": "Gay",
+      "es": "Gay",
+      "fr": "Gai"
+    },
+    "GR": {
+      "en": "Grapevine",
+      "es": "La Viña",
+      "fr": "Grapevine"
+    },
+    "H": {
+      "en": "Birthday",
+      "es": "Cumpleaños",
+      "fr": "Anniversaire"
+    },
+    "HE": {
+      "en": "Hebrew",
+      "es": "Hebreo",
+      "fr": "Hébreu"
+    },
+    "ITA": {
+      "en": "Italian",
+      "es": "Italiano",
+      "fr": "Italien"
+    },
+    "JA": {
+      "en": "Japanese",
+      "es": "Japonés",
+      "fr": "Japonais"
+    },
+    "KOR": {
+      "en": "Korean",
+      "es": "Coreano",
+      "fr": "Coréen"
+    },
+    "L": {
+      "en": "Lesbian",
+      "es": "Lesbianas",
+      "fr": "Lesbienne"
+    },
+    "LGBTQ": {
+      "en": "LGBTQ",
+      "es": "LGBTQ",
+      "fr": "LGBTQ"
+    },
+    "LIT": {
+      "en": "Literature",
+      "es": "Literatura",
+      "fr": "Publications"
+    },
+    "LS": {
+      "en": "Living Sober",
+      "es": "Viviendo Sobrio",
+      "fr": "Vivre… Sans alcool"
+    },
+    "M": {
+      "en": "Men",
+      "es": "Hombres",
+      "fr": "Hommes"
+    },
+    "MED": {
+      "en": "Meditation",
+      "es": "Meditación",
+      "fr": "Méditation"
+    },
+    "N": {
+      "en": "Native American",
+      "es": "Nativo Americano",
+      "fr": "Autochtone"
+    },
+    "NDG": {
+      "en": "Indigenous",
+      "es": "Indígena",
+      "fr": "Indigène"
+    },
+    "O": {
+      "en": "Open",
+      "es": "Abierta",
+      "fr": "Ouvert(e)"
+    },
+    "OUT": {
+      "en": "Outdoor",
+      "es": "Al aire libre",
+      "fr": "En plein air"
+    },
+    "P": {
+      "en": "Professionals",
+      "es": "Profesionales",
+      "fr": "Professionnels"
+    },
+    "POC": {
+      "en": "People of Color",
+      "es": "Gente de color",
+      "fr": "Gens de couleur"
+    },
+    "POL": {
+      "en": "Polish",
+      "es": "Polaco",
+      "fr": "Polonais"
+    },
+    "POR": {
+      "en": "Portuguese",
+      "es": "Portugués",
+      "fr": "Portugais"
+    },
+    "PUN": {
+      "en": "Punjabi",
+      "es": "Punjabi",
+      "fr": "Pendjabi"
+    },
+    "RUS": {
+      "en": "Russian",
+      "es": "Ruso",
+      "fr": "Russe"
+    },
+    "S": {
+      "en": "Spanish",
+      "es": "Español",
+      "fr": "Espagnol"
+    },
+    "SEN": {
+      "en": "Seniors",
+      "es": "Personas mayores",
+      "fr": "Séniors"
+    },
+    "SM": {
+      "en": "Smoking Permitted",
+      "es": "Se permite fumar",
+      "fr": "Permis de fumer"
+    },
+    "SP": {
+      "en": "Speaker",
+      "es": "Orador",
+      "fr": "Conférencier"
+    },
+    "ST": {
+      "en": "Step Study",
+      "es": "Estudio de pasos",
+      "fr": "Sur les Étapes"
+    },
+    "T": {
+      "en": "Transgender",
+      "es": "Transgénero",
+      "fr": "Transgenre"
+    },
+    "TC": {
+      "en": "Location Temporarily Closed",
+      "es": "Ubicación temporalmente cerrada",
+      "fr": "Emplacement temporairement fermé"
+    },
+    "TR": {
+      "en": "Tradition Study",
+      "es": "Estudio de tradicion",
+      "fr": "Étude des Traditions"
+    },
+    "W": {
+      "en": "Women",
+      "es": "Mujer",
+      "fr": "Femmes"
+    },
+    "X": {
+      "en": "Wheelchair Access",
+      "es": "Acceso en silla de ruedas",
+      "fr": "Accès aux fauteuils roulants"
+    },
+    "XB": {
+      "en": "Wheelchair-Accessible Bathroom",
+      "es": "Baño accesible para sillas de ruedas",
+      "fr": "Toilettes accessibles aux fauteuils roulants"
+    },
+    "XT": {
+      "en": "Cross Talk Permitted",
+      "es": "Se permite opinar",
+      "fr": "Conversation croisée permise"
+    },
+    "Y": {
+      "en": "Young People",
+      "es": "Gente joven",
+      "fr": "Jeunes"
+    }
+  }
+}
