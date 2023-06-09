@@ -13,7 +13,7 @@
 
 namespace Code4Recovery;
 
-class CreateReadme
+class UpdateReadme
 {
     /**
      * The path to the json file containing spec data.
@@ -80,13 +80,14 @@ class CreateReadme
      */
     private function createTable(): string
     {
-        $content[0] = $this->tableDelimiterTop;
         // Rows must be created before header, so we know what language columns to create
-        $content[2] = $this->createTableRows();
-        $content[1] = $this->createTableHeader();
-        $content[3] = $this->tableDelimiterBottom;
-        ksort($content);
-        return implode(PHP_EOL, $content);
+        $rows = $this->createTableRows();
+        return implode(PHP_EOL, [
+            $this->tableDelimiterTop,
+            $this->createTableHeader(),
+            $rows,
+            $this->tableDelimiterBottom,
+        ]);
     }
 
     /**
@@ -97,22 +98,25 @@ class CreateReadme
     private function createTableHeader(): string
     {
         // Start columns & header dashes output
-        $headerColumns[] = '| Code';
-        $headerDashes[] = '| ---';
+        $headerColumns = ['Code'];
+
         // Loop through available languages, comparing them to the languages
         // available in the spec data and create columns
         foreach ($this->languages as $languageCode => $language) {
             if (in_array($languageCode, $this->languagesUsed)) {
                 // Create columns
-                $headerColumns[] = trim($language);
-                $headerDashes[] = '---';
+                $headerColumns[] = $language;
             }
         }
-        // Add an empty array value so our implode will add an extra ' | ' at the end
-        $markupArray['cols'] = implode(' | ', array_merge($headerColumns, ['']));
-        $markupArray['dashes'] = implode(' | ', array_merge($headerDashes, ['']));
+
+        // Create header dashes
+        $rows = [$headerColumns, array_fill(0, count($headerColumns), '---')];
+
+        // Add an empty array value so our implode will add an extra '|' at the end
         // Build final markup with line breaks
-        return implode(PHP_EOL, $markupArray);
+        return implode(PHP_EOL, array_map(function ($row) {
+            return implode('|', array_merge([''], $row, ['']));
+        }, $rows));
     }
 
     /**
@@ -124,28 +128,33 @@ class CreateReadme
     {
         // Init empty array
         $specRows = [];
+
         // Get spec data & language codes
         $specJson = json_decode(file_get_contents($this->specFile), true);
         $availableLanguages = array_keys($this->languages);
-        // Loop through tupes from spec
+
+        // Loop through types from spec
         foreach ($specJson['types'] as $key => $value) {
             // Begin row output. Empty the $columns array each time.
-            $specColumns = [];
-            $specColumns[] = '| `' . trim($key) . '`';
+            $specColumns = ['`' . $key . '`'];
+
             // Loop through translated values
             foreach ($value as $languageKey => $translatedText) {
+
                 // Only display values for available languages
                 if (in_array($languageKey, $availableLanguages)) {
+
                     // Add the language key to an array for use in creating the header
                     if (!in_array($languageKey, $this->languagesUsed)) {
-                        $this->languagesUsed[] = trim($languageKey);
+                        $this->languagesUsed[] = $languageKey;
                     }
                     // Add translation to columns
-                    $specColumns[] = trim($translatedText);
+                    $specColumns[] = $translatedText;
                 }
             }
+
             // Add empty array value so implode will create an extra "|" at then end of the markup
-            $specRows[] = implode(' | ', array_merge($specColumns, ['']));
+            $specRows[] = implode('|', array_merge([''], $specColumns, ['']));
         }
         return implode(PHP_EOL, $specRows);
     }
@@ -170,4 +179,4 @@ class CreateReadme
     }
 }
 
-new CreateReadme('./data/types.json', 'README.md');
+new UpdateReadme('./data/types.json', 'README.md');
