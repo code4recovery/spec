@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Updates the README.md
+ * Rebuilds the types table in the README file and creates a typescript file
  *
  * Reads a spec.json file and creates a new types table.
  * Leaves the remainder of the file as-is.
@@ -13,19 +13,19 @@
 
 namespace Code4Recovery;
 
-class UpdateReadme
+class Build
 {
     /**
      * The path to the json file containing spec data.
      * @var string
      */
-    public string $specFile;
+    public string $specFile = './data/types.json';
 
     /**
      * The path to the readme.md that will be created.
      * @var string
      */
-    public string $readmeFile;
+    public string $readmeFile = './README.md';
 
     /**
      * Replacement begins on the line after the appearance of this string.
@@ -52,27 +52,14 @@ class UpdateReadme
     ];
 
     /**
-     * Used to track all languages found in the spec file to avoid empty
-     * language columns
-     * @var array
-     */
-    private array $languagesUsed = [];
-
-    /**
      * Constructor.
      *
      * @param $specFile: Path to spec json file, relative to project root.
      * @param $readmeFile: Path to readme file, relative to project root.
      */
-    public function __construct(string $specFile, string $readmeFile)
+    public function __construct()
     {
-        // Set variables
-        $this->specFile   = $specFile;
-        $this->readmeFile = $readmeFile;
-        // Process
-        $this->writeFile($this->createTable());
-
-        // write typescript
+        $this->writeReadme($this->createTable());
         $this->writeTypeScript();
     }
 
@@ -83,12 +70,10 @@ class UpdateReadme
      */
     private function createTable(): string
     {
-        // Rows must be created before header, so we know what language columns to create
-        $rows = $this->createTableRows();
         return implode(PHP_EOL, [
             $this->tableDelimiterTop,
             $this->createTableHeader(),
-            $rows,
+            $this->createTableRows(),
             $this->tableDelimiterBottom,
         ]);
     }
@@ -100,26 +85,26 @@ class UpdateReadme
      */
     private function createTableHeader(): string
     {
-        // Start columns & header dashes output
-        $headerColumns = ['Code'];
+        // Columns
+        $headerColumns = array_merge(['Code'], array_values($this->languages));
 
-        // Loop through available languages, comparing them to the languages
-        // available in the spec data and create columns
-        foreach ($this->languages as $languageCode => $language) {
-            if (in_array($languageCode, $this->languagesUsed)) {
-                // Create columns
-                $headerColumns[] = $language;
-            }
-        }
-
-        // Create header dashes
+        // Dashes
         $rows = [$headerColumns, array_fill(0, count($headerColumns), '---')];
 
         // Build final markup with line breaks
-        return implode(PHP_EOL, array_map(function ($row) {
-            // Add empty array values so our row is surrounded by pipes
-            return implode('|', array_merge([''], $row, ['']));
-        }, $rows));
+        return implode(PHP_EOL, array_map([$this, 'createTableRow'], $rows));
+    }
+
+    /**
+     * Creates a table row separated (and surrounded) by pipes.
+     *
+     * @param array $row
+     *
+     * @return string
+     */
+    private function createTableRow($row): string
+    {
+        return implode('|', array_merge([''], $row, ['']));
     }
 
     /**
@@ -134,30 +119,22 @@ class UpdateReadme
 
         // Get spec data & language codes
         $specJson = json_decode(file_get_contents($this->specFile), true);
-        $availableLanguages = array_keys($this->languages);
+        $languages = array_keys($this->languages);
 
         // Loop through types from spec
         foreach ($specJson['types'] as $key => $value) {
             // Begin row output. Empty the $columns array each time.
             $specColumns = ['`' . $key . '`'];
 
-            // Loop through translated values
-            foreach ($value as $languageKey => $translatedText) {
+            // Loop through languages
+            foreach ($languages as $languageKey) {
 
-                // Only display values for available languages
-                if (in_array($languageKey, $availableLanguages)) {
-
-                    // Add the language key to an array for use in creating the header
-                    if (!in_array($languageKey, $this->languagesUsed)) {
-                        $this->languagesUsed[] = $languageKey;
-                    }
-                    // Add translation to columns
-                    $specColumns[] = $translatedText;
-                }
+                // Add translation to columns
+                $specColumns[] = array_key_exists($languageKey, $value) ? $value[$languageKey] : '-';
             }
 
             // Add empty array values so our row is surrounded by pipes
-            $specRows[] = implode('|', array_merge([''], $specColumns, ['']));
+            $specRows[] = $this->createTableRow($specColumns);
         }
         return implode(PHP_EOL, $specRows);
     }
@@ -169,7 +146,7 @@ class UpdateReadme
      *
      * @return void
      */
-    private function writeFile(string $tableContent): void
+    private function writeReadme(string $tableContent): void
     {
         // Get the current readme contents
         $readmeContents = file_get_contents($this->readmeFile);
@@ -193,4 +170,4 @@ class UpdateReadme
     }
 }
 
-new UpdateReadme('./data/types.json', 'README.md');
+new Build();

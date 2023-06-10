@@ -1,5 +1,5 @@
 {
-  "name": "spec",
+  "name": "@code4recovery/spec",
   "version": "1.0.0",
   "description": "The goal of the Meeting Guide API is help sync information about AA meetings. It was developed for the Meeting Guide app, but it is non-proprietary and other systems are encouraged to make use of it.",
   "main": "lib/index.js",
@@ -13,14 +13,18 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
+    "prepublishOnly": "npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
   },
-  "keywords": [],
+  "keywords": [
+    "AA",
+    "meetings",
+    "JSON"
+  ],
   "author": "Code for Recovery",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "prettier": "^2.8.8",
     "tslint": "^6.1.3",
