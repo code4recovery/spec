@@ -13,7 +13,7 @@ export function isSupportedLanguage(language: string): language is Language {
 }
 
 export function getTypesForLanguage(language: string) {
-  const typesForLanguage: { [id: string]: string } = {};
+  const typesForLanguage: Record<MeetingType, string> = {} as any;
   for (const type in types) {
     if (isMeetingType(type) && isSupportedLanguage(language)) {
       typesForLanguage[type] = types[type][language];
