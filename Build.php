@@ -122,7 +122,7 @@ class Build
         $languages = array_keys($this->languages);
 
         // Loop through types from spec
-        foreach ($specJson['types'] as $key => $value) {
+        foreach ($specJson as $key => $value) {
             // Begin row output. Empty the $columns array each time.
             $specColumns = ['`' . $key . '`'];
 
@@ -165,8 +165,9 @@ class Build
      */
     private function writeTypeScript(): void
     {
+        file_put_contents('./src/languages.ts', 'export const languages = ' . json_encode(array_keys($this->languages)) . ' as const;');
         $json = file_get_contents($this->specFile);
-        file_put_contents('./src/index.ts', 'export const types = ' . $json . ';');
+        file_put_contents('./src/types.ts', 'export const types = ' . $json . ';');
     }
 }
 
