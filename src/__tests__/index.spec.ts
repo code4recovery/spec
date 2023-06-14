@@ -22,6 +22,7 @@ describe("isMeetingType", () => {
   });
 
   it("should return supported languages", () => {
-    expect(getTypesForLanguage("en")).toBeTruthy();
+    const enTypes = getTypesForLanguage("en");
+    expect(Object.keys(enTypes)).toHaveLength(58);
   });
 });
