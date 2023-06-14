@@ -9,7 +9,7 @@ export function isMeetingType(type: string): type is MeetingType {
 }
 
 export function isSupportedLanguage(language: string): language is Language {
-  return language in languages;
+  return languages.includes(language as Language);
 }
 
 export function getTypesForLanguage(language: string) {
