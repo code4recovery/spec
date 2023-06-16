@@ -162,72 +162,53 @@ they will be ignored by the importer.
 | `ABSI`  | As Bill Sees It                | Como lo ve Bill                      | Réflexions de Bill                           |
 | `AL`    | Concurrent with Alateen        | Concurrente con Alateen              | En même temps qu’Alateen                     |
 | `AL-AN` | Concurrent with Al-Anon        | Concurrente con Al-Anon              | En même temps qu’Al-Anon                     |
-| `AM`    | Amharic                        | Amárico                              | Amharique                                    |
 | `ASL`   | American Sign Language         | Lenguaje por señas                   | Langage des Signes                           |
 | `B`     | Big Book                       | Libro Grande                         | Gros Livre                                   |
 | `BA`    | Babysitting Available          | Guardería disponible                 | Garderie d’enfants disponible                |
 | `BE`    | Newcomer                       | Principiantes                        | Nouveau/nouvelle                             |
 | `BI`    | Bisexual                       | Bisexual                             | Bisexuel                                     |
 | `BRK`   | Breakfast                      | Desayuno                             | Petit déjeuner                               |
-| `BV-I`  | Blind / Visually Impaired      | Ciegos / Deficientes Visuales        | Aveugle / Malvoyant                          |
 | `C`     | Closed                         | Cerrada                              | Fermé                                        |
 | `CAN`   | Candlelight                    | Luz de una vela                      | À la chandelle                               |
 | `CF`    | Child-Friendly                 | Niño amigable                        | Enfants acceptés                             |
 | `D`     | Discussion                     | Discusión                            | Discussion                                   |
-| `D-HOH` | Deaf / Hard of Hearing         | Sordo/dificultades auditivas         | Sourd / Malentendant                         |
-| `DA`    | Danish                         | Danés                                | Danois                                       |
 | `DB`    | Digital Basket                 | Canasta digital                      | Panier numérique                             |
 | `DD`    | Dual Diagnosis                 | Diagnóstico dual                     | Double diagnostic                            |
-| `DE`    | German                         | Alemán                               | Allemand                                     |
 | `DR`    | Daily Reflections              | Reflexiones Diarias                  | Réflexions quotidiennes                      |
-| `EL`    | Greek                          | Griego                               | Grec                                         |
 | `EN`    | English                        | Inglés                               | Anglais                                      |
-| `FA`    | Persian                        | Persa                                | Persan                                       |
 | `FF`    | Fragrance Free                 | Sin fragancia                        | Sans parfum                                  |
 | `FR`    | French                         | Francés                              | Français                                     |
 | `G`     | Gay                            | Gay                                  | Gai                                          |
 | `GR`    | Grapevine                      | La Viña                              | Grapevine                                    |
 | `H`     | Birthday                       | Cumpleaños                           | Anniversaire                                 |
 | `HE`    | Hebrew                         | Hebreo                               | Hébreu                                       |
-| `HI`    | Hindi                          | Hindi                                | Hindi                                        |
-| `HR`    | Croatian                       | Croata                               | Croate                                       |
-| `HU`    | Hungarian                      | Húngaro                              | Hongrois                                     |
 | `ITA`   | Italian                        | Italiano                             | Italien                                      |
 | `JA`    | Japanese                       | Japonés                              | Japonais                                     |
 | `KOR`   | Korean                         | Coreano                              | Coréen                                       |
 | `L`     | Lesbian                        | Lesbianas                            | Lesbienne                                    |
-| `LGBTQ` | LGBTQIAA+                      | LGBTQIAA+                            | LGBTQIAA+                                    |
+| `LGBTQ` | LGBTQ                          | LGBTQ                                | LGBTQ                                        |
 | `LIT`   | Literature                     | Literatura                           | Publications                                 |
-| `LO-I`  | Loners / Isolationists         | Solitarios / aislacionistas          | Solitaires / Isolationnistes                 |
 | `LS`    | Living Sober                   | Viviendo Sobrio                      | Vivre… Sans alcool                           |
-| `LT`    | Lithuanian                     | Lituano                              | Lituanien                                    |
 | `M`     | Men                            | Hombres                              | Hommes                                       |
 | `MED`   | Meditation                     | Meditación                           | Méditation                                   |
-| `ML`    | Malayalam                      | Malayalam                            | Malayalam                                    |
 | `N`     | Native American                | Nativo Americano                     | Autochtone                                   |
 | `NDG`   | Indigenous                     | Indígena                             | Indigène                                     |
 | `O`     | Open                           | Abierta                              | Ouvert(e)                                    |
 | `OUT`   | Outdoor                        | Al aire libre                        | En plein air                                 |
 | `P`     | Professionals                  | Profesionales                        | Professionnels                               |
-| `POA`   | Proof of Attendance            | Preuve de présence                   | Prueba de asistencia                         |
 | `POC`   | People of Color                | Gente de color                       | Gens de couleur                              |
 | `POL`   | Polish                         | Polaco                               | Polonais                                     |
 | `POR`   | Portuguese                     | Portugués                            | Portugais                                    |
 | `PUN`   | Punjabi                        | Punjabi                              | Pendjabi                                     |
-| `QSL`   | Quebec Sign Language           | Lengua de señas de Quebec            | Langue des signes québécoise                 |
-| `RSL`   | Russian Sign Language          | Lenguaje de señas ruso               | Langue des signes russe                      |
 | `RUS`   | Russian                        | Ruso                                 | Russe                                        |
 | `S`     | Spanish                        | Español                              | Espagnol                                     |
 | `SEN`   | Seniors                        | Personas mayores                     | Séniors                                      |
-| `SK`    | Slovak                         | Eslovaco                             | Slovaque                                     |
 | `SM`    | Smoking Permitted              | Se permite fumar                     | Permis de fumer                              |
 | `SP`    | Speaker                        | Orador                               | Conférencier                                 |
 | `ST`    | Step Study                     | Estudio de pasos                     | Sur les Étapes                               |
-| `SV`    | Swedish                        | Sueco                                | Suédois                                      |
 | `T`     | Transgender                    | Transgénero                          | Transgenre                                   |
 | `TC`    | Location Temporarily Closed    | Ubicación temporalmente cerrada      | Emplacement temporairement fermé             |
 | `TR`    | Tradition Study                | Estudio de tradicion                 | Étude des Traditions                         |
-| `UK`    | Ukrainian                      | Ucranio                              | Ukrainien                                    |
 | `W`     | Women                          | Mujer                                | Femmes                                       |
 | `X`     | Wheelchair Access              | Acceso en silla de ruedas            | Accès aux fauteuils roulants                 |
 | `XB`    | Wheelchair-Accessible Bathroom | Baño accesible para sillas de ruedas | Toilettes accessibles aux fauteuils roulants |
