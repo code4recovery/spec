@@ -163,72 +163,53 @@ they will be ignored by the importer.
 |`ABSI`|As Bill Sees It|Como lo ve Bill|Réflexions de Bill|ビルはこう思う|Som Bill Ser Det|
 |`AL`|Concurrent with Alateen|Concurrente con Alateen|En même temps qu’Alateen|アラティーンと同時進行|Tillsammans med Alateen|
 |`AL-AN`|Concurrent with Al-Anon|Concurrente con Al-Anon|En même temps qu’Al-Anon|アラノンと同時進行|Tillsammans med Al-Anon|
-|`AM`|Amharic|Amárico|Amharique|アムハラ語|Amhariska|
 |`ASL`|American Sign Language|Lenguaje por señas|Langage des Signes|アメリカ手話|Amerikanskt teckenspråk|
 |`B`|Big Book|Libro Grande|Gros Livre|ビッグブック|Stora Boken|
 |`BA`|Babysitting Available|Guardería disponible|Garderie d’enfants disponible|ベビーシッターあり|Barnvakt Finns|
 |`BE`|Newcomer|Principiantes|Nouveau/nouvelle|ビギナーズ|Nykomling|
 |`BI`|Bisexual|Bisexual|Bisexuel|バイセクシャル|Bisexuellt|
 |`BRK`|Breakfast|Desayuno|Petit déjeuner|朝食|Frukost|
-|`BV-I`|Blind / Visually Impaired|Ciegos / Deficientes Visuales|Aveugle / Malvoyant|視覚障害者|Blinda / Synskadade|
 |`C`|Closed|Cerrada|Fermé|クローズド|Slutet|
 |`CAN`|Candlelight|Luz de una vela|À la chandelle|キャンドル|Tända Ljus|
 |`CF`|Child-Friendly|Niño amigable|Enfants acceptés|お子さま歓迎|Barnvänligt|
 |`D`|Discussion|Discusión|Discussion|ディスカッション|Diskussion|
-|`D-HOH`|Deaf / Hard of Hearing|Sordo/dificultades auditivas|Sourd / Malentendant|難聴者|Döva / Hörselskadade|
-|`DA`|Danish|Danés|Danois|デンマーク語|Danska|
 |`DB`|Digital Basket|Canasta digital|Panier numérique|電子献金|Digital Korg|
 |`DD`|Dual Diagnosis|Diagnóstico dual|Double diagnostic|重複診断|Dubbel Diagnos|
-|`DE`|German|Alemán|Allemand|ドイツ語|Tyska|
 |`DR`|Daily Reflections|Reflexiones Diarias|Réflexions quotidiennes|今日を新たに|Dagliga Reflektioner|
-|`EL`|Greek|Griego|Grec|ギリシャ語|Grekiska|
 |`EN`|English|Inglés|Anglais|英語|Engelska|
-|`FA`|Persian|Persa|Persan|ペルシャ語|Persiska|
 |`FF`|Fragrance Free|Sin fragancia|Sans parfum|香水なし|Parfym Fritt|
 |`FR`|French|Francés|Français|フランス語|Franska|
 |`G`|Gay|Gay|Gai|ゲイ|Gay|
 |`GR`|Grapevine|La Viña|Grapevine|グレープバイン|Grapevine|
 |`H`|Birthday|Cumpleaños|Anniversaire|バースデー|Födelsedag|
 |`HE`|Hebrew|Hebreo|Hébreu|ヘブライ語|Hebreiska|
-|`HI`|Hindi|Hindi|Hindi|ヒンディー語|Hindi|
-|`HR`|Croatian|Croata|Croate|クロアチア語|Kroatiska|
-|`HU`|Hungarian|Húngaro|Hongrois|ハンガリー語|Ungerska|
 |`ITA`|Italian|Italiano|Italien|イタリア語|Italienska|
 |`JA`|Japanese|Japonés|Japonais|日本語|Japanska|
 |`KOR`|Korean|Coreano|Coréen|韓国語|Koreanska|
 |`L`|Lesbian|Lesbianas|Lesbienne|レズビアン|Lesbiskt|
-|`LGBTQ`|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|
+|`LGBTQ`|LGBTQ|LGBTQ|LGBTQ|LGBTQ|LGBTQ|
 |`LIT`|Literature|Literatura|Publications|書籍|Litteratur|
-|`LO-I`|Loners / Isolationists|Solitarios / Aislacionistas|Solitaires / Isolationnistes|孤独者|Ensamvargar / Isolationister|
 |`LS`|Living Sober|Viviendo Sobrio|Vivre… Sans alcool|リビングソーバー|Leva Nyktert|
-|`LT`|Lithuanian|Lituano|Lituanien|リトアニア語|Litauiska|
 |`M`|Men|Hombres|Hommes|男性|Mansmöte|
 |`MED`|Meditation|Meditación|Méditation|黙想|Meditationsmöte|
-|`ML`|Malayalam|Malayalam|Malayalam|マラヤーラム語|Malayalam|
 |`N`|Native American|Nativo Americano|Autochtone|ネイティブアメリカン|Ur-amerikanskt|
 |`NDG`|Indigenous|Indígena|Indigène|先住民|Urfolkligt|
 |`O`|Open|Abierta|Ouvert(e)|オープン|Öppet|
 |`OUT`|Outdoor|Al aire libre|En plein air|アウトドア|Utomhus|
 |`P`|Professionals|Profesionales|Professionnels|職業人|Professionella|
-|`POA`|Proof of Attendance|Comprobante de asistencia|Preuve de présence|出席証明|Närvarobevis|
 |`POC`|People of Color|Gente de color|Gens de couleur|有色人種|Färgade|
 |`POL`|Polish|Polaco|Polonais|ポーランド語|Polska|
 |`POR`|Portuguese|Portugués|Portugais|ポルトガル語|Portugisiska|
 |`PUN`|Punjabi|Punjabi|Pendjabi|パンジャブ語|Punjabi|
-|`QSL`|Quebec Sign Language|Lenguaje de señas de Quebec|Langue des signes québécoise|ケベック手話|Quebec Teckenspråk|
-|`RSL`|Russian Sign Language|Lenguaje de señas ruso|Langue des signes russe|ロシア手話|Ryskt Teckenspråk|
 |`RUS`|Russian|Ruso|Russe|ロシア語|Ryska|
 |`S`|Spanish|Español|Espagnol|スペイン語|Spanska|
 |`SEN`|Seniors|Personas mayores|Séniors|シニア|Seniorer|
-|`SK`|Slovak|Eslovaco|Slovaque|スロバキア語|Slovakiska|
 |`SM`|Smoking Permitted|Se permite fumar|Permis de fumer|喫煙可|Rökning Tillåten|
 |`SP`|Speaker|Orador|Conférencier|スピーカー|Talare|
 |`ST`|Step Study|Estudio de pasos|Sur les Étapes|ステップ|Stegmöte|
-|`SV`|Swedish|Sueco|Suédois|スウェーデン語|Svenska|
 |`T`|Transgender|Transgénero|Transgenre|トランスジェンダー|Transpersoner|
 |`TC`|Location Temporarily Closed|Ubicación temporalmente cerrada|Emplacement temporairement fermé|一時的休止中|Tillfälligt Stängt|
 |`TR`|Tradition Study|Estudio de tradicion|Étude des Traditions|伝統|Traditionsmöte|
-|`UK`|Ukrainian|Ucraniano|Ukrainien|ウクライナ語|Ukrainska|
 |`W`|Women|Mujer|Femmes|女性|Kvinnomöte|
 |`X`|Wheelchair Access|Acceso en silla de ruedas|Accès aux fauteuils roulants|車いすアクセス|Handikappanpassat|
 |`XB`|Wheelchair-Accessible Bathroom|Baño accesible para sillas de ruedas|Toilettes accessibles aux fauteuils roulants|車いす使用者用トイレ|Handikappanpassad WC|
