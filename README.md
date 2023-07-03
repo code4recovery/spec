@@ -224,8 +224,9 @@ they will be ignored by the importer.
 | `SP`    | Speaker                        | Orador                               | Conférencier                                 |
 | `ST`    | Step Study                     | Estudio de pasos                     | Sur les Étapes                               |
 | `SV`    | Swedish                        | Sueco                                | Suédois                                      |
-| `TL`    | Tagalog                        | Tagalog                              | Tagalo                                       |
 | `T`     | Transgender                    | Transgénero                          | Transgenre                                   |
+| `TH`    | Thai                           | Tailandesa                           | Thaïlandaise                                 |
+| `TL`    | Tagalog                        | Tagalog                              | Tagalo                                       |
 | `TC`    | Location Temporarily Closed    | Ubicación temporalmente cerrada      | Emplacement temporairement fermé             |
 | `TR`    | Tradition Study                | Estudio de tradicion                 | Étude des Traditions                         |
 | `UK`    | Ukrainian                      | Ucranio                              | Ukrainien                                    |
