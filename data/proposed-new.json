@@ -1,0 +1,149 @@
+{
+  "AM": {
+    "en": "Amharic",
+    "es": "Amárico",
+    "fr": "Amharique",
+    "ja": "アムハラ語",
+    "sv": "Amhariska"
+  },
+  "BV-I": {
+    "en": "Blind / Visually Impaired",
+    "es": "Ciego / Discapacidad Visual",
+    "fr": "Aveugle / Malvoyant",
+    "ja": "視覚障害者",
+    "sv": "Blind / Synskadad"
+  },
+  "D-HOH": {
+    "en": "Deaf / Hard of Hearing",
+    "es": "Sordo / Duro de Oído",
+    "fr": "Sourd / Malentendant",
+    "ja": "聴覚障害者",
+    "sv": "Döv / Hörselskadad"
+  },
+  "DA": {
+    "en": "Danish",
+    "es": "Danés",
+    "fr": "Danois",
+    "ja": "デンマーク語",
+    "sv": "Danska"
+  },
+  "DE": {
+    "en": "German",
+    "es": "Alemán",
+    "fr": "Allemand",
+    "ja": "ドイツ語",
+    "sv": "Tyska"
+  },
+  "EL": {
+    "en": "Greek",
+    "es": "Griego",
+    "fr": "Grec",
+    "ja": "ギリシャ語",
+    "sv": "Grekiska"
+  },
+  "FA": {
+    "en": "Persian",
+    "es": "Persa",
+    "fr": "Persan",
+    "ja": "ペルシア語",
+    "sv": "Persiska"
+  },
+  "HI": {
+    "en": "Hindi",
+    "es": "Hindi",
+    "fr": "Hindi",
+    "ja": "ヒンディー語",
+    "sv": "Hindi"
+  },
+  "HR": {
+    "en": "Croatian",
+    "es": "Croata",
+    "fr": "Croate",
+    "ja": "クロアチア語",
+    "sv": "Kroatiska"
+  },
+  "HU": {
+    "en": "Hungarian",
+    "es": "Húngaro",
+    "fr": "Hongrois",
+    "ja": "ハンガリー語",
+    "sv": "Ungerska"
+  },
+  "LO-I": {
+    "en": "Loners / Isolationists",
+    "es": "Solitarios / Aislacionistas",
+    "fr": "Solitaires / Isolationnistes",
+    "ja": "孤独 / 孤立主義者",
+    "sv": "Ensamvargar / Isolationister"
+  },
+  "LT": {
+    "en": "Lithuanian",
+    "es": "Lituano",
+    "fr": "Lituanien",
+    "ja": "リトアニア語",
+    "sv": "Litauiska"
+  },
+  "ML": {
+    "en": "Malayalam",
+    "es": "Malayalam",
+    "fr": "Malayalam",
+    "ja": "マラヤーラム語",
+    "sv": "Malayalam"
+  },
+  "POA": {
+    "en": "Proof of Attendance",
+    "es": "Prueba de Asistencia",
+    "fr": "Preuve de Présence",
+    "ja": "出席証明",
+    "sv": "Närvarobevis"
+  },
+  "QSL": {
+    "en": "Quebec Sign Language",
+    "es": "Lengua de Señas de Quebec",
+    "fr": "Langue des Signes Québécoise",
+    "ja": "ケベック手話",
+    "sv": "Quebecskt Teckenspråk"
+  },
+  "RSL": {
+    "en": "Russian Sign Language",
+    "es": "Lengua de Señas Rusa",
+    "fr": "Langue des Signes Russe",
+    "ja": "ロシア手話",
+    "sv": "Ryskt Teckenspråk"
+  },
+  "SK": {
+    "en": "Slovak",
+    "es": "Eslovaco",
+    "fr": "Slovaque",
+    "ja": "スロバキア語",
+    "sv": "Slovakiska"
+  },
+  "SV": {
+    "en": "Swedish",
+    "es": "Sueco",
+    "fr": "Suédois",
+    "ja": "スウェーデン語",
+    "sv": "Svenska"
+  },
+  "TH": {
+    "en": "Thai",
+    "es": "Tailandés",
+    "fr": "Thaï",
+    "ja": "タイ語",
+    "sv": "Thailändska"
+  },
+  "TL": {
+    "en": "Tagalog",
+    "es": "Tagalo",
+    "fr": "Tagalog",
+    "ja": "タガログ語",
+    "sv": "Tagalog"
+  },
+  "UK": {
+    "en": "Ukrainian",
+    "es": "Ucraniano",
+    "fr": "Ukrainien",
+    "ja": "ウクライナ語",
+    "sv": "Ukrainska"
+  }
+}

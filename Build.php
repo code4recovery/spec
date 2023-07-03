@@ -17,27 +17,33 @@ class Build
 {
     /**
      * The path to the json file containing spec data.
-     * @var string
+     * @var array
      */
-    public string $specFile = './data/types.json';
+    private array $tables = [
+        [
+            'file' => './data/types.json',
+            'delimiterTop' => '<!-- Types -->',
+            'delimiterBottom' => '<!-- End Types -->',
+        ],
+        [
+            'file' => './data/proposed-new.json',
+            'delimiterTop' => '<!-- Proposed Types -->',
+            'delimiterBottom' => '<!-- End Proposed Types -->',
+
+        ],
+        [
+            'file' => './data/proposed-change.json',
+            'delimiterTop' => '<!-- Proposed Changed Types -->',
+            'delimiterBottom' => '<!-- End Proposed Changed Types -->',
+
+        ]
+    ];
 
     /**
      * The path to the readme.md that will be created.
      * @var string
      */
-    public string $readmeFile = './README.md';
-
-    /**
-     * Replacement begins on the line after the appearance of this string.
-     * @var string
-     */
-    private string $tableDelimiterTop = '<!-- Types -->';
-
-    /**
-     * Replacement ends on the line before the appearance of this string.
-     * @var string
-     */
-    private string $tableDelimiterBottom = '<!-- End Types -->';
+    private string $readmeFile = './README.md';
 
     /**
      * Languages used in the types table
@@ -59,22 +65,24 @@ class Build
      */
     public function __construct()
     {
-        $this->writeReadme($this->createTable());
+        foreach ($this->tables as $table) {
+            $this->writeReadme($table);
+        }
         $this->writeTypeScript();
     }
 
     /**
-     * Builds the types table.
+     * Builds a types table.
      *
      * @return string Markdown for table
      */
-    private function createTable(): string
+    private function createTable($table): string
     {
         return implode(PHP_EOL, [
-            $this->tableDelimiterTop,
+            $table['delimiterTop'],
             $this->createTableHeader(),
-            $this->createTableRows(),
-            $this->tableDelimiterBottom,
+            $this->createTableRows($table['file']),
+            $table['delimiterBottom'],
         ]);
     }
 
@@ -112,13 +120,13 @@ class Build
      *
      * @return string
      */
-    private function createTableRows(): string
+    private function createTableRows($specFile): string
     {
         // Init empty array
         $specRows = [];
 
         // Get spec data & language codes
-        $specJson = json_decode(file_get_contents($this->specFile), true);
+        $specJson = json_decode(file_get_contents($specFile), true);
         $languages = array_keys($this->languages);
 
         // Loop through types from spec
@@ -146,12 +154,17 @@ class Build
      *
      * @return void
      */
-    private function writeReadme(string $tableContent): void
+    private function writeReadme(array $table): void
     {
         // Get the current readme contents
         $readmeContents = file_get_contents($this->readmeFile);
+
+        // Get the new table content
+        $tableContent = $this->createTable($table);
+
         // Replace existing table
-        $result = preg_replace('#(' . preg_quote($this->tableDelimiterTop) . ')(.*)(' . preg_quote($this->tableDelimiterBottom) . ')#siU', $tableContent, $readmeContents);
+        $result = preg_replace('#(' . preg_quote($table['delimiterTop']) . ')(.*)(' . preg_quote($table['delimiterBottom']) . ')#siU', $tableContent, $readmeContents);
+
         // Write new file
         $readmeHandle = fopen($this->readmeFile, "w") or die("Unable to open file!");
         fwrite($readmeHandle, $result);
@@ -166,7 +179,7 @@ class Build
     private function writeTypeScript(): void
     {
         file_put_contents('./src/languages.ts', 'export const languages = ' . json_encode(array_keys($this->languages)) . ' as const;');
-        $json = file_get_contents($this->specFile);
+        $json = file_get_contents('./data/types.json');
         file_put_contents('./src/types.ts', 'export const types = ' . $json . ';');
     }
 }

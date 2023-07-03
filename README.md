@@ -150,9 +150,9 @@ This API is for weekly recovery meetings.
 The codes below are only used for transmitting meeting data. App users will only see the full definitions.
 
 The codes below should be considered 'reserved.' In your implementation, it's ok to alter the description (for example
-"Topic Discussion" rather than "Discussion") so long as the intent is the same. "Child Care Available" is a common substitute
-for "Babysitting Available." "American Sign Language" or "ASL" rather than "Sign Language." It's also ok to add types,
-they will be ignored by the importer.
+"Topic Discussion" rather than "Discussion") so long as the intent is the same. For example, "Child Care Available" is a common substitute
+for "Babysitting Available." It's also ok to add types,
+they will be ignored by the importer, but be careful not to use any existing or proposed codes.
 
 <!-- Types -->
 |Code|English|Español|Français|日本語|Svenska|
@@ -217,6 +217,46 @@ they will be ignored by the importer.
 |`Y`|Young People|Gente joven|Jeunes|ヤング|Young People|
 <!-- End Types -->
 
+## Proposed New Types
+
+The following types are proposed for future use. They are not currently in use in the app.
+
+<!-- Proposed Types -->
+|Code|English|Español|Français|日本語|Svenska|
+|---|---|---|---|---|---|
+|`AM`|Amharic|Amárico|Amharique|アムハラ語|Amhariska|
+|`BV-I`|Blind / Visually Impaired|Ciego / Discapacidad Visual|Aveugle / Malvoyant|視覚障害者|Blind / Synskadad|
+|`D-HOH`|Deaf / Hard of Hearing|Sordo / Duro de Oído|Sourd / Malentendant|聴覚障害者|Döv / Hörselskadad|
+|`DA`|Danish|Danés|Danois|デンマーク語|Danska|
+|`DE`|German|Alemán|Allemand|ドイツ語|Tyska|
+|`EL`|Greek|Griego|Grec|ギリシャ語|Grekiska|
+|`FA`|Persian|Persa|Persan|ペルシア語|Persiska|
+|`HI`|Hindi|Hindi|Hindi|ヒンディー語|Hindi|
+|`HR`|Croatian|Croata|Croate|クロアチア語|Kroatiska|
+|`HU`|Hungarian|Húngaro|Hongrois|ハンガリー語|Ungerska|
+|`LO-I`|Loners / Isolationists|Solitarios / Aislacionistas|Solitaires / Isolationnistes|孤独 / 孤立主義者|Ensamvargar / Isolationister|
+|`LT`|Lithuanian|Lituano|Lituanien|リトアニア語|Litauiska|
+|`ML`|Malayalam|Malayalam|Malayalam|マラヤーラム語|Malayalam|
+|`POA`|Proof of Attendance|Prueba de Asistencia|Preuve de Présence|出席証明|Närvarobevis|
+|`QSL`|Quebec Sign Language|Lengua de Señas de Quebec|Langue des Signes Québécoise|ケベック手話|Quebecskt Teckenspråk|
+|`RSL`|Russian Sign Language|Lengua de Señas Rusa|Langue des Signes Russe|ロシア手話|Ryskt Teckenspråk|
+|`SK`|Slovak|Eslovaco|Slovaque|スロバキア語|Slovakiska|
+|`SV`|Swedish|Sueco|Suédois|スウェーデン語|Svenska|
+|`TH`|Thai|Tailandés|Thaï|タイ語|Thailändska|
+|`TL`|Tagalog|Tagalo|Tagalog|タガログ語|Tagalog|
+|`UK`|Ukrainian|Ucraniano|Ukrainien|ウクライナ語|Ukrainska|
+<!-- End Proposed Types -->
+
+## Proposed Changed Types
+
+The following types being considered for a name change.
+
+<!-- Proposed Changed Types -->
+|Code|English|Español|Français|日本語|Svenska|
+|---|---|---|---|---|---|
+|`LGBTQ`|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|HBTQIAA+|
+<!-- End Proposed Changed Types -->
+
 ## Sharing Your Data
 
 If you choose, you may make your feed discoverable by linking to it (like RSS) in your site's `<HEAD>`.
@@ -231,7 +271,7 @@ The script may have any name, and be in any directory, but it should be a fully 
 
 Some possible next steps for this format include:
 
-- organizational metadata so that an org can indicate its preferred name and URL
+- metadata so that service entities can indicate their preferred name and URL
 - contact information for following up on issues with feed or meeting info
 - language split out into its own fields
 - indication of which language was used for geocoding
