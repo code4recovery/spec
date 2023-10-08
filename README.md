@@ -187,7 +187,7 @@ they will be ignored by the importer, but be careful not to use any existing or 
 |`JA`|Japanese|Japonés|Japonais|日本語|Japanska|
 |`KOR`|Korean|Coreano|Coréen|韓国語|Koreanska|
 |`L`|Lesbian|Lesbianas|Lesbienne|レズビアン|Lesbiskt|
-|`LGBTQ`|LGBTQ|LGBTQ|LGBTQ|LGBTQ|LGBTQ|
+|`LGBTQ`|LGBTQ|LGBTQ|LGBTQ|LGBTQ|HBTQ|
 |`LIT`|Literature|Literatura|Publications|書籍|Litteratur|
 |`LS`|Living Sober|Viviendo Sobrio|Vivre… Sans alcool|リビングソーバー|Leva Nyktert|
 |`M`|Men|Hombres|Hommes|男性|Mansmöte|
