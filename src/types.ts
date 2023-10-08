@@ -214,7 +214,7 @@ export const types = {
     es: "LGBTQ",
     fr: "LGBTQ",
     ja: "LGBTQ",
-    sv: "LGBTQ",
+    sv: "HBTQ",
   },
   LIT: {
     en: "Literature",
