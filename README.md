@@ -44,16 +44,14 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 		"postal_code": "98765",
 		"country": "US",
 		"approximate": "no",
-		"entity": {
-			"name": "Area 72",
-			"url": "https://district11aa.org",
-			"emails": [
-				"feedback@district11aa.org"
-			],
-			"phone": "+1-123-456-7890",
-			"logo": "https://district11aa.org/images/logo.svg",
-			"location": "Whatcom County, Washington",
-		}
+		"entity": "Area 72",
+		"entity_feedback_emails": [
+			"feedback@district11aa.org"
+		],
+		"entity_location": "Whatcom County, Washington",
+		"entity_logo": "https://district11aa.org/images/logo.svg",
+		"entity_phone": "+1-123-456-7890",
+		"entity_url": "https://district11aa.org"
 	},
 	...
 ]
@@ -117,17 +115,17 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `feedback_url` is an optional string URL that can be used to provide feedback about the meeting. These could be local links, eg `/feedback?meeting=meeting-slug-1`, remote links, eg `https://typeform.com/to/23904203?meeting=meeting-slug-1`, or email links, eg `mailto:webservant@domain.org?subject=meeting-slug-1`.
 
-`entity` is an optional object describing the service entity responsible for the listing.
+`entity` is the name of the service entity responsible for the listing. entity info is optional, but `entity` is required if any of the other entity fields are present.
 
-- `name` is the name of the service entity responsible for the listing.
+`entity_feedback_emails` an array of feedback addresses for the service entity responsible for the listing.
 
-- `url` is the URL of the service entity responsible for the listing.
+`entity_location` is a human-readable physical description of the service area of the entity, eg `Whatcom County, Washington`.
 
-- `emails` an array of feedback addresses for the service entity responsible for the listing.
+`entity_logo` is the URL of the logo of the service entity responsible for the listing. should begin with `https://`. ideally the image this points to is a vector-based SVG so it can be scaled to any size. Additionally, the image should be square, and have a transparent background. Finally, colors should be specified using `currentColor` so that they can adapt to the color mode (light, dark) of the app.
 
-- `phone` is the phone number of the service entity responsible for the listing.
+`entity_phone` is the phone number of the service entity responsible for the listing. Should be in the format `+1-123-456-7890` and start with country code for international dialing.
 
-- `location` is a human-readable physical description of the service area of the entity.
+`entity_url` is the URL of the website homepage of the service entity responsible for the listing. should begin with `https://`
 
 ## Common Questions & Concerns
 
