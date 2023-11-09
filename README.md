@@ -272,11 +272,9 @@ The following types are proposed for future use. They are not currently in use i
 The following types being considered for a name change.
 
 <!-- Proposed Changed Types -->
-
-| Code    | English   | Español   | Français  | 日本語    | Svenska  |
-| ------- | --------- | --------- | --------- | --------- | -------- |
-| `LGBTQ` | LGBTQIAA+ | LGBTQIAA+ | LGBTQIAA+ | LGBTQIAA+ | HBTQIAA+ |
-
+|Code|English|Español|Français|日本語|Svenska|
+|---|---|---|---|---|---|
+|`LGBTQ`|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|HBTQIAA+|
 <!-- End Proposed Changed Types -->
 
 ## Sharing Your Data
