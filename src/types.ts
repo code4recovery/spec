@@ -41,6 +41,13 @@ export const types = {
     ja: "アラノンと同時進行",
     sv: "Tillsammans med Al-Anon",
   },
+  AM: {
+    en: "Amharic",
+    es: "Amárico",
+    fr: "Amharique",
+    ja: "アムハラ語",
+    sv: "Amhariska",
+  },
   ASL: {
     en: "American Sign Language",
     es: "Lenguaje por señas",
@@ -111,6 +118,13 @@ export const types = {
     ja: "ディスカッション",
     sv: "Diskussion",
   },
+  DA: {
+    en: "Danish",
+    es: "Danés",
+    fr: "Danois",
+    ja: "デンマーク語",
+    sv: "Danska",
+  },
   DB: {
     en: "Digital Basket",
     es: "Canasta digital",
@@ -125,6 +139,13 @@ export const types = {
     ja: "重複診断",
     sv: "Dubbel Diagnos",
   },
+  DE: {
+    en: "German",
+    es: "Alemán",
+    fr: "Allemand",
+    ja: "ドイツ語",
+    sv: "Tyska",
+  },
   DR: {
     en: "Daily Reflections",
     es: "Reflexiones Diarias",
@@ -132,12 +153,26 @@ export const types = {
     ja: "今日を新たに",
     sv: "Dagliga Reflektioner",
   },
+  EL: {
+    en: "Greek",
+    es: "Griego",
+    fr: "Grec",
+    ja: "ギリシャ語",
+    sv: "Grekiska",
+  },
   EN: {
     en: "English",
     es: "Inglés",
     fr: "Anglais",
     ja: "英語",
     sv: "Engelska",
+  },
+  FA: {
+    en: "Persian",
+    es: "Persa",
+    fr: "Persan",
+    ja: "ペルシア語",
+    sv: "Persiska",
   },
   FF: {
     en: "Fragrance Free",
@@ -180,6 +215,27 @@ export const types = {
     fr: "Hébreu",
     ja: "ヘブライ語",
     sv: "Hebreiska",
+  },
+  HI: {
+    en: "Hindi",
+    es: "Hindi",
+    fr: "Hindi",
+    ja: "ヒンディー語",
+    sv: "Hindi",
+  },
+  HR: {
+    en: "Croatian",
+    es: "Croata",
+    fr: "Croate",
+    ja: "クロアチア語",
+    sv: "Kroatiska",
+  },
+  HU: {
+    en: "Hungarian",
+    es: "Húngaro",
+    fr: "Hongrois",
+    ja: "ハンガリー語",
+    sv: "Ungerska",
   },
   ITA: {
     en: "Italian",
@@ -230,6 +286,13 @@ export const types = {
     ja: "リビングソーバー",
     sv: "Leva Nyktert",
   },
+  LT: {
+    en: "Lithuanian",
+    es: "Lituano",
+    fr: "Lituanien",
+    ja: "リトアニア語",
+    sv: "Litauiska",
+  },
   M: {
     en: "Men",
     es: "Hombres",
@@ -243,6 +306,13 @@ export const types = {
     fr: "Méditation",
     ja: "黙想",
     sv: "Meditationsmöte",
+  },
+  ML: {
+    en: "Malayalam",
+    es: "Malayalam",
+    fr: "Malayalam",
+    ja: "マラヤーラム語",
+    sv: "Malayalam",
   },
   N: {
     en: "Native American",
@@ -328,6 +398,13 @@ export const types = {
     ja: "シニア",
     sv: "Seniorer",
   },
+  SK: {
+    en: "Slovak",
+    es: "Eslovaco",
+    fr: "Slovaque",
+    ja: "スロバキア語",
+    sv: "Slovakiska",
+  },
   SM: {
     en: "Smoking Permitted",
     es: "Se permite fumar",
@@ -349,6 +426,13 @@ export const types = {
     ja: "ステップ",
     sv: "Stegmöte",
   },
+  SV: {
+    en: "Swedish",
+    es: "Sueco",
+    fr: "Suédois",
+    ja: "スウェーデン語",
+    sv: "Svenska",
+  },
   T: {
     en: "Transgender",
     es: "Transgénero",
@@ -363,12 +447,33 @@ export const types = {
     ja: "一時的休止中",
     sv: "Tillfälligt Stängt",
   },
+  TH: {
+    en: "Thai",
+    es: "Tailandés",
+    fr: "Thaï",
+    ja: "タイ語",
+    sv: "Thailändska",
+  },
+  TL: {
+    en: "Tagalog",
+    es: "Tagalo",
+    fr: "Tagalog",
+    ja: "タガログ語",
+    sv: "Tagalog",
+  },
   TR: {
     en: "Tradition Study",
     es: "Estudio de tradicion",
     fr: "Étude des Traditions",
     ja: "伝統",
     sv: "Traditionsmöte",
+  },
+  UK: {
+    en: "Ukrainian",
+    es: "Ucraniano",
+    fr: "Ukrainien",
+    ja: "ウクライナ語",
+    sv: "Ukrainska",
   },
   W: {
     en: "Women",

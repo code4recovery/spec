@@ -175,68 +175,81 @@ for "Babysitting Available." It's also ok to add types,
 they will be ignored by the importer, but be careful not to use any existing or proposed codes.
 
 <!-- Types -->
-
-| Code    | English                        | Español                              | Français                                     | 日本語                    | Svenska                  |
-| ------- | ------------------------------ | ------------------------------------ | -------------------------------------------- | ------------------------- | ------------------------ |
-| `11`    | 11th Step Meditation           | Meditación del Paso 11               | Méditation sur la 11e Étape                  | ステップ 11 黙想          | 11th Stegs Meditation    |
-| `12x12` | 12 Steps & 12 Traditions       | 12 Pasos y 12 Tradiciones            | 12 Étapes et 12 Traditions                   | 12 のステップと 12 の伝統 | 12 Steg & 12 Traditioner |
-| `A`     | Secular                        | Secular                              | Séculier                                     | 無宗教                    | Sekulärt                 |
-| `ABSI`  | As Bill Sees It                | Como lo ve Bill                      | Réflexions de Bill                           | ビルはこう思う            | Som Bill Ser Det         |
-| `AL`    | Concurrent with Alateen        | Concurrente con Alateen              | En même temps qu’Alateen                     | アラティーンと同時進行    | Tillsammans med Alateen  |
-| `AL-AN` | Concurrent with Al-Anon        | Concurrente con Al-Anon              | En même temps qu’Al-Anon                     | アラノンと同時進行        | Tillsammans med Al-Anon  |
-| `ASL`   | American Sign Language         | Lenguaje por señas                   | Langage des Signes                           | アメリカ手話              | Amerikanskt teckenspråk  |
-| `B`     | Big Book                       | Libro Grande                         | Gros Livre                                   | ビッグブック              | Stora Boken              |
-| `BA`    | Babysitting Available          | Guardería disponible                 | Garderie d’enfants disponible                | ベビーシッターあり        | Barnvakt Finns           |
-| `BE`    | Newcomer                       | Principiantes                        | Nouveau/nouvelle                             | ビギナーズ                | Nykomling                |
-| `BI`    | Bisexual                       | Bisexual                             | Bisexuel                                     | バイセクシャル            | Bisexuellt               |
-| `BRK`   | Breakfast                      | Desayuno                             | Petit déjeuner                               | 朝食                      | Frukost                  |
-| `C`     | Closed                         | Cerrada                              | Fermé                                        | クローズド                | Slutet                   |
-| `CAN`   | Candlelight                    | Luz de una vela                      | À la chandelle                               | キャンドル                | Tända Ljus               |
-| `CF`    | Child-Friendly                 | Niño amigable                        | Enfants acceptés                             | お子さま歓迎              | Barnvänligt              |
-| `D`     | Discussion                     | Discusión                            | Discussion                                   | ディスカッション          | Diskussion               |
-| `DB`    | Digital Basket                 | Canasta digital                      | Panier numérique                             | 電子献金                  | Digital Korg             |
-| `DD`    | Dual Diagnosis                 | Diagnóstico dual                     | Double diagnostic                            | 重複診断                  | Dubbel Diagnos           |
-| `DR`    | Daily Reflections              | Reflexiones Diarias                  | Réflexions quotidiennes                      | 今日を新たに              | Dagliga Reflektioner     |
-| `EN`    | English                        | Inglés                               | Anglais                                      | 英語                      | Engelska                 |
-| `FF`    | Fragrance Free                 | Sin fragancia                        | Sans parfum                                  | 香水なし                  | Parfym Fritt             |
-| `FR`    | French                         | Francés                              | Français                                     | フランス語                | Franska                  |
-| `G`     | Gay                            | Gay                                  | Gai                                          | ゲイ                      | Gay                      |
-| `GR`    | Grapevine                      | La Viña                              | Grapevine                                    | グレープバイン            | Grapevine                |
-| `H`     | Birthday                       | Cumpleaños                           | Anniversaire                                 | バースデー                | Födelsedag               |
-| `HE`    | Hebrew                         | Hebreo                               | Hébreu                                       | ヘブライ語                | Hebreiska                |
-| `ITA`   | Italian                        | Italiano                             | Italien                                      | イタリア語                | Italienska               |
-| `JA`    | Japanese                       | Japonés                              | Japonais                                     | 日本語                    | Japanska                 |
-| `KOR`   | Korean                         | Coreano                              | Coréen                                       | 韓国語                    | Koreanska                |
-| `L`     | Lesbian                        | Lesbianas                            | Lesbienne                                    | レズビアン                | Lesbiskt                 |
-| `LGBTQ` | LGBTQ                          | LGBTQ                                | LGBTQ                                        | LGBTQ                     | HBTQ                     |
-| `LIT`   | Literature                     | Literatura                           | Publications                                 | 書籍                      | Litteratur               |
-| `LS`    | Living Sober                   | Viviendo Sobrio                      | Vivre… Sans alcool                           | リビングソーバー          | Leva Nyktert             |
-| `M`     | Men                            | Hombres                              | Hommes                                       | 男性                      | Mansmöte                 |
-| `MED`   | Meditation                     | Meditación                           | Méditation                                   | 黙想                      | Meditationsmöte          |
-| `N`     | Native American                | Nativo Americano                     | Autochtone                                   | ネイティブアメリカン      | Ur-amerikanskt           |
-| `NDG`   | Indigenous                     | Indígena                             | Indigène                                     | 先住民                    | Urfolkligt               |
-| `O`     | Open                           | Abierta                              | Ouvert(e)                                    | オープン                  | Öppet                    |
-| `OUT`   | Outdoor                        | Al aire libre                        | En plein air                                 | アウトドア                | Utomhus                  |
-| `P`     | Professionals                  | Profesionales                        | Professionnels                               | 職業人                    | Professionella           |
-| `POC`   | People of Color                | Gente de color                       | Gens de couleur                              | 有色人種                  | Färgade                  |
-| `POL`   | Polish                         | Polaco                               | Polonais                                     | ポーランド語              | Polska                   |
-| `POR`   | Portuguese                     | Portugués                            | Portugais                                    | ポルトガル語              | Portugisiska             |
-| `PUN`   | Punjabi                        | Punjabi                              | Pendjabi                                     | パンジャブ語              | Punjabi                  |
-| `RUS`   | Russian                        | Ruso                                 | Russe                                        | ロシア語                  | Ryska                    |
-| `S`     | Spanish                        | Español                              | Espagnol                                     | スペイン語                | Spanska                  |
-| `SEN`   | Seniors                        | Personas mayores                     | Séniors                                      | シニア                    | Seniorer                 |
-| `SM`    | Smoking Permitted              | Se permite fumar                     | Permis de fumer                              | 喫煙可                    | Rökning Tillåten         |
-| `SP`    | Speaker                        | Orador                               | Conférencier                                 | スピーカー                | Talare                   |
-| `ST`    | Step Study                     | Estudio de pasos                     | Sur les Étapes                               | ステップ                  | Stegmöte                 |
-| `T`     | Transgender                    | Transgénero                          | Transgenre                                   | トランスジェンダー        | Transpersoner            |
-| `TC`    | Location Temporarily Closed    | Ubicación temporalmente cerrada      | Emplacement temporairement fermé             | 一時的休止中              | Tillfälligt Stängt       |
-| `TR`    | Tradition Study                | Estudio de tradicion                 | Étude des Traditions                         | 伝統                      | Traditionsmöte           |
-| `W`     | Women                          | Mujer                                | Femmes                                       | 女性                      | Kvinnomöte               |
-| `X`     | Wheelchair Access              | Acceso en silla de ruedas            | Accès aux fauteuils roulants                 | 車いすアクセス            | Handikappanpassat        |
-| `XB`    | Wheelchair-Accessible Bathroom | Baño accesible para sillas de ruedas | Toilettes accessibles aux fauteuils roulants | 車いす使用者用トイレ      | Handikappanpassad WC     |
-| `XT`    | Cross Talk Permitted           | Se permite opinar                    | Conversation croisée permise                 | クロストーク可能          | Kommentarer Tilltåtna    |
-| `Y`     | Young People                   | Gente joven                          | Jeunes                                       | ヤング                    | Young People             |
-
+|Code|English|Español|Français|日本語|Svenska|
+|---|---|---|---|---|---|
+|`11`|11th Step Meditation|Meditación del Paso 11|Méditation sur la 11e Étape|ステップ11 黙想|11th Stegs Meditation|
+|`12x12`|12 Steps & 12 Traditions|12 Pasos y 12 Tradiciones|12 Étapes et 12 Traditions|12のステップと12の伝統|12 Steg & 12 Traditioner|
+|`A`|Secular|Secular|Séculier|無宗教|Sekulärt|
+|`ABSI`|As Bill Sees It|Como lo ve Bill|Réflexions de Bill|ビルはこう思う|Som Bill Ser Det|
+|`AL`|Concurrent with Alateen|Concurrente con Alateen|En même temps qu’Alateen|アラティーンと同時進行|Tillsammans med Alateen|
+|`AL-AN`|Concurrent with Al-Anon|Concurrente con Al-Anon|En même temps qu’Al-Anon|アラノンと同時進行|Tillsammans med Al-Anon|
+|`AM`|Amharic|Amárico|Amharique|アムハラ語|Amhariska|
+|`ASL`|American Sign Language|Lenguaje por señas|Langage des Signes|アメリカ手話|Amerikanskt teckenspråk|
+|`B`|Big Book|Libro Grande|Gros Livre|ビッグブック|Stora Boken|
+|`BA`|Babysitting Available|Guardería disponible|Garderie d’enfants disponible|ベビーシッターあり|Barnvakt Finns|
+|`BE`|Newcomer|Principiantes|Nouveau/nouvelle|ビギナーズ|Nykomling|
+|`BI`|Bisexual|Bisexual|Bisexuel|バイセクシャル|Bisexuellt|
+|`BRK`|Breakfast|Desayuno|Petit déjeuner|朝食|Frukost|
+|`C`|Closed|Cerrada|Fermé|クローズド|Slutet|
+|`CAN`|Candlelight|Luz de una vela|À la chandelle|キャンドル|Tända Ljus|
+|`CF`|Child-Friendly|Niño amigable|Enfants acceptés|お子さま歓迎|Barnvänligt|
+|`D`|Discussion|Discusión|Discussion|ディスカッション|Diskussion|
+|`DA`|Danish|Danés|Danois|デンマーク語|Danska|
+|`DB`|Digital Basket|Canasta digital|Panier numérique|電子献金|Digital Korg|
+|`DD`|Dual Diagnosis|Diagnóstico dual|Double diagnostic|重複診断|Dubbel Diagnos|
+|`DE`|German|Alemán|Allemand|ドイツ語|Tyska|
+|`DR`|Daily Reflections|Reflexiones Diarias|Réflexions quotidiennes|今日を新たに|Dagliga Reflektioner|
+|`EL`|Greek|Griego|Grec|ギリシャ語|Grekiska|
+|`EN`|English|Inglés|Anglais|英語|Engelska|
+|`FA`|Persian|Persa|Persan|ペルシア語|Persiska|
+|`FF`|Fragrance Free|Sin fragancia|Sans parfum|香水なし|Parfym Fritt|
+|`FR`|French|Francés|Français|フランス語|Franska|
+|`G`|Gay|Gay|Gai|ゲイ|Gay|
+|`GR`|Grapevine|La Viña|Grapevine|グレープバイン|Grapevine|
+|`H`|Birthday|Cumpleaños|Anniversaire|バースデー|Födelsedag|
+|`HE`|Hebrew|Hebreo|Hébreu|ヘブライ語|Hebreiska|
+|`HI`|Hindi|Hindi|Hindi|ヒンディー語|Hindi|
+|`HR`|Croatian|Croata|Croate|クロアチア語|Kroatiska|
+|`HU`|Hungarian|Húngaro|Hongrois|ハンガリー語|Ungerska|
+|`ITA`|Italian|Italiano|Italien|イタリア語|Italienska|
+|`JA`|Japanese|Japonés|Japonais|日本語|Japanska|
+|`KOR`|Korean|Coreano|Coréen|韓国語|Koreanska|
+|`L`|Lesbian|Lesbianas|Lesbienne|レズビアン|Lesbiskt|
+|`LGBTQ`|LGBTQ|LGBTQ|LGBTQ|LGBTQ|HBTQ|
+|`LIT`|Literature|Literatura|Publications|書籍|Litteratur|
+|`LS`|Living Sober|Viviendo Sobrio|Vivre… Sans alcool|リビングソーバー|Leva Nyktert|
+|`LT`|Lithuanian|Lituano|Lituanien|リトアニア語|Litauiska|
+|`M`|Men|Hombres|Hommes|男性|Mansmöte|
+|`MED`|Meditation|Meditación|Méditation|黙想|Meditationsmöte|
+|`ML`|Malayalam|Malayalam|Malayalam|マラヤーラム語|Malayalam|
+|`N`|Native American|Nativo Americano|Autochtone|ネイティブアメリカン|Ur-amerikanskt|
+|`NDG`|Indigenous|Indígena|Indigène|先住民|Urfolkligt|
+|`O`|Open|Abierta|Ouvert(e)|オープン|Öppet|
+|`OUT`|Outdoor|Al aire libre|En plein air|アウトドア|Utomhus|
+|`P`|Professionals|Profesionales|Professionnels|職業人|Professionella|
+|`POC`|People of Color|Gente de color|Gens de couleur|有色人種|Färgade|
+|`POL`|Polish|Polaco|Polonais|ポーランド語|Polska|
+|`POR`|Portuguese|Portugués|Portugais|ポルトガル語|Portugisiska|
+|`PUN`|Punjabi|Punjabi|Pendjabi|パンジャブ語|Punjabi|
+|`RUS`|Russian|Ruso|Russe|ロシア語|Ryska|
+|`S`|Spanish|Español|Espagnol|スペイン語|Spanska|
+|`SEN`|Seniors|Personas mayores|Séniors|シニア|Seniorer|
+|`SK`|Slovak|Eslovaco|Slovaque|スロバキア語|Slovakiska|
+|`SM`|Smoking Permitted|Se permite fumar|Permis de fumer|喫煙可|Rökning Tillåten|
+|`SP`|Speaker|Orador|Conférencier|スピーカー|Talare|
+|`ST`|Step Study|Estudio de pasos|Sur les Étapes|ステップ|Stegmöte|
+|`SV`|Swedish|Sueco|Suédois|スウェーデン語|Svenska|
+|`T`|Transgender|Transgénero|Transgenre|トランスジェンダー|Transpersoner|
+|`TC`|Location Temporarily Closed|Ubicación temporalmente cerrada|Emplacement temporairement fermé|一時的休止中|Tillfälligt Stängt|
+|`TH`|Thai|Tailandés|Thaï|タイ語|Thailändska|
+|`TL`|Tagalog|Tagalo|Tagalog|タガログ語|Tagalog|
+|`TR`|Tradition Study|Estudio de tradicion|Étude des Traditions|伝統|Traditionsmöte|
+|`UK`|Ukrainian|Ucraniano|Ukrainien|ウクライナ語|Ukrainska|
+|`W`|Women|Mujer|Femmes|女性|Kvinnomöte|
+|`X`|Wheelchair Access|Acceso en silla de ruedas|Accès aux fauteuils roulants|車いすアクセス|Handikappanpassat|
+|`XB`|Wheelchair-Accessible Bathroom|Baño accesible para sillas de ruedas|Toilettes accessibles aux fauteuils roulants|車いす使用者用トイレ|Handikappanpassad WC|
+|`XT`|Cross Talk Permitted|Se permite opinar|Conversation croisée permise|クロストーク可能|Kommentarer Tilltåtna|
+|`Y`|Young People|Gente joven|Jeunes|ヤング|Young People|
 <!-- End Types -->
 
 ## Proposed New Types
@@ -244,31 +257,14 @@ they will be ignored by the importer, but be careful not to use any existing or 
 The following types are proposed for future use. They are not currently in use in the app.
 
 <!-- Proposed Types -->
-
-| Code    | English                   | Español                     | Français                     | 日本語            | Svenska                      |
-| ------- | ------------------------- | --------------------------- | ---------------------------- | ----------------- | ---------------------------- |
-| `AM`    | Amharic                   | Amárico                     | Amharique                    | アムハラ語        | Amhariska                    |
-| `BV-I`  | Blind / Visually Impaired | Ciego / Discapacidad Visual | Aveugle / Malvoyant          | 視覚障害者        | Blind / Synskadad            |
-| `D-HOH` | Deaf / Hard of Hearing    | Sordo / Duro de Oído        | Sourd / Malentendant         | 聴覚障害者        | Döv / Hörselskadad           |
-| `DA`    | Danish                    | Danés                       | Danois                       | デンマーク語      | Danska                       |
-| `DE`    | German                    | Alemán                      | Allemand                     | ドイツ語          | Tyska                        |
-| `EL`    | Greek                     | Griego                      | Grec                         | ギリシャ語        | Grekiska                     |
-| `FA`    | Persian                   | Persa                       | Persan                       | ペルシア語        | Persiska                     |
-| `HI`    | Hindi                     | Hindi                       | Hindi                        | ヒンディー語      | Hindi                        |
-| `HR`    | Croatian                  | Croata                      | Croate                       | クロアチア語      | Kroatiska                    |
-| `HU`    | Hungarian                 | Húngaro                     | Hongrois                     | ハンガリー語      | Ungerska                     |
-| `LO-I`  | Loners / Isolationists    | Solitarios / Aislacionistas | Solitaires / Isolationnistes | 孤独 / 孤立主義者 | Ensamvargar / Isolationister |
-| `LT`    | Lithuanian                | Lituano                     | Lituanien                    | リトアニア語      | Litauiska                    |
-| `ML`    | Malayalam                 | Malayalam                   | Malayalam                    | マラヤーラム語    | Malayalam                    |
-| `POA`   | Proof of Attendance       | Prueba de Asistencia        | Preuve de Présence           | 出席証明          | Närvarobevis                 |
-| `QSL`   | Quebec Sign Language      | Lengua de Señas de Quebec   | Langue des Signes Québécoise | ケベック手話      | Quebecskt Teckenspråk        |
-| `RSL`   | Russian Sign Language     | Lengua de Señas Rusa        | Langue des Signes Russe      | ロシア手話        | Ryskt Teckenspråk            |
-| `SK`    | Slovak                    | Eslovaco                    | Slovaque                     | スロバキア語      | Slovakiska                   |
-| `SV`    | Swedish                   | Sueco                       | Suédois                      | スウェーデン語    | Svenska                      |
-| `TH`    | Thai                      | Tailandés                   | Thaï                         | タイ語            | Thailändska                  |
-| `TL`    | Tagalog                   | Tagalo                      | Tagalog                      | タガログ語        | Tagalog                      |
-| `UK`    | Ukrainian                 | Ucraniano                   | Ukrainien                    | ウクライナ語      | Ukrainska                    |
-
+|Code|English|Español|Français|日本語|Svenska|
+|---|---|---|---|---|---|
+|`BV-I`|Blind / Visually Impaired|Ciego / Discapacidad Visual|Aveugle / Malvoyant|視覚障害者|Blind / Synskadad|
+|`D-HOH`|Deaf / Hard of Hearing|Sordo / Duro de Oído|Sourd / Malentendant|聴覚障害者|Döv / Hörselskadad|
+|`LO-I`|Loners / Isolationists|Solitarios / Aislacionistas|Solitaires / Isolationnistes|孤独 / 孤立主義者|Ensamvargar / Isolationister|
+|`POA`|Proof of Attendance|Prueba de Asistencia|Preuve de Présence|出席証明|Närvarobevis|
+|`QSL`|Quebec Sign Language|Lengua de Señas de Quebec|Langue des Signes Québécoise|ケベック手話|Quebecskt Teckenspråk|
+|`RSL`|Russian Sign Language|Lengua de Señas Rusa|Langue des Signes Russe|ロシア手話|Ryskt Teckenspråk|
 <!-- End Proposed Types -->
 
 ## Proposed Changed Types
