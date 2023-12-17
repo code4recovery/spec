@@ -328,6 +328,13 @@ export const types = {
     ja: "先住民",
     sv: "Urfolkligt",
   },
+  NO: {
+    en: "Norwegian",
+    es: "Noruego",
+    fr: "Norvégien",
+    ja: "ノルウェー語",
+    sv: "Norska",
+  },
   O: {
     en: "Open",
     es: "Abierta",
