@@ -32,7 +32,7 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 		"group": "The Serenity Group",
 		"notes": "Ring buzzer. Meeting is on the 2nd floor.",
 		"updated": "2014-05-31 14:32:23",
-		"url": "https://intergroup.org/meetings/sunday-serenity",
+		"url": "https://district123.org/meetings/sunday-serenity",
 		"types": [
 			"O",
 			"T",
@@ -44,14 +44,15 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 		"postal_code": "98765",
 		"country": "US",
 		"approximate": "no",
-		"entity": "Area 72",
+		"entity": "District 123",
+		"entity_email": "info@district123.org",
 		"entity_feedback_emails": [
-			"feedback@district11aa.org"
+			"meetingupdates@district123.org"
 		],
-		"entity_location": "Whatcom County, Washington",
-		"entity_logo": "https://district11aa.org/images/logo.svg",
+		"entity_location": "Example County, California",
+		"entity_logo": "https://district123.org/images/logo.svg",
 		"entity_phone": "+1-123-456-7890",
-		"entity_url": "https://district11aa.org"
+		"entity_url": "https://district123.org"
 	},
 	...
 ]
