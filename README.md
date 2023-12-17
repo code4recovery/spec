@@ -224,6 +224,7 @@ they will be ignored by the importer, but be careful not to use any existing or 
 |`ML`|Malayalam|Malayalam|Malayalam|マラヤーラム語|Malayalam|
 |`N`|Native American|Nativo Americano|Autochtone|ネイティブアメリカン|Ur-amerikanskt|
 |`NDG`|Indigenous|Indígena|Indigène|先住民|Urfolkligt|
+|`NO`|Norwegian|Noruego|Norvégien|ノルウェー語|Norska|
 |`O`|Open|Abierta|Ouvert(e)|オープン|Öppet|
 |`OUT`|Outdoor|Al aire libre|En plein air|アウトドア|Utomhus|
 |`P`|Professionals|Profesionales|Professionnels|職業人|Professionella|
