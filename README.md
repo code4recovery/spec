@@ -345,76 +345,7 @@ Example returned value
     "12x12" => "12 Steps & 12 Traditions"
     "A" => "Secular"
     "ABSI" => "As Bill Sees It"
-    "AL" => "Concurrent with Alateen"
-    "AL-AN" => "Concurrent with Al-Anon"
-    "AM" => "Amharic"
-    "ASL" => "American Sign Language"
-    "B" => "Big Book"
-    "BA" => "Babysitting Available"
-    "BE" => "Newcomer"
-    "BI" => "Bisexual"
-    "BRK" => "Breakfast"
-    "C" => "Closed"
-    "CAN" => "Candlelight"
-    "CF" => "Child-Friendly"
-    "D" => "Discussion"
-    "DA" => "Danish"
-    "DB" => "Digital Basket"
-    "DD" => "Dual Diagnosis"
-    "DE" => "German"
-    "DR" => "Daily Reflections"
-    "EL" => "Greek"
-    "EN" => "English"
-    "FA" => "Persian"
-    "FF" => "Fragrance Free"
-    "FR" => "French"
-    "G" => "Gay"
-    "GR" => "Grapevine"
-    "H" => "Birthday"
-    "HE" => "Hebrew"
-    "HI" => "Hindi"
-    "HR" => "Croatian"
-    "HU" => "Hungarian"
-    "ITA" => "Italian"
-    "JA" => "Japanese"
-    "KOR" => "Korean"
-    "L" => "Lesbian"
-    "LGBTQ" => "LGBTQ"
-    "LIT" => "Literature"
-    "LS" => "Living Sober"
-    "LT" => "Lithuanian"
-    "M" => "Men"
-    "MED" => "Meditation"
-    "ML" => "Malayalam"
-    "N" => "Native American"
-    "NDG" => "Indigenous"
-    "NO" => "Norwegian"
-    "O" => "Open"
-    "OUT" => "Outdoor"
-    "P" => "Professionals"
-    "POC" => "People of Color"
-    "POL" => "Polish"
-    "POR" => "Portuguese"
-    "PUN" => "Punjabi"
-    "RUS" => "Russian"
-    "S" => "Spanish"
-    "SEN" => "Seniors"
-    "SK" => "Slovak"
-    "SM" => "Smoking Permitted"
-    "SP" => "Speaker"
-    "ST" => "Step Study"
-    "SV" => "Swedish"
-    "T" => "Transgender"
-    "TC" => "Location Temporarily Closed"
-    "TH" => "Thai"
-    "TL" => "Tagalog"
-    "TR" => "Tradition Study"
-    "UK" => "Ukrainian"
-    "W" => "Women"
-    "X" => "Wheelchair Access"
-    "XB" => "Wheelchair-Accessible Bathroom"
-    "XT" => "Cross Talk Permitted"
-    "Y" => "Young People"
+    ...
 ];
 ```
 
@@ -423,8 +354,15 @@ Example returned value
 
 ### Installation
 ```shell
-npm
+npm i @code4recovery/spec
+```
+
+### Usage
+```shell
+import { getTypesForLanguage } from '@code4recovery/spec';
+
+const types = getTypesForLanguage('en');
 ```
 
 ## License
-Guzzle is made available under the MIT License (MIT). Please see [License File](LICENSE) for more information.
+Code4Recovery Spec is made available under the MIT License (MIT). Please see [License File](LICENSE) for more information.
