@@ -32,7 +32,7 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 		"group": "The Serenity Group",
 		"notes": "Ring buzzer. Meeting is on the 2nd floor.",
 		"updated": "2014-05-31 14:32:23",
-		"url": "https://intergroup.org/meetings/sunday-serenity",
+		"url": "https://district123.org/meetings/sunday-serenity",
 		"types": [
 			"O",
 			"T",
@@ -43,7 +43,16 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 		"state": "CA",
 		"postal_code": "98765",
 		"country": "US",
-		"approximate": "no"
+		"approximate": "no",
+		"entity": "District 123",
+		"entity_email": "info@district123.org",
+		"entity_feedback_emails": [
+			"meetingupdates@district123.org"
+		],
+		"entity_location": "Example County, California",
+		"entity_logo": "https://district123.org/images/logo.svg",
+		"entity_phone": "+1-123-456-7890",
+		"entity_url": "https://district123.org"
 	},
 	...
 ]
@@ -105,7 +114,21 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 
 `edit_url` is an optional string URL that trusted servants can use to edit the specific meeting's listing.
 
-`feedback_url` is an optional string URL that can be used to provide feedback about the meeting. These could be local links, eg `/feedback?meeting=meeting-slug-1`, remote links, eg `https://typeform.com/to/23904203?meeting=meeting-slug-1`, or email links, eg `mailto:webservant@domain.org?subject=meeting-slug-1`.
+`feedback_url` is an optional string URL that can be used to provide feedback about the meeting. These can be on-site or off-site absolute URLs, eg `https://example.org/feedback?meeting=meeting-slug-1` or `https://typeform.com/to/23904203?meeting=meeting-slug-1`, or email links, eg `mailto:webservant@domain.org?subject=meeting-slug-1`.
+
+`entity` is the name of the service entity responsible for the listing. entity info is optional, but `entity` is required if any of the other entity fields are present.
+
+`entity_email` is a public email address for the service entity responsible for the listing.
+
+`entity_feedback_emails` an array of feedback addresses for the service entity responsible for the listing.
+
+`entity_location` is a human-readable physical description of the service area of the entity, eg `Whatcom County, Washington`.
+
+`entity_logo` is the URL of the logo of the service entity responsible for the listing. should begin with `https://`. ideally the image this points to is a vector-based SVG so it can be scaled to any size. Additionally, the image should be square, and have a transparent background. Finally, colors should be specified using `currentColor` so that they can adapt to the color mode (light, dark) of the app.
+
+`entity_phone` is the phone number of the service entity responsible for the listing. Should be in the format `+1-123-456-7890` and start with country code for international dialing.
+
+`entity_website_url` is the URL of the website homepage of the service entity responsible for the listing. should begin with `https://`
 
 ## Common Questions & Concerns
 
