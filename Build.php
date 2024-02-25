@@ -69,6 +69,7 @@ class Build
             $this->writeReadme($table);
         }
         $this->writeTypeScript();
+        $this->writePHPObject();
     }
 
     /**
@@ -181,6 +182,33 @@ class Build
         file_put_contents('./src/languages.ts', 'export const languages = ' . json_encode(array_keys($this->languages)) . ' as const;');
         $json = file_get_contents('./data/types.json');
         file_put_contents('./src/types.ts', 'export const types = ' . $json . ';');
+    }
+
+    private function writePHPObject(): void
+    {
+        // Fetch the JSON file
+        $jsonData = file_get_contents('./data/types.json');
+        if ($jsonData === false) {
+            die("Error fetching JSON file.");
+        }
+
+        // Decode JSON data
+        $dataObject = json_decode($jsonData);
+        if ($dataObject === null) {
+            die("Error decoding JSON data.");
+        }
+
+        // Prepare the PHP content
+        $phpContent = "<?php\n\n" . 'return ' . var_export($dataObject, true) . ";\n";
+
+        // Write to types.php in the src directory
+        $fileWritten = file_put_contents(__DIR__ . '/src/types.php', $phpContent);
+
+        if ($fileWritten === false) {
+            die("Error writing to types.php.");
+        }
+
+        echo "types.php successfully written.\n";
     }
 }
 

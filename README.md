@@ -276,3 +276,93 @@ Some possible next steps for this format include:
 - contact information for following up on issues with feed or meeting info
 - language split out into its own fields
 - indication of which language was used for geocoding
+
+## Use the Spec in your code
+
+### PHP
+***
+### Code4Recovery Spec Composer Package
+
+This package contains a class that makes the most up-to-date meeting types available to your application. Updates are released anytime new meeting types are added.
+
+### Installation
+```shell
+composer require code4recovery/spec
+```
+
+### Get all available languages
+Returns an array of all available languages for types can be translated into. The array is keyed by language code and has the expanded language name as the value.
+```php
+$spec::getLanguages();
+```
+Example returned value
+```php
+[
+    'en' => 'English',
+    'es' => 'Español',
+    'fr' => 'Français',
+    'ja' => '日本語',
+    'sv' => 'Svenska',
+];
+```
+
+### Get all types
+Returns an object containing all current meeeting types in every language.
+```php
+$spec::getAllTypes();
+```
+Example returned value (truncated)
+```php
+{
+  "11": {
+    "en": "11th Step Meditation",
+    "es": "Meditación del Paso 11",
+    "fr": "Méditation sur la 11e Étape",
+    "ja": "ステップ11 黙想",
+    "sv": "11th Stegs Meditation"
+  },
+   "12x12": {
+    "en": "12 Steps & 12 Traditions",
+    "es": "12 Pasos y 12 Tradiciones",
+    "fr": "12 Étapes et 12 Traditions",
+    "ja": "12のステップと12の伝統",
+    "sv": "12 Steg & 12 Traditioner"
+  },
+  ...
+};
+```
+
+### Get types by language
+Returns an array of types translated into a specified language. Pass the desired language key as a string ('en', 'es', 'fr', etc.)
+
+```php
+$spec::getTypesByLanguage('en');
+```
+Example returned value
+```php
+[
+    11 => "11th Step Meditation"
+    "12x12" => "12 Steps & 12 Traditions"
+    "A" => "Secular"
+    "ABSI" => "As Bill Sees It"
+    ...
+];
+```
+
+### Typescript/Javascript
+***
+
+### Installation
+```shell
+npm i @code4recovery/spec
+```
+
+### Usage
+```shell
+import { getTypesForLanguage } from '@code4recovery/spec';
+
+const types = getTypesForLanguage('en');
+```
+
+## License
+Code4Recovery Spec is made available under the MIT License (MIT). Please see [License File](LICENSE) for more information.
