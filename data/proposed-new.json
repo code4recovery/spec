@@ -4,41 +4,47 @@
     "es": "Ciego / Discapacidad Visual",
     "fr": "Aveugle / Malvoyant",
     "ja": "視覚障害者",
-    "sv": "Blind / Synskadad"
+    "sv": "Blind / Synskadad",
+    "sk": "Nevidiaci / Zrakovo postihnutí"
   },
   "D-HOH": {
     "en": "Deaf / Hard of Hearing",
     "es": "Sordo / Duro de Oído",
     "fr": "Sourd / Malentendant",
     "ja": "聴覚障害者",
-    "sv": "Döv / Hörselskadad"
+    "sv": "Döv / Hörselskadad",
+    "sk": "Nepočujúci / Nedoslýchaví"
   },
   "LO-I": {
     "en": "Loners / Isolationists",
     "es": "Solitarios / Aislacionistas",
     "fr": "Solitaires / Isolationnistes",
     "ja": "孤独 / 孤立主義者",
-    "sv": "Ensamvargar / Isolationister"
+    "sv": "Ensamvargar / Isolationister",
+    "sk": "Samotári / Izolacionisti"
   },
   "POA": {
     "en": "Proof of Attendance",
     "es": "Prueba de Asistencia",
     "fr": "Preuve de Présence",
     "ja": "出席証明",
-    "sv": "Närvarobevis"
+    "sv": "Närvarobevis",
+    "sk": "Doklad o účasti"
   },
   "QSL": {
     "en": "Quebec Sign Language",
     "es": "Lengua de Señas de Quebec",
     "fr": "Langue des Signes Québécoise",
     "ja": "ケベック手話",
-    "sv": "Quebecskt Teckenspråk"
+    "sv": "Quebecskt Teckenspråk",
+    "sk": "Quebecký posunkový jazyk"
   },
   "RSL": {
     "en": "Russian Sign Language",
     "es": "Lengua de Señas Rusa",
     "fr": "Langue des Signes Russe",
     "ja": "ロシア手話",
-    "sv": "Ryskt Teckenspråk"
+    "sv": "Ryskt Teckenspråk",
+    "sk": "Ruský posunkový jazyk"
   }
 }
