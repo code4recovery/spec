@@ -326,6 +326,7 @@ Example returned value
     'fr' => 'Français',
     'ja' => '日本語',
     'sv' => 'Svenska',
+    'sk' => 'Slovenčina',
 ];
 ```
 
@@ -342,14 +343,16 @@ Example returned value (truncated)
     "es": "Meditación del Paso 11",
     "fr": "Méditation sur la 11e Étape",
     "ja": "ステップ11 黙想",
-    "sv": "11th Stegs Meditation"
+    "sv": "11th Stegs Meditation",
+    "sk": "Meditácia 11. kroku"
   },
    "12x12": {
     "en": "12 Steps & 12 Traditions",
     "es": "12 Pasos y 12 Tradiciones",
     "fr": "12 Étapes et 12 Traditions",
     "ja": "12のステップと12の伝統",
-    "sv": "12 Steg & 12 Traditioner"
+    "sv": "12 Steg & 12 Traditioner",
+    "sk": "12 Krokov & 12 Tradícií"
   },
   ...
 };

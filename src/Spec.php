@@ -10,6 +10,7 @@ class Spec
         'fr' => 'Français',
         'ja' => '日本語',
         'sv' => 'Svenska',
+        'sk' => 'Slovenčina',
     ];
 
     /**
