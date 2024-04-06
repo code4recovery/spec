@@ -4,6 +4,7 @@
     "es": "Ciego / Discapacidad Visual",
     "fr": "Aveugle / Malvoyant",
     "ja": "視覚障害者",
+    "sk": "Nevidiaci / Zrakovo postihnutí",
     "sv": "Blind / Synskadad"
   },
   "D-HOH": {
@@ -11,6 +12,7 @@
     "es": "Sordo / Duro de Oído",
     "fr": "Sourd / Malentendant",
     "ja": "聴覚障害者",
+    "sk": "Nepočujúci / Nedoslýchaví",
     "sv": "Döv / Hörselskadad"
   },
   "LO-I": {
@@ -18,6 +20,7 @@
     "es": "Solitarios / Aislacionistas",
     "fr": "Solitaires / Isolationnistes",
     "ja": "孤独 / 孤立主義者",
+    "sk": "Samotári / Izolacionisti",
     "sv": "Ensamvargar / Isolationister"
   },
   "POA": {
@@ -25,6 +28,7 @@
     "es": "Prueba de Asistencia",
     "fr": "Preuve de Présence",
     "ja": "出席証明",
+    "sk": "Doklad o účasti",
     "sv": "Närvarobevis"
   },
   "QSL": {
@@ -32,6 +36,7 @@
     "es": "Lengua de Señas de Quebec",
     "fr": "Langue des Signes Québécoise",
     "ja": "ケベック手話",
+    "sk": "Quebecký posunkový jazyk",
     "sv": "Quebecskt Teckenspråk"
   },
   "RSL": {
@@ -39,6 +44,7 @@
     "es": "Lengua de Señas Rusa",
     "fr": "Langue des Signes Russe",
     "ja": "ロシア手話",
+    "sk": "Ruský posunkový jazyk",
     "sv": "Ryskt Teckenspråk"
   }
 }

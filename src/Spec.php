@@ -1,5 +1,7 @@
 <?php
 
+namespace Code4Recovery;
+
 class Spec
 {
     private static array $languages = [
@@ -7,6 +9,7 @@ class Spec
         'es' => 'Español',
         'fr' => 'Français',
         'ja' => '日本語',
+        'sk' => 'Slovenčina',
         'sv' => 'Svenska',
     ];
 
