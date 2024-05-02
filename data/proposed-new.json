@@ -4,6 +4,7 @@
     "es": "Ciego / Discapacidad Visual",
     "fr": "Aveugle / Malvoyant",
     "ja": "視覚障害者",
+    "nl": "Blind / Visueel gehandicapt",
     "sk": "Nevidiaci / Zrakovo postihnutí",
     "sv": "Blind / Synskadad"
   },
@@ -12,6 +13,7 @@
     "es": "Sordo / Duro de Oído",
     "fr": "Sourd / Malentendant",
     "ja": "聴覚障害者",
+    "nl": "Doof / Hardhoren",
     "sk": "Nepočujúci / Nedoslýchaví",
     "sv": "Döv / Hörselskadad"
   },
@@ -20,6 +22,7 @@
     "es": "Solitarios / Aislacionistas",
     "fr": "Solitaires / Isolationnistes",
     "ja": "孤独 / 孤立主義者",
+    "nl": "Eenlingen / Isolationisten",
     "sk": "Samotári / Izolacionisti",
     "sv": "Ensamvargar / Isolationister"
   },
@@ -28,6 +31,7 @@
     "es": "Prueba de Asistencia",
     "fr": "Preuve de Présence",
     "ja": "出席証明",
+    "nl": "Bewijs van Aanwezigheid",
     "sk": "Doklad o účasti",
     "sv": "Närvarobevis"
   },
@@ -36,6 +40,7 @@
     "es": "Lengua de Señas de Quebec",
     "fr": "Langue des Signes Québécoise",
     "ja": "ケベック手話",
+    "nl": "Quebec -gebarentaal",
     "sk": "Quebecký posunkový jazyk",
     "sv": "Quebecskt Teckenspråk"
   },
@@ -44,6 +49,7 @@
     "es": "Lengua de Señas Rusa",
     "fr": "Langue des Signes Russe",
     "ja": "ロシア手話",
+    "nl": "Russische gebarentaal",
     "sk": "Ruský posunkový jazyk",
     "sv": "Ryskt Teckenspråk"
   }
