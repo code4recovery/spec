@@ -348,17 +348,17 @@ Also when adding a custom type, it's wise to stay away from any [ISO 369 languag
 <!-- Types -->
 |Code|English|Español|Français|日本語|Nederlands|Slovenčina|Svenska|
 |---|---|---|---|---|---|---|---|
-|`11`|11th Step Meditation|Meditación del Paso 11|Méditation sur la 11e Étape|ステップ11 黙想|11e stapmeditatie|Meditácia 11. kroku|11th Stegs Meditation|
+|`11`|11th Step Meditation|Meditación del Paso 11|Méditation sur la 11e Étape|ステップ11 黙想|Stap 11 meditatie|Meditácia 11. kroku|11th Stegs Meditation|
 |`12x12`|12 Steps & 12 Traditions|12 Pasos y 12 Tradiciones|12 Étapes et 12 Traditions|12のステップと12の伝統|12 Stappen en 12 Tradities|12 Krokov & 12 Tradícií|12 Steg & 12 Traditioner|
 |`A`|Secular|Secular|Séculier|無宗教|Seculier|Svetské|Sekulärt|
 |`ABSI`|As Bill Sees It|Como lo ve Bill|Réflexions de Bill|ビルはこう思う|Zoals Bill het ziet|Ako to vidí Bill|Som Bill Ser Det|
 |`AL`|Concurrent with Alateen|Concurrente con Alateen|En même temps qu’Alateen|アラティーンと同時進行|Gelijktijdig met Alateen|Súbežne s Alateen|Tillsammans med Alateen|
 |`AL-AN`|Concurrent with Al-Anon|Concurrente con Al-Anon|En même temps qu’Al-Anon|アラノンと同時進行|Gelijktijdig met Al-Anon|Súbežne s Al-Anon|Tillsammans med Al-Anon|
-|`AM`|Amharic|Amárico|Amharique|アムハラ語|Amharisch|Amharčina|Amhariska|
+|`AM`|Amharic|Amárico|Amharique|アムハラ語|Amhaars|Amharčina|Amhariska|
 |`ASL`|American Sign Language|Lenguaje por señas|Langage des Signes|アメリカ手話|Amerikaanse gebaren taal|Americký posunkový jazyk|Amerikanskt teckenspråk|
-|`B`|Big Book|Libro Grande|Gros Livre|ビッグブック|Groot boek|Veľká Kniha|Stora Boken|
-|`BA`|Babysitting Available|Guardería disponible|Garderie d’enfants disponible|ベビーシッターあり|Babysitten beschikbaar|Dostupné opatrovanie detí|Barnvakt Finns|
-|`BE`|Newcomer|Principiantes|Nouveau/nouvelle|ビギナーズ|Nieuweling|Nováčikovia|Nykomling|
+|`B`|Big Book|Libro Grande|Gros Livre|ビッグブック|Big Book|Veľká Kniha|Stora Boken|
+|`BA`|Babysitting Available|Guardería disponible|Garderie d’enfants disponible|ベビーシッターあり|Kinderopvang aanwezig|Dostupné opatrovanie detí|Barnvakt Finns|
+|`BE`|Newcomer|Principiantes|Nouveau/nouvelle|ビギナーズ|Nieuwkomer|Nováčikovia|Nykomling|
 |`BI`|Bisexual|Bisexual|Bisexuel|バイセクシャル|Biseksueel|Bisexuálne|Bisexuellt|
 |`BRK`|Breakfast|Desayuno|Petit déjeuner|朝食|Ontbijt|Raňajky|Frukost|
 |`C`|Closed|Cerrada|Fermé|クローズド|Gesloten|Uzatvorené|Slutet|
@@ -369,11 +369,11 @@ Also when adding a custom type, it's wise to stay away from any [ISO 369 languag
 |`DB`|Digital Basket|Canasta digital|Panier numérique|電子献金|Digitale mand|Digitálny košík|Digital Korg|
 |`DD`|Dual Diagnosis|Diagnóstico dual|Double diagnostic|重複診断|Dubbele diagnose|Duálna diagnóza|Dubbel Diagnos|
 |`DE`|German|Alemán|Allemand|ドイツ語|Duits|Nemecké|Tyska|
-|`DR`|Daily Reflections|Reflexiones Diarias|Réflexions quotidiennes|今日を新たに|Dagelijkse reflecties|Denné úvahy|Dagliga Reflektioner|
+|`DR`|Daily Reflections|Reflexiones Diarias|Réflexions quotidiennes|今日を新たに|Dagelijkse weerspiegelingen|Denné úvahy|Dagliga Reflektioner|
 |`EL`|Greek|Griego|Grec|ギリシャ語|Grieks|Grécke|Grekiska|
 |`EN`|English|Inglés|Anglais|英語|Engels|Anglické|Engelska|
 |`FA`|Persian|Persa|Persan|ペルシア語|Perzisch|Perzské|Persiska|
-|`FF`|Fragrance Free|Sin fragancia|Sans parfum|香水なし|Geurvrij|Bez vône|Parfym Fritt|
+|`FF`|Fragrance Free|Sin fragancia|Sans parfum|香水なし|Geen parfum|Bez vône|Parfym Fritt|
 |`FR`|French|Francés|Français|フランス語|Frans|Francúzsky|Franska|
 |`G`|Gay|Gay|Gai|ゲイ|Homo|Gay|Gay|
 |`GR`|Grapevine|La Viña|Grapevine|グレープバイン|Wijnstok|Grapevine|Grapevine|
@@ -385,19 +385,19 @@ Also when adding a custom type, it's wise to stay away from any [ISO 369 languag
 |`ITA`|Italian|Italiano|Italien|イタリア語|Italiaans|Taliansky|Italienska|
 |`JA`|Japanese|Japonés|Japonais|日本語|Japans|Japonské|Japanska|
 |`KOR`|Korean|Coreano|Coréen|韓国語|Koreaans|Kórejske|Koreanska|
-|`L`|Lesbian|Lesbianas|Lesbienne|レズビアン|lesbienne|Lesbické|Lesbiskt|
+|`L`|Lesbian|Lesbianas|Lesbienne|レズビアン|Lesbisch|Lesbické|Lesbiskt|
 |`LGBTQ`|LGBTQ|LGBTQ|LGBTQ|LGBTQ|LGBTQ|LGBTQ|HBTQ|
 |`LIT`|Literature|Literatura|Publications|書籍|Literatuur|Literatúra|Litteratur|
 |`LS`|Living Sober|Viviendo Sobrio|Vivre… Sans alcool|リビングソーバー|Sober leven|Triezvy život|Leva Nyktert|
 |`LT`|Lithuanian|Lituano|Lituanien|リトアニア語|Litouws|Litovské|Litauiska|
-|`M`|Men|Hombres|Hommes|男性|Heren|Muži|Mansmöte|
+|`M`|Men|Hombres|Hommes|男性|Mannen|Muži|Mansmöte|
 |`MED`|Meditation|Meditación|Méditation|黙想|Meditatie|Meditácia|Meditationsmöte|
 |`ML`|Malayalam|Malayalam|Malayalam|マラヤーラム語|Malayalam|Malajálamsky|Malayalam|
 |`N`|Native American|Nativo Americano|Autochtone|ネイティブアメリカン|Indiaan|Domorodí Američania|Ur-amerikanskt|
 |`NDG`|Indigenous|Indígena|Indigène|先住民|Inheems|Domorodé|Urfolkligt|
 |`NO`|Norwegian|Noruego|Norvégien|ノルウェー語|Noors|Nórsky|Norska|
 |`O`|Open|Abierta|Ouvert(e)|オープン|Open|Otvorené|Öppet|
-|`OUT`|Outdoor|Al aire libre|En plein air|アウトドア|Buitenshuis|Vonkajšie|Utomhus|
+|`OUT`|Outdoor|Al aire libre|En plein air|アウトドア|Buiten|Vonkajšie|Utomhus|
 |`P`|Professionals|Profesionales|Professionnels|職業人|Professionals|Profesionáli|Professionella|
 |`POC`|People of Color|Gente de color|Gens de couleur|有色人種|Mensen van kleur|Farební ľudia|Färgade|
 |`POL`|Polish|Polaco|Polonais|ポーランド語|Pools|Poľské|Polska|
@@ -408,7 +408,7 @@ Also when adding a custom type, it's wise to stay away from any [ISO 369 languag
 |`SEN`|Seniors|Personas mayores|Séniors|シニア|Senioren|Seniori|Seniorer|
 |`SK`|Slovak|Eslovaco|Slovaque|スロバキア語|Slowaaks|Slovenské|Slovakiska|
 |`SM`|Smoking Permitted|Se permite fumar|Permis de fumer|喫煙可|Roken toegestaan|Fajčenie povolené|Rökning Tillåten|
-|`SP`|Speaker|Orador|Conférencier|スピーカー|Luidspreker|Spíker|Talare|
+|`SP`|Speaker|Orador|Conférencier|スピーカー|Spreker|Spíker|Talare|
 |`ST`|Step Study|Estudio de pasos|Sur les Étapes|ステップ|Stap studie|Štúdium Krokov|Stegmöte|
 |`SV`|Swedish|Sueco|Suédois|スウェーデン語|Zweeds|Švédske|Svenska|
 |`T`|Transgender|Transgénero|Transgenre|トランスジェンダー|Transgender|Transgender|Transpersoner|
@@ -420,7 +420,7 @@ Also when adding a custom type, it's wise to stay away from any [ISO 369 languag
 |`W`|Women|Mujer|Femmes|女性|Vrouwen|Ženy|Kvinnomöte|
 |`X`|Wheelchair Access|Acceso en silla de ruedas|Accès aux fauteuils roulants|車いすアクセス|Toegankelijk voor rolstoelgebruikers|Prístup pre vozíčkarov|Handikappanpassat|
 |`XB`|Wheelchair-Accessible Bathroom|Baño accesible para sillas de ruedas|Toilettes accessibles aux fauteuils roulants|車いす使用者用トイレ|Rolstoeltoegankelijke badkamer|Bezbariérová kúpeľňa|Handikappanpassad WC|
-|`XT`|Cross Talk Permitted|Se permite opinar|Conversation croisée permise|クロストーク可能|Overspraak toegestaan|Cross Talk povolený|Kommentarer Tilltåtna|
+|`XT`|Cross Talk Permitted|Se permite opinar|Conversation croisée permise|クロストーク可能|Cross-sharen toegestaan|Cross Talk povolený|Kommentarer Tilltåtna|
 |`Y`|Young People|Gente joven|Jeunes|ヤング|Jongeren|Mladí ľudia|Young People|
 <!-- End Types -->
 
