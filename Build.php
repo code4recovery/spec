@@ -54,6 +54,7 @@ class Build
         'es' => 'Español',
         'fr' => 'Français',
         'ja' => '日本語',
+        'nl' => 'Nederlands',
         'sk' => 'Slovenčina',
         'sv' => 'Svenska',
     ];
