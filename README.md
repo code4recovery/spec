@@ -346,82 +346,82 @@ The codes below should be considered 'reserved.' In your implementation, it's ok
 Also when adding a custom type, it's wise to stay away from any [ISO 369 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes), since these could be added in the future.
 
 <!-- Types -->
-|Code|English|Español|Français|日本語|Nederlands|Slovenčina|Svenska|
-|---|---|---|---|---|---|---|---|
-|`11`|11th Step Meditation|Meditación del Paso 11|Méditation sur la 11e Étape|ステップ11 黙想|Stap 11 meditatie|Meditácia 11. kroku|11th Stegs Meditation|
-|`12x12`|12 Steps & 12 Traditions|12 Pasos y 12 Tradiciones|12 Étapes et 12 Traditions|12のステップと12の伝統|12 Stappen en 12 Tradities|12 Krokov & 12 Tradícií|12 Steg & 12 Traditioner|
-|`A`|Secular|Secular|Séculier|無宗教|Seculier|Svetské|Sekulärt|
-|`ABSI`|As Bill Sees It|Como lo ve Bill|Réflexions de Bill|ビルはこう思う|Zoals Bill het ziet|Ako to vidí Bill|Som Bill Ser Det|
-|`AL`|Concurrent with Alateen|Concurrente con Alateen|En même temps qu’Alateen|アラティーンと同時進行|Gelijktijdig met Alateen|Súbežne s Alateen|Tillsammans med Alateen|
-|`AL-AN`|Concurrent with Al-Anon|Concurrente con Al-Anon|En même temps qu’Al-Anon|アラノンと同時進行|Gelijktijdig met Al-Anon|Súbežne s Al-Anon|Tillsammans med Al-Anon|
-|`AM`|Amharic|Amárico|Amharique|アムハラ語|Amhaars|Amharčina|Amhariska|
-|`ASL`|American Sign Language|Lenguaje por señas|Langage des Signes|アメリカ手話|Amerikaanse gebaren taal|Americký posunkový jazyk|Amerikanskt teckenspråk|
-|`B`|Big Book|Libro Grande|Gros Livre|ビッグブック|Big Book|Veľká Kniha|Stora Boken|
-|`BA`|Babysitting Available|Guardería disponible|Garderie d’enfants disponible|ベビーシッターあり|Kinderopvang aanwezig|Dostupné opatrovanie detí|Barnvakt Finns|
-|`BE`|Newcomer|Principiantes|Nouveau/nouvelle|ビギナーズ|Nieuwkomer|Nováčikovia|Nykomling|
-|`BI`|Bisexual|Bisexual|Bisexuel|バイセクシャル|Biseksueel|Bisexuálne|Bisexuellt|
-|`BRK`|Breakfast|Desayuno|Petit déjeuner|朝食|Ontbijt|Raňajky|Frukost|
-|`C`|Closed|Cerrada|Fermé|クローズド|Gesloten|Uzatvorené|Slutet|
-|`CAN`|Candlelight|Luz de una vela|À la chandelle|キャンドル|Candlelight|Sviečky|Tända Ljus|
-|`CF`|Child-Friendly|Niño amigable|Enfants acceptés|お子さま歓迎|Kindvriendelijk|Priateľský k deťom|Barnvänligt|
-|`D`|Discussion|Discusión|Discussion|ディスカッション|Discussie|Diskusia|Diskussion|
-|`DA`|Danish|Danés|Danois|デンマーク語|Deens|Dánsky|Danska|
-|`DB`|Digital Basket|Canasta digital|Panier numérique|電子献金|Digitale mand|Digitálny košík|Digital Korg|
-|`DD`|Dual Diagnosis|Diagnóstico dual|Double diagnostic|重複診断|Dubbele diagnose|Duálna diagnóza|Dubbel Diagnos|
-|`DE`|German|Alemán|Allemand|ドイツ語|Duits|Nemecké|Tyska|
-|`DR`|Daily Reflections|Reflexiones Diarias|Réflexions quotidiennes|今日を新たに|Dagelijkse weerspiegelingen|Denné úvahy|Dagliga Reflektioner|
-|`EL`|Greek|Griego|Grec|ギリシャ語|Grieks|Grécke|Grekiska|
-|`EN`|English|Inglés|Anglais|英語|Engels|Anglické|Engelska|
-|`FA`|Persian|Persa|Persan|ペルシア語|Perzisch|Perzské|Persiska|
-|`FF`|Fragrance Free|Sin fragancia|Sans parfum|香水なし|Geen parfum|Bez vône|Parfym Fritt|
-|`FR`|French|Francés|Français|フランス語|Frans|Francúzsky|Franska|
-|`G`|Gay|Gay|Gai|ゲイ|Homo|Gay|Gay|
-|`GR`|Grapevine|La Viña|Grapevine|グレープバイン|Wijnstok|Grapevine|Grapevine|
-|`H`|Birthday|Cumpleaños|Anniversaire|バースデー|Verjaardag|Narodeniny|Födelsedag|
-|`HE`|Hebrew|Hebreo|Hébreu|ヘブライ語|Hebreeuws|Hebrejské|Hebreiska|
-|`HI`|Hindi|Hindi|Hindi|ヒンディー語|Hindi|Hindi|Hindi|
-|`HR`|Croatian|Croata|Croate|クロアチア語|Kroatisch|Chorvátsky|Kroatiska|
-|`HU`|Hungarian|Húngaro|Hongrois|ハンガリー語|Hongaars|Maďarské|Ungerska|
-|`ITA`|Italian|Italiano|Italien|イタリア語|Italiaans|Taliansky|Italienska|
-|`JA`|Japanese|Japonés|Japonais|日本語|Japans|Japonské|Japanska|
-|`KOR`|Korean|Coreano|Coréen|韓国語|Koreaans|Kórejske|Koreanska|
-|`L`|Lesbian|Lesbianas|Lesbienne|レズビアン|Lesbisch|Lesbické|Lesbiskt|
-|`LGBTQ`|LGBTQ|LGBTQ|LGBTQ|LGBTQ|LGBTQ|LGBTQ|HBTQ|
-|`LIT`|Literature|Literatura|Publications|書籍|Literatuur|Literatúra|Litteratur|
-|`LS`|Living Sober|Viviendo Sobrio|Vivre… Sans alcool|リビングソーバー|Sober leven|Triezvy život|Leva Nyktert|
-|`LT`|Lithuanian|Lituano|Lituanien|リトアニア語|Litouws|Litovské|Litauiska|
-|`M`|Men|Hombres|Hommes|男性|Mannen|Muži|Mansmöte|
-|`MED`|Meditation|Meditación|Méditation|黙想|Meditatie|Meditácia|Meditationsmöte|
-|`ML`|Malayalam|Malayalam|Malayalam|マラヤーラム語|Malayalam|Malajálamsky|Malayalam|
-|`N`|Native American|Nativo Americano|Autochtone|ネイティブアメリカン|Indiaan|Domorodí Američania|Ur-amerikanskt|
-|`NDG`|Indigenous|Indígena|Indigène|先住民|Inheems|Domorodé|Urfolkligt|
-|`NO`|Norwegian|Noruego|Norvégien|ノルウェー語|Noors|Nórsky|Norska|
-|`O`|Open|Abierta|Ouvert(e)|オープン|Open|Otvorené|Öppet|
-|`OUT`|Outdoor|Al aire libre|En plein air|アウトドア|Buiten|Vonkajšie|Utomhus|
-|`P`|Professionals|Profesionales|Professionnels|職業人|Professionals|Profesionáli|Professionella|
-|`POC`|People of Color|Gente de color|Gens de couleur|有色人種|Mensen van kleur|Farební ľudia|Färgade|
-|`POL`|Polish|Polaco|Polonais|ポーランド語|Pools|Poľské|Polska|
-|`POR`|Portuguese|Portugués|Portugais|ポルトガル語|Portugees|Portugalské|Portugisiska|
-|`PUN`|Punjabi|Punjabi|Pendjabi|パンジャブ語|Punjabi|Pandžábske|Punjabi|
-|`RUS`|Russian|Ruso|Russe|ロシア語|Russisch|Ruské|Ryska|
-|`S`|Spanish|Español|Espagnol|スペイン語|Spaans|Španielské|Spanska|
-|`SEN`|Seniors|Personas mayores|Séniors|シニア|Senioren|Seniori|Seniorer|
-|`SK`|Slovak|Eslovaco|Slovaque|スロバキア語|Slowaaks|Slovenské|Slovakiska|
-|`SM`|Smoking Permitted|Se permite fumar|Permis de fumer|喫煙可|Roken toegestaan|Fajčenie povolené|Rökning Tillåten|
-|`SP`|Speaker|Orador|Conférencier|スピーカー|Spreker|Spíker|Talare|
-|`ST`|Step Study|Estudio de pasos|Sur les Étapes|ステップ|Stap studie|Štúdium Krokov|Stegmöte|
-|`SV`|Swedish|Sueco|Suédois|スウェーデン語|Zweeds|Švédske|Svenska|
-|`T`|Transgender|Transgénero|Transgenre|トランスジェンダー|Transgender|Transgender|Transpersoner|
-|`TC`|Location Temporarily Closed|Ubicación temporalmente cerrada|Emplacement temporairement fermé|一時的休止中|Locatie tijdelijk gesloten|Miesto dočasne zatvorené|Tillfälligt Stängt|
-|`TH`|Thai|Tailandés|Thaï|タイ語|Thais|Thajské|Thailändska|
-|`TL`|Tagalog|Tagalo|Tagalog|タガログ語|Tagalog|Tagalské|Tagalog|
-|`TR`|Tradition Study|Estudio de tradicion|Étude des Traditions|伝統|Traditie Studie|Tradičné štúdium|Traditionsmöte|
-|`UK`|Ukrainian|Ucraniano|Ukrainien|ウクライナ語|Oekraïens|Ukrajinské|Ukrainska|
-|`W`|Women|Mujer|Femmes|女性|Vrouwen|Ženy|Kvinnomöte|
-|`X`|Wheelchair Access|Acceso en silla de ruedas|Accès aux fauteuils roulants|車いすアクセス|Toegankelijk voor rolstoelgebruikers|Prístup pre vozíčkarov|Handikappanpassat|
-|`XB`|Wheelchair-Accessible Bathroom|Baño accesible para sillas de ruedas|Toilettes accessibles aux fauteuils roulants|車いす使用者用トイレ|Rolstoeltoegankelijke badkamer|Bezbariérová kúpeľňa|Handikappanpassad WC|
-|`XT`|Cross Talk Permitted|Se permite opinar|Conversation croisée permise|クロストーク可能|Cross-sharen toegestaan|Cross Talk povolený|Kommentarer Tilltåtna|
-|`Y`|Young People|Gente joven|Jeunes|ヤング|Jongeren|Mladí ľudia|Young People|
+|Code|English|Español|Français|日本語|Nederlands|Português|Slovenčina|Svenska|
+|---|---|---|---|---|---|---|---|---|
+|`11`|11th Step Meditation|Meditación del Paso 11|Méditation sur la 11e Étape|ステップ11 黙想|Stap 11 meditatie|Meditação do 11º Passo|Meditácia 11. kroku|11th Stegs Meditation|
+|`12x12`|12 Steps & 12 Traditions|12 Pasos y 12 Tradiciones|12 Étapes et 12 Traditions|12のステップと12の伝統|12 Stappen en 12 Tradities|12 Passos e 12 Tradições|12 Krokov & 12 Tradícií|12 Steg & 12 Traditioner|
+|`A`|Secular|Secular|Séculier|無宗教|Seculier|Secular|Svetské|Sekulärt|
+|`ABSI`|As Bill Sees It|Como lo ve Bill|Réflexions de Bill|ビルはこう思う|Zoals Bill het ziet|Na opinião de Bill|Ako to vidí Bill|Som Bill Ser Det|
+|`AL`|Concurrent with Alateen|Concurrente con Alateen|En même temps qu’Alateen|アラティーンと同時進行|Gelijktijdig met Alateen|Em simultâneo com Alateen|Súbežne s Alateen|Tillsammans med Alateen|
+|`AL-AN`|Concurrent with Al-Anon|Concurrente con Al-Anon|En même temps qu’Al-Anon|アラノンと同時進行|Gelijktijdig met Al-Anon|Em simultâneo com Al-Anon|Súbežne s Al-Anon|Tillsammans med Al-Anon|
+|`AM`|Amharic|Amárico|Amharique|アムハラ語|Amhaars|Amárico|Amharčina|Amhariska|
+|`ASL`|American Sign Language|Lenguaje por señas|Langage des Signes|アメリカ手話|Amerikaanse gebaren taal|Língua Gestual Americana|Americký posunkový jazyk|Amerikanskt teckenspråk|
+|`B`|Big Book|Libro Grande|Gros Livre|ビッグブック|Big Book|Livro Azul|Veľká Kniha|Stora Boken|
+|`BA`|Babysitting Available|Guardería disponible|Garderie d’enfants disponible|ベビーシッターあり|Kinderopvang aanwezig|Babysitting disponível|Dostupné opatrovanie detí|Barnvakt Finns|
+|`BE`|Newcomer|Principiantes|Nouveau/nouvelle|ビギナーズ|Nieuwkomer|Recém-chegados|Nováčikovia|Nykomling|
+|`BI`|Bisexual|Bisexual|Bisexuel|バイセクシャル|Biseksueel|Bisexual|Bisexuálne|Bisexuellt|
+|`BRK`|Breakfast|Desayuno|Petit déjeuner|朝食|Ontbijt|Pequeno-Almoço|Raňajky|Frukost|
+|`C`|Closed|Cerrada|Fermé|クローズド|Gesloten|Fechada|Uzatvorené|Slutet|
+|`CAN`|Candlelight|Luz de una vela|À la chandelle|キャンドル|Candlelight|Luz de Velas|Sviečky|Tända Ljus|
+|`CF`|Child-Friendly|Niño amigable|Enfants acceptés|お子さま歓迎|Kindvriendelijk|Amigável para Crianças|Priateľský k deťom|Barnvänligt|
+|`D`|Discussion|Discusión|Discussion|ディスカッション|Discussie|Discussão|Diskusia|Diskussion|
+|`DA`|Danish|Danés|Danois|デンマーク語|Deens|Dinamarquês|Dánsky|Danska|
+|`DB`|Digital Basket|Canasta digital|Panier numérique|電子献金|Digitale mand|Cesto Digital|Digitálny košík|Digital Korg|
+|`DD`|Dual Diagnosis|Diagnóstico dual|Double diagnostic|重複診断|Dubbele diagnose|Duplo Diagnóstico|Duálna diagnóza|Dubbel Diagnos|
+|`DE`|German|Alemán|Allemand|ドイツ語|Duits|Alemão|Nemecké|Tyska|
+|`DR`|Daily Reflections|Reflexiones Diarias|Réflexions quotidiennes|今日を新たに|Dagelijkse weerspiegelingen|Reflexões Diárias|Denné úvahy|Dagliga Reflektioner|
+|`EL`|Greek|Griego|Grec|ギリシャ語|Grieks|Grego|Grécke|Grekiska|
+|`EN`|English|Inglés|Anglais|英語|Engels|Inglês|Anglické|Engelska|
+|`FA`|Persian|Persa|Persan|ペルシア語|Perzisch|Persa|Perzské|Persiska|
+|`FF`|Fragrance Free|Sin fragancia|Sans parfum|香水なし|Geen parfum|Sem Perfumes|Bez vône|Parfym Fritt|
+|`FR`|French|Francés|Français|フランス語|Frans|Francês|Francúzsky|Franska|
+|`G`|Gay|Gay|Gai|ゲイ|Homo|Gay|Gay|Gay|
+|`GR`|Grapevine|La Viña|Grapevine|グレープバイン|Wijnstok|Grapevine|Grapevine|Grapevine|
+|`H`|Birthday|Cumpleaños|Anniversaire|バースデー|Verjaardag|Aniversário|Narodeniny|Födelsedag|
+|`HE`|Hebrew|Hebreo|Hébreu|ヘブライ語|Hebreeuws|Hebreu|Hebrejské|Hebreiska|
+|`HI`|Hindi|Hindi|Hindi|ヒンディー語|Hindi|Hindi|Hindi|Hindi|
+|`HR`|Croatian|Croata|Croate|クロアチア語|Kroatisch|Croata|Chorvátsky|Kroatiska|
+|`HU`|Hungarian|Húngaro|Hongrois|ハンガリー語|Hongaars|Hungaro|Maďarské|Ungerska|
+|`ITA`|Italian|Italiano|Italien|イタリア語|Italiaans|Italiano|Taliansky|Italienska|
+|`JA`|Japanese|Japonés|Japonais|日本語|Japans|Japonês|Japonské|Japanska|
+|`KOR`|Korean|Coreano|Coréen|韓国語|Koreaans|Coreano|Kórejske|Koreanska|
+|`L`|Lesbian|Lesbiana|Lesbienne|レズビアン|Lesbisch|Lésbica|Lesbické|Lesbiskt|
+|`LGBTQ`|LGBTQ|LGBTQ|LGBTQ|LGBTQ|LGBTQ|LGBTQ|LGBTQ|HBTQ|
+|`LIT`|Literature|Literatura|Publications|書籍|Literatuur|Literatura|Literatúra|Litteratur|
+|`LS`|Living Sober|Viviendo Sobrio|Vivre… Sans alcool|リビングソーバー|Sober leven|Viver Sóbrio|Triezvy život|Leva Nyktert|
+|`LT`|Lithuanian|Lituano|Lituanien|リトアニア語|Litouws|Lituano|Litovské|Litauiska|
+|`M`|Men|Hombres|Hommes|男性|Mannen|Homens|Muži|Mansmöte|
+|`MED`|Meditation|Meditación|Méditation|黙想|Meditatie|Meditação|Meditácia|Meditationsmöte|
+|`ML`|Malayalam|Malayalam|Malayalam|マラヤーラム語|Malayalam|Malaiala|Malajálamsky|Malayalam|
+|`N`|Native American|Nativo Americano|Autochtone|ネイティブアメリカン|Indiaan|Nativo Americano|Domorodí Američania|Ur-amerikanskt|
+|`NDG`|Indigenous|Indígena|Indigène|先住民|Inheems|Indígena|Domorodé|Urfolkligt|
+|`NO`|Norwegian|Noruego|Norvégien|ノルウェー語|Noors|Norueguês|Nórsky|Norska|
+|`O`|Open|Abierta|Ouvert(e)|オープン|Open|Aberta|Otvorené|Öppet|
+|`OUT`|Outdoor|Al aire libre|En plein air|アウトドア|Buiten|Ao ar livre|Vonkajšie|Utomhus|
+|`P`|Professionals|Profesionales|Professionnels|職業人|Professionals|Profissionais|Profesionáli|Professionella|
+|`POC`|People of Color|Gente de color|Gens de couleur|有色人種|Mensen van kleur|Pessoas de Côr|Farební ľudia|Färgade|
+|`POL`|Polish|Polaco|Polonais|ポーランド語|Pools|Polaco|Poľské|Polska|
+|`POR`|Portuguese|Portugués|Portugais|ポルトガル語|Portugees|Português|Portugalské|Portugisiska|
+|`PUN`|Punjabi|Punjabi|Pendjabi|パンジャブ語|Punjabi|Punjabi|Pandžábske|Punjabi|
+|`RUS`|Russian|Ruso|Russe|ロシア語|Russisch|Russo|Ruské|Ryska|
+|`S`|Spanish|Español|Espagnol|スペイン語|Spaans|Espanhol|Španielské|Spanska|
+|`SEN`|Seniors|Personas mayores|Séniors|シニア|Senioren|Séniores|Seniori|Seniorer|
+|`SK`|Slovak|Eslovaco|Slovaque|スロバキア語|Slowaaks|Eslovaco|Slovenské|Slovakiska|
+|`SM`|Smoking Permitted|Se permite fumar|Permis de fumer|喫煙可|Roken toegestaan|Permitido Fumar|Fajčenie povolené|Rökning Tillåten|
+|`SP`|Speaker|Orador|Conférencier|スピーカー|Spreker|Partilhador|Spíker|Talare|
+|`ST`|Step Study|Estudio de pasos|Sur les Étapes|ステップ|Stap studie|Estudo de Passos|Štúdium Krokov|Stegmöte|
+|`SV`|Swedish|Sueco|Suédois|スウェーデン語|Zweeds|Sueco|Švédske|Svenska|
+|`T`|Transgender|Transgénero|Transgenre|トランスジェンダー|Transgender|Transgénero|Transgender|Transpersoner|
+|`TC`|Location Temporarily Closed|Ubicación temporalmente cerrada|Emplacement temporairement fermé|一時的休止中|Locatie tijdelijk gesloten|Local Temporáriamente Encerrado|Miesto dočasne zatvorené|Tillfälligt Stängt|
+|`TH`|Thai|Tailandés|Thaï|タイ語|Thais|Tailandês|Thajské|Thailändska|
+|`TL`|Tagalog|Tagalo|Tagalog|タガログ語|Tagalog|Tagalo|Tagalské|Tagalog|
+|`TR`|Tradition Study|Estudio de tradicion|Étude des Traditions|伝統|Traditie Studie|Estudo de Tradições|Tradičné štúdium|Traditionsmöte|
+|`UK`|Ukrainian|Ucraniano|Ukrainien|ウクライナ語|Oekraïens|Ucraniano|Ukrajinské|Ukrainska|
+|`W`|Women|Mujer|Femmes|女性|Vrouwen|Mulheres|Ženy|Kvinnomöte|
+|`X`|Wheelchair Access|Acceso en silla de ruedas|Accès aux fauteuils roulants|車いすアクセス|Toegankelijk voor rolstoelgebruikers|Acesso a Cadeiras de Rodas|Prístup pre vozíčkarov|Handikappanpassat|
+|`XB`|Wheelchair-Accessible Bathroom|Baño accesible para sillas de ruedas|Toilettes accessibles aux fauteuils roulants|車いす使用者用トイレ|Rolstoeltoegankelijke badkamer|WC com Acesso a Cadeiras de Rodas|Bezbariérová kúpeľňa|Handikappanpassad WC|
+|`XT`|Cross Talk Permitted|Se permite opinar|Conversation croisée permise|クロストーク可能|Cross-sharen toegestaan|Prtilhas Cruzadas Permitidas|Cross Talk povolený|Kommentarer Tilltåtna|
+|`Y`|Young People|Gente joven|Jeunes|ヤング|Jongeren|Jovens|Mladí ľudia|Young People|
 <!-- End Types -->
 
 ## Proposed New Types
@@ -429,14 +429,14 @@ Also when adding a custom type, it's wise to stay away from any [ISO 369 languag
 The following types are proposed for future use. They are not currently in use in the app.
 
 <!-- Proposed Types -->
-|Code|English|Español|Français|日本語|Nederlands|Slovenčina|Svenska|
-|---|---|---|---|---|---|---|---|
-|`BV-I`|Blind / Visually Impaired|Ciego / Discapacidad Visual|Aveugle / Malvoyant|視覚障害者|Blind / Visueel gehandicapt|Nevidiaci / Zrakovo postihnutí|Blind / Synskadad|
-|`D-HOH`|Deaf / Hard of Hearing|Sordo / Duro de Oído|Sourd / Malentendant|聴覚障害者|Doof / Hardhoren|Nepočujúci / Nedoslýchaví|Döv / Hörselskadad|
-|`LO-I`|Loners / Isolationists|Solitarios / Aislacionistas|Solitaires / Isolationnistes|孤独 / 孤立主義者|Eenlingen / Isolationisten|Samotári / Izolacionisti|Ensamvargar / Isolationister|
-|`POA`|Proof of Attendance|Prueba de Asistencia|Preuve de Présence|出席証明|Bewijs van Aanwezigheid|Doklad o účasti|Närvarobevis|
-|`QSL`|Quebec Sign Language|Lengua de Señas de Quebec|Langue des Signes Québécoise|ケベック手話|Quebec -gebarentaal|Quebecký posunkový jazyk|Quebecskt Teckenspråk|
-|`RSL`|Russian Sign Language|Lengua de Señas Rusa|Langue des Signes Russe|ロシア手話|Russische gebarentaal|Ruský posunkový jazyk|Ryskt Teckenspråk|
+|Code|English|Español|Français|日本語|Nederlands|Português|Slovenčina|Svenska|
+|---|---|---|---|---|---|---|---|---|
+|`BV-I`|Blind / Visually Impaired|Ciego / Discapacidad Visual|Aveugle / Malvoyant|視覚障害者|Blind / Visueel gehandicapt|Cego / Deficiência Visual|Nevidiaci / Zrakovo postihnutí|Blind / Synskadad|
+|`D-HOH`|Deaf / Hard of Hearing|Sordo / Duro de Oído|Sourd / Malentendant|聴覚障害者|Doof / Hardhoren|Surdo / Duro de Ouvido|Nepočujúci / Nedoslýchaví|Döv / Hörselskadad|
+|`LO-I`|Loners / Isolationists|Solitarios / Aislacionistas|Solitaires / Isolationnistes|孤独 / 孤立主義者|Eenlingen / Isolationisten|Solitários / Isolacionistas|Samotári / Izolacionisti|Ensamvargar / Isolationister|
+|`POA`|Proof of Attendance|Prueba de Asistencia|Preuve de Présence|出席証明|Bewijs van Aanwezigheid|Comprovante de Presença|Doklad o účasti|Närvarobevis|
+|`QSL`|Quebec Sign Language|Lengua de Señas de Quebec|Langue des Signes Québécoise|ケベック手話|Quebec -gebarentaal|Língua Gesual Quebec|Quebecký posunkový jazyk|Quebecskt Teckenspråk|
+|`RSL`|Russian Sign Language|Lengua de Señas Rusa|Langue des Signes Russe|ロシア手話|Russische gebarentaal|Língua Gestual Russa|Ruský posunkový jazyk|Ryskt Teckenspråk|
 <!-- End Proposed Types -->
 
 ## Proposed Changed Types
@@ -444,9 +444,9 @@ The following types are proposed for future use. They are not currently in use i
 The following types being considered for a name change.
 
 <!-- Proposed Changed Types -->
-|Code|English|Español|Français|日本語|Nederlands|Slovenčina|Svenska|
-|---|---|---|---|---|---|---|---|
-|`LGBTQ`|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|HBTQIAA+|
+|Code|English|Español|Français|日本語|Nederlands|Português|Slovenčina|Svenska|
+|---|---|---|---|---|---|---|---|---|
+|`LGBTQ`|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|HBTQIAA+|
 <!-- End Proposed Changed Types -->
 
 ## Sharing Your Data
