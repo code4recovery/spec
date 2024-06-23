@@ -10,6 +10,7 @@ class Spec
         'fr' => 'Français',
         'ja' => '日本語',
         'nl' => 'Nederlands',
+        'pt' => 'Português',
         'sk' => 'Slovenčina',
         'sv' => 'Svenska',
     ];
@@ -34,7 +35,7 @@ class Spec
      *
      * @return object The array of all types.
      */
-    public static function getAllTypes (): object
+    public static function getAllTypes(): object
     {
         $types = include 'types.php';
         return $types;

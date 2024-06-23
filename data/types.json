@@ -5,6 +5,7 @@
     "fr": "Méditation sur la 11e Étape",
     "ja": "ステップ11 黙想",
     "nl": "Stap 11 meditatie",
+    "pt": "Meditação do 11º Passo",
     "sk": "Meditácia 11. kroku",
     "sv": "11th Stegs Meditation"
   },
@@ -14,6 +15,7 @@
     "fr": "12 Étapes et 12 Traditions",
     "ja": "12のステップと12の伝統",
     "nl": "12 Stappen en 12 Tradities",
+    "pt": "12 Passos e 12 Tradições",
     "sk": "12 Krokov & 12 Tradícií",
     "sv": "12 Steg & 12 Traditioner"
   },
@@ -23,6 +25,7 @@
     "fr": "Séculier",
     "ja": "無宗教",
     "nl": "Seculier",
+    "pt": "Secular",
     "sk": "Svetské",
     "sv": "Sekulärt"
   },
@@ -32,6 +35,7 @@
     "fr": "Réflexions de Bill",
     "ja": "ビルはこう思う",
     "nl": "Zoals Bill het ziet",
+    "pt": "Na opinião de Bill",
     "sk": "Ako to vidí Bill",
     "sv": "Som Bill Ser Det"
   },
@@ -41,6 +45,7 @@
     "fr": "En même temps qu’Alateen",
     "ja": "アラティーンと同時進行",
     "nl": "Gelijktijdig met Alateen",
+    "pt": "Em simultâneo com Alateen",
     "sk": "Súbežne s Alateen",
     "sv": "Tillsammans med Alateen"
   },
@@ -50,6 +55,7 @@
     "fr": "En même temps qu’Al-Anon",
     "ja": "アラノンと同時進行",
     "nl": "Gelijktijdig met Al-Anon",
+    "pt": "Em simultâneo com Al-Anon",
     "sk": "Súbežne s Al-Anon",
     "sv": "Tillsammans med Al-Anon"
   },
@@ -59,6 +65,7 @@
     "fr": "Amharique",
     "ja": "アムハラ語",
     "nl": "Amhaars",
+    "pt": "Amárico",
     "sk": "Amharčina",
     "sv": "Amhariska"
   },
@@ -68,6 +75,7 @@
     "fr": "Langage des Signes",
     "ja": "アメリカ手話",
     "nl": "Amerikaanse gebaren taal",
+    "pt": "Língua Gestual Americana",
     "sk": "Americký posunkový jazyk",
     "sv": "Amerikanskt teckenspråk"
   },
@@ -77,6 +85,7 @@
     "fr": "Gros Livre",
     "ja": "ビッグブック",
     "nl": "Big Book",
+    "pt": "Livro Azul",
     "sk": "Veľká Kniha",
     "sv": "Stora Boken"
   },
@@ -86,6 +95,7 @@
     "fr": "Garderie d’enfants disponible",
     "ja": "ベビーシッターあり",
     "nl": "Kinderopvang aanwezig",
+    "pt": "Babysitting disponível",
     "sk": "Dostupné opatrovanie detí",
     "sv": "Barnvakt Finns"
   },
@@ -95,6 +105,7 @@
     "fr": "Nouveau/nouvelle",
     "ja": "ビギナーズ",
     "nl": "Nieuwkomer",
+    "pt": "Recém-chegados",
     "sk": "Nováčikovia",
     "sv": "Nykomling"
   },
@@ -104,6 +115,7 @@
     "fr": "Bisexuel",
     "ja": "バイセクシャル",
     "nl": "Biseksueel",
+    "pt": "Bisexual",
     "sk": "Bisexuálne",
     "sv": "Bisexuellt"
   },
@@ -113,6 +125,7 @@
     "fr": "Petit déjeuner",
     "ja": "朝食",
     "nl": "Ontbijt",
+    "pt": "Pequeno-Almoço",
     "sk": "Raňajky",
     "sv": "Frukost"
   },
@@ -122,6 +135,7 @@
     "fr": "Fermé",
     "ja": "クローズド",
     "nl": "Gesloten",
+    "pt": "Fechada",
     "sk": "Uzatvorené",
     "sv": "Slutet"
   },
@@ -131,6 +145,7 @@
     "fr": "À la chandelle",
     "ja": "キャンドル",
     "nl": "Candlelight",
+    "pt": "Luz de Velas",
     "sk": "Sviečky",
     "sv": "Tända Ljus"
   },
@@ -140,6 +155,7 @@
     "fr": "Enfants acceptés",
     "ja": "お子さま歓迎",
     "nl": "Kindvriendelijk",
+    "pt": "Amigável para Crianças",
     "sk": "Priateľský k deťom",
     "sv": "Barnvänligt"
   },
@@ -149,6 +165,7 @@
     "fr": "Discussion",
     "ja": "ディスカッション",
     "nl": "Discussie",
+    "pt": "Discussão",
     "sk": "Diskusia",
     "sv": "Diskussion"
   },
@@ -158,6 +175,7 @@
     "fr": "Danois",
     "ja": "デンマーク語",
     "nl": "Deens",
+    "pt": "Dinamarquês",
     "sk": "Dánsky",
     "sv": "Danska"
   },
@@ -167,6 +185,7 @@
     "fr": "Panier numérique",
     "ja": "電子献金",
     "nl": "Digitale mand",
+    "pt": "Cesto Digital",
     "sk": "Digitálny košík",
     "sv": "Digital Korg"
   },
@@ -176,6 +195,7 @@
     "fr": "Double diagnostic",
     "ja": "重複診断",
     "nl": "Dubbele diagnose",
+    "pt": "Duplo Diagnóstico",
     "sk": "Duálna diagnóza",
     "sv": "Dubbel Diagnos"
   },
@@ -185,6 +205,7 @@
     "fr": "Allemand",
     "ja": "ドイツ語",
     "nl": "Duits",
+    "pt": "Alemão",
     "sk": "Nemecké",
     "sv": "Tyska"
   },
@@ -194,6 +215,7 @@
     "fr": "Réflexions quotidiennes",
     "ja": "今日を新たに",
     "nl": "Dagelijkse weerspiegelingen",
+    "pt": "Reflexões Diárias",
     "sv": "Dagliga Reflektioner",
     "sk": "Denné úvahy"
   },
@@ -203,6 +225,7 @@
     "fr": "Grec",
     "ja": "ギリシャ語",
     "nl": "Grieks",
+    "pt": "Grego",
     "sk": "Grécke",
     "sv": "Grekiska"
   },
@@ -212,6 +235,7 @@
     "fr": "Anglais",
     "ja": "英語",
     "nl": "Engels",
+    "pt": "Inglês",
     "sk": "Anglické",
     "sv": "Engelska"
   },
@@ -221,6 +245,7 @@
     "fr": "Persan",
     "ja": "ペルシア語",
     "nl": "Perzisch",
+    "pt": "Persa",
     "sk": "Perzské",
     "sv": "Persiska"
   },
@@ -230,6 +255,7 @@
     "fr": "Sans parfum",
     "ja": "香水なし",
     "nl": "Geen parfum",
+    "pt": "Sem Perfumes",
     "sk": "Bez vône",
     "sv": "Parfym Fritt"
   },
@@ -239,6 +265,7 @@
     "fr": "Français",
     "ja": "フランス語",
     "nl": "Frans",
+    "pt": "Francês",
     "sk": "Francúzsky",
     "sv": "Franska"
   },
@@ -248,6 +275,7 @@
     "fr": "Gai",
     "ja": "ゲイ",
     "nl": "Homo",
+    "pt": "Gay",
     "sk": "Gay",
     "sv": "Gay"
   },
@@ -257,6 +285,7 @@
     "fr": "Grapevine",
     "ja": "グレープバイン",
     "nl": "Wijnstok",
+    "pt": "Grapevine",
     "sk": "Grapevine",
     "sv": "Grapevine"
   },
@@ -266,6 +295,7 @@
     "fr": "Anniversaire",
     "ja": "バースデー",
     "nl": "Verjaardag",
+    "pt": "Aniversário",
     "sk": "Narodeniny",
     "sv": "Födelsedag"
   },
@@ -275,6 +305,7 @@
     "fr": "Hébreu",
     "ja": "ヘブライ語",
     "nl": "Hebreeuws",
+    "pt": "Hebreu",
     "sk": "Hebrejské",
     "sv": "Hebreiska"
   },
@@ -284,6 +315,7 @@
     "fr": "Hindi",
     "ja": "ヒンディー語",
     "nl": "Hindi",
+    "pt": "Hindi",
     "sk": "Hindi",
     "sv": "Hindi"
   },
@@ -293,6 +325,7 @@
     "fr": "Croate",
     "ja": "クロアチア語",
     "nl": "Kroatisch",
+    "pt": "Croata",
     "sk": "Chorvátsky",
     "sv": "Kroatiska"
   },
@@ -302,6 +335,7 @@
     "fr": "Hongrois",
     "ja": "ハンガリー語",
     "nl": "Hongaars",
+    "pt": "Hungaro",
     "sk": "Maďarské",
     "sv": "Ungerska"
   },
@@ -311,6 +345,7 @@
     "fr": "Italien",
     "ja": "イタリア語",
     "nl": "Italiaans",
+    "pt": "Italiano",
     "sk": "Taliansky",
     "sv": "Italienska"
   },
@@ -320,6 +355,7 @@
     "fr": "Japonais",
     "ja": "日本語",
     "nl": "Japans",
+    "pt": "Japonês",
     "sk": "Japonské",
     "sv": "Japanska"
   },
@@ -329,15 +365,17 @@
     "fr": "Coréen",
     "ja": "韓国語",
     "nl": "Koreaans",
+    "pt": "Coreano",
     "sk": "Kórejske",
     "sv": "Koreanska"
   },
   "L": {
     "en": "Lesbian",
-    "es": "Lesbianas",
+    "es": "Lesbiana",
     "fr": "Lesbienne",
     "ja": "レズビアン",
     "nl": "Lesbisch",
+    "pt": "Lésbica",
     "sk": "Lesbické",
     "sv": "Lesbiskt"
   },
@@ -347,6 +385,7 @@
     "fr": "LGBTQ",
     "ja": "LGBTQ",
     "nl": "LGBTQ",
+    "pt": "LGBTQ",
     "sk": "LGBTQ",
     "sv": "HBTQ"
   },
@@ -356,6 +395,7 @@
     "fr": "Publications",
     "ja": "書籍",
     "nl": "Literatuur",
+    "pt": "Literatura",
     "sk": "Literatúra",
     "sv": "Litteratur"
   },
@@ -365,6 +405,7 @@
     "fr": "Vivre… Sans alcool",
     "ja": "リビングソーバー",
     "nl": "Sober leven",
+    "pt": "Viver Sóbrio",
     "sk": "Triezvy život",
     "sv": "Leva Nyktert"
   },
@@ -374,6 +415,7 @@
     "fr": "Lituanien",
     "ja": "リトアニア語",
     "nl": "Litouws",
+    "pt": "Lituano",
     "sk": "Litovské",
     "sv": "Litauiska"
   },
@@ -383,6 +425,7 @@
     "fr": "Hommes",
     "ja": "男性",
     "nl": "Mannen",
+    "pt": "Homens",
     "sk": "Muži",
     "sv": "Mansmöte"
   },
@@ -392,6 +435,7 @@
     "fr": "Méditation",
     "ja": "黙想",
     "nl": "Meditatie",
+    "pt": "Meditação",
     "sk": "Meditácia",
     "sv": "Meditationsmöte"
   },
@@ -401,6 +445,7 @@
     "fr": "Malayalam",
     "ja": "マラヤーラム語",
     "nl": "Malayalam",
+    "pt": "Malaiala",
     "sk": "Malajálamsky",
     "sv": "Malayalam"
   },
@@ -410,6 +455,7 @@
     "fr": "Autochtone",
     "ja": "ネイティブアメリカン",
     "nl": "Indiaan",
+    "pt": "Nativo Americano",
     "sk": "Domorodí Američania",
     "sv": "Ur-amerikanskt"
   },
@@ -419,6 +465,7 @@
     "fr": "Indigène",
     "ja": "先住民",
     "nl": "Inheems",
+    "pt": "Indígena",
     "sk": "Domorodé",
     "sv": "Urfolkligt"
   },
@@ -428,6 +475,7 @@
     "fr": "Norvégien",
     "ja": "ノルウェー語",
     "nl": "Noors",
+    "pt": "Norueguês",
     "sk": "Nórsky",
     "sv": "Norska"
   },
@@ -437,6 +485,7 @@
     "fr": "Ouvert(e)",
     "ja": "オープン",
     "nl": "Open",
+    "pt": "Aberta",
     "sk": "Otvorené",
     "sv": "Öppet"
   },
@@ -446,6 +495,7 @@
     "fr": "En plein air",
     "ja": "アウトドア",
     "nl": "Buiten",
+    "pt": "Ao ar livre",
     "sk": "Vonkajšie",
     "sv": "Utomhus"
   },
@@ -455,6 +505,7 @@
     "fr": "Professionnels",
     "ja": "職業人",
     "nl": "Professionals",
+    "pt": "Profissionais",
     "sk": "Profesionáli",
     "sv": "Professionella"
   },
@@ -464,6 +515,7 @@
     "fr": "Gens de couleur",
     "ja": "有色人種",
     "nl": "Mensen van kleur",
+    "pt": "Pessoas de Côr",
     "sk": "Farební ľudia",
     "sv": "Färgade"
   },
@@ -473,6 +525,7 @@
     "fr": "Polonais",
     "ja": "ポーランド語",
     "nl": "Pools",
+    "pt": "Polaco",
     "sk": "Poľské",
     "sv": "Polska"
   },
@@ -482,6 +535,7 @@
     "fr": "Portugais",
     "ja": "ポルトガル語",
     "nl": "Portugees",
+    "pt": "Português",
     "sk": "Portugalské",
     "sv": "Portugisiska"
   },
@@ -491,6 +545,7 @@
     "fr": "Pendjabi",
     "ja": "パンジャブ語",
     "nl": "Punjabi",
+    "pt": "Punjabi",
     "sk": "Pandžábske",
     "sv": "Punjabi"
   },
@@ -500,6 +555,7 @@
     "fr": "Russe",
     "ja": "ロシア語",
     "nl": "Russisch",
+    "pt": "Russo",
     "sk": "Ruské",
     "sv": "Ryska"
   },
@@ -509,6 +565,7 @@
     "fr": "Espagnol",
     "ja": "スペイン語",
     "nl": "Spaans",
+    "pt": "Espanhol",
     "sk": "Španielské",
     "sv": "Spanska"
   },
@@ -518,6 +575,7 @@
     "fr": "Séniors",
     "ja": "シニア",
     "nl": "Senioren",
+    "pt": "Séniores",
     "sk": "Seniori",
     "sv": "Seniorer"
   },
@@ -527,6 +585,7 @@
     "fr": "Slovaque",
     "ja": "スロバキア語",
     "nl": "Slowaaks",
+    "pt": "Eslovaco",
     "sk": "Slovenské",
     "sv": "Slovakiska"
   },
@@ -536,6 +595,7 @@
     "fr": "Permis de fumer",
     "ja": "喫煙可",
     "nl": "Roken toegestaan",
+    "pt": "Permitido Fumar",
     "sk": "Fajčenie povolené",
     "sv": "Rökning Tillåten"
   },
@@ -545,6 +605,7 @@
     "fr": "Conférencier",
     "ja": "スピーカー",
     "nl": "Spreker",
+    "pt": "Partilhador",
     "sk": "Spíker",
     "sv": "Talare"
   },
@@ -554,6 +615,7 @@
     "fr": "Sur les Étapes",
     "ja": "ステップ",
     "nl": "Stap studie",
+    "pt": "Estudo de Passos",
     "sk": "Štúdium Krokov",
     "sv": "Stegmöte"
   },
@@ -563,6 +625,7 @@
     "fr": "Suédois",
     "ja": "スウェーデン語",
     "nl": "Zweeds",
+    "pt": "Sueco",
     "sk": "Švédske",
     "sv": "Svenska"
   },
@@ -572,6 +635,7 @@
     "fr": "Transgenre",
     "ja": "トランスジェンダー",
     "nl": "Transgender",
+    "pt": "Transgénero",
     "sk": "Transgender",
     "sv": "Transpersoner"
   },
@@ -581,6 +645,7 @@
     "fr": "Emplacement temporairement fermé",
     "ja": "一時的休止中",
     "nl": "Locatie tijdelijk gesloten",
+    "pt": "Local Temporáriamente Encerrado",
     "sk": "Miesto dočasne zatvorené",
     "sv": "Tillfälligt Stängt"
   },
@@ -590,6 +655,7 @@
     "fr": "Thaï",
     "ja": "タイ語",
     "nl": "Thais",
+    "pt": "Tailandês",
     "sk": "Thajské",
     "sv": "Thailändska"
   },
@@ -599,6 +665,7 @@
     "fr": "Tagalog",
     "ja": "タガログ語",
     "nl": "Tagalog",
+    "pt": "Tagalo",
     "sk": "Tagalské",
     "sv": "Tagalog"
   },
@@ -608,6 +675,7 @@
     "fr": "Étude des Traditions",
     "ja": "伝統",
     "nl": "Traditie Studie",
+    "pt": "Estudo de Tradições",
     "sk": "Tradičné štúdium",
     "sv": "Traditionsmöte"
   },
@@ -617,6 +685,7 @@
     "fr": "Ukrainien",
     "ja": "ウクライナ語",
     "nl": "Oekraïens",
+    "pt": "Ucraniano",
     "sk": "Ukrajinské",
     "sv": "Ukrainska"
   },
@@ -626,6 +695,7 @@
     "fr": "Femmes",
     "ja": "女性",
     "nl": "Vrouwen",
+    "pt": "Mulheres",
     "sk": "Ženy",
     "sv": "Kvinnomöte"
   },
@@ -635,6 +705,7 @@
     "fr": "Accès aux fauteuils roulants",
     "ja": "車いすアクセス",
     "nl": "Toegankelijk voor rolstoelgebruikers",
+    "pt": "Acesso a Cadeiras de Rodas",
     "sk": "Prístup pre vozíčkarov",
     "sv": "Handikappanpassat"
   },
@@ -644,6 +715,7 @@
     "fr": "Toilettes accessibles aux fauteuils roulants",
     "ja": "車いす使用者用トイレ",
     "nl": "Rolstoeltoegankelijke badkamer",
+    "pt": "WC com Acesso a Cadeiras de Rodas",
     "sk": "Bezbariérová kúpeľňa",
     "sv": "Handikappanpassad WC"
   },
@@ -653,6 +725,7 @@
     "fr": "Conversation croisée permise",
     "ja": "クロストーク可能",
     "nl": "Cross-sharen toegestaan",
+    "pt": "Prtilhas Cruzadas Permitidas",
     "sk": "Cross Talk povolený",
     "sv": "Kommentarer Tilltåtna"
   },
@@ -662,6 +735,7 @@
     "fr": "Jeunes",
     "ja": "ヤング",
     "nl": "Jongeren",
+    "pt": "Jovens",
     "sk": "Mladí ľudia",
     "sv": "Young People"
   }
