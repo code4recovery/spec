@@ -431,12 +431,12 @@ The following types are proposed for future use. They are not currently in use i
 <!-- Proposed Types -->
 |Code|English|Español|Français|日本語|Nederlands|Português|Slovenčina|Svenska|
 |---|---|---|---|---|---|---|---|---|
-|`BV-I`|Blind / Visually Impaired|Ciego / Discapacidad Visual|Aveugle / Malvoyant|視覚障害者|Blind / Visueel gehandicapt|-|Nevidiaci / Zrakovo postihnutí|Blind / Synskadad|
-|`D-HOH`|Deaf / Hard of Hearing|Sordo / Duro de Oído|Sourd / Malentendant|聴覚障害者|Doof / Hardhoren|-|Nepočujúci / Nedoslýchaví|Döv / Hörselskadad|
-|`LO-I`|Loners / Isolationists|Solitarios / Aislacionistas|Solitaires / Isolationnistes|孤独 / 孤立主義者|Eenlingen / Isolationisten|-|Samotári / Izolacionisti|Ensamvargar / Isolationister|
-|`POA`|Proof of Attendance|Prueba de Asistencia|Preuve de Présence|出席証明|Bewijs van Aanwezigheid|-|Doklad o účasti|Närvarobevis|
-|`QSL`|Quebec Sign Language|Lengua de Señas de Quebec|Langue des Signes Québécoise|ケベック手話|Quebec -gebarentaal|-|Quebecký posunkový jazyk|Quebecskt Teckenspråk|
-|`RSL`|Russian Sign Language|Lengua de Señas Rusa|Langue des Signes Russe|ロシア手話|Russische gebarentaal|-|Ruský posunkový jazyk|Ryskt Teckenspråk|
+|`BV-I`|Blind / Visually Impaired|Ciego / Discapacidad Visual|Aveugle / Malvoyant|視覚障害者|Blind / Visueel gehandicapt|Cego / Deficiência Visual|Nevidiaci / Zrakovo postihnutí|Blind / Synskadad|
+|`D-HOH`|Deaf / Hard of Hearing|Sordo / Duro de Oído|Sourd / Malentendant|聴覚障害者|Doof / Hardhoren|Surdo / Duro de Ouvido|Nepočujúci / Nedoslýchaví|Döv / Hörselskadad|
+|`LO-I`|Loners / Isolationists|Solitarios / Aislacionistas|Solitaires / Isolationnistes|孤独 / 孤立主義者|Eenlingen / Isolationisten|Solitários / Isolacionistas|Samotári / Izolacionisti|Ensamvargar / Isolationister|
+|`POA`|Proof of Attendance|Prueba de Asistencia|Preuve de Présence|出席証明|Bewijs van Aanwezigheid|Comprovante de Presença|Doklad o účasti|Närvarobevis|
+|`QSL`|Quebec Sign Language|Lengua de Señas de Quebec|Langue des Signes Québécoise|ケベック手話|Quebec -gebarentaal|Língua Gesual Quebec|Quebecký posunkový jazyk|Quebecskt Teckenspråk|
+|`RSL`|Russian Sign Language|Lengua de Señas Rusa|Langue des Signes Russe|ロシア手話|Russische gebarentaal|Língua Gestual Russa|Ruský posunkový jazyk|Ryskt Teckenspråk|
 <!-- End Proposed Types -->
 
 ## Proposed Changed Types
@@ -446,7 +446,7 @@ The following types being considered for a name change.
 <!-- Proposed Changed Types -->
 |Code|English|Español|Français|日本語|Nederlands|Português|Slovenčina|Svenska|
 |---|---|---|---|---|---|---|---|---|
-|`LGBTQ`|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|-|LGBTQIAA+|HBTQIAA+|
+|`LGBTQ`|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|LGBTQIAA+|HBTQIAA+|
 <!-- End Proposed Changed Types -->
 
 ## Sharing Your Data
