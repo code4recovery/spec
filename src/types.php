@@ -562,6 +562,17 @@ return (object) array(
      'sk' => 'Profesionáli',
      'sv' => 'Professionella',
   ),
+   'POA' => 
+  (object) array(
+     'en' => 'Proof of Attendance',
+     'es' => 'Prueba de Asistencia',
+     'fr' => 'Preuve de Présence',
+     'ja' => '出席証明',
+     'nl' => 'Bewijs van Aanwezigheid',
+     'pt' => 'Comprovante de Presença',
+     'sk' => 'Doklad o účasti',
+     'sv' => 'Närvarobevis',
+  ),
    'POC' => 
   (object) array(
      'en' => 'People of Color',
