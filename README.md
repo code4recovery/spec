@@ -399,6 +399,7 @@ Also when adding a custom type, it's wise to stay away from any [ISO 369 languag
 |`O`|Open|Abierta|Ouvert(e)|オープン|Open|Aberta|Otvorené|Öppet|
 |`OUT`|Outdoor|Al aire libre|En plein air|アウトドア|Buiten|Ao ar livre|Vonkajšie|Utomhus|
 |`P`|Professionals|Profesionales|Professionnels|職業人|Professionals|Profissionais|Profesionáli|Professionella|
+|`POA`|Proof of Attendance|Prueba de Asistencia|Preuve de Présence|出席証明|Bewijs van Aanwezigheid|Comprovante de Presença|Doklad o účasti|Närvarobevis|
 |`POC`|People of Color|Gente de color|Gens de couleur|有色人種|Mensen van kleur|Pessoas de Côr|Farební ľudia|Färgade|
 |`POL`|Polish|Polaco|Polonais|ポーランド語|Pools|Polaco|Poľské|Polska|
 |`POR`|Portuguese|Portugués|Portugais|ポルトガル語|Portugees|Português|Portugalské|Portugisiska|
@@ -434,7 +435,6 @@ The following types are proposed for future use. They are not currently in use i
 |`BV-I`|Blind / Visually Impaired|Ciego / Discapacidad Visual|Aveugle / Malvoyant|視覚障害者|Blind / Visueel gehandicapt|Cego / Deficiência Visual|Nevidiaci / Zrakovo postihnutí|Blind / Synskadad|
 |`D-HOH`|Deaf / Hard of Hearing|Sordo / Duro de Oído|Sourd / Malentendant|聴覚障害者|Doof / Hardhoren|Surdo / Duro de Ouvido|Nepočujúci / Nedoslýchaví|Döv / Hörselskadad|
 |`LO-I`|Loners / Isolationists|Solitarios / Aislacionistas|Solitaires / Isolationnistes|孤独 / 孤立主義者|Eenlingen / Isolationisten|Solitários / Isolacionistas|Samotári / Izolacionisti|Ensamvargar / Isolationister|
-|`POA`|Proof of Attendance|Prueba de Asistencia|Preuve de Présence|出席証明|Bewijs van Aanwezigheid|Comprovante de Presença|Doklad o účasti|Närvarobevis|
 |`QSL`|Quebec Sign Language|Lengua de Señas de Quebec|Langue des Signes Québécoise|ケベック手話|Quebec -gebarentaal|Língua Gesual Quebec|Quebecký posunkový jazyk|Quebecskt Teckenspråk|
 |`RSL`|Russian Sign Language|Lengua de Señas Rusa|Langue des Signes Russe|ロシア手話|Russische gebarentaal|Língua Gestual Russa|Ruský posunkový jazyk|Ryskt Teckenspråk|
 <!-- End Proposed Types -->

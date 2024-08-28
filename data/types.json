@@ -509,6 +509,16 @@
     "sk": "Profesionáli",
     "sv": "Professionella"
   },
+  "POA": {
+    "en": "Proof of Attendance",
+    "es": "Prueba de Asistencia",
+    "fr": "Preuve de Présence",
+    "ja": "出席証明",
+    "nl": "Bewijs van Aanwezigheid",
+    "pt": "Comprovante de Presença",
+    "sk": "Doklad o účasti",
+    "sv": "Närvarobevis"
+  },
   "POC": {
     "en": "People of Color",
     "es": "Gente de color",
