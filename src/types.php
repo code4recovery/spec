@@ -507,6 +507,17 @@ return (object) array(
      'sk' => 'Domorodí Američania',
      'sv' => 'Ur-amerikanskt',
   ),
+   'NB' => 
+  (object) array(
+     'en' => 'Non-Binary',
+     'es' => 'No binario',
+     'fr' => 'Non binaire',
+     'ja' => 'ノンバイナリー',
+     'nl' => 'Niet-binair',
+     'pt' => 'Não binário',
+     'sk' => 'Nebinárne',
+     'sv' => 'Icke-binär',
+  ),
    'NDG' => 
   (object) array(
      'en' => 'Indigenous',
