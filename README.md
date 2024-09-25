@@ -44,13 +44,13 @@ The JSON file is expected to contain a simple array of meetings. [Here is an exa
 		"approximate": "no",
 		"entity": "District 123",
 		"entity_email": "info@district123.org",
-		"entity_feedback_emails": [
-			"meetingupdates@district123.org"
-		],
 		"entity_location": "Example County, California",
 		"entity_logo": "https://district123.org/images/logo.svg",
 		"entity_phone": "+1-123-456-7890",
-		"entity_url": "https://district123.org"
+		"entity_url": "https://district123.org",
+		"feedback_emails": [
+			"meetingupdates@district123.org"
+		],
 	},
 	...
 ]
@@ -236,9 +236,13 @@ URL is optional and should point to the meeting's listing on the area website. T
 
 Edit URL is an optional string URL that trusted servants can use to edit the specific meeting's listing. This is ignored by Meeting Guide but used by TSML UI.
 
+#### `feedback_emails`
+
+Feedback Emails is an array of feedback addresses for the service entity responsible for the listing. When using a Google Sheet, separate multiple addresses with a `,`.
+
 #### `feedback_url`
 
-Feedback URL is an optional string URL that can be used to provide feedback about the meeting. These can be on-site or off-site absolute URLs, for example:
+Feedback URL is an optional string URL that can be used instead of `feedback_emails` to provide feedback about the meeting. These can be on-site or off-site absolute URLs, for example:
 
 - `https://example.org/feedback?meeting=meeting-slug-1`
 - `https://typeform.com/to/23904203?meeting=meeting-slug-1`
@@ -253,10 +257,6 @@ Entity is the name of the service entity responsible for the listing. entity inf
 #### `entity_email`
 
 Entity Email is a public email address for the service entity responsible for the listing. This should be a single email address.
-
-#### `entity_feedback_emails`
-
-Entity Feedback Emails is an array of feedback addresses for the service entity responsible for the listing. When using a Google Sheet, separate multiple addresses with a `,`.
 
 #### `entity_location`
 
