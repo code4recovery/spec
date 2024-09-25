@@ -242,7 +242,7 @@ Feedback Emails is an array of feedback addresses for the service entity respons
 
 #### `feedback_url`
 
-Feedback URL is an optional string URL that can be used to provide feedback about the meeting. These can be on-site or off-site absolute URLs, for example:
+Feedback URL is an optional string URL that can be used instead of `feedback_emails` to provide feedback about the meeting. These can be on-site or off-site absolute URLs, for example:
 
 - `https://example.org/feedback?meeting=meeting-slug-1`
 - `https://typeform.com/to/23904203?meeting=meeting-slug-1`
