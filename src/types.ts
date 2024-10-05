@@ -459,6 +459,16 @@ export const types = {
     sk: "Domorodí Američania",
     sv: "Ur-amerikanskt",
   },
+  NB: {
+    en: "Non-Binary",
+    es: "No binario",
+    fr: "Non binaire",
+    ja: "ノンバイナリー",
+    nl: "Niet-binair",
+    pt: "Não binário",
+    sk: "Nebinárne",
+    sv: "Icke-binär",
+  },
   NDG: {
     en: "Indigenous",
     es: "Indígena",

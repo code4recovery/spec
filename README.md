@@ -394,6 +394,7 @@ Also when adding a custom type, it's wise to stay away from any [ISO 369 languag
 |`MED`|Meditation|Meditación|Méditation|黙想|Meditatie|Meditação|Meditácia|Meditationsmöte|
 |`ML`|Malayalam|Malayalam|Malayalam|マラヤーラム語|Malayalam|Malaiala|Malajálamsky|Malayalam|
 |`N`|Native American|Nativo Americano|Autochtone|ネイティブアメリカン|Indiaan|Nativo Americano|Domorodí Američania|Ur-amerikanskt|
+|`NB`|Non-Binary|No binario|Non binaire|ノンバイナリー|Niet-binair|Não binário|Nebinárne|Icke-binär|
 |`NDG`|Indigenous|Indígena|Indigène|先住民|Inheems|Indígena|Domorodé|Urfolkligt|
 |`NO`|Norwegian|Noruego|Norvégien|ノルウェー語|Noors|Norueguês|Nórsky|Norska|
 |`O`|Open|Abierta|Ouvert(e)|オープン|Open|Aberta|Otvorené|Öppet|
