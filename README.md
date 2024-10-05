@@ -418,6 +418,7 @@ Also when adding a custom type, it's wise to stay away from any [ISO 369 languag
 |`TH`|Thai|Tailandés|Thaï|タイ語|Thais|Tailandês|Thajské|Thailändska|
 |`TL`|Tagalog|Tagalo|Tagalog|タガログ語|Tagalog|Tagalo|Tagalské|Tagalog|
 |`TR`|Tradition Study|Estudio de tradicion|Étude des Traditions|伝統|Traditie Studie|Estudo de Tradições|Tradičné štúdium|Traditionsmöte|
+|`TUR`|Turkish|Turco|Turc|トルコ語|Turks|Turco|Turecký|Turkiska|
 |`UK`|Ukrainian|Ucraniano|Ukrainien|ウクライナ語|Oekraïens|Ucraniano|Ukrajinské|Ukrainska|
 |`W`|Women|Mujer|Femmes|女性|Vrouwen|Mulheres|Ženy|Kvinnomöte|
 |`X`|Wheelchair Access|Acceso en silla de ruedas|Accès aux fauteuils roulants|車いすアクセス|Toegankelijk voor rolstoelgebruikers|Acesso a Cadeiras de Rodas|Prístup pre vozíčkarov|Handikappanpassat|

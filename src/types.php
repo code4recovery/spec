@@ -771,6 +771,17 @@ return (object) array(
      'sk' => 'Tradičné štúdium',
      'sv' => 'Traditionsmöte',
   ),
+   'TUR' => 
+  (object) array(
+     'en' => 'Turkish',
+     'es' => 'Turco',
+     'fr' => 'Turc',
+     'ja' => 'トルコ語',
+     'nl' => 'Turks',
+     'pt' => 'Turco',
+     'sk' => 'Turecký',
+     'sv' => 'Turkiska',
+  ),
    'UK' => 
   (object) array(
      'en' => 'Ukrainian',
