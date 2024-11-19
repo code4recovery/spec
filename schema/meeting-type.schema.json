@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://code4recovery.com/meeting-type.schema.json",
+    "$id": "https://raw.githubusercontent.com/code4recovery/spec/refs/heads/main/schema/meeting-type.schema.json",
     "title": "Meeting Guide API Schema",
     "description": "The meeting types available",
     "type": "array",
