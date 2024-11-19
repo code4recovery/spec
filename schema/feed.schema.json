@@ -1,0 +1,10 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://code4recovery.com/feed.schema.json",
+    "title": "Meeting Guide API Schema",
+    "description": "The feed of meetings",
+    "type": "array",
+    "items": {
+        "$ref": "./meeting.schema.json"
+    }
+}
