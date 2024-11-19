@@ -101,6 +101,40 @@ if ($validator->isValid()) {
 }
 ```
 
+### Typescript Example
+
+*(tested with `bun`)*
+
+Here is an example of using json-schema-to-zod to generate typescript types and validation schemas (with zod) from the `meeting.schema.json`:
+
+```typescript
+import { jsonSchemaToZod } from "json-schema-to-zod";
+import { resolveRefs } from "json-refs";
+import { format } from "prettier";
+import {writeFileSync} from 'fs'
+
+const schemaUrl = 'https://raw.githubusercontent.com/code4recovery/spec/refs/heads/main/schema/meeting.schema.json'
+
+const generateTypes = async () => {
+    // Get Json Schema from URL
+    const schemaObject = await (await fetch(schemaUrl)).json();
+
+    // Resolve all $refs in the schema object (ie. meeting-type.schema.json)
+    const { resolved } = await resolveRefs(schemaObject);
+
+    // Convert the schema to Zod types
+    const code = jsonSchemaToZod(resolved, { name: "MeetingSchema", module: "esm", type: true });
+
+    // Format the code
+    const formatted = await format(code, { parser: "typescript" });
+    return formatted
+}
+
+generateTypes().then((formatted: string) => {
+    console.log(formatted)
+})
+```
+
 ### JavaScript Example
 
 Here is an example of how you might use the ajv library in JavaScript to validate data against the `meeting.schema.json`:
