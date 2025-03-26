@@ -228,6 +228,10 @@ Square is an optional string and should be a [Square Cash App cashtag](https://c
 
 PayPal is an optional string and should be a [PayPal.me username](https://www.paypal.com/us/cshelp/article/what-is-paypalme-help432), for example `AAGroupName`. This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
 
+#### `homegroup_online`
+
+`homegroup_online` is an optional string and should be a [Homegroup Online](https://homegroup.online) group code, such as `tbc` [in this example](https://donate.homegroup.online/tbc/). This is understood to be the address for 7th Tradition contributions to the meeting, and not any other entity.
+
 #### `url`
 
 URL is optional and should point to the meeting's listing on the area website. This is used by the Meeting Guide app but not TSML UI.
