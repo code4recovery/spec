@@ -249,6 +249,16 @@ export const types = {
     sk: "Perzské",
     sv: "Persiska",
   },
+  FI: {
+    en: "Finnish",
+    es: "Finlandés",
+    fr: "Finlandais",
+    ja: "フィンランド語",
+    nl: "Fins",
+    pt: "Finlandês",
+    sk: "Fínčina",
+    sv: "Finska",
+  },
   FF: {
     en: "Fragrance Free",
     es: "Sin fragancia",

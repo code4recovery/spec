@@ -377,6 +377,7 @@ Also when adding a custom type, it's wise to stay away from any [ISO 369 languag
 |`EL`|Greek|Griego|Grec|ギリシャ語|Grieks|Grego|Grécke|Grekiska|
 |`EN`|English|Inglés|Anglais|英語|Engels|Inglês|Anglické|Engelska|
 |`FA`|Persian|Persa|Persan|ペルシア語|Perzisch|Persa|Perzské|Persiska|
+|`FI`|Finnish|Finlandés|Finlandais|フィンランド語|Fins|Finlandês|Fínčina|Finska|
 |`FF`|Fragrance Free|Sin fragancia|Sans parfum|香水なし|Geen parfum|Sem Perfumes|Bez vône|Parfym Fritt|
 |`FR`|French|Francés|Français|フランス語|Frans|Francês|Francúzsky|Franska|
 |`G`|Gay|Gay|Gai|ゲイ|Homo|Gay|Gay|Gay|
