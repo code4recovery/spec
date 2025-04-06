@@ -39,6 +39,16 @@
     "sk": "Ako to vidí Bill",
     "sv": "Som Bill Ser Det"
   },
+  "AF": {
+    "en": "Afrikaans",
+    "es": "Afrikáans",
+    "fr": "Afrikaans",
+    "ja": "アフリカーンス語",
+    "nl": "Afrikaans",
+    "pt": "Afrikaans",
+    "sk": "Afrikánčina",
+    "sv": "Afrikaans"
+  },
   "AL": {
     "en": "Concurrent with Alateen",
     "es": "Concurrente con Alateen",
@@ -68,6 +78,16 @@
     "pt": "Amárico",
     "sk": "Amharčina",
     "sv": "Amhariska"
+  },
+  "AR": {
+    "en": "Arabic",
+    "es": "Árabe",
+    "fr": "Arabe",
+    "ja": "アラビア語",
+    "nl": "Arabisch",
+    "pt": "Árabe",
+    "sk": "Arabské",
+    "sv": "Arabiska"
   },
   "ASL": {
     "en": "American Sign Language",
@@ -108,6 +128,16 @@
     "pt": "Recém-chegados",
     "sk": "Nováčikovia",
     "sv": "Nykomling"
+  },
+  "BG": {
+    "en": "Bulgarian",
+    "es": "Búlgaro",
+    "fr": "Bulgare",
+    "ja": "ブルガリア語",
+    "nl": "Bulgaars",
+    "pt": "Búlgaro",
+    "sk": "Bulharské",
+    "sv": "Bulgariska"
   },
   "BI": {
     "en": "Bisexual",
@@ -349,6 +379,16 @@
     "sk": "Maďarské",
     "sv": "Ungerska"
   },
+  "IS": {
+    "en": "Icelandic",
+    "es": "Islandés",
+    "fr": "Islandais",
+    "ja": "アイスランド語",
+    "nl": "IJslands",
+    "pt": "Islandês",
+    "sk": "Islanské",
+    "sv": "Isländska"
+  },
   "ITA": {
     "en": "Italian",
     "es": "Italiano",
@@ -368,6 +408,16 @@
     "pt": "Japonês",
     "sk": "Japonské",
     "sv": "Japanska"
+  },
+  "KA": {
+    "en": "Georgian",
+    "es": "Georgiano",
+    "fr": "Géorgien",
+    "ja": "ジョージア語",
+    "nl": "Georgisch",
+    "pt": "Georgiano",
+    "sk": "Gruzínske",
+    "sv": "Georgiska"
   },
   "KOR": {
     "en": "Korean",
@@ -459,6 +509,16 @@
     "sk": "Malajálamsky",
     "sv": "Malayalam"
   },
+  "MT": {
+    "en": "Maltese",
+    "es": "Maltés",
+    "fr": "Maltais",
+    "ja": "マルタ語",
+    "nl": "Maltees",
+    "pt": "Maltês",
+    "sk": "Maltézske",
+    "sv": "Maltesiska"
+  },
   "N": {
     "en": "Native American",
     "es": "Nativo Americano",
@@ -488,6 +548,26 @@
     "pt": "Indígena",
     "sk": "Domorodé",
     "sv": "Urfolkligt"
+  },
+  "NE": {
+    "en": "Nepali",
+    "es": "Nepalí",
+    "fr": "Népalais",
+    "ja": "ネパール語",
+    "nl": "Nepalees",
+    "pt": "Nepalês",
+    "sk": "Nepálsky",
+    "sv": "Nepali"
+  },
+  "NL": {
+    "en": "Dutch",
+    "es": "Holandés",
+    "fr": "Néerlandais",
+    "ja": "オランダ語",
+    "nl": "Nederlands",
+    "pt": "Holandês",
+    "sk": "Holandské",
+    "sv": "Holländska"
   },
   "NO": {
     "en": "Norwegian",
@@ -618,6 +698,16 @@
     "pt": "Eslovaco",
     "sk": "Slovenské",
     "sv": "Slovakiska"
+  },
+  "SL": {
+    "en": "Slovenian",
+    "es": "Esloveno",
+    "fr": "Slovène",
+    "ja": "スロベニア語",
+    "nl": "Sloveens",
+    "pt": "Esloveno",
+    "sk": "Slovinské",
+    "sv": "Slovenska"
   },
   "SM": {
     "en": "Smoking Permitted",

@@ -45,6 +45,17 @@ return (object) array(
      'sk' => 'Ako to vidí Bill',
      'sv' => 'Som Bill Ser Det',
   ),
+   'AF' => 
+  (object) array(
+     'en' => 'Afrikaans',
+     'es' => 'Afrikáans',
+     'fr' => 'Afrikaans',
+     'ja' => 'アフリカーンス語',
+     'nl' => 'Afrikaans',
+     'pt' => 'Afrikaans',
+     'sk' => 'Afrikánčina',
+     'sv' => 'Afrikaans',
+  ),
    'AL' => 
   (object) array(
      'en' => 'Concurrent with Alateen',
@@ -77,6 +88,17 @@ return (object) array(
      'pt' => 'Amárico',
      'sk' => 'Amharčina',
      'sv' => 'Amhariska',
+  ),
+   'AR' => 
+  (object) array(
+     'en' => 'Arabic',
+     'es' => 'Árabe',
+     'fr' => 'Arabe',
+     'ja' => 'アラビア語',
+     'nl' => 'Arabisch',
+     'pt' => 'Árabe',
+     'sk' => 'Arabské',
+     'sv' => 'Arabiska',
   ),
    'ASL' => 
   (object) array(
@@ -121,6 +143,17 @@ return (object) array(
      'pt' => 'Recém-chegados',
      'sk' => 'Nováčikovia',
      'sv' => 'Nykomling',
+  ),
+   'BG' => 
+  (object) array(
+     'en' => 'Bulgarian',
+     'es' => 'Búlgaro',
+     'fr' => 'Bulgare',
+     'ja' => 'ブルガリア語',
+     'nl' => 'Bulgaars',
+     'pt' => 'Búlgaro',
+     'sk' => 'Bulharské',
+     'sv' => 'Bulgariska',
   ),
    'BI' => 
   (object) array(
@@ -386,6 +419,17 @@ return (object) array(
      'sk' => 'Maďarské',
      'sv' => 'Ungerska',
   ),
+   'IS' => 
+  (object) array(
+     'en' => 'Icelandic',
+     'es' => 'Islandés',
+     'fr' => 'Islandais',
+     'ja' => 'アイスランド語',
+     'nl' => 'IJslands',
+     'pt' => 'Islandês',
+     'sk' => 'Islanské',
+     'sv' => 'Isländska',
+  ),
    'ITA' => 
   (object) array(
      'en' => 'Italian',
@@ -407,6 +451,17 @@ return (object) array(
      'pt' => 'Japonês',
      'sk' => 'Japonské',
      'sv' => 'Japanska',
+  ),
+   'KA' => 
+  (object) array(
+     'en' => 'Georgian',
+     'es' => 'Georgiano',
+     'fr' => 'Géorgien',
+     'ja' => 'ジョージア語',
+     'nl' => 'Georgisch',
+     'pt' => 'Georgiano',
+     'sk' => 'Gruzínske',
+     'sv' => 'Georgiska',
   ),
    'KOR' => 
   (object) array(
@@ -507,6 +562,17 @@ return (object) array(
      'sk' => 'Malajálamsky',
      'sv' => 'Malayalam',
   ),
+   'MT' => 
+  (object) array(
+     'en' => 'Maltese',
+     'es' => 'Maltés',
+     'fr' => 'Maltais',
+     'ja' => 'マルタ語',
+     'nl' => 'Maltees',
+     'pt' => 'Maltês',
+     'sk' => 'Maltézske',
+     'sv' => 'Maltesiska',
+  ),
    'N' => 
   (object) array(
      'en' => 'Native American',
@@ -539,6 +605,28 @@ return (object) array(
      'pt' => 'Indígena',
      'sk' => 'Domorodé',
      'sv' => 'Urfolkligt',
+  ),
+   'NE' => 
+  (object) array(
+     'en' => 'Nepali',
+     'es' => 'Nepalí',
+     'fr' => 'Népalais',
+     'ja' => 'ネパール語',
+     'nl' => 'Nepalees',
+     'pt' => 'Nepalês',
+     'sk' => 'Nepálsky',
+     'sv' => 'Nepali',
+  ),
+   'NL' => 
+  (object) array(
+     'en' => 'Dutch',
+     'es' => 'Holandés',
+     'fr' => 'Néerlandais',
+     'ja' => 'オランダ語',
+     'nl' => 'Nederlands',
+     'pt' => 'Holandês',
+     'sk' => 'Holandské',
+     'sv' => 'Holländska',
   ),
    'NO' => 
   (object) array(
@@ -682,6 +770,17 @@ return (object) array(
      'pt' => 'Eslovaco',
      'sk' => 'Slovenské',
      'sv' => 'Slovakiska',
+  ),
+   'SL' => 
+  (object) array(
+     'en' => 'Slovenian',
+     'es' => 'Esloveno',
+     'fr' => 'Slovène',
+     'ja' => 'スロベニア語',
+     'nl' => 'Sloveens',
+     'pt' => 'Esloveno',
+     'sk' => 'Slovinské',
+     'sv' => 'Slovenska',
   ),
    'SM' => 
   (object) array(
