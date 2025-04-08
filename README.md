@@ -356,13 +356,16 @@ Also when adding a custom type, it's wise to stay away from any [ISO 369 languag
 |`12x12`|12 Steps & 12 Traditions|12 Pasos y 12 Tradiciones|12 Étapes et 12 Traditions|12のステップと12の伝統|12 Stappen en 12 Tradities|12 Passos e 12 Tradições|12 Krokov & 12 Tradícií|12 Steg & 12 Traditioner|
 |`A`|Secular|Secular|Séculier|無宗教|Seculier|Secular|Svetské|Sekulärt|
 |`ABSI`|As Bill Sees It|Como lo ve Bill|Réflexions de Bill|ビルはこう思う|Zoals Bill het ziet|Na opinião de Bill|Ako to vidí Bill|Som Bill Ser Det|
+|`AF`|Afrikaans|Afrikáans|Afrikaans|アフリカーンス語|Afrikaans|Afrikaans|Afrikánčina|Afrikaans|
 |`AL`|Concurrent with Alateen|Concurrente con Alateen|En même temps qu’Alateen|アラティーンと同時進行|Gelijktijdig met Alateen|Em simultâneo com Alateen|Súbežne s Alateen|Tillsammans med Alateen|
 |`AL-AN`|Concurrent with Al-Anon|Concurrente con Al-Anon|En même temps qu’Al-Anon|アラノンと同時進行|Gelijktijdig met Al-Anon|Em simultâneo com Al-Anon|Súbežne s Al-Anon|Tillsammans med Al-Anon|
 |`AM`|Amharic|Amárico|Amharique|アムハラ語|Amhaars|Amárico|Amharčina|Amhariska|
+|`AR`|Arabic|Árabe|Arabe|アラビア語|Arabisch|Árabe|Arabské|Arabiska|
 |`ASL`|American Sign Language|Lenguaje por señas|Langage des Signes|アメリカ手話|Amerikaanse gebaren taal|Língua Gestual Americana|Americký posunkový jazyk|Amerikanskt teckenspråk|
 |`B`|Big Book|Libro Grande|Gros Livre|ビッグブック|Big Book|Livro Azul|Veľká Kniha|Stora Boken|
 |`BA`|Babysitting Available|Guardería disponible|Garderie d’enfants disponible|ベビーシッターあり|Kinderopvang aanwezig|Babysitting disponível|Dostupné opatrovanie detí|Barnvakt Finns|
 |`BE`|Newcomer|Principiantes|Nouveau/nouvelle|ビギナーズ|Nieuwkomer|Recém-chegados|Nováčikovia|Nykomling|
+|`BG`|Bulgarian|Búlgaro|Bulgare|ブルガリア語|Bulgaars|Búlgaro|Bulharské|Bulgariska|
 |`BI`|Bisexual|Bisexual|Bisexuel|バイセクシャル|Biseksueel|Bisexual|Bisexuálne|Bisexuellt|
 |`BRK`|Breakfast|Desayuno|Petit déjeuner|朝食|Ontbijt|Pequeno-Almoço|Raňajky|Frukost|
 |`C`|Closed|Cerrada|Fermé|クローズド|Gesloten|Fechada|Uzatvorené|Slutet|
@@ -387,8 +390,10 @@ Also when adding a custom type, it's wise to stay away from any [ISO 369 languag
 |`HI`|Hindi|Hindi|Hindi|ヒンディー語|Hindi|Hindi|Hindi|Hindi|
 |`HR`|Croatian|Croata|Croate|クロアチア語|Kroatisch|Croata|Chorvátsky|Kroatiska|
 |`HU`|Hungarian|Húngaro|Hongrois|ハンガリー語|Hongaars|Hungaro|Maďarské|Ungerska|
+|`IS`|Icelandic|Islandés|Islandais|アイスランド語|IJslands|Islandês|Islanské|Isländska|
 |`ITA`|Italian|Italiano|Italien|イタリア語|Italiaans|Italiano|Taliansky|Italienska|
 |`JA`|Japanese|Japonés|Japonais|日本語|Japans|Japonês|Japonské|Japanska|
+|`KA`|Georgian|Georgiano|Géorgien|ジョージア語|Georgisch|Georgiano|Gruzínske|Georgiska|
 |`KOR`|Korean|Coreano|Coréen|韓国語|Koreaans|Coreano|Kórejske|Koreanska|
 |`L`|Lesbian|Lesbiana|Lesbienne|レズビアン|Lesbisch|Lésbica|Lesbické|Lesbiskt|
 |`LGBTQ`|LGBTQ|LGBTQ|LGBTQ|LGBTQ|LGBTQ|LGBTQ|LGBTQ|HBTQ|
@@ -398,9 +403,12 @@ Also when adding a custom type, it's wise to stay away from any [ISO 369 languag
 |`M`|Men|Hombres|Hommes|男性|Mannen|Homens|Muži|Mansmöte|
 |`MED`|Meditation|Meditación|Méditation|黙想|Meditatie|Meditação|Meditácia|Meditationsmöte|
 |`ML`|Malayalam|Malayalam|Malayalam|マラヤーラム語|Malayalam|Malaiala|Malajálamsky|Malayalam|
+|`MT`|Maltese|Maltés|Maltais|マルタ語|Maltees|Maltês|Maltézske|Maltesiska|
 |`N`|Native American|Nativo Americano|Autochtone|ネイティブアメリカン|Indiaan|Nativo Americano|Domorodí Američania|Ur-amerikanskt|
 |`NB`|Non-Binary|No binario|Non binaire|ノンバイナリー|Niet-binair|Não binário|Nebinárne|Icke-binär|
 |`NDG`|Indigenous|Indígena|Indigène|先住民|Inheems|Indígena|Domorodé|Urfolkligt|
+|`NE`|Nepali|Nepalí|Népalais|ネパール語|Nepalees|Nepalês|Nepálsky|Nepali|
+|`NL`|Dutch|Holandés|Néerlandais|オランダ語|Nederlands|Holandês|Holandské|Holländska|
 |`NO`|Norwegian|Noruego|Norvégien|ノルウェー語|Noors|Norueguês|Nórsky|Norska|
 |`O`|Open|Abierta|Ouvert(e)|オープン|Open|Aberta|Otvorené|Öppet|
 |`OUT`|Outdoor|Al aire libre|En plein air|アウトドア|Buiten|Ao ar livre|Vonkajšie|Utomhus|
@@ -414,6 +422,7 @@ Also when adding a custom type, it's wise to stay away from any [ISO 369 languag
 |`S`|Spanish|Español|Espagnol|スペイン語|Spaans|Espanhol|Španielské|Spanska|
 |`SEN`|Seniors|Personas mayores|Séniors|シニア|Senioren|Séniores|Seniori|Seniorer|
 |`SK`|Slovak|Eslovaco|Slovaque|スロバキア語|Slowaaks|Eslovaco|Slovenské|Slovakiska|
+|`SL`|Slovenian|Esloveno|Slovène|スロベニア語|Sloveens|Esloveno|Slovinské|Slovenska|
 |`SM`|Smoking Permitted|Se permite fumar|Permis de fumer|喫煙可|Roken toegestaan|Permitido Fumar|Fajčenie povolené|Rökning Tillåten|
 |`SP`|Speaker|Orador|Conférencier|スピーカー|Spreker|Partilhador|Spíker|Talare|
 |`ST`|Step Study|Estudio de pasos|Sur les Étapes|ステップ|Stap studie|Estudo de Passos|Štúdium Krokov|Stegmöte|
