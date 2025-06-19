@@ -357,7 +357,7 @@ return (object) array(
   (object) array(
      'en' => 'Grapevine',
      'es' => 'La Viña',
-     'fr' => 'Grapevine',
+     'fr' => 'La Vigne',
      'ja' => 'グレープバイン',
      'nl' => 'Wijnstok',
      'pt' => 'Grapevine',
@@ -906,7 +906,7 @@ return (object) array(
    'W' => 
   (object) array(
      'en' => 'Women',
-     'es' => 'Mujer',
+     'es' => 'Mujeres',
      'fr' => 'Femmes',
      'ja' => '女性',
      'nl' => 'Vrouwen',
