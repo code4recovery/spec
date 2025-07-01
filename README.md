@@ -439,6 +439,12 @@ Also when adding a custom type, it's wise to stay away from any [ISO 369 languag
 |`XB`|Wheelchair-Accessible Bathroom|Baño accesible para sillas de ruedas|Toilettes accessibles aux fauteuils roulants|車いす使用者用トイレ|Rolstoeltoegankelijke badkamer|WC com Acesso a Cadeiras de Rodas|Bezbariérová kúpeľňa|Handikappanpassad WC|
 |`XT`|Cross Talk Permitted|Se permite opinar|Conversation croisée permise|クロストーク可能|Cross-sharen toegestaan|Prtilhas Cruzadas Permitidas|Cross Talk povolený|Kommentarer Tilltåtna|
 |`Y`|Young People|Gente joven|Jeunes|ヤング|Jongeren|Jovens|Mladí ľudia|Young People|
+|`BEG`|Beginner|Principiante|Débutant|初心者向け|Beginner|Iniciante|Začiatočník|Nybörjare|
+|`BT`|Book Study|Estudio del libro|Étude de livre|本の学習|Boekstudie|Estudo de livro|Štúdium knihy|Bokstudie|
+|`BUS`|Business|Negocios|Réunion administrative|ビジネス会議|Zakelijke vergadering|Reunião administrativa|Obchodné stretnutie|Affärsmöte|
+|`CC`|Closed Captions|Subtítulos cerrados|Sous-titres codés|字幕付き|Gesloten ondertitels|Legendas ocultas|Skryté titulky|Textremsa (stängda)|
+|`CHP`|Chip|Medalla|Jeton|チップ|Token|Ficha|Odznak|Märke|
+|`AO`|Addicts Only|Solo adictos|Réservé aux dépendants|当事者のみ|Alleen voor verslaafden|Somente para adictos|Iba pre závislých|Endast för beroende|
 <!-- End Types -->
 
 ## Proposed New Types

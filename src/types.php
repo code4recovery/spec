@@ -958,4 +958,70 @@ return (object) array(
      'sk' => 'Mladí ľudia',
      'sv' => 'Young People',
   ),
+   'BEG' => 
+  (object) array(
+     'en' => 'Beginner',
+     'es' => 'Principiante',
+     'fr' => 'Débutant',
+     'ja' => '初心者向け',
+     'nl' => 'Beginner',
+     'pt' => 'Iniciante',
+     'sk' => 'Začiatočník',
+     'sv' => 'Nybörjare',
+  ),
+   'BT' => 
+  (object) array(
+     'en' => 'Book Study',
+     'es' => 'Estudio del libro',
+     'fr' => 'Étude de livre',
+     'ja' => '本の学習',
+     'nl' => 'Boekstudie',
+     'pt' => 'Estudo de livro',
+     'sk' => 'Štúdium knihy',
+     'sv' => 'Bokstudie',
+  ),
+   'BUS' => 
+  (object) array(
+     'en' => 'Business',
+     'es' => 'Negocios',
+     'fr' => 'Réunion administrative',
+     'ja' => 'ビジネス会議',
+     'nl' => 'Zakelijke vergadering',
+     'pt' => 'Reunião administrativa',
+     'sk' => 'Obchodné stretnutie',
+     'sv' => 'Affärsmöte',
+  ),
+   'CC' => 
+  (object) array(
+     'en' => 'Closed Captions',
+     'es' => 'Subtítulos cerrados',
+     'fr' => 'Sous-titres codés',
+     'ja' => '字幕付き',
+     'nl' => 'Gesloten ondertitels',
+     'pt' => 'Legendas ocultas',
+     'sk' => 'Skryté titulky',
+     'sv' => 'Textremsa (stängda)',
+  ),
+   'CHP' => 
+  (object) array(
+     'en' => 'Chip',
+     'es' => 'Medalla',
+     'fr' => 'Jeton',
+     'ja' => 'チップ',
+     'nl' => 'Token',
+     'pt' => 'Ficha',
+     'sk' => 'Odznak',
+     'sv' => 'Märke',
+  ),
+   'AO' => 
+  (object) array(
+     'en' => 'Addicts Only',
+     'es' => 'Solo adictos',
+     'fr' => 'Réservé aux dépendants',
+     'ja' => '当事者のみ',
+     'nl' => 'Alleen voor verslaafden',
+     'pt' => 'Somente para adictos',
+     'sk' => 'Iba pre závislých',
+     'sv' => 'Endast för beroende',
+  ),
 );
