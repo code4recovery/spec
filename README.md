@@ -384,7 +384,7 @@ Also when adding a custom type, it's wise to stay away from any [ISO 369 languag
 |`FF`|Fragrance Free|Sin fragancia|Sans parfum|香水なし|Geen parfum|Sem Perfumes|Bez vône|Parfym Fritt|
 |`FR`|French|Francés|Français|フランス語|Frans|Francês|Francúzsky|Franska|
 |`G`|Gay|Gay|Gai|ゲイ|Homo|Gay|Gay|Gay|
-|`GR`|Grapevine|La Viña|Grapevine|グレープバイン|Wijnstok|Grapevine|Grapevine|Grapevine|
+|`GR`|Grapevine|La Viña|La Vigne|グレープバイン|Wijnstok|Grapevine|Grapevine|Grapevine|
 |`H`|Birthday|Cumpleaños|Anniversaire|バースデー|Verjaardag|Aniversário|Narodeniny|Födelsedag|
 |`HE`|Hebrew|Hebreo|Hébreu|ヘブライ語|Hebreeuws|Hebreu|Hebrejské|Hebreiska|
 |`HI`|Hindi|Hindi|Hindi|ヒンディー語|Hindi|Hindi|Hindi|Hindi|
@@ -434,7 +434,7 @@ Also when adding a custom type, it's wise to stay away from any [ISO 369 languag
 |`TR`|Tradition Study|Estudio de tradicion|Étude des Traditions|伝統|Traditie Studie|Estudo de Tradições|Tradičné štúdium|Traditionsmöte|
 |`TUR`|Turkish|Turco|Turc|トルコ語|Turks|Turco|Turecký|Turkiska|
 |`UK`|Ukrainian|Ucraniano|Ukrainien|ウクライナ語|Oekraïens|Ucraniano|Ukrajinské|Ukrainska|
-|`W`|Women|Mujer|Femmes|女性|Vrouwen|Mulheres|Ženy|Kvinnomöte|
+|`W`|Women|Mujeres|Femmes|女性|Vrouwen|Mulheres|Ženy|Kvinnomöte|
 |`X`|Wheelchair Access|Acceso en silla de ruedas|Accès aux fauteuils roulants|車いすアクセス|Toegankelijk voor rolstoelgebruikers|Acesso a Cadeiras de Rodas|Prístup pre vozíčkarov|Handikappanpassat|
 |`XB`|Wheelchair-Accessible Bathroom|Baño accesible para sillas de ruedas|Toilettes accessibles aux fauteuils roulants|車いす使用者用トイレ|Rolstoeltoegankelijke badkamer|WC com Acesso a Cadeiras de Rodas|Bezbariérová kúpeľňa|Handikappanpassad WC|
 |`XT`|Cross Talk Permitted|Se permite opinar|Conversation croisée permise|クロストーク可能|Cross-sharen toegestaan|Prtilhas Cruzadas Permitidas|Cross Talk povolený|Kommentarer Tilltåtna|

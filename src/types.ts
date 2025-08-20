@@ -322,7 +322,7 @@ export const types = {
   GR: {
     en: "Grapevine",
     es: "La Viña",
-    fr: "Grapevine",
+    fr: "La Vigne",
     ja: "グレープバイン",
     nl: "Wijnstok",
     pt: "Grapevine",
@@ -821,7 +821,7 @@ export const types = {
   },
   W: {
     en: "Women",
-    es: "Mujer",
+    es: "Mujeres",
     fr: "Femmes",
     ja: "女性",
     nl: "Vrouwen",
