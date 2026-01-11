@@ -7,7 +7,8 @@
     "nl": "Stap 11 meditatie",
     "pt": "Meditação do 11º Passo",
     "sk": "Meditácia 11. kroku",
-    "sv": "11th Stegs Meditation"
+    "sv": "11th Stegs Meditation",
+    "th": "สมาธิขั้นที่ 11"
   },
   "12x12": {
     "en": "12 Steps & 12 Traditions",
@@ -17,7 +18,8 @@
     "nl": "12 Stappen en 12 Tradities",
     "pt": "12 Passos e 12 Tradições",
     "sk": "12 Krokov & 12 Tradícií",
-    "sv": "12 Steg & 12 Traditioner"
+    "sv": "12 Steg & 12 Traditioner",
+    "th": "12 ขั้นตอนและ 12 ธรรมเนียม"
   },
   "A": {
     "en": "Secular",
@@ -27,7 +29,8 @@
     "nl": "Seculier",
     "pt": "Secular",
     "sk": "Svetské",
-    "sv": "Sekulärt"
+    "sv": "Sekulärt",
+    "th": "ไม่เกี่ยวกับศาสนา"
   },
   "ABSI": {
     "en": "As Bill Sees It",
@@ -37,7 +40,8 @@
     "nl": "Zoals Bill het ziet",
     "pt": "Na opinião de Bill",
     "sk": "Ako to vidí Bill",
-    "sv": "Som Bill Ser Det"
+    "sv": "Som Bill Ser Det",
+    "th": "ตามที่บิลมอง"
   },
   "AF": {
     "en": "Afrikaans",
@@ -47,7 +51,8 @@
     "nl": "Afrikaans",
     "pt": "Afrikaans",
     "sk": "Afrikánčina",
-    "sv": "Afrikaans"
+    "sv": "Afrikaans",
+    "th": "แอฟริกานส์"
   },
   "AL": {
     "en": "Concurrent with Alateen",
@@ -57,7 +62,8 @@
     "nl": "Gelijktijdig met Alateen",
     "pt": "Em simultâneo com Alateen",
     "sk": "Súbežne s Alateen",
-    "sv": "Tillsammans med Alateen"
+    "sv": "Tillsammans med Alateen",
+    "th": "พร้อมกันกับ Alateen"
   },
   "AL-AN": {
     "en": "Concurrent with Al-Anon",
@@ -67,7 +73,8 @@
     "nl": "Gelijktijdig met Al-Anon",
     "pt": "Em simultâneo com Al-Anon",
     "sk": "Súbežne s Al-Anon",
-    "sv": "Tillsammans med Al-Anon"
+    "sv": "Tillsammans med Al-Anon",
+    "th": "พร้อมกันกับ Al-Anon"
   },
   "AM": {
     "en": "Amharic",
@@ -77,7 +84,8 @@
     "nl": "Amhaars",
     "pt": "Amárico",
     "sk": "Amharčina",
-    "sv": "Amhariska"
+    "sv": "Amhariska",
+    "th": "อัมฮาริก"
   },
   "AR": {
     "en": "Arabic",
@@ -87,7 +95,8 @@
     "nl": "Arabisch",
     "pt": "Árabe",
     "sk": "Arabské",
-    "sv": "Arabiska"
+    "sv": "Arabiska",
+    "th": "อาหรับ"
   },
   "ASL": {
     "en": "American Sign Language",
@@ -97,7 +106,8 @@
     "nl": "Amerikaanse gebaren taal",
     "pt": "Língua Gestual Americana",
     "sk": "Americký posunkový jazyk",
-    "sv": "Amerikanskt teckenspråk"
+    "sv": "Amerikanskt teckenspråk",
+    "th": "ภาษามืออเมริกัน"
   },
   "B": {
     "en": "Big Book",
@@ -107,7 +117,8 @@
     "nl": "Big Book",
     "pt": "Livro Azul",
     "sk": "Veľká Kniha",
-    "sv": "Stora Boken"
+    "sv": "Stora Boken",
+    "th": "หนังสือใหญ่"
   },
   "BA": {
     "en": "Babysitting Available",
@@ -117,7 +128,8 @@
     "nl": "Kinderopvang aanwezig",
     "pt": "Babysitting disponível",
     "sk": "Dostupné opatrovanie detí",
-    "sv": "Barnvakt Finns"
+    "sv": "Barnvakt Finns",
+    "th": "มีบริการดูแลเด็ก"
   },
   "BE": {
     "en": "Newcomer",
@@ -127,7 +139,8 @@
     "nl": "Nieuwkomer",
     "pt": "Recém-chegados",
     "sk": "Nováčikovia",
-    "sv": "Nykomling"
+    "sv": "Nykomling",
+    "th": "สมาชิกใหม่"
   },
   "BG": {
     "en": "Bulgarian",
@@ -137,7 +150,8 @@
     "nl": "Bulgaars",
     "pt": "Búlgaro",
     "sk": "Bulharské",
-    "sv": "Bulgariska"
+    "sv": "Bulgariska",
+    "th": "บัลแกเรีย"
   },
   "BI": {
     "en": "Bisexual",
@@ -147,7 +161,8 @@
     "nl": "Biseksueel",
     "pt": "Bisexual",
     "sk": "Bisexuálne",
-    "sv": "Bisexuellt"
+    "sv": "Bisexuellt",
+    "th": "ไบเซ็กชวล"
   },
   "BRK": {
     "en": "Breakfast",
@@ -157,7 +172,8 @@
     "nl": "Ontbijt",
     "pt": "Pequeno-Almoço",
     "sk": "Raňajky",
-    "sv": "Frukost"
+    "sv": "Frukost",
+    "th": "อาหารเช้า"
   },
   "C": {
     "en": "Closed",
@@ -167,7 +183,8 @@
     "nl": "Gesloten",
     "pt": "Fechada",
     "sk": "Uzatvorené",
-    "sv": "Slutet"
+    "sv": "Slutet",
+    "th": "ปิด"
   },
   "CAN": {
     "en": "Candlelight",
@@ -177,7 +194,8 @@
     "nl": "Candlelight",
     "pt": "Luz de Velas",
     "sk": "Sviečky",
-    "sv": "Tända Ljus"
+    "sv": "Tända Ljus",
+    "th": "แสงเทียน"
   },
   "CF": {
     "en": "Child-Friendly",
@@ -187,7 +205,8 @@
     "nl": "Kindvriendelijk",
     "pt": "Amigável para Crianças",
     "sk": "Priateľský k deťom",
-    "sv": "Barnvänligt"
+    "sv": "Barnvänligt",
+    "th": "เป็นมิตรกับเด็ก"
   },
   "D": {
     "en": "Discussion",
@@ -197,7 +216,8 @@
     "nl": "Discussie",
     "pt": "Discussão",
     "sk": "Diskusia",
-    "sv": "Diskussion"
+    "sv": "Diskussion",
+    "th": "พูดคุยกลุ่ม"
   },
   "DA": {
     "en": "Danish",
@@ -207,7 +227,8 @@
     "nl": "Deens",
     "pt": "Dinamarquês",
     "sk": "Dánsky",
-    "sv": "Danska"
+    "sv": "Danska",
+    "th": "เดนมาร์ก"
   },
   "DB": {
     "en": "Digital Basket",
@@ -217,7 +238,8 @@
     "nl": "Digitale mand",
     "pt": "Cesto Digital",
     "sk": "Digitálny košík",
-    "sv": "Digital Korg"
+    "sv": "Digital Korg",
+    "th": "ตะกร้าบริจาคดิจิทัล"
   },
   "DD": {
     "en": "Dual Diagnosis",
@@ -227,7 +249,8 @@
     "nl": "Dubbele diagnose",
     "pt": "Duplo Diagnóstico",
     "sk": "Duálna diagnóza",
-    "sv": "Dubbel Diagnos"
+    "sv": "Dubbel Diagnos",
+    "th": "วินิจฉัยร่วม"
   },
   "DE": {
     "en": "German",
@@ -237,7 +260,8 @@
     "nl": "Duits",
     "pt": "Alemão",
     "sk": "Nemecké",
-    "sv": "Tyska"
+    "sv": "Tyska",
+    "th": "เยอรมัน"
   },
   "DR": {
     "en": "Daily Reflections",
@@ -247,7 +271,8 @@
     "nl": "Dagelijkse weerspiegelingen",
     "pt": "Reflexões Diárias",
     "sv": "Dagliga Reflektioner",
-    "sk": "Denné úvahy"
+    "sk": "Denné úvahy",
+    "th": "ข้อคิดประจำวัน"
   },
   "EL": {
     "en": "Greek",
@@ -257,7 +282,8 @@
     "nl": "Grieks",
     "pt": "Grego",
     "sk": "Grécke",
-    "sv": "Grekiska"
+    "sv": "Grekiska",
+    "th": "กรีก"
   },
   "EN": {
     "en": "English",
@@ -267,7 +293,8 @@
     "nl": "Engels",
     "pt": "Inglês",
     "sk": "Anglické",
-    "sv": "Engelska"
+    "sv": "Engelska",
+    "th": "อังกฤษ"
   },
   "FA": {
     "en": "Persian",
@@ -277,7 +304,8 @@
     "nl": "Perzisch",
     "pt": "Persa",
     "sk": "Perzské",
-    "sv": "Persiska"
+    "sv": "Persiska",
+    "th": "เปอร์เซีย"
   },
   "FI": {
     "en": "Finnish",
@@ -287,7 +315,8 @@
     "nl": "Fins",
     "pt": "Finlandês",
     "sk": "Fínčina",
-    "sv": "Finska"
+    "sv": "Finska",
+    "th": "ฟินแลนด์"
   },
   "FF": {
     "en": "Fragrance Free",
@@ -297,7 +326,8 @@
     "nl": "Geen parfum",
     "pt": "Sem Perfumes",
     "sk": "Bez vône",
-    "sv": "Parfym Fritt"
+    "sv": "Parfym Fritt",
+    "th": "ปลอดกลิ่นน้ำหอม"
   },
   "FR": {
     "en": "French",
@@ -307,7 +337,8 @@
     "nl": "Frans",
     "pt": "Francês",
     "sk": "Francúzsky",
-    "sv": "Franska"
+    "sv": "Franska",
+    "th": "ฝรั่งเศส"
   },
   "G": {
     "en": "Gay",
@@ -317,7 +348,8 @@
     "nl": "Homo",
     "pt": "Gay",
     "sk": "Gay",
-    "sv": "Gay"
+    "sv": "Gay",
+    "th": "เกย์"
   },
   "GR": {
     "en": "Grapevine",
@@ -327,7 +359,8 @@
     "nl": "Wijnstok",
     "pt": "Grapevine",
     "sk": "Grapevine",
-    "sv": "Grapevine"
+    "sv": "Grapevine",
+    "th": "เกรปไวน์"
   },
   "H": {
     "en": "Birthday",
@@ -337,7 +370,8 @@
     "nl": "Verjaardag",
     "pt": "Aniversário",
     "sk": "Narodeniny",
-    "sv": "Födelsedag"
+    "sv": "Födelsedag",
+    "th": "วันครบรอบ"
   },
   "HE": {
     "en": "Hebrew",
@@ -347,7 +381,8 @@
     "nl": "Hebreeuws",
     "pt": "Hebreu",
     "sk": "Hebrejské",
-    "sv": "Hebreiska"
+    "sv": "Hebreiska",
+    "th": "ฮีบรู"
   },
   "HI": {
     "en": "Hindi",
@@ -357,7 +392,8 @@
     "nl": "Hindi",
     "pt": "Hindi",
     "sk": "Hindi",
-    "sv": "Hindi"
+    "sv": "Hindi",
+    "th": "ฮินดี"
   },
   "HR": {
     "en": "Croatian",
@@ -367,7 +403,8 @@
     "nl": "Kroatisch",
     "pt": "Croata",
     "sk": "Chorvátsky",
-    "sv": "Kroatiska"
+    "sv": "Kroatiska",
+    "th": "โครเอเชีย"
   },
   "HU": {
     "en": "Hungarian",
@@ -377,7 +414,8 @@
     "nl": "Hongaars",
     "pt": "Hungaro",
     "sk": "Maďarské",
-    "sv": "Ungerska"
+    "sv": "Ungerska",
+    "th": "ฮังการี"
   },
   "IS": {
     "en": "Icelandic",
@@ -387,7 +425,8 @@
     "nl": "IJslands",
     "pt": "Islandês",
     "sk": "Islanské",
-    "sv": "Isländska"
+    "sv": "Isländska",
+    "th": "ไอซ์แลนด์"
   },
   "ITA": {
     "en": "Italian",
@@ -397,7 +436,8 @@
     "nl": "Italiaans",
     "pt": "Italiano",
     "sk": "Taliansky",
-    "sv": "Italienska"
+    "sv": "Italienska",
+    "th": "อิตาลี"
   },
   "JA": {
     "en": "Japanese",
@@ -407,7 +447,8 @@
     "nl": "Japans",
     "pt": "Japonês",
     "sk": "Japonské",
-    "sv": "Japanska"
+    "sv": "Japanska",
+    "th": "ญี่ปุ่น"
   },
   "KA": {
     "en": "Georgian",
@@ -417,7 +458,8 @@
     "nl": "Georgisch",
     "pt": "Georgiano",
     "sk": "Gruzínske",
-    "sv": "Georgiska"
+    "sv": "Georgiska",
+    "th": "จอร์เจีย"
   },
   "KOR": {
     "en": "Korean",
@@ -427,7 +469,8 @@
     "nl": "Koreaans",
     "pt": "Coreano",
     "sk": "Kórejske",
-    "sv": "Koreanska"
+    "sv": "Koreanska",
+    "th": "เกาหลี"
   },
   "L": {
     "en": "Lesbian",
@@ -437,7 +480,8 @@
     "nl": "Lesbisch",
     "pt": "Lésbica",
     "sk": "Lesbické",
-    "sv": "Lesbiskt"
+    "sv": "Lesbiskt",
+    "th": "เลสเบียน"
   },
   "LGBTQ": {
     "en": "LGBTQ",
@@ -447,7 +491,8 @@
     "nl": "LGBTQ",
     "pt": "LGBTQ",
     "sk": "LGBTQ",
-    "sv": "HBTQ"
+    "sv": "HBTQ",
+    "th": "แอลจีบีทีคิว"
   },
   "LIT": {
     "en": "Literature",
@@ -457,7 +502,8 @@
     "nl": "Literatuur",
     "pt": "Literatura",
     "sk": "Literatúra",
-    "sv": "Litteratur"
+    "sv": "Litteratur",
+    "th": "วรรณกรรม"
   },
   "LS": {
     "en": "Living Sober",
@@ -467,7 +513,8 @@
     "nl": "Sober leven",
     "pt": "Viver Sóbrio",
     "sk": "Triezvy život",
-    "sv": "Leva Nyktert"
+    "sv": "Leva Nyktert",
+    "th": "ใช้ชีวิตอย่างมีสติ"
   },
   "LT": {
     "en": "Lithuanian",
@@ -477,7 +524,8 @@
     "nl": "Litouws",
     "pt": "Lituano",
     "sk": "Litovské",
-    "sv": "Litauiska"
+    "sv": "Litauiska",
+    "th": "ลิทัวเนีย"
   },
   "M": {
     "en": "Men",
@@ -487,7 +535,8 @@
     "nl": "Mannen",
     "pt": "Homens",
     "sk": "Muži",
-    "sv": "Mansmöte"
+    "sv": "Mansmöte",
+    "th": "ผู้ชาย"
   },
   "MED": {
     "en": "Meditation",
@@ -497,7 +546,8 @@
     "nl": "Meditatie",
     "pt": "Meditação",
     "sk": "Meditácia",
-    "sv": "Meditationsmöte"
+    "sv": "Meditationsmöte",
+    "th": "สมาธิ"
   },
   "ML": {
     "en": "Malayalam",
@@ -507,7 +557,8 @@
     "nl": "Malayalam",
     "pt": "Malaiala",
     "sk": "Malajálamsky",
-    "sv": "Malayalam"
+    "sv": "Malayalam",
+    "th": "มาลายาลัม"
   },
   "MT": {
     "en": "Maltese",
@@ -517,7 +568,8 @@
     "nl": "Maltees",
     "pt": "Maltês",
     "sk": "Maltézske",
-    "sv": "Maltesiska"
+    "sv": "Maltesiska",
+    "th": "มอลตา"
   },
   "N": {
     "en": "Native American",
@@ -527,7 +579,8 @@
     "nl": "Indiaan",
     "pt": "Nativo Americano",
     "sk": "Domorodí Američania",
-    "sv": "Ur-amerikanskt"
+    "sv": "Ur-amerikanskt",
+    "th": "ชนพื้นเมืองอเมริกัน"
   },
   "NB": {
     "en": "Non-Binary",
@@ -537,7 +590,8 @@
     "nl": "Niet-binair",
     "pt": "Não binário",
     "sk": "Nebinárne",
-    "sv": "Icke-binär"
+    "sv": "Icke-binär",
+    "th": "ไม่ระบุเพศ"
   },
   "NDG": {
     "en": "Indigenous",
@@ -547,7 +601,8 @@
     "nl": "Inheems",
     "pt": "Indígena",
     "sk": "Domorodé",
-    "sv": "Urfolkligt"
+    "sv": "Urfolkligt",
+    "th": "ชนพื้นเมือง"
   },
   "NE": {
     "en": "Nepali",
@@ -557,7 +612,8 @@
     "nl": "Nepalees",
     "pt": "Nepalês",
     "sk": "Nepálsky",
-    "sv": "Nepali"
+    "sv": "Nepali",
+    "th": "เนปาล"
   },
   "NL": {
     "en": "Dutch",
@@ -567,7 +623,8 @@
     "nl": "Nederlands",
     "pt": "Holandês",
     "sk": "Holandské",
-    "sv": "Holländska"
+    "sv": "Holländska",
+    "th": "ดัตช์"
   },
   "NO": {
     "en": "Norwegian",
@@ -577,7 +634,8 @@
     "nl": "Noors",
     "pt": "Norueguês",
     "sk": "Nórsky",
-    "sv": "Norska"
+    "sv": "Norska",
+    "th": "นอร์เวย์"
   },
   "O": {
     "en": "Open",
@@ -587,7 +645,8 @@
     "nl": "Open",
     "pt": "Aberta",
     "sk": "Otvorené",
-    "sv": "Öppet"
+    "sv": "Öppet",
+    "th": "เปิด"
   },
   "OUT": {
     "en": "Outdoor",
@@ -597,7 +656,8 @@
     "nl": "Buiten",
     "pt": "Ao ar livre",
     "sk": "Vonkajšie",
-    "sv": "Utomhus"
+    "sv": "Utomhus",
+    "th": "กลางแจ้ง"
   },
   "P": {
     "en": "Professionals",
@@ -607,7 +667,8 @@
     "nl": "Professionals",
     "pt": "Profissionais",
     "sk": "Profesionáli",
-    "sv": "Professionella"
+    "sv": "Professionella",
+    "th": "ผู้ประกอบอาชีพ"
   },
   "POA": {
     "en": "Proof of Attendance",
@@ -617,7 +678,8 @@
     "nl": "Bewijs van Aanwezigheid",
     "pt": "Comprovante de Presença",
     "sk": "Doklad o účasti",
-    "sv": "Närvarobevis"
+    "sv": "Närvarobevis",
+    "th": "หลักฐานการเข้าร่วม"
   },
   "POC": {
     "en": "People of Color",
@@ -627,7 +689,8 @@
     "nl": "Mensen van kleur",
     "pt": "Pessoas de Côr",
     "sk": "Farební ľudia",
-    "sv": "Färgade"
+    "sv": "Färgade",
+    "th": "ผู้คนผิวสี"
   },
   "POL": {
     "en": "Polish",
@@ -637,7 +700,8 @@
     "nl": "Pools",
     "pt": "Polaco",
     "sk": "Poľské",
-    "sv": "Polska"
+    "sv": "Polska",
+    "th": "โปแลนด์"
   },
   "POR": {
     "en": "Portuguese",
@@ -647,7 +711,8 @@
     "nl": "Portugees",
     "pt": "Português",
     "sk": "Portugalské",
-    "sv": "Portugisiska"
+    "sv": "Portugisiska",
+    "th": "โปรตุเกส"
   },
   "PUN": {
     "en": "Punjabi",
@@ -657,7 +722,8 @@
     "nl": "Punjabi",
     "pt": "Punjabi",
     "sk": "Pandžábske",
-    "sv": "Punjabi"
+    "sv": "Punjabi",
+    "th": "ปัญจาบ"
   },
   "RUS": {
     "en": "Russian",
@@ -667,7 +733,8 @@
     "nl": "Russisch",
     "pt": "Russo",
     "sk": "Ruské",
-    "sv": "Ryska"
+    "sv": "Ryska",
+    "th": "รัสเซีย"
   },
   "S": {
     "en": "Spanish",
@@ -677,7 +744,8 @@
     "nl": "Spaans",
     "pt": "Espanhol",
     "sk": "Španielské",
-    "sv": "Spanska"
+    "sv": "Spanska",
+    "th": "สเปน"
   },
   "SEN": {
     "en": "Seniors",
@@ -687,7 +755,8 @@
     "nl": "Senioren",
     "pt": "Séniores",
     "sk": "Seniori",
-    "sv": "Seniorer"
+    "sv": "Seniorer",
+    "th": "ผู้สูงอายุ"
   },
   "SK": {
     "en": "Slovak",
@@ -697,7 +766,8 @@
     "nl": "Slowaaks",
     "pt": "Eslovaco",
     "sk": "Slovenské",
-    "sv": "Slovakiska"
+    "sv": "Slovakiska",
+    "th": "สโลวัก"
   },
   "SL": {
     "en": "Slovenian",
@@ -707,7 +777,8 @@
     "nl": "Sloveens",
     "pt": "Esloveno",
     "sk": "Slovinské",
-    "sv": "Slovenska"
+    "sv": "Slovenska",
+    "th": "สโลวีเนีย"
   },
   "SM": {
     "en": "Smoking Permitted",
@@ -717,7 +788,8 @@
     "nl": "Roken toegestaan",
     "pt": "Permitido Fumar",
     "sk": "Fajčenie povolené",
-    "sv": "Rökning Tillåten"
+    "sv": "Rökning Tillåten",
+    "th": "สูบบุหรี่ได้"
   },
   "SP": {
     "en": "Speaker",
@@ -727,7 +799,8 @@
     "nl": "Spreker",
     "pt": "Partilhador",
     "sk": "Spíker",
-    "sv": "Talare"
+    "sv": "Talare",
+    "th": "ผู้พูด"
   },
   "ST": {
     "en": "Step Study",
@@ -737,7 +810,8 @@
     "nl": "Stap studie",
     "pt": "Estudo de Passos",
     "sk": "Štúdium Krokov",
-    "sv": "Stegmöte"
+    "sv": "Stegmöte",
+    "th": "ศึกษาขั้นตอน"
   },
   "SV": {
     "en": "Swedish",
@@ -747,7 +821,8 @@
     "nl": "Zweeds",
     "pt": "Sueco",
     "sk": "Švédske",
-    "sv": "Svenska"
+    "sv": "Svenska",
+    "th": "สวีเดน"
   },
   "T": {
     "en": "Transgender",
@@ -757,7 +832,8 @@
     "nl": "Transgender",
     "pt": "Transgénero",
     "sk": "Transgender",
-    "sv": "Transpersoner"
+    "sv": "Transpersoner",
+    "th": "ทรานส์เจนเดอร์"
   },
   "TC": {
     "en": "Location Temporarily Closed",
@@ -767,7 +843,8 @@
     "nl": "Locatie tijdelijk gesloten",
     "pt": "Local Temporáriamente Encerrado",
     "sk": "Miesto dočasne zatvorené",
-    "sv": "Tillfälligt Stängt"
+    "sv": "Tillfälligt Stängt",
+    "th": "สถานที่ปิดชั่วคราว"
   },
   "TH": {
     "en": "Thai",
@@ -777,7 +854,8 @@
     "nl": "Thais",
     "pt": "Tailandês",
     "sk": "Thajské",
-    "sv": "Thailändska"
+    "sv": "Thailändska",
+    "th": "ไทย"
   },
   "TL": {
     "en": "Tagalog",
@@ -787,7 +865,8 @@
     "nl": "Tagalog",
     "pt": "Tagalo",
     "sk": "Tagalské",
-    "sv": "Tagalog"
+    "sv": "Tagalog",
+    "th": "ตากาล็อก"
   },
   "TR": {
     "en": "Tradition Study",
@@ -797,7 +876,8 @@
     "nl": "Traditie Studie",
     "pt": "Estudo de Tradições",
     "sk": "Tradičné štúdium",
-    "sv": "Traditionsmöte"
+    "sv": "Traditionsmöte",
+    "th": "ศึกษาประเพณี"
   },
   "TUR": {
     "en": "Turkish",
@@ -807,7 +887,8 @@
     "nl": "Turks",
     "pt": "Turco",
     "sk": "Turecký",
-    "sv": "Turkiska"
+    "sv": "Turkiska",
+    "th": "ตุรกี"
   },
   "UK": {
     "en": "Ukrainian",
@@ -817,7 +898,8 @@
     "nl": "Oekraïens",
     "pt": "Ucraniano",
     "sk": "Ukrajinské",
-    "sv": "Ukrainska"
+    "sv": "Ukrainska",
+    "th": "ยูเครน"
   },
   "W": {
     "en": "Women",
@@ -827,7 +909,8 @@
     "nl": "Vrouwen",
     "pt": "Mulheres",
     "sk": "Ženy",
-    "sv": "Kvinnomöte"
+    "sv": "Kvinnomöte",
+    "th": "ผู้หญิง"
   },
   "X": {
     "en": "Wheelchair Access",
@@ -837,7 +920,8 @@
     "nl": "Toegankelijk voor rolstoelgebruikers",
     "pt": "Acesso a Cadeiras de Rodas",
     "sk": "Prístup pre vozíčkarov",
-    "sv": "Handikappanpassat"
+    "sv": "Handikappanpassat",
+    "th": "รองรับรถเข็น"
   },
   "XB": {
     "en": "Wheelchair-Accessible Bathroom",
@@ -847,7 +931,8 @@
     "nl": "Rolstoeltoegankelijke badkamer",
     "pt": "WC com Acesso a Cadeiras de Rodas",
     "sk": "Bezbariérová kúpeľňa",
-    "sv": "Handikappanpassad WC"
+    "sv": "Handikappanpassad WC",
+    "th": "ห้องน้ำสำหรับรถเข็น"
   },
   "XT": {
     "en": "Cross Talk Permitted",
@@ -857,7 +942,8 @@
     "nl": "Cross-sharen toegestaan",
     "pt": "Prtilhas Cruzadas Permitidas",
     "sk": "Cross Talk povolený",
-    "sv": "Kommentarer Tilltåtna"
+    "sv": "Kommentarer Tilltåtna",
+    "th": "อนุญาตให้โต้ตอบ"
   },
   "Y": {
     "en": "Young People",
@@ -867,6 +953,7 @@
     "nl": "Jongeren",
     "pt": "Jovens",
     "sk": "Mladí ľudia",
-    "sv": "Young People"
+    "sv": "Young People",
+    "th": "กลุ่มเยาวชน"
   }
 }

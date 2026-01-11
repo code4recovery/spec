@@ -58,6 +58,7 @@ class Build
         'pt' => 'Português',
         'sk' => 'Slovenčina',
         'sv' => 'Svenska',
+        'th' => 'ไทย',
     ];
 
     /**

@@ -7,4 +7,5 @@ export const languages = [
   "pt",
   "sk",
   "sv",
+  "th",
 ] as const;
