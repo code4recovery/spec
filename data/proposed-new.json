@@ -7,7 +7,8 @@
     "nl": "Blind / Visueel gehandicapt",
     "pt": "Cego / Deficiência Visual",
     "sk": "Nevidiaci / Zrakovo postihnutí",
-    "sv": "Blind / Synskadad"
+    "sv": "Blind / Synskadad",
+    "th": "คนตาบอด / ผู้มีปัญหาด้านการมองเห็น"
   },
   "D-HOH": {
     "en": "Deaf / Hard of Hearing",
@@ -17,7 +18,8 @@
     "nl": "Doof / Hardhoren",
     "pt": "Surdo / Duro de Ouvido",
     "sk": "Nepočujúci / Nedoslýchaví",
-    "sv": "Döv / Hörselskadad"
+    "sv": "Döv / Hörselskadad",
+    "th": "คนหูหนวก / หูตึง"
   },
   "LO-I": {
     "en": "Loners / Isolationists",
@@ -27,7 +29,8 @@
     "nl": "Eenlingen / Isolationisten",
     "pt": "Solitários / Isolacionistas",
     "sk": "Samotári / Izolacionisti",
-    "sv": "Ensamvargar / Isolationister"
+    "sv": "Ensamvargar / Isolationister",
+    "th": "คนชอบอยู่คนเดียว / คนที่ชอบแยกตัว"
   },
   "QSL": {
     "en": "Quebec Sign Language",
@@ -37,7 +40,8 @@
     "nl": "Quebec -gebarentaal",
     "pt": "Língua Gesual Quebec",
     "sk": "Quebecký posunkový jazyk",
-    "sv": "Quebecskt Teckenspråk"
+    "sv": "Quebecskt Teckenspråk",
+    "th": "ภาษามือควิเบก"
   },
   "RSL": {
     "en": "Russian Sign Language",
@@ -47,6 +51,7 @@
     "nl": "Russische gebarentaal",
     "pt": "Língua Gestual Russa",
     "sk": "Ruský posunkový jazyk",
-    "sv": "Ryskt Teckenspråk"
+    "sv": "Ryskt Teckenspråk",
+    "th": "ภาษามือรัสเซีย"
   }
 }

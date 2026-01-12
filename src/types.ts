@@ -8,6 +8,7 @@ export const types = {
     pt: "Meditação do 11º Passo",
     sk: "Meditácia 11. kroku",
     sv: "11th Stegs Meditation",
+    th: "สมาธิขั้นที่ 11",
   },
   "12x12": {
     en: "12 Steps & 12 Traditions",
@@ -18,6 +19,7 @@ export const types = {
     pt: "12 Passos e 12 Tradições",
     sk: "12 Krokov & 12 Tradícií",
     sv: "12 Steg & 12 Traditioner",
+    th: "12 ขั้นตอนและ 12 ธรรมเนียม",
   },
   A: {
     en: "Secular",
@@ -28,6 +30,7 @@ export const types = {
     pt: "Secular",
     sk: "Svetské",
     sv: "Sekulärt",
+    th: "ไม่เกี่ยวกับศาสนา",
   },
   ABSI: {
     en: "As Bill Sees It",
@@ -38,6 +41,7 @@ export const types = {
     pt: "Na opinião de Bill",
     sk: "Ako to vidí Bill",
     sv: "Som Bill Ser Det",
+    th: "ตามที่บิลมอง",
   },
   AF: {
     en: "Afrikaans",
@@ -48,6 +52,7 @@ export const types = {
     pt: "Afrikaans",
     sk: "Afrikánčina",
     sv: "Afrikaans",
+    th: "แอฟริกานส์",
   },
   AL: {
     en: "Concurrent with Alateen",
@@ -58,6 +63,7 @@ export const types = {
     pt: "Em simultâneo com Alateen",
     sk: "Súbežne s Alateen",
     sv: "Tillsammans med Alateen",
+    th: "พร้อมกันกับ Alateen",
   },
   "AL-AN": {
     en: "Concurrent with Al-Anon",
@@ -68,6 +74,7 @@ export const types = {
     pt: "Em simultâneo com Al-Anon",
     sk: "Súbežne s Al-Anon",
     sv: "Tillsammans med Al-Anon",
+    th: "พร้อมกันกับ Al-Anon",
   },
   AM: {
     en: "Amharic",
@@ -78,6 +85,7 @@ export const types = {
     pt: "Amárico",
     sk: "Amharčina",
     sv: "Amhariska",
+    th: "อัมฮาริก",
   },
   AR: {
     en: "Arabic",
@@ -88,6 +96,7 @@ export const types = {
     pt: "Árabe",
     sk: "Arabské",
     sv: "Arabiska",
+    th: "อาหรับ",
   },
   ASL: {
     en: "American Sign Language",
@@ -98,6 +107,7 @@ export const types = {
     pt: "Língua Gestual Americana",
     sk: "Americký posunkový jazyk",
     sv: "Amerikanskt teckenspråk",
+    th: "ภาษามืออเมริกัน",
   },
   B: {
     en: "Big Book",
@@ -108,6 +118,7 @@ export const types = {
     pt: "Livro Azul",
     sk: "Veľká Kniha",
     sv: "Stora Boken",
+    th: "หนังสือใหญ่",
   },
   BA: {
     en: "Babysitting Available",
@@ -118,6 +129,7 @@ export const types = {
     pt: "Babysitting disponível",
     sk: "Dostupné opatrovanie detí",
     sv: "Barnvakt Finns",
+    th: "มีบริการดูแลเด็ก",
   },
   BE: {
     en: "Newcomer",
@@ -128,6 +140,7 @@ export const types = {
     pt: "Recém-chegados",
     sk: "Nováčikovia",
     sv: "Nykomling",
+    th: "สมาชิกใหม่",
   },
   BG: {
     en: "Bulgarian",
@@ -138,6 +151,7 @@ export const types = {
     pt: "Búlgaro",
     sk: "Bulharské",
     sv: "Bulgariska",
+    th: "บัลแกเรีย",
   },
   BI: {
     en: "Bisexual",
@@ -148,6 +162,7 @@ export const types = {
     pt: "Bisexual",
     sk: "Bisexuálne",
     sv: "Bisexuellt",
+    th: "ไบเซ็กชวล",
   },
   BRK: {
     en: "Breakfast",
@@ -158,6 +173,7 @@ export const types = {
     pt: "Pequeno-Almoço",
     sk: "Raňajky",
     sv: "Frukost",
+    th: "อาหารเช้า",
   },
   C: {
     en: "Closed",
@@ -168,6 +184,7 @@ export const types = {
     pt: "Fechada",
     sk: "Uzatvorené",
     sv: "Slutet",
+    th: "ปิด",
   },
   CAN: {
     en: "Candlelight",
@@ -178,6 +195,7 @@ export const types = {
     pt: "Luz de Velas",
     sk: "Sviečky",
     sv: "Tända Ljus",
+    th: "แสงเทียน",
   },
   CF: {
     en: "Child-Friendly",
@@ -188,6 +206,7 @@ export const types = {
     pt: "Amigável para Crianças",
     sk: "Priateľský k deťom",
     sv: "Barnvänligt",
+    th: "เป็นมิตรกับเด็ก",
   },
   D: {
     en: "Discussion",
@@ -198,6 +217,7 @@ export const types = {
     pt: "Discussão",
     sk: "Diskusia",
     sv: "Diskussion",
+    th: "พูดคุยกลุ่ม",
   },
   DA: {
     en: "Danish",
@@ -208,6 +228,7 @@ export const types = {
     pt: "Dinamarquês",
     sk: "Dánsky",
     sv: "Danska",
+    th: "เดนมาร์ก",
   },
   DB: {
     en: "Digital Basket",
@@ -218,6 +239,7 @@ export const types = {
     pt: "Cesto Digital",
     sk: "Digitálny košík",
     sv: "Digital Korg",
+    th: "ตะกร้าบริจาคดิจิทัล",
   },
   DD: {
     en: "Dual Diagnosis",
@@ -228,6 +250,7 @@ export const types = {
     pt: "Duplo Diagnóstico",
     sk: "Duálna diagnóza",
     sv: "Dubbel Diagnos",
+    th: "วินิจฉัยร่วม",
   },
   DE: {
     en: "German",
@@ -238,6 +261,7 @@ export const types = {
     pt: "Alemão",
     sk: "Nemecké",
     sv: "Tyska",
+    th: "เยอรมัน",
   },
   DR: {
     en: "Daily Reflections",
@@ -248,6 +272,7 @@ export const types = {
     pt: "Reflexões Diárias",
     sv: "Dagliga Reflektioner",
     sk: "Denné úvahy",
+    th: "ข้อคิดประจำวัน",
   },
   EL: {
     en: "Greek",
@@ -258,6 +283,7 @@ export const types = {
     pt: "Grego",
     sk: "Grécke",
     sv: "Grekiska",
+    th: "กรีก",
   },
   EN: {
     en: "English",
@@ -268,6 +294,7 @@ export const types = {
     pt: "Inglês",
     sk: "Anglické",
     sv: "Engelska",
+    th: "อังกฤษ",
   },
   FA: {
     en: "Persian",
@@ -278,6 +305,7 @@ export const types = {
     pt: "Persa",
     sk: "Perzské",
     sv: "Persiska",
+    th: "เปอร์เซีย",
   },
   FI: {
     en: "Finnish",
@@ -288,6 +316,7 @@ export const types = {
     pt: "Finlandês",
     sk: "Fínčina",
     sv: "Finska",
+    th: "ฟินแลนด์",
   },
   FF: {
     en: "Fragrance Free",
@@ -298,6 +327,7 @@ export const types = {
     pt: "Sem Perfumes",
     sk: "Bez vône",
     sv: "Parfym Fritt",
+    th: "ปลอดกลิ่นน้ำหอม",
   },
   FR: {
     en: "French",
@@ -308,6 +338,7 @@ export const types = {
     pt: "Francês",
     sk: "Francúzsky",
     sv: "Franska",
+    th: "ฝรั่งเศส",
   },
   G: {
     en: "Gay",
@@ -318,6 +349,7 @@ export const types = {
     pt: "Gay",
     sk: "Gay",
     sv: "Gay",
+    th: "เกย์",
   },
   GR: {
     en: "Grapevine",
@@ -328,6 +360,7 @@ export const types = {
     pt: "Grapevine",
     sk: "Grapevine",
     sv: "Grapevine",
+    th: "เกรปไวน์",
   },
   H: {
     en: "Birthday",
@@ -338,6 +371,7 @@ export const types = {
     pt: "Aniversário",
     sk: "Narodeniny",
     sv: "Födelsedag",
+    th: "วันครบรอบ",
   },
   HE: {
     en: "Hebrew",
@@ -348,6 +382,7 @@ export const types = {
     pt: "Hebreu",
     sk: "Hebrejské",
     sv: "Hebreiska",
+    th: "ฮีบรู",
   },
   HI: {
     en: "Hindi",
@@ -358,6 +393,7 @@ export const types = {
     pt: "Hindi",
     sk: "Hindi",
     sv: "Hindi",
+    th: "ฮินดี",
   },
   HR: {
     en: "Croatian",
@@ -368,6 +404,7 @@ export const types = {
     pt: "Croata",
     sk: "Chorvátsky",
     sv: "Kroatiska",
+    th: "โครเอเชีย",
   },
   HU: {
     en: "Hungarian",
@@ -378,6 +415,7 @@ export const types = {
     pt: "Hungaro",
     sk: "Maďarské",
     sv: "Ungerska",
+    th: "ฮังการี",
   },
   IS: {
     en: "Icelandic",
@@ -388,6 +426,7 @@ export const types = {
     pt: "Islandês",
     sk: "Islanské",
     sv: "Isländska",
+    th: "ไอซ์แลนด์",
   },
   ITA: {
     en: "Italian",
@@ -398,6 +437,7 @@ export const types = {
     pt: "Italiano",
     sk: "Taliansky",
     sv: "Italienska",
+    th: "อิตาลี",
   },
   JA: {
     en: "Japanese",
@@ -408,6 +448,7 @@ export const types = {
     pt: "Japonês",
     sk: "Japonské",
     sv: "Japanska",
+    th: "ญี่ปุ่น",
   },
   KA: {
     en: "Georgian",
@@ -418,6 +459,7 @@ export const types = {
     pt: "Georgiano",
     sk: "Gruzínske",
     sv: "Georgiska",
+    th: "จอร์เจีย",
   },
   KOR: {
     en: "Korean",
@@ -428,6 +470,7 @@ export const types = {
     pt: "Coreano",
     sk: "Kórejske",
     sv: "Koreanska",
+    th: "เกาหลี",
   },
   L: {
     en: "Lesbian",
@@ -438,6 +481,7 @@ export const types = {
     pt: "Lésbica",
     sk: "Lesbické",
     sv: "Lesbiskt",
+    th: "เลสเบียน",
   },
   LGBTQ: {
     en: "LGBTQ",
@@ -448,6 +492,7 @@ export const types = {
     pt: "LGBTQ",
     sk: "LGBTQ",
     sv: "HBTQ",
+    th: "แอลจีบีทีคิว",
   },
   LIT: {
     en: "Literature",
@@ -458,6 +503,7 @@ export const types = {
     pt: "Literatura",
     sk: "Literatúra",
     sv: "Litteratur",
+    th: "วรรณกรรม",
   },
   LS: {
     en: "Living Sober",
@@ -468,6 +514,7 @@ export const types = {
     pt: "Viver Sóbrio",
     sk: "Triezvy život",
     sv: "Leva Nyktert",
+    th: "ใช้ชีวิตอย่างมีสติ",
   },
   LT: {
     en: "Lithuanian",
@@ -478,6 +525,7 @@ export const types = {
     pt: "Lituano",
     sk: "Litovské",
     sv: "Litauiska",
+    th: "ลิทัวเนีย",
   },
   M: {
     en: "Men",
@@ -488,6 +536,7 @@ export const types = {
     pt: "Homens",
     sk: "Muži",
     sv: "Mansmöte",
+    th: "ผู้ชาย",
   },
   MED: {
     en: "Meditation",
@@ -498,6 +547,7 @@ export const types = {
     pt: "Meditação",
     sk: "Meditácia",
     sv: "Meditationsmöte",
+    th: "สมาธิ",
   },
   ML: {
     en: "Malayalam",
@@ -508,6 +558,7 @@ export const types = {
     pt: "Malaiala",
     sk: "Malajálamsky",
     sv: "Malayalam",
+    th: "มาลายาลัม",
   },
   MT: {
     en: "Maltese",
@@ -518,6 +569,7 @@ export const types = {
     pt: "Maltês",
     sk: "Maltézske",
     sv: "Maltesiska",
+    th: "มอลตา",
   },
   N: {
     en: "Native American",
@@ -528,6 +580,7 @@ export const types = {
     pt: "Nativo Americano",
     sk: "Domorodí Američania",
     sv: "Ur-amerikanskt",
+    th: "ชนพื้นเมืองอเมริกัน",
   },
   NB: {
     en: "Non-Binary",
@@ -538,6 +591,7 @@ export const types = {
     pt: "Não binário",
     sk: "Nebinárne",
     sv: "Icke-binär",
+    th: "ไม่ระบุเพศ",
   },
   NDG: {
     en: "Indigenous",
@@ -548,6 +602,7 @@ export const types = {
     pt: "Indígena",
     sk: "Domorodé",
     sv: "Urfolkligt",
+    th: "ชนพื้นเมือง",
   },
   NE: {
     en: "Nepali",
@@ -558,6 +613,7 @@ export const types = {
     pt: "Nepalês",
     sk: "Nepálsky",
     sv: "Nepali",
+    th: "เนปาล",
   },
   NL: {
     en: "Dutch",
@@ -568,6 +624,7 @@ export const types = {
     pt: "Holandês",
     sk: "Holandské",
     sv: "Holländska",
+    th: "ดัตช์",
   },
   NO: {
     en: "Norwegian",
@@ -578,6 +635,7 @@ export const types = {
     pt: "Norueguês",
     sk: "Nórsky",
     sv: "Norska",
+    th: "นอร์เวย์",
   },
   O: {
     en: "Open",
@@ -588,6 +646,7 @@ export const types = {
     pt: "Aberta",
     sk: "Otvorené",
     sv: "Öppet",
+    th: "เปิด",
   },
   OUT: {
     en: "Outdoor",
@@ -598,6 +657,7 @@ export const types = {
     pt: "Ao ar livre",
     sk: "Vonkajšie",
     sv: "Utomhus",
+    th: "กลางแจ้ง",
   },
   P: {
     en: "Professionals",
@@ -608,6 +668,7 @@ export const types = {
     pt: "Profissionais",
     sk: "Profesionáli",
     sv: "Professionella",
+    th: "ผู้ประกอบอาชีพ",
   },
   POA: {
     en: "Proof of Attendance",
@@ -618,6 +679,7 @@ export const types = {
     pt: "Comprovante de Presença",
     sk: "Doklad o účasti",
     sv: "Närvarobevis",
+    th: "หลักฐานการเข้าร่วม",
   },
   POC: {
     en: "People of Color",
@@ -628,6 +690,7 @@ export const types = {
     pt: "Pessoas de Côr",
     sk: "Farební ľudia",
     sv: "Färgade",
+    th: "ผู้คนผิวสี",
   },
   POL: {
     en: "Polish",
@@ -638,6 +701,7 @@ export const types = {
     pt: "Polaco",
     sk: "Poľské",
     sv: "Polska",
+    th: "โปแลนด์",
   },
   POR: {
     en: "Portuguese",
@@ -648,6 +712,7 @@ export const types = {
     pt: "Português",
     sk: "Portugalské",
     sv: "Portugisiska",
+    th: "โปรตุเกส",
   },
   PUN: {
     en: "Punjabi",
@@ -658,6 +723,7 @@ export const types = {
     pt: "Punjabi",
     sk: "Pandžábske",
     sv: "Punjabi",
+    th: "ปัญจาบ",
   },
   RUS: {
     en: "Russian",
@@ -668,6 +734,7 @@ export const types = {
     pt: "Russo",
     sk: "Ruské",
     sv: "Ryska",
+    th: "รัสเซีย",
   },
   S: {
     en: "Spanish",
@@ -678,6 +745,7 @@ export const types = {
     pt: "Espanhol",
     sk: "Španielské",
     sv: "Spanska",
+    th: "สเปน",
   },
   SEN: {
     en: "Seniors",
@@ -688,6 +756,7 @@ export const types = {
     pt: "Séniores",
     sk: "Seniori",
     sv: "Seniorer",
+    th: "ผู้สูงอายุ",
   },
   SK: {
     en: "Slovak",
@@ -698,6 +767,7 @@ export const types = {
     pt: "Eslovaco",
     sk: "Slovenské",
     sv: "Slovakiska",
+    th: "สโลวัก",
   },
   SL: {
     en: "Slovenian",
@@ -708,6 +778,7 @@ export const types = {
     pt: "Esloveno",
     sk: "Slovinské",
     sv: "Slovenska",
+    th: "สโลวีเนีย",
   },
   SM: {
     en: "Smoking Permitted",
@@ -718,6 +789,7 @@ export const types = {
     pt: "Permitido Fumar",
     sk: "Fajčenie povolené",
     sv: "Rökning Tillåten",
+    th: "สูบบุหรี่ได้",
   },
   SP: {
     en: "Speaker",
@@ -728,6 +800,7 @@ export const types = {
     pt: "Partilhador",
     sk: "Spíker",
     sv: "Talare",
+    th: "ผู้พูด",
   },
   ST: {
     en: "Step Study",
@@ -738,6 +811,7 @@ export const types = {
     pt: "Estudo de Passos",
     sk: "Štúdium Krokov",
     sv: "Stegmöte",
+    th: "ศึกษาขั้นตอน",
   },
   SV: {
     en: "Swedish",
@@ -748,6 +822,7 @@ export const types = {
     pt: "Sueco",
     sk: "Švédske",
     sv: "Svenska",
+    th: "สวีเดน",
   },
   T: {
     en: "Transgender",
@@ -758,6 +833,7 @@ export const types = {
     pt: "Transgénero",
     sk: "Transgender",
     sv: "Transpersoner",
+    th: "ทรานส์เจนเดอร์",
   },
   TC: {
     en: "Location Temporarily Closed",
@@ -768,6 +844,7 @@ export const types = {
     pt: "Local Temporáriamente Encerrado",
     sk: "Miesto dočasne zatvorené",
     sv: "Tillfälligt Stängt",
+    th: "สถานที่ปิดชั่วคราว",
   },
   TH: {
     en: "Thai",
@@ -778,6 +855,7 @@ export const types = {
     pt: "Tailandês",
     sk: "Thajské",
     sv: "Thailändska",
+    th: "ไทย",
   },
   TL: {
     en: "Tagalog",
@@ -788,6 +866,7 @@ export const types = {
     pt: "Tagalo",
     sk: "Tagalské",
     sv: "Tagalog",
+    th: "ตากาล็อก",
   },
   TR: {
     en: "Tradition Study",
@@ -798,6 +877,7 @@ export const types = {
     pt: "Estudo de Tradições",
     sk: "Tradičné štúdium",
     sv: "Traditionsmöte",
+    th: "ศึกษาประเพณี",
   },
   TUR: {
     en: "Turkish",
@@ -808,6 +888,7 @@ export const types = {
     pt: "Turco",
     sk: "Turecký",
     sv: "Turkiska",
+    th: "ตุรกี",
   },
   UK: {
     en: "Ukrainian",
@@ -818,6 +899,7 @@ export const types = {
     pt: "Ucraniano",
     sk: "Ukrajinské",
     sv: "Ukrainska",
+    th: "ยูเครน",
   },
   W: {
     en: "Women",
@@ -828,6 +910,7 @@ export const types = {
     pt: "Mulheres",
     sk: "Ženy",
     sv: "Kvinnomöte",
+    th: "ผู้หญิง",
   },
   X: {
     en: "Wheelchair Access",
@@ -838,6 +921,7 @@ export const types = {
     pt: "Acesso a Cadeiras de Rodas",
     sk: "Prístup pre vozíčkarov",
     sv: "Handikappanpassat",
+    th: "รองรับรถเข็น",
   },
   XB: {
     en: "Wheelchair-Accessible Bathroom",
@@ -848,6 +932,7 @@ export const types = {
     pt: "WC com Acesso a Cadeiras de Rodas",
     sk: "Bezbariérová kúpeľňa",
     sv: "Handikappanpassad WC",
+    th: "ห้องน้ำสำหรับรถเข็น",
   },
   XT: {
     en: "Cross Talk Permitted",
@@ -858,6 +943,7 @@ export const types = {
     pt: "Prtilhas Cruzadas Permitidas",
     sk: "Cross Talk povolený",
     sv: "Kommentarer Tilltåtna",
+    th: "อนุญาตให้โต้ตอบ",
   },
   Y: {
     en: "Young People",
@@ -868,5 +954,6 @@ export const types = {
     pt: "Jovens",
     sk: "Mladí ľudia",
     sv: "Young People",
+    th: "กลุ่มเยาวชน",
   },
 };
