@@ -8,7 +8,7 @@
     "pt": "Meditação do 11º Passo",
     "sk": "Meditácia 11. kroku",
     "sv": "11th Stegs Meditation",
-    "th": "สมาธิขั้นที่ 11"
+    "th": "การทำสมาธิตามขั้นตอนที่ 11"
   },
   "12x12": {
     "en": "12 Steps & 12 Traditions",
@@ -19,7 +19,7 @@
     "pt": "12 Passos e 12 Tradições",
     "sk": "12 Krokov & 12 Tradícií",
     "sv": "12 Steg & 12 Traditioner",
-    "th": "12 ขั้นตอนและ 12 ธรรมเนียม"
+    "th": "ขั้นตอนทั้งสิบสองและธรรมเนียมทั้งสิบสอง"
   },
   "A": {
     "en": "Secular",
@@ -30,7 +30,7 @@
     "pt": "Secular",
     "sk": "Svetské",
     "sv": "Sekulärt",
-    "th": "ไม่เกี่ยวกับศาสนา"
+    "th": "ไม่เกี่ยวข้องกับศาสนา"
   },
   "ABSI": {
     "en": "As Bill Sees It",
@@ -41,7 +41,7 @@
     "pt": "Na opinião de Bill",
     "sk": "Ako to vidí Bill",
     "sv": "Som Bill Ser Det",
-    "th": "ตามที่บิลมอง"
+    "th": "ในมุมมองของบิล"
   },
   "AF": {
     "en": "Afrikaans",
@@ -63,7 +63,7 @@
     "pt": "Em simultâneo com Alateen",
     "sk": "Súbežne s Alateen",
     "sv": "Tillsammans med Alateen",
-    "th": "พร้อมกันกับ Alateen"
+    "th": "ควบคู่กับ Alateen"
   },
   "AL-AN": {
     "en": "Concurrent with Al-Anon",
@@ -74,7 +74,7 @@
     "pt": "Em simultâneo com Al-Anon",
     "sk": "Súbežne s Al-Anon",
     "sv": "Tillsammans med Al-Anon",
-    "th": "พร้อมกันกับ Al-Anon"
+    "th": "ควบคู่กับ Al-Anon"
   },
   "AM": {
     "en": "Amharic",
@@ -118,7 +118,7 @@
     "pt": "Livro Azul",
     "sk": "Veľká Kniha",
     "sv": "Stora Boken",
-    "th": "หนังสือใหญ่"
+    "th": "หนังสือบิ๊กบุ๊คหรือหนังสือกลุ่มผู้ติดสุรานิรนาม"
   },
   "BA": {
     "en": "Babysitting Available",
@@ -162,7 +162,7 @@
     "pt": "Bisexual",
     "sk": "Bisexuálne",
     "sv": "Bisexuellt",
-    "th": "ไบเซ็กชวล"
+    "th": "รักสองเพศ"
   },
   "BRK": {
     "en": "Breakfast",
@@ -206,7 +206,7 @@
     "pt": "Amigável para Crianças",
     "sk": "Priateľský k deťom",
     "sv": "Barnvänligt",
-    "th": "เป็นมิตรกับเด็ก"
+    "th": "ยินดีต้อนรับเด็ก"
   },
   "D": {
     "en": "Discussion",
@@ -217,7 +217,7 @@
     "pt": "Discussão",
     "sk": "Diskusia",
     "sv": "Diskussion",
-    "th": "พูดคุยกลุ่ม"
+    "th": "การแบ่งปัน"
   },
   "DA": {
     "en": "Danish",
@@ -239,7 +239,7 @@
     "pt": "Cesto Digital",
     "sk": "Digitálny košík",
     "sv": "Digital Korg",
-    "th": "ตะกร้าบริจาคดิจิทัล"
+    "th": "บริจาคออนไลน์"
   },
   "DD": {
     "en": "Dual Diagnosis",
@@ -250,7 +250,7 @@
     "pt": "Duplo Diagnóstico",
     "sk": "Duálna diagnóza",
     "sv": "Dubbel Diagnos",
-    "th": "วินิจฉัยร่วม"
+    "th": "โรคร่วม (สุขภาพจิตและการเสพติด)"
   },
   "DE": {
     "en": "German",
@@ -327,7 +327,7 @@
     "pt": "Sem Perfumes",
     "sk": "Bez vône",
     "sv": "Parfym Fritt",
-    "th": "ปลอดกลิ่นน้ำหอม"
+    "th": "ปราศจากน้ำหอม"
   },
   "FR": {
     "en": "French",
@@ -371,7 +371,7 @@
     "pt": "Aniversário",
     "sk": "Narodeniny",
     "sv": "Födelsedag",
-    "th": "วันครบรอบ"
+    "th": "วันครบรอบการไม่เมา"
   },
   "HE": {
     "en": "Hebrew",
@@ -492,7 +492,7 @@
     "pt": "LGBTQ",
     "sk": "LGBTQ",
     "sv": "HBTQ",
-    "th": "แอลจีบีทีคิว"
+    "th": "กลุ่มผู้มีความหลากหลายทางเพศ (LGBTQ+)"
   },
   "LIT": {
     "en": "Literature",
@@ -503,7 +503,7 @@
     "pt": "Literatura",
     "sk": "Literatúra",
     "sv": "Litteratur",
-    "th": "วรรณกรรม"
+    "th": "วรรณกรรมของเอเอ"
   },
   "LS": {
     "en": "Living Sober",
@@ -514,7 +514,7 @@
     "pt": "Viver Sóbrio",
     "sk": "Triezvy život",
     "sv": "Leva Nyktert",
-    "th": "ใช้ชีวิตอย่างมีสติ"
+    "th": "ชีวิตที่ใม่เมา"
   },
   "LT": {
     "en": "Lithuanian",
@@ -668,7 +668,7 @@
     "pt": "Profissionais",
     "sk": "Profesionáli",
     "sv": "Professionella",
-    "th": "ผู้ประกอบอาชีพ"
+    "th": "ผู้ประกอบวิชาชีพ"
   },
   "POA": {
     "en": "Proof of Attendance",
@@ -679,7 +679,7 @@
     "pt": "Comprovante de Presença",
     "sk": "Doklad o účasti",
     "sv": "Närvarobevis",
-    "th": "หลักฐานการเข้าร่วม"
+    "th": "หลักฐานการเข้าประชุม"
   },
   "POC": {
     "en": "People of Color",
@@ -690,7 +690,7 @@
     "pt": "Pessoas de Côr",
     "sk": "Farební ľudia",
     "sv": "Färgade",
-    "th": "ผู้คนผิวสี"
+    "th": "ชนกลุ่มน้อย"
   },
   "POL": {
     "en": "Polish",
@@ -789,7 +789,7 @@
     "pt": "Permitido Fumar",
     "sk": "Fajčenie povolené",
     "sv": "Rökning Tillåten",
-    "th": "สูบบุหรี่ได้"
+    "th": "สูบบุหรี่ได"
   },
   "SP": {
     "en": "Speaker",
@@ -811,7 +811,7 @@
     "pt": "Estudo de Passos",
     "sk": "Štúdium Krokov",
     "sv": "Stegmöte",
-    "th": "ศึกษาขั้นตอน"
+    "th": "การศึกษา 12 ขั้นตอน"
   },
   "SV": {
     "en": "Swedish",
@@ -833,7 +833,7 @@
     "pt": "Transgénero",
     "sk": "Transgender",
     "sv": "Transpersoner",
-    "th": "ทรานส์เจนเดอร์"
+    "th": "คนข้ามเพศ"
   },
   "TC": {
     "en": "Location Temporarily Closed",
@@ -844,7 +844,7 @@
     "pt": "Local Temporáriamente Encerrado",
     "sk": "Miesto dočasne zatvorené",
     "sv": "Tillfälligt Stängt",
-    "th": "สถานที่ปิดชั่วคราว"
+    "th": "ปิดชั่วคราว"
   },
   "TH": {
     "en": "Thai",
@@ -877,7 +877,7 @@
     "pt": "Estudo de Tradições",
     "sk": "Tradičné štúdium",
     "sv": "Traditionsmöte",
-    "th": "ศึกษาประเพณี"
+    "th": "การศึกษา 12 ธรรมเนียม"
   },
   "TUR": {
     "en": "Turkish",
@@ -932,7 +932,7 @@
     "pt": "WC com Acesso a Cadeiras de Rodas",
     "sk": "Bezbariérová kúpeľňa",
     "sv": "Handikappanpassad WC",
-    "th": "ห้องน้ำสำหรับรถเข็น"
+    "th": "ห้องน้ำสำหรับผู้ใช้รถเข็น"
   },
   "XT": {
     "en": "Cross Talk Permitted",
@@ -943,7 +943,7 @@
     "pt": "Prtilhas Cruzadas Permitidas",
     "sk": "Cross Talk povolený",
     "sv": "Kommentarer Tilltåtna",
-    "th": "อนุญาตให้โต้ตอบ"
+    "th": "โต้ตอบได้"
   },
   "Y": {
     "en": "Young People",
@@ -954,6 +954,6 @@
     "pt": "Jovens",
     "sk": "Mladí ľudia",
     "sv": "Young People",
-    "th": "กลุ่มเยาวชน"
+    "th": "เยาวชน"
   }
 }

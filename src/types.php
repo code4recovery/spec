@@ -11,7 +11,7 @@ return (object) array(
      'pt' => 'Meditação do 11º Passo',
      'sk' => 'Meditácia 11. kroku',
      'sv' => '11th Stegs Meditation',
-     'th' => 'สมาธิขั้นที่ 11',
+     'th' => 'การทำสมาธิตามขั้นตอนที่ 11',
   ),
    '12x12' => 
   (object) array(
@@ -23,7 +23,7 @@ return (object) array(
      'pt' => '12 Passos e 12 Tradições',
      'sk' => '12 Krokov & 12 Tradícií',
      'sv' => '12 Steg & 12 Traditioner',
-     'th' => '12 ขั้นตอนและ 12 ธรรมเนียม',
+     'th' => 'ขั้นตอนทั้งสิบสองและธรรมเนียมทั้งสิบสอง',
   ),
    'A' => 
   (object) array(
@@ -35,7 +35,7 @@ return (object) array(
      'pt' => 'Secular',
      'sk' => 'Svetské',
      'sv' => 'Sekulärt',
-     'th' => 'ไม่เกี่ยวกับศาสนา',
+     'th' => 'ไม่เกี่ยวข้องกับศาสนา',
   ),
    'ABSI' => 
   (object) array(
@@ -47,7 +47,7 @@ return (object) array(
      'pt' => 'Na opinião de Bill',
      'sk' => 'Ako to vidí Bill',
      'sv' => 'Som Bill Ser Det',
-     'th' => 'ตามที่บิลมอง',
+     'th' => 'ในมุมมองของบิล',
   ),
    'AF' => 
   (object) array(
@@ -71,7 +71,7 @@ return (object) array(
      'pt' => 'Em simultâneo com Alateen',
      'sk' => 'Súbežne s Alateen',
      'sv' => 'Tillsammans med Alateen',
-     'th' => 'พร้อมกันกับ Alateen',
+     'th' => 'ควบคู่กับ Alateen',
   ),
    'AL-AN' => 
   (object) array(
@@ -83,7 +83,7 @@ return (object) array(
      'pt' => 'Em simultâneo com Al-Anon',
      'sk' => 'Súbežne s Al-Anon',
      'sv' => 'Tillsammans med Al-Anon',
-     'th' => 'พร้อมกันกับ Al-Anon',
+     'th' => 'ควบคู่กับ Al-Anon',
   ),
    'AM' => 
   (object) array(
@@ -131,7 +131,7 @@ return (object) array(
      'pt' => 'Livro Azul',
      'sk' => 'Veľká Kniha',
      'sv' => 'Stora Boken',
-     'th' => 'หนังสือใหญ่',
+     'th' => 'หนังสือบิ๊กบุ๊คหรือหนังสือกลุ่มผู้ติดสุรานิรนาม',
   ),
    'BA' => 
   (object) array(
@@ -179,7 +179,7 @@ return (object) array(
      'pt' => 'Bisexual',
      'sk' => 'Bisexuálne',
      'sv' => 'Bisexuellt',
-     'th' => 'ไบเซ็กชวล',
+     'th' => 'รักสองเพศ',
   ),
    'BRK' => 
   (object) array(
@@ -227,7 +227,7 @@ return (object) array(
      'pt' => 'Amigável para Crianças',
      'sk' => 'Priateľský k deťom',
      'sv' => 'Barnvänligt',
-     'th' => 'เป็นมิตรกับเด็ก',
+     'th' => 'ยินดีต้อนรับเด็ก',
   ),
    'D' => 
   (object) array(
@@ -239,7 +239,7 @@ return (object) array(
      'pt' => 'Discussão',
      'sk' => 'Diskusia',
      'sv' => 'Diskussion',
-     'th' => 'พูดคุยกลุ่ม',
+     'th' => 'การแบ่งปัน',
   ),
    'DA' => 
   (object) array(
@@ -263,7 +263,7 @@ return (object) array(
      'pt' => 'Cesto Digital',
      'sk' => 'Digitálny košík',
      'sv' => 'Digital Korg',
-     'th' => 'ตะกร้าบริจาคดิจิทัล',
+     'th' => 'บริจาคออนไลน์',
   ),
    'DD' => 
   (object) array(
@@ -275,7 +275,7 @@ return (object) array(
      'pt' => 'Duplo Diagnóstico',
      'sk' => 'Duálna diagnóza',
      'sv' => 'Dubbel Diagnos',
-     'th' => 'วินิจฉัยร่วม',
+     'th' => 'โรคร่วม (สุขภาพจิตและการเสพติด)',
   ),
    'DE' => 
   (object) array(
@@ -359,7 +359,7 @@ return (object) array(
      'pt' => 'Sem Perfumes',
      'sk' => 'Bez vône',
      'sv' => 'Parfym Fritt',
-     'th' => 'ปลอดกลิ่นน้ำหอม',
+     'th' => 'ปราศจากน้ำหอม',
   ),
    'FR' => 
   (object) array(
@@ -407,7 +407,7 @@ return (object) array(
      'pt' => 'Aniversário',
      'sk' => 'Narodeniny',
      'sv' => 'Födelsedag',
-     'th' => 'วันครบรอบ',
+     'th' => 'วันครบรอบการไม่เมา',
   ),
    'HE' => 
   (object) array(
@@ -539,7 +539,7 @@ return (object) array(
      'pt' => 'LGBTQ',
      'sk' => 'LGBTQ',
      'sv' => 'HBTQ',
-     'th' => 'แอลจีบีทีคิว',
+     'th' => 'กลุ่มผู้มีความหลากหลายทางเพศ (LGBTQ+)',
   ),
    'LIT' => 
   (object) array(
@@ -551,7 +551,7 @@ return (object) array(
      'pt' => 'Literatura',
      'sk' => 'Literatúra',
      'sv' => 'Litteratur',
-     'th' => 'วรรณกรรม',
+     'th' => 'วรรณกรรมของเอเอ',
   ),
    'LS' => 
   (object) array(
@@ -563,7 +563,7 @@ return (object) array(
      'pt' => 'Viver Sóbrio',
      'sk' => 'Triezvy život',
      'sv' => 'Leva Nyktert',
-     'th' => 'ใช้ชีวิตอย่างมีสติ',
+     'th' => 'ชีวิตที่ใม่เมา',
   ),
    'LT' => 
   (object) array(
@@ -731,7 +731,7 @@ return (object) array(
      'pt' => 'Profissionais',
      'sk' => 'Profesionáli',
      'sv' => 'Professionella',
-     'th' => 'ผู้ประกอบอาชีพ',
+     'th' => 'ผู้ประกอบวิชาชีพ',
   ),
    'POA' => 
   (object) array(
@@ -743,7 +743,7 @@ return (object) array(
      'pt' => 'Comprovante de Presença',
      'sk' => 'Doklad o účasti',
      'sv' => 'Närvarobevis',
-     'th' => 'หลักฐานการเข้าร่วม',
+     'th' => 'หลักฐานการเข้าประชุม',
   ),
    'POC' => 
   (object) array(
@@ -755,7 +755,7 @@ return (object) array(
      'pt' => 'Pessoas de Côr',
      'sk' => 'Farební ľudia',
      'sv' => 'Färgade',
-     'th' => 'ผู้คนผิวสี',
+     'th' => 'ชนกลุ่มน้อย',
   ),
    'POL' => 
   (object) array(
@@ -863,7 +863,7 @@ return (object) array(
      'pt' => 'Permitido Fumar',
      'sk' => 'Fajčenie povolené',
      'sv' => 'Rökning Tillåten',
-     'th' => 'สูบบุหรี่ได้',
+     'th' => 'สูบบุหรี่ได',
   ),
    'SP' => 
   (object) array(
@@ -887,7 +887,7 @@ return (object) array(
      'pt' => 'Estudo de Passos',
      'sk' => 'Štúdium Krokov',
      'sv' => 'Stegmöte',
-     'th' => 'ศึกษาขั้นตอน',
+     'th' => 'การศึกษา 12 ขั้นตอน',
   ),
    'SV' => 
   (object) array(
@@ -911,7 +911,7 @@ return (object) array(
      'pt' => 'Transgénero',
      'sk' => 'Transgender',
      'sv' => 'Transpersoner',
-     'th' => 'ทรานส์เจนเดอร์',
+     'th' => 'คนข้ามเพศ',
   ),
    'TC' => 
   (object) array(
@@ -923,7 +923,7 @@ return (object) array(
      'pt' => 'Local Temporáriamente Encerrado',
      'sk' => 'Miesto dočasne zatvorené',
      'sv' => 'Tillfälligt Stängt',
-     'th' => 'สถานที่ปิดชั่วคราว',
+     'th' => 'ปิดชั่วคราว',
   ),
    'TH' => 
   (object) array(
@@ -959,7 +959,7 @@ return (object) array(
      'pt' => 'Estudo de Tradições',
      'sk' => 'Tradičné štúdium',
      'sv' => 'Traditionsmöte',
-     'th' => 'ศึกษาประเพณี',
+     'th' => 'การศึกษา 12 ธรรมเนียม',
   ),
    'TUR' => 
   (object) array(
@@ -1019,7 +1019,7 @@ return (object) array(
      'pt' => 'WC com Acesso a Cadeiras de Rodas',
      'sk' => 'Bezbariérová kúpeľňa',
      'sv' => 'Handikappanpassad WC',
-     'th' => 'ห้องน้ำสำหรับรถเข็น',
+     'th' => 'ห้องน้ำสำหรับผู้ใช้รถเข็น',
   ),
    'XT' => 
   (object) array(
@@ -1031,7 +1031,7 @@ return (object) array(
      'pt' => 'Prtilhas Cruzadas Permitidas',
      'sk' => 'Cross Talk povolený',
      'sv' => 'Kommentarer Tilltåtna',
-     'th' => 'อนุญาตให้โต้ตอบ',
+     'th' => 'โต้ตอบได้',
   ),
    'Y' => 
   (object) array(
@@ -1043,6 +1043,6 @@ return (object) array(
      'pt' => 'Jovens',
      'sk' => 'Mladí ľudia',
      'sv' => 'Young People',
-     'th' => 'กลุ่มเยาวชน',
+     'th' => 'เยาวชน',
   ),
 );
