@@ -352,40 +352,40 @@ Also when adding a custom type, it's wise to stay away from any [ISO 369 languag
 <!-- Types -->
 |Code|English|Español|Français|日本語|Nederlands|Português|Slovenčina|Svenska|ไทย|
 |---|---|---|---|---|---|---|---|---|---|
-|`11`|11th Step Meditation|Meditación del Paso 11|Méditation sur la 11e Étape|ステップ11 黙想|Stap 11 meditatie|Meditação do 11º Passo|Meditácia 11. kroku|11th Stegs Meditation|สมาธิขั้นที่ 11|
-|`12x12`|12 Steps & 12 Traditions|12 Pasos y 12 Tradiciones|12 Étapes et 12 Traditions|12のステップと12の伝統|12 Stappen en 12 Tradities|12 Passos e 12 Tradições|12 Krokov & 12 Tradícií|12 Steg & 12 Traditioner|12 ขั้นตอนและ 12 ธรรมเนียม|
-|`A`|Secular|Secular|Séculier|無宗教|Seculier|Secular|Svetské|Sekulärt|ไม่เกี่ยวกับศาสนา|
-|`ABSI`|As Bill Sees It|Como lo ve Bill|Réflexions de Bill|ビルはこう思う|Zoals Bill het ziet|Na opinião de Bill|Ako to vidí Bill|Som Bill Ser Det|ตามที่บิลมอง|
+|`11`|11th Step Meditation|Meditación del Paso 11|Méditation sur la 11e Étape|ステップ11 黙想|Stap 11 meditatie|Meditação do 11º Passo|Meditácia 11. kroku|11th Stegs Meditation|การทำสมาธิตามขั้นตอนที่ 11|
+|`12x12`|12 Steps & 12 Traditions|12 Pasos y 12 Tradiciones|12 Étapes et 12 Traditions|12のステップと12の伝統|12 Stappen en 12 Tradities|12 Passos e 12 Tradições|12 Krokov & 12 Tradícií|12 Steg & 12 Traditioner|ขั้นตอนทั้งสิบสองและธรรมเนียมทั้งสิบสอง|
+|`A`|Secular|Secular|Séculier|無宗教|Seculier|Secular|Svetské|Sekulärt|ไม่เกี่ยวข้องกับศาสนา|
+|`ABSI`|As Bill Sees It|Como lo ve Bill|Réflexions de Bill|ビルはこう思う|Zoals Bill het ziet|Na opinião de Bill|Ako to vidí Bill|Som Bill Ser Det|ในมุมมองของบิล|
 |`AF`|Afrikaans|Afrikáans|Afrikaans|アフリカーンス語|Afrikaans|Afrikaans|Afrikánčina|Afrikaans|แอฟริกานส์|
-|`AL`|Concurrent with Alateen|Concurrente con Alateen|En même temps qu’Alateen|アラティーンと同時進行|Gelijktijdig met Alateen|Em simultâneo com Alateen|Súbežne s Alateen|Tillsammans med Alateen|พร้อมกันกับ Alateen|
-|`AL-AN`|Concurrent with Al-Anon|Concurrente con Al-Anon|En même temps qu’Al-Anon|アラノンと同時進行|Gelijktijdig met Al-Anon|Em simultâneo com Al-Anon|Súbežne s Al-Anon|Tillsammans med Al-Anon|พร้อมกันกับ Al-Anon|
+|`AL`|Concurrent with Alateen|Concurrente con Alateen|En même temps qu’Alateen|アラティーンと同時進行|Gelijktijdig met Alateen|Em simultâneo com Alateen|Súbežne s Alateen|Tillsammans med Alateen|ควบคู่กับ Alateen|
+|`AL-AN`|Concurrent with Al-Anon|Concurrente con Al-Anon|En même temps qu’Al-Anon|アラノンと同時進行|Gelijktijdig met Al-Anon|Em simultâneo com Al-Anon|Súbežne s Al-Anon|Tillsammans med Al-Anon|ควบคู่กับ Al-Anon|
 |`AM`|Amharic|Amárico|Amharique|アムハラ語|Amhaars|Amárico|Amharčina|Amhariska|อัมฮาริก|
 |`AR`|Arabic|Árabe|Arabe|アラビア語|Arabisch|Árabe|Arabské|Arabiska|อาหรับ|
 |`ASL`|American Sign Language|Lenguaje por señas|Langage des Signes|アメリカ手話|Amerikaanse gebaren taal|Língua Gestual Americana|Americký posunkový jazyk|Amerikanskt teckenspråk|ภาษามืออเมริกัน|
-|`B`|Big Book|Libro Grande|Gros Livre|ビッグブック|Big Book|Livro Azul|Veľká Kniha|Stora Boken|หนังสือใหญ่|
+|`B`|Big Book|Libro Grande|Gros Livre|ビッグブック|Big Book|Livro Azul|Veľká Kniha|Stora Boken|หนังสือบิ๊กบุ๊คหรือหนังสือกลุ่มผู้ติดสุรานิรนาม|
 |`BA`|Babysitting Available|Guardería disponible|Garderie d’enfants disponible|ベビーシッターあり|Kinderopvang aanwezig|Babysitting disponível|Dostupné opatrovanie detí|Barnvakt Finns|มีบริการดูแลเด็ก|
 |`BE`|Newcomer|Principiantes|Nouveau/nouvelle|ビギナーズ|Nieuwkomer|Recém-chegados|Nováčikovia|Nykomling|สมาชิกใหม่|
 |`BG`|Bulgarian|Búlgaro|Bulgare|ブルガリア語|Bulgaars|Búlgaro|Bulharské|Bulgariska|บัลแกเรีย|
-|`BI`|Bisexual|Bisexual|Bisexuel|バイセクシャル|Biseksueel|Bisexual|Bisexuálne|Bisexuellt|ไบเซ็กชวล|
+|`BI`|Bisexual|Bisexual|Bisexuel|バイセクシャル|Biseksueel|Bisexual|Bisexuálne|Bisexuellt|รักสองเพศ|
 |`BRK`|Breakfast|Desayuno|Petit déjeuner|朝食|Ontbijt|Pequeno-Almoço|Raňajky|Frukost|อาหารเช้า|
 |`C`|Closed|Cerrada|Fermé|クローズド|Gesloten|Fechada|Uzatvorené|Slutet|ปิด|
 |`CAN`|Candlelight|Luz de una vela|À la chandelle|キャンドル|Candlelight|Luz de Velas|Sviečky|Tända Ljus|แสงเทียน|
-|`CF`|Child-Friendly|Niño amigable|Enfants acceptés|お子さま歓迎|Kindvriendelijk|Amigável para Crianças|Priateľský k deťom|Barnvänligt|เป็นมิตรกับเด็ก|
-|`D`|Discussion|Discusión|Discussion|ディスカッション|Discussie|Discussão|Diskusia|Diskussion|พูดคุยกลุ่ม|
+|`CF`|Child-Friendly|Niño amigable|Enfants acceptés|お子さま歓迎|Kindvriendelijk|Amigável para Crianças|Priateľský k deťom|Barnvänligt|ยินดีต้อนรับเด็ก|
+|`D`|Discussion|Discusión|Discussion|ディスカッション|Discussie|Discussão|Diskusia|Diskussion|การแบ่งปัน|
 |`DA`|Danish|Danés|Danois|デンマーク語|Deens|Dinamarquês|Dánsky|Danska|เดนมาร์ก|
-|`DB`|Digital Basket|Canasta digital|Panier numérique|電子献金|Digitale mand|Cesto Digital|Digitálny košík|Digital Korg|ตะกร้าบริจาคดิจิทัล|
-|`DD`|Dual Diagnosis|Diagnóstico dual|Double diagnostic|重複診断|Dubbele diagnose|Duplo Diagnóstico|Duálna diagnóza|Dubbel Diagnos|วินิจฉัยร่วม|
+|`DB`|Digital Basket|Canasta digital|Panier numérique|電子献金|Digitale mand|Cesto Digital|Digitálny košík|Digital Korg|บริจาคออนไลน์|
+|`DD`|Dual Diagnosis|Diagnóstico dual|Double diagnostic|重複診断|Dubbele diagnose|Duplo Diagnóstico|Duálna diagnóza|Dubbel Diagnos|โรคร่วม (สุขภาพจิตและการเสพติด)|
 |`DE`|German|Alemán|Allemand|ドイツ語|Duits|Alemão|Nemecké|Tyska|เยอรมัน|
 |`DR`|Daily Reflections|Reflexiones Diarias|Réflexions quotidiennes|今日を新たに|Dagelijkse weerspiegelingen|Reflexões Diárias|Denné úvahy|Dagliga Reflektioner|ข้อคิดประจำวัน|
 |`EL`|Greek|Griego|Grec|ギリシャ語|Grieks|Grego|Grécke|Grekiska|กรีก|
 |`EN`|English|Inglés|Anglais|英語|Engels|Inglês|Anglické|Engelska|อังกฤษ|
 |`FA`|Persian|Persa|Persan|ペルシア語|Perzisch|Persa|Perzské|Persiska|เปอร์เซีย|
 |`FI`|Finnish|Finlandés|Finlandais|フィンランド語|Fins|Finlandês|Fínčina|Finska|ฟินแลนด์|
-|`FF`|Fragrance Free|Sin fragancia|Sans parfum|香水なし|Geen parfum|Sem Perfumes|Bez vône|Parfym Fritt|ปลอดกลิ่นน้ำหอม|
+|`FF`|Fragrance Free|Sin fragancia|Sans parfum|香水なし|Geen parfum|Sem Perfumes|Bez vône|Parfym Fritt|ปราศจากน้ำหอม|
 |`FR`|French|Francés|Français|フランス語|Frans|Francês|Francúzsky|Franska|ฝรั่งเศส|
 |`G`|Gay|Gay|Gai|ゲイ|Homo|Gay|Gay|Gay|เกย์|
 |`GR`|Grapevine|La Viña|La Vigne|グレープバイン|Wijnstok|Grapevine|Grapevine|Grapevine|เกรปไวน์|
-|`H`|Birthday|Cumpleaños|Anniversaire|バースデー|Verjaardag|Aniversário|Narodeniny|Födelsedag|วันครบรอบ|
+|`H`|Birthday|Cumpleaños|Anniversaire|バースデー|Verjaardag|Aniversário|Narodeniny|Födelsedag|วันครบรอบการไม่เมา|
 |`HE`|Hebrew|Hebreo|Hébreu|ヘブライ語|Hebreeuws|Hebreu|Hebrejské|Hebreiska|ฮีบรู|
 |`HI`|Hindi|Hindi|Hindi|ヒンディー語|Hindi|Hindi|Hindi|Hindi|ฮินดี|
 |`HR`|Croatian|Croata|Croate|クロアチア語|Kroatisch|Croata|Chorvátsky|Kroatiska|โครเอเชีย|
@@ -396,9 +396,9 @@ Also when adding a custom type, it's wise to stay away from any [ISO 369 languag
 |`KA`|Georgian|Georgiano|Géorgien|ジョージア語|Georgisch|Georgiano|Gruzínske|Georgiska|จอร์เจีย|
 |`KOR`|Korean|Coreano|Coréen|韓国語|Koreaans|Coreano|Kórejske|Koreanska|เกาหลี|
 |`L`|Lesbian|Lesbiana|Lesbienne|レズビアン|Lesbisch|Lésbica|Lesbické|Lesbiskt|เลสเบียน|
-|`LGBTQ`|LGBTQ|LGBTQ|LGBTQ|LGBTQ|LGBTQ|LGBTQ|LGBTQ|HBTQ|แอลจีบีทีคิว|
-|`LIT`|Literature|Literatura|Publications|書籍|Literatuur|Literatura|Literatúra|Litteratur|วรรณกรรม|
-|`LS`|Living Sober|Viviendo Sobrio|Vivre… Sans alcool|リビングソーバー|Sober leven|Viver Sóbrio|Triezvy život|Leva Nyktert|ใช้ชีวิตอย่างมีสติ|
+|`LGBTQ`|LGBTQ|LGBTQ|LGBTQ|LGBTQ|LGBTQ|LGBTQ|LGBTQ|HBTQ|กลุ่มผู้มีความหลากหลายทางเพศ (LGBTQ+)|
+|`LIT`|Literature|Literatura|Publications|書籍|Literatuur|Literatura|Literatúra|Litteratur|วรรณกรรมของเอเอ|
+|`LS`|Living Sober|Viviendo Sobrio|Vivre… Sans alcool|リビングソーバー|Sober leven|Viver Sóbrio|Triezvy život|Leva Nyktert|ชีวิตที่ใม่เมา|
 |`LT`|Lithuanian|Lituano|Lituanien|リトアニア語|Litouws|Lituano|Litovské|Litauiska|ลิทัวเนีย|
 |`M`|Men|Hombres|Hommes|男性|Mannen|Homens|Muži|Mansmöte|ผู้ชาย|
 |`MED`|Meditation|Meditación|Méditation|黙想|Meditatie|Meditação|Meditácia|Meditationsmöte|สมาธิ|
@@ -412,9 +412,9 @@ Also when adding a custom type, it's wise to stay away from any [ISO 369 languag
 |`NO`|Norwegian|Noruego|Norvégien|ノルウェー語|Noors|Norueguês|Nórsky|Norska|นอร์เวย์|
 |`O`|Open|Abierta|Ouvert(e)|オープン|Open|Aberta|Otvorené|Öppet|เปิด|
 |`OUT`|Outdoor|Al aire libre|En plein air|アウトドア|Buiten|Ao ar livre|Vonkajšie|Utomhus|กลางแจ้ง|
-|`P`|Professionals|Profesionales|Professionnels|職業人|Professionals|Profissionais|Profesionáli|Professionella|ผู้ประกอบอาชีพ|
-|`POA`|Proof of Attendance|Prueba de Asistencia|Preuve de Présence|出席証明|Bewijs van Aanwezigheid|Comprovante de Presença|Doklad o účasti|Närvarobevis|หลักฐานการเข้าร่วม|
-|`POC`|People of Color|Gente de color|Gens de couleur|有色人種|Mensen van kleur|Pessoas de Côr|Farební ľudia|Färgade|ผู้คนผิวสี|
+|`P`|Professionals|Profesionales|Professionnels|職業人|Professionals|Profissionais|Profesionáli|Professionella|ผู้ประกอบวิชาชีพ|
+|`POA`|Proof of Attendance|Prueba de Asistencia|Preuve de Présence|出席証明|Bewijs van Aanwezigheid|Comprovante de Presença|Doklad o účasti|Närvarobevis|หลักฐานการเข้าประชุม|
+|`POC`|People of Color|Gente de color|Gens de couleur|有色人種|Mensen van kleur|Pessoas de Côr|Farební ľudia|Färgade|ชนกลุ่มน้อย|
 |`POL`|Polish|Polaco|Polonais|ポーランド語|Pools|Polaco|Poľské|Polska|โปแลนด์|
 |`POR`|Portuguese|Portugués|Portugais|ポルトガル語|Portugees|Português|Portugalské|Portugisiska|โปรตุเกส|
 |`PUN`|Punjabi|Punjabi|Pendjabi|パンジャブ語|Punjabi|Punjabi|Pandžábske|Punjabi|ปัญจาบ|
@@ -423,22 +423,22 @@ Also when adding a custom type, it's wise to stay away from any [ISO 369 languag
 |`SEN`|Seniors|Personas mayores|Séniors|シニア|Senioren|Séniores|Seniori|Seniorer|ผู้สูงอายุ|
 |`SK`|Slovak|Eslovaco|Slovaque|スロバキア語|Slowaaks|Eslovaco|Slovenské|Slovakiska|สโลวัก|
 |`SL`|Slovenian|Esloveno|Slovène|スロベニア語|Sloveens|Esloveno|Slovinské|Slovenska|สโลวีเนีย|
-|`SM`|Smoking Permitted|Se permite fumar|Permis de fumer|喫煙可|Roken toegestaan|Permitido Fumar|Fajčenie povolené|Rökning Tillåten|สูบบุหรี่ได้|
+|`SM`|Smoking Permitted|Se permite fumar|Permis de fumer|喫煙可|Roken toegestaan|Permitido Fumar|Fajčenie povolené|Rökning Tillåten|สูบบุหรี่ได|
 |`SP`|Speaker|Orador|Conférencier|スピーカー|Spreker|Partilhador|Spíker|Talare|ผู้พูด|
-|`ST`|Step Study|Estudio de pasos|Sur les Étapes|ステップ|Stap studie|Estudo de Passos|Štúdium Krokov|Stegmöte|ศึกษาขั้นตอน|
+|`ST`|Step Study|Estudio de pasos|Sur les Étapes|ステップ|Stap studie|Estudo de Passos|Štúdium Krokov|Stegmöte|การศึกษา 12 ขั้นตอน|
 |`SV`|Swedish|Sueco|Suédois|スウェーデン語|Zweeds|Sueco|Švédske|Svenska|สวีเดน|
-|`T`|Transgender|Transgénero|Transgenre|トランスジェンダー|Transgender|Transgénero|Transgender|Transpersoner|ทรานส์เจนเดอร์|
-|`TC`|Location Temporarily Closed|Ubicación temporalmente cerrada|Emplacement temporairement fermé|一時的休止中|Locatie tijdelijk gesloten|Local Temporáriamente Encerrado|Miesto dočasne zatvorené|Tillfälligt Stängt|สถานที่ปิดชั่วคราว|
+|`T`|Transgender|Transgénero|Transgenre|トランスジェンダー|Transgender|Transgénero|Transgender|Transpersoner|คนข้ามเพศ|
+|`TC`|Location Temporarily Closed|Ubicación temporalmente cerrada|Emplacement temporairement fermé|一時的休止中|Locatie tijdelijk gesloten|Local Temporáriamente Encerrado|Miesto dočasne zatvorené|Tillfälligt Stängt|ปิดชั่วคราว|
 |`TH`|Thai|Tailandés|Thaï|タイ語|Thais|Tailandês|Thajské|Thailändska|ไทย|
 |`TL`|Tagalog|Tagalo|Tagalog|タガログ語|Tagalog|Tagalo|Tagalské|Tagalog|ตากาล็อก|
-|`TR`|Tradition Study|Estudio de tradicion|Étude des Traditions|伝統|Traditie Studie|Estudo de Tradições|Tradičné štúdium|Traditionsmöte|ศึกษาประเพณี|
+|`TR`|Tradition Study|Estudio de tradicion|Étude des Traditions|伝統|Traditie Studie|Estudo de Tradições|Tradičné štúdium|Traditionsmöte|การศึกษา 12 ธรรมเนียม|
 |`TUR`|Turkish|Turco|Turc|トルコ語|Turks|Turco|Turecký|Turkiska|ตุรกี|
 |`UK`|Ukrainian|Ucraniano|Ukrainien|ウクライナ語|Oekraïens|Ucraniano|Ukrajinské|Ukrainska|ยูเครน|
 |`W`|Women|Mujeres|Femmes|女性|Vrouwen|Mulheres|Ženy|Kvinnomöte|ผู้หญิง|
 |`X`|Wheelchair Access|Acceso en silla de ruedas|Accès aux fauteuils roulants|車いすアクセス|Toegankelijk voor rolstoelgebruikers|Acesso a Cadeiras de Rodas|Prístup pre vozíčkarov|Handikappanpassat|รองรับรถเข็น|
-|`XB`|Wheelchair-Accessible Bathroom|Baño accesible para sillas de ruedas|Toilettes accessibles aux fauteuils roulants|車いす使用者用トイレ|Rolstoeltoegankelijke badkamer|WC com Acesso a Cadeiras de Rodas|Bezbariérová kúpeľňa|Handikappanpassad WC|ห้องน้ำสำหรับรถเข็น|
-|`XT`|Cross Talk Permitted|Se permite opinar|Conversation croisée permise|クロストーク可能|Cross-sharen toegestaan|Prtilhas Cruzadas Permitidas|Cross Talk povolený|Kommentarer Tilltåtna|อนุญาตให้โต้ตอบ|
-|`Y`|Young People|Gente joven|Jeunes|ヤング|Jongeren|Jovens|Mladí ľudia|Young People|กลุ่มเยาวชน|
+|`XB`|Wheelchair-Accessible Bathroom|Baño accesible para sillas de ruedas|Toilettes accessibles aux fauteuils roulants|車いす使用者用トイレ|Rolstoeltoegankelijke badkamer|WC com Acesso a Cadeiras de Rodas|Bezbariérová kúpeľňa|Handikappanpassad WC|ห้องน้ำสำหรับผู้ใช้รถเข็น|
+|`XT`|Cross Talk Permitted|Se permite opinar|Conversation croisée permise|クロストーク可能|Cross-sharen toegestaan|Prtilhas Cruzadas Permitidas|Cross Talk povolený|Kommentarer Tilltåtna|โต้ตอบได้|
+|`Y`|Young People|Gente joven|Jeunes|ヤング|Jongeren|Jovens|Mladí ľudia|Young People|เยาวชน|
 <!-- End Types -->
 
 ## Proposed New Types
