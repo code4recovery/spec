@@ -15,6 +15,7 @@ describe("isMeetingType", () => {
 
   it("should return true for supported language", () => {
     expect(isSupportedLanguage("en")).toBe(true);
+    expect(isSupportedLanguage("de")).toBe(true);
   });
 
   it("should return false for unsupported language", () => {

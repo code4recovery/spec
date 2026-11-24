@@ -1,5 +1,6 @@
 {
   "BV-I": {
+    "de": "Blind / Sehbehindert",
     "en": "Blind / Visually Impaired",
     "es": "Ciego / Discapacidad Visual",
     "fr": "Aveugle / Malvoyant",
@@ -11,6 +12,7 @@
     "th": "คนตาบอด / ผู้มีปัญหาด้านการมองเห็น"
   },
   "D-HOH": {
+    "de": "Gehörlos / Schwerhörig",
     "en": "Deaf / Hard of Hearing",
     "es": "Sordo / Duro de Oído",
     "fr": "Sourd / Malentendant",
@@ -22,6 +24,7 @@
     "th": "คนหูหนวก / หูตึง"
   },
   "LO-I": {
+    "de": "Einzelgänger / Isolationisten",
     "en": "Loners / Isolationists",
     "es": "Solitarios / Aislacionistas",
     "fr": "Solitaires / Isolationnistes",
@@ -33,6 +36,7 @@
     "th": "คนชอบอยู่คนเดียว / คนที่ชอบแยกตัว"
   },
   "QSL": {
+    "de": "Quebec-Gebärdensprache",
     "en": "Quebec Sign Language",
     "es": "Lengua de Señas de Quebec",
     "fr": "Langue des Signes Québécoise",
@@ -44,6 +48,7 @@
     "th": "ภาษามือควิเบก"
   },
   "RSL": {
+    "de": "Russische Gebärdensprache",
     "en": "Russian Sign Language",
     "es": "Lengua de Señas Rusa",
     "fr": "Langue des Signes Russe",

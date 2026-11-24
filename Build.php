@@ -50,6 +50,7 @@ class Build
      * @var array
      */
     private array $languages = [
+        'de' => 'Deutsch',
         'en' => 'English',
         'es' => 'Español',
         'fr' => 'Français',

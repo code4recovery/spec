@@ -3,6 +3,7 @@
 return (object) array(
    '11' => 
   (object) array(
+     'de' => 'Meditation des 11. Schrittes',
      'en' => '11th Step Meditation',
      'es' => 'Meditación del Paso 11',
      'fr' => 'Méditation sur la 11e Étape',
@@ -15,6 +16,7 @@ return (object) array(
   ),
    '12x12' => 
   (object) array(
+     'de' => 'Zwölf Schritte und zwölf Traditionen',
      'en' => '12 Steps & 12 Traditions',
      'es' => '12 Pasos y 12 Tradiciones',
      'fr' => '12 Étapes et 12 Traditions',
@@ -27,6 +29,7 @@ return (object) array(
   ),
    'A' => 
   (object) array(
+     'de' => 'Säkular',
      'en' => 'Secular',
      'es' => 'Secular',
      'fr' => 'Séculier',
@@ -39,6 +42,7 @@ return (object) array(
   ),
    'ABSI' => 
   (object) array(
+     'de' => 'Wie es Bill sieht',
      'en' => 'As Bill Sees It',
      'es' => 'Como lo ve Bill',
      'fr' => 'Réflexions de Bill',
@@ -51,6 +55,7 @@ return (object) array(
   ),
    'AF' => 
   (object) array(
+     'de' => 'Afrikaans',
      'en' => 'Afrikaans',
      'es' => 'Afrikáans',
      'fr' => 'Afrikaans',
@@ -63,6 +68,7 @@ return (object) array(
   ),
    'AL' => 
   (object) array(
+     'de' => 'Gleichzeitig mit Alateen',
      'en' => 'Concurrent with Alateen',
      'es' => 'Concurrente con Alateen',
      'fr' => 'En même temps qu’Alateen',
@@ -75,6 +81,7 @@ return (object) array(
   ),
    'AL-AN' => 
   (object) array(
+     'de' => 'Gleichzeitig mit Al-Anon',
      'en' => 'Concurrent with Al-Anon',
      'es' => 'Concurrente con Al-Anon',
      'fr' => 'En même temps qu’Al-Anon',
@@ -87,6 +94,7 @@ return (object) array(
   ),
    'AM' => 
   (object) array(
+     'de' => 'Amharisch',
      'en' => 'Amharic',
      'es' => 'Amárico',
      'fr' => 'Amharique',
@@ -99,6 +107,7 @@ return (object) array(
   ),
    'AR' => 
   (object) array(
+     'de' => 'Arabisch',
      'en' => 'Arabic',
      'es' => 'Árabe',
      'fr' => 'Arabe',
@@ -111,6 +120,7 @@ return (object) array(
   ),
    'ASL' => 
   (object) array(
+     'de' => 'Amerikanische Gebärdensprache',
      'en' => 'American Sign Language',
      'es' => 'Lenguaje por señas',
      'fr' => 'Langage des Signes',
@@ -123,6 +133,7 @@ return (object) array(
   ),
    'B' => 
   (object) array(
+     'de' => 'Big Book',
      'en' => 'Big Book',
      'es' => 'Libro Grande',
      'fr' => 'Gros Livre',
@@ -135,6 +146,7 @@ return (object) array(
   ),
    'BA' => 
   (object) array(
+     'de' => 'Kinderbetreuung verfügbar',
      'en' => 'Babysitting Available',
      'es' => 'Guardería disponible',
      'fr' => 'Garderie d’enfants disponible',
@@ -147,6 +159,7 @@ return (object) array(
   ),
    'BE' => 
   (object) array(
+     'de' => 'Neu in der Gruppe',
      'en' => 'Newcomer',
      'es' => 'Principiantes',
      'fr' => 'Nouveau/nouvelle',
@@ -159,6 +172,7 @@ return (object) array(
   ),
    'BG' => 
   (object) array(
+     'de' => 'Bulgarisch',
      'en' => 'Bulgarian',
      'es' => 'Búlgaro',
      'fr' => 'Bulgare',
@@ -171,6 +185,7 @@ return (object) array(
   ),
    'BI' => 
   (object) array(
+     'de' => 'Bisexuell',
      'en' => 'Bisexual',
      'es' => 'Bisexual',
      'fr' => 'Bisexuel',
@@ -183,6 +198,7 @@ return (object) array(
   ),
    'BRK' => 
   (object) array(
+     'de' => 'Frühstück',
      'en' => 'Breakfast',
      'es' => 'Desayuno',
      'fr' => 'Petit déjeuner',
@@ -195,6 +211,7 @@ return (object) array(
   ),
    'C' => 
   (object) array(
+     'de' => 'Geschlossen',
      'en' => 'Closed',
      'es' => 'Cerrada',
      'fr' => 'Fermé',
@@ -207,6 +224,7 @@ return (object) array(
   ),
    'CAN' => 
   (object) array(
+     'de' => 'Kerzenlicht',
      'en' => 'Candlelight',
      'es' => 'Luz de una vela',
      'fr' => 'À la chandelle',
@@ -219,6 +237,7 @@ return (object) array(
   ),
    'CF' => 
   (object) array(
+     'de' => 'Kinderfreundlich',
      'en' => 'Child-Friendly',
      'es' => 'Niño amigable',
      'fr' => 'Enfants acceptés',
@@ -231,6 +250,7 @@ return (object) array(
   ),
    'D' => 
   (object) array(
+     'de' => 'Diskussion',
      'en' => 'Discussion',
      'es' => 'Discusión',
      'fr' => 'Discussion',
@@ -243,6 +263,7 @@ return (object) array(
   ),
    'DA' => 
   (object) array(
+     'de' => 'Dänisch',
      'en' => 'Danish',
      'es' => 'Danés',
      'fr' => 'Danois',
@@ -255,6 +276,7 @@ return (object) array(
   ),
    'DB' => 
   (object) array(
+     'de' => 'Digitaler Sammelbeutel',
      'en' => 'Digital Basket',
      'es' => 'Canasta digital',
      'fr' => 'Panier numérique',
@@ -267,6 +289,7 @@ return (object) array(
   ),
    'DD' => 
   (object) array(
+     'de' => 'Doppeldiagnose',
      'en' => 'Dual Diagnosis',
      'es' => 'Diagnóstico dual',
      'fr' => 'Double diagnostic',
@@ -279,6 +302,7 @@ return (object) array(
   ),
    'DE' => 
   (object) array(
+     'de' => 'Deutsch',
      'en' => 'German',
      'es' => 'Alemán',
      'fr' => 'Allemand',
@@ -291,18 +315,20 @@ return (object) array(
   ),
    'DR' => 
   (object) array(
+     'de' => 'Tägliche Reflexionen',
      'en' => 'Daily Reflections',
      'es' => 'Reflexiones Diarias',
      'fr' => 'Réflexions quotidiennes',
      'ja' => '今日を新たに',
      'nl' => 'Dagelijkse weerspiegelingen',
      'pt' => 'Reflexões Diárias',
-     'sv' => 'Dagliga Reflektioner',
      'sk' => 'Denné úvahy',
+     'sv' => 'Dagliga Reflektioner',
      'th' => 'ข้อคิดประจำวัน',
   ),
    'EL' => 
   (object) array(
+     'de' => 'Griechisch',
      'en' => 'Greek',
      'es' => 'Griego',
      'fr' => 'Grec',
@@ -315,6 +341,7 @@ return (object) array(
   ),
    'EN' => 
   (object) array(
+     'de' => 'Englisch',
      'en' => 'English',
      'es' => 'Inglés',
      'fr' => 'Anglais',
@@ -327,6 +354,7 @@ return (object) array(
   ),
    'FA' => 
   (object) array(
+     'de' => 'Persisch',
      'en' => 'Persian',
      'es' => 'Persa',
      'fr' => 'Persan',
@@ -337,20 +365,9 @@ return (object) array(
      'sv' => 'Persiska',
      'th' => 'เปอร์เซีย',
   ),
-   'FI' => 
-  (object) array(
-     'en' => 'Finnish',
-     'es' => 'Finlandés',
-     'fr' => 'Finlandais',
-     'ja' => 'フィンランド語',
-     'nl' => 'Fins',
-     'pt' => 'Finlandês',
-     'sk' => 'Fínčina',
-     'sv' => 'Finska',
-     'th' => 'ฟินแลนด์',
-  ),
    'FF' => 
   (object) array(
+     'de' => 'Düftefrei',
      'en' => 'Fragrance Free',
      'es' => 'Sin fragancia',
      'fr' => 'Sans parfum',
@@ -361,8 +378,22 @@ return (object) array(
      'sv' => 'Parfym Fritt',
      'th' => 'ปราศจากน้ำหอม',
   ),
+   'FI' => 
+  (object) array(
+     'de' => 'Finnisch',
+     'en' => 'Finnish',
+     'es' => 'Finlandés',
+     'fr' => 'Finlandais',
+     'ja' => 'フィンランド語',
+     'nl' => 'Fins',
+     'pt' => 'Finlandês',
+     'sk' => 'Fínčina',
+     'sv' => 'Finska',
+     'th' => 'ฟินแลนด์',
+  ),
    'FR' => 
   (object) array(
+     'de' => 'Französisch',
      'en' => 'French',
      'es' => 'Francés',
      'fr' => 'Français',
@@ -375,6 +406,7 @@ return (object) array(
   ),
    'G' => 
   (object) array(
+     'de' => 'Homosexuell',
      'en' => 'Gay',
      'es' => 'Gay',
      'fr' => 'Gai',
@@ -387,6 +419,7 @@ return (object) array(
   ),
    'GR' => 
   (object) array(
+     'de' => 'Grapevine',
      'en' => 'Grapevine',
      'es' => 'La Viña',
      'fr' => 'La Vigne',
@@ -399,6 +432,7 @@ return (object) array(
   ),
    'H' => 
   (object) array(
+     'de' => 'Geburtstag',
      'en' => 'Birthday',
      'es' => 'Cumpleaños',
      'fr' => 'Anniversaire',
@@ -411,6 +445,7 @@ return (object) array(
   ),
    'HE' => 
   (object) array(
+     'de' => 'Hebräisch',
      'en' => 'Hebrew',
      'es' => 'Hebreo',
      'fr' => 'Hébreu',
@@ -423,6 +458,7 @@ return (object) array(
   ),
    'HI' => 
   (object) array(
+     'de' => 'Hindi',
      'en' => 'Hindi',
      'es' => 'Hindi',
      'fr' => 'Hindi',
@@ -435,6 +471,7 @@ return (object) array(
   ),
    'HR' => 
   (object) array(
+     'de' => 'Kroatisch',
      'en' => 'Croatian',
      'es' => 'Croata',
      'fr' => 'Croate',
@@ -447,6 +484,7 @@ return (object) array(
   ),
    'HU' => 
   (object) array(
+     'de' => 'Ungarisch',
      'en' => 'Hungarian',
      'es' => 'Húngaro',
      'fr' => 'Hongrois',
@@ -459,6 +497,7 @@ return (object) array(
   ),
    'IS' => 
   (object) array(
+     'de' => 'Isländisch',
      'en' => 'Icelandic',
      'es' => 'Islandés',
      'fr' => 'Islandais',
@@ -471,6 +510,7 @@ return (object) array(
   ),
    'ITA' => 
   (object) array(
+     'de' => 'Italienisch',
      'en' => 'Italian',
      'es' => 'Italiano',
      'fr' => 'Italien',
@@ -483,6 +523,7 @@ return (object) array(
   ),
    'JA' => 
   (object) array(
+     'de' => 'Japanisch',
      'en' => 'Japanese',
      'es' => 'Japonés',
      'fr' => 'Japonais',
@@ -495,6 +536,7 @@ return (object) array(
   ),
    'KA' => 
   (object) array(
+     'de' => 'Georgisch',
      'en' => 'Georgian',
      'es' => 'Georgiano',
      'fr' => 'Géorgien',
@@ -507,6 +549,7 @@ return (object) array(
   ),
    'KOR' => 
   (object) array(
+     'de' => 'Koreanisch',
      'en' => 'Korean',
      'es' => 'Coreano',
      'fr' => 'Coréen',
@@ -519,6 +562,7 @@ return (object) array(
   ),
    'L' => 
   (object) array(
+     'de' => 'Lesbisch',
      'en' => 'Lesbian',
      'es' => 'Lesbiana',
      'fr' => 'Lesbienne',
@@ -531,6 +575,7 @@ return (object) array(
   ),
    'LGBTQ' => 
   (object) array(
+     'de' => 'LGBTQ',
      'en' => 'LGBTQ',
      'es' => 'LGBTQ',
      'fr' => 'LGBTQ',
@@ -543,6 +588,7 @@ return (object) array(
   ),
    'LIT' => 
   (object) array(
+     'de' => 'Literatur',
      'en' => 'Literature',
      'es' => 'Literatura',
      'fr' => 'Publications',
@@ -555,6 +601,7 @@ return (object) array(
   ),
    'LS' => 
   (object) array(
+     'de' => 'Living Sober',
      'en' => 'Living Sober',
      'es' => 'Viviendo Sobrio',
      'fr' => 'Vivre… Sans alcool',
@@ -567,6 +614,7 @@ return (object) array(
   ),
    'LT' => 
   (object) array(
+     'de' => 'Litauisch',
      'en' => 'Lithuanian',
      'es' => 'Lituano',
      'fr' => 'Lituanien',
@@ -579,6 +627,7 @@ return (object) array(
   ),
    'M' => 
   (object) array(
+     'de' => 'Männer',
      'en' => 'Men',
      'es' => 'Hombres',
      'fr' => 'Hommes',
@@ -591,6 +640,7 @@ return (object) array(
   ),
    'MED' => 
   (object) array(
+     'de' => 'Meditation',
      'en' => 'Meditation',
      'es' => 'Meditación',
      'fr' => 'Méditation',
@@ -603,6 +653,7 @@ return (object) array(
   ),
    'ML' => 
   (object) array(
+     'de' => 'Malayalam',
      'en' => 'Malayalam',
      'es' => 'Malayalam',
      'fr' => 'Malayalam',
@@ -615,6 +666,7 @@ return (object) array(
   ),
    'MT' => 
   (object) array(
+     'de' => 'Maltesisch',
      'en' => 'Maltese',
      'es' => 'Maltés',
      'fr' => 'Maltais',
@@ -627,6 +679,7 @@ return (object) array(
   ),
    'N' => 
   (object) array(
+     'de' => 'Indianische Herkunft',
      'en' => 'Native American',
      'es' => 'Nativo Americano',
      'fr' => 'Autochtone',
@@ -639,6 +692,7 @@ return (object) array(
   ),
    'NB' => 
   (object) array(
+     'de' => 'Nicht-binär',
      'en' => 'Non-Binary',
      'es' => 'No binario',
      'fr' => 'Non binaire',
@@ -651,6 +705,7 @@ return (object) array(
   ),
    'NDG' => 
   (object) array(
+     'de' => 'Indigene',
      'en' => 'Indigenous',
      'es' => 'Indígena',
      'fr' => 'Indigène',
@@ -663,6 +718,7 @@ return (object) array(
   ),
    'NE' => 
   (object) array(
+     'de' => 'Nepalesisch',
      'en' => 'Nepali',
      'es' => 'Nepalí',
      'fr' => 'Népalais',
@@ -675,6 +731,7 @@ return (object) array(
   ),
    'NL' => 
   (object) array(
+     'de' => 'Niederländisch',
      'en' => 'Dutch',
      'es' => 'Holandés',
      'fr' => 'Néerlandais',
@@ -687,6 +744,7 @@ return (object) array(
   ),
    'NO' => 
   (object) array(
+     'de' => 'Norwegisch',
      'en' => 'Norwegian',
      'es' => 'Noruego',
      'fr' => 'Norvégien',
@@ -699,6 +757,7 @@ return (object) array(
   ),
    'O' => 
   (object) array(
+     'de' => 'Offen',
      'en' => 'Open',
      'es' => 'Abierta',
      'fr' => 'Ouvert(e)',
@@ -711,6 +770,7 @@ return (object) array(
   ),
    'OUT' => 
   (object) array(
+     'de' => 'Im Freien',
      'en' => 'Outdoor',
      'es' => 'Al aire libre',
      'fr' => 'En plein air',
@@ -723,6 +783,7 @@ return (object) array(
   ),
    'P' => 
   (object) array(
+     'de' => 'Fachkräfte',
      'en' => 'Professionals',
      'es' => 'Profesionales',
      'fr' => 'Professionnels',
@@ -735,6 +796,7 @@ return (object) array(
   ),
    'POA' => 
   (object) array(
+     'de' => 'Teilnahmebestätigung',
      'en' => 'Proof of Attendance',
      'es' => 'Prueba de Asistencia',
      'fr' => 'Preuve de Présence',
@@ -747,6 +809,7 @@ return (object) array(
   ),
    'POC' => 
   (object) array(
+     'de' => 'Menschen of Color',
      'en' => 'People of Color',
      'es' => 'Gente de color',
      'fr' => 'Gens de couleur',
@@ -759,6 +822,7 @@ return (object) array(
   ),
    'POL' => 
   (object) array(
+     'de' => 'Polnisch',
      'en' => 'Polish',
      'es' => 'Polaco',
      'fr' => 'Polonais',
@@ -771,6 +835,7 @@ return (object) array(
   ),
    'POR' => 
   (object) array(
+     'de' => 'Portugiesisch',
      'en' => 'Portuguese',
      'es' => 'Portugués',
      'fr' => 'Portugais',
@@ -783,6 +848,7 @@ return (object) array(
   ),
    'PUN' => 
   (object) array(
+     'de' => 'Punjabi',
      'en' => 'Punjabi',
      'es' => 'Punjabi',
      'fr' => 'Pendjabi',
@@ -795,6 +861,7 @@ return (object) array(
   ),
    'RUS' => 
   (object) array(
+     'de' => 'Russisch',
      'en' => 'Russian',
      'es' => 'Ruso',
      'fr' => 'Russe',
@@ -807,6 +874,7 @@ return (object) array(
   ),
    'S' => 
   (object) array(
+     'de' => 'Spanisch',
      'en' => 'Spanish',
      'es' => 'Español',
      'fr' => 'Espagnol',
@@ -819,6 +887,7 @@ return (object) array(
   ),
    'SEN' => 
   (object) array(
+     'de' => 'Senioren',
      'en' => 'Seniors',
      'es' => 'Personas mayores',
      'fr' => 'Séniors',
@@ -831,6 +900,7 @@ return (object) array(
   ),
    'SK' => 
   (object) array(
+     'de' => 'Slowakisch',
      'en' => 'Slovak',
      'es' => 'Eslovaco',
      'fr' => 'Slovaque',
@@ -843,6 +913,7 @@ return (object) array(
   ),
    'SL' => 
   (object) array(
+     'de' => 'Slowenisch',
      'en' => 'Slovenian',
      'es' => 'Esloveno',
      'fr' => 'Slovène',
@@ -855,6 +926,7 @@ return (object) array(
   ),
    'SM' => 
   (object) array(
+     'de' => 'Rauchen erlaubt',
      'en' => 'Smoking Permitted',
      'es' => 'Se permite fumar',
      'fr' => 'Permis de fumer',
@@ -867,6 +939,7 @@ return (object) array(
   ),
    'SP' => 
   (object) array(
+     'de' => 'Redner',
      'en' => 'Speaker',
      'es' => 'Orador',
      'fr' => 'Conférencier',
@@ -879,6 +952,7 @@ return (object) array(
   ),
    'ST' => 
   (object) array(
+     'de' => 'Schrittstudium',
      'en' => 'Step Study',
      'es' => 'Estudio de pasos',
      'fr' => 'Sur les Étapes',
@@ -891,6 +965,7 @@ return (object) array(
   ),
    'SV' => 
   (object) array(
+     'de' => 'Schwedisch',
      'en' => 'Swedish',
      'es' => 'Sueco',
      'fr' => 'Suédois',
@@ -903,6 +978,7 @@ return (object) array(
   ),
    'T' => 
   (object) array(
+     'de' => 'Transgender',
      'en' => 'Transgender',
      'es' => 'Transgénero',
      'fr' => 'Transgenre',
@@ -915,6 +991,7 @@ return (object) array(
   ),
    'TC' => 
   (object) array(
+     'de' => 'Ort vorübergehend geschlossen',
      'en' => 'Location Temporarily Closed',
      'es' => 'Ubicación temporalmente cerrada',
      'fr' => 'Emplacement temporairement fermé',
@@ -927,6 +1004,7 @@ return (object) array(
   ),
    'TH' => 
   (object) array(
+     'de' => 'Thailändisch',
      'en' => 'Thai',
      'es' => 'Tailandés',
      'fr' => 'Thaï',
@@ -939,6 +1017,7 @@ return (object) array(
   ),
    'TL' => 
   (object) array(
+     'de' => 'Tagalog',
      'en' => 'Tagalog',
      'es' => 'Tagalo',
      'fr' => 'Tagalog',
@@ -951,6 +1030,7 @@ return (object) array(
   ),
    'TR' => 
   (object) array(
+     'de' => 'Traditionenstudium',
      'en' => 'Tradition Study',
      'es' => 'Estudio de tradicion',
      'fr' => 'Étude des Traditions',
@@ -963,6 +1043,7 @@ return (object) array(
   ),
    'TUR' => 
   (object) array(
+     'de' => 'Türkisch',
      'en' => 'Turkish',
      'es' => 'Turco',
      'fr' => 'Turc',
@@ -975,6 +1056,7 @@ return (object) array(
   ),
    'UK' => 
   (object) array(
+     'de' => 'Ukrainisch',
      'en' => 'Ukrainian',
      'es' => 'Ucraniano',
      'fr' => 'Ukrainien',
@@ -987,6 +1069,7 @@ return (object) array(
   ),
    'W' => 
   (object) array(
+     'de' => 'Frauen',
      'en' => 'Women',
      'es' => 'Mujeres',
      'fr' => 'Femmes',
@@ -999,6 +1082,7 @@ return (object) array(
   ),
    'X' => 
   (object) array(
+     'de' => 'Rollstuhlgerecht',
      'en' => 'Wheelchair Access',
      'es' => 'Acceso en silla de ruedas',
      'fr' => 'Accès aux fauteuils roulants',
@@ -1011,6 +1095,7 @@ return (object) array(
   ),
    'XB' => 
   (object) array(
+     'de' => 'Rollstuhlgerechte Toilette',
      'en' => 'Wheelchair-Accessible Bathroom',
      'es' => 'Baño accesible para sillas de ruedas',
      'fr' => 'Toilettes accessibles aux fauteuils roulants',
@@ -1023,6 +1108,7 @@ return (object) array(
   ),
    'XT' => 
   (object) array(
+     'de' => 'Querverweise erlaubt',
      'en' => 'Cross Talk Permitted',
      'es' => 'Se permite opinar',
      'fr' => 'Conversation croisée permise',
@@ -1035,6 +1121,7 @@ return (object) array(
   ),
    'Y' => 
   (object) array(
+     'de' => 'Junge Menschen',
      'en' => 'Young People',
      'es' => 'Gente joven',
      'fr' => 'Jeunes',
